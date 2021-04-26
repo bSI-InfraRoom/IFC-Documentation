@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-17 February 2021
+22 March 2021
 
 *)
 
@@ -286,8 +286,20 @@ ENTITY IfcImpactProtectionDevice
 	PredefinedType : OPTIONAL IfcImpactProtectionDeviceTypeSelect;
  WHERE
 	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
-(PredefinedType <> IfcImpactProtectionDeviceTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));
+((('IFC4X3_RC3.IFCIMPACTPROTECTIONDEVICETYPEENUM' IN TYPEOF(PredefinedType))
+AND (PredefinedType <> IfcImpactProtectionDeviceTypeEnum.USERDEFINED))
+OR (('IFC4X3_RC3.IFCVIBRATIONDAMPERTYPEENUM' IN TYPEOF(PredefinedType))
+AND (PredefinedType <> IfcVibrationDamperTypeEnum.USERDEFINED))
+OR (('IFC4X3_RC3.IFCVIBRATIONISOLATORTYPEENUM' IN TYPEOF(PredefinedType))
+AND (PredefinedType <> IfcVibrationIsolatorTypeEnum.USERDEFINED)))
+ OR
+(((('IFC4X3_RC3.IFCIMPACTPROTECTIONDEVICETYPEENUM' IN TYPEOF(PredefinedType))
+AND (PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED))
+OR (('IFC4X3_RC3.IFCVIBRATIONDAMPERTYPEENUM' IN TYPEOF(PredefinedType))
+AND (PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED))
+OR ((('IFC4X3_RC3.IFCVIBRATIONISOLATORTYPEENUM' IN TYPEOF(PredefinedType))
+AND PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED))) 
+AND EXISTS(SELF\IfcObject.ObjectType));
 	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
 ('IFCSHAREDINFRASTRUCTUREELEMENTS.IFCIMPACTPROTECTIONDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
 END_ENTITY;
@@ -296,8 +308,20 @@ ENTITY IfcImpactProtectionDeviceType
  SUBTYPE OF (IfcElementComponentType);
 	PredefinedType : IfcImpactProtectionDeviceTypeSelect;
  WHERE
-	CorrectPredefinedType : (PredefinedType <> IfcImpactProtectionDeviceTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType));
+	CorrectPredefinedType : ((('IFC4X3_RC3.IFCIMPACTPROTECTIONDEVICETYPEENUM' IN TYPEOF(PredefinedType))
+AND (PredefinedType <> IfcImpactProtectionDeviceTypeEnum.USERDEFINED))
+OR (('IFC4X3_RC3.IFCVIBRATIONDAMPERTYPEENUM' IN TYPEOF(PredefinedType))
+AND (PredefinedType <> IfcVibrationDamperTypeEnum.USERDEFINED))
+OR (('IFC4X3_RC3.IFCVIBRATIONISOLATORTYPEENUM' IN TYPEOF(PredefinedType))
+AND (PredefinedType <> IfcVibrationIsolatorTypeEnum.USERDEFINED)))
+ OR
+(((('IFC4X3_RC3.IFCIMPACTPROTECTIONDEVICETYPEENUM' IN TYPEOF(PredefinedType))
+AND (PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED))
+OR (('IFC4X3_RC3.IFCVIBRATIONDAMPERTYPEENUM' IN TYPEOF(PredefinedType))
+AND (PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED))
+OR ((('IFC4X3_RC3.IFCVIBRATIONISOLATORTYPEENUM' IN TYPEOF(PredefinedType))
+AND PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED))) 
+AND EXISTS(SELF\IfcObject.ObjectType));
 END_ENTITY;
 
 ENTITY IfcPavement
