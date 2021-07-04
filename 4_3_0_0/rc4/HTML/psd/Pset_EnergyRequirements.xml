@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="b00232f2210c4ec59c146cf81542aa47" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ifdguid="b00232f2210c4ec59c146cf81542aa47" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
   <IfcVersion version="IFC4x3_RC4" />
   <Name>Pset_EnergyRequirements</Name>
   <Definition>Property set for the application of energy requirements to facility and physical elements</Definition>

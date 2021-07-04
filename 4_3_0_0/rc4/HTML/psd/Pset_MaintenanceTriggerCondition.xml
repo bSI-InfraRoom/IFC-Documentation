@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="8c96074fccd047f18333c20b06083cf6" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ifdguid="8c96074fccd047f18333c20b06083cf6" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
   <IfcVersion version="IFC4x3_RC4" />
   <Name>Pset_MaintenanceTriggerCondition</Name>
   <Definition>Trigger levels for an asset that has an inspection-based maintenance strategy</Definition>

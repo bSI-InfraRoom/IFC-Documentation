@@ -11,7 +11,7 @@
     <title>IfcSystem</title>
 
     <style type="text/css">
-      body { counter-reset: index1 5 index2 4 index3 3 index4 64 index5 0; }
+      body { counter-reset: index1 5 index2 4 index3 3 index4 68 index5 0; }
     </style>
   </head>
 
@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 <!--
-    parent.index.location.replace("../../toc-5.htm#5.4.3.65");
+    parent.index.location.replace("../../toc-5.htm#5.4.3.69");
 //-->
 </script>
 
@@ -65,7 +65,7 @@ HISTORY New entity in IFC1.0</p>
 <details open="open"><summary>Entity inheritance</summary><img src="../../../diagrams/ifcsystem.png" usemap="#f"/>
 <map name="f">
 <area shape="rect" coords="66,126,254,138" href="../../../schema/ifcsharedbldgelements/lexical/ifcbuildingsystem.htm" alt="IfcBuildingSystem" />
-<area shape="rect" coords="66,150,254,162" href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcbuiltsystem.htm" alt="IfcBuiltSystem" />
+<area shape="rect" coords="66,150,254,162" href="../../../schema/ifcproductextension/lexical/ifcbuiltsystem.htm" alt="IfcBuiltSystem" />
 <area shape="rect" coords="66,174,254,186" href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm" alt="IfcDistributionSystem" />
 <area shape="rect" coords="66,198,254,210" href="../../../schema/ifcstructuralanalysisdomain/lexical/ifcstructuralanalysismodel.htm" alt="IfcStructuralAnalysisModel" />
 <area shape="rect" coords="66,222,254,234" href="../../../schema/ifcproductextension/lexical/ifczone.htm" alt="IfcZone" />
@@ -249,7 +249,7 @@ IFC4 CHANGE  The cardinality has been changed from 1..1 to 0..? in order to all
 </code></div></details>
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">ENTITY</span> IfcSystem<br/>
-&nbsp;<span class="keyword">SUPERTYPE OF</span>(<span class="keyword">ONEOF</span>(<a href="../../ifcsharedbldgelements/lexical/ifcbuildingsystem.htm">IfcBuildingSystem</a>, <a href="../../ifcsharedinfrastructureelements/lexical/ifcbuiltsystem.htm">IfcBuiltSystem</a>, <a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm">IfcDistributionSystem</a>, <a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralanalysismodel.htm">IfcStructuralAnalysisModel</a>, <a href="../../ifcproductextension/lexical/ifczone.htm">IfcZone</a>))<br/>
+&nbsp;<span class="keyword">SUPERTYPE OF</span>(<span class="keyword">ONEOF</span>(<a href="../../ifcsharedbldgelements/lexical/ifcbuildingsystem.htm">IfcBuildingSystem</a>, <a href="../../ifcproductextension/lexical/ifcbuiltsystem.htm">IfcBuiltSystem</a>, <a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm">IfcDistributionSystem</a>, <a href="../../ifcstructuralanalysisdomain/lexical/ifcstructuralanalysismodel.htm">IfcStructuralAnalysisModel</a>, <a href="../../ifcproductextension/lexical/ifczone.htm">IfcZone</a>))<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifckernel/lexical/ifcgroup.htm">IfcGroup</a>)<b>;</b><br/>
 &nbsp;<span class="keyword">INVERSE</span><br/>
 &nbsp;&nbsp;ServicesBuildings : <span class="keyword">SET</span> [0:1] OF <a href="../../ifcproductextension/lexical/ifcrelservicesbuildings.htm">IfcRelServicesBuildings</a> <span class="keyword">FOR</span> RelatingSystem;<br/>

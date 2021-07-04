@@ -11,7 +11,7 @@
     <title>IfcFeatureElementAddition</title>
 
     <style type="text/css">
-      body { counter-reset: index1 5 index2 4 index3 3 index4 24 index5 0; }
+      body { counter-reset: index1 5 index2 4 index3 3 index4 26 index5 0; }
     </style>
   </head>
 
@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 <!--
-    parent.index.location.replace("../../toc-5.htm#5.4.3.25");
+    parent.index.location.replace("../../toc-5.htm#5.4.3.27");
 //-->
 </script>
 
@@ -38,7 +38,7 @@
 <p>The <span class="self-ref">IfcFeatureElementAddition</span> is associated to its master element by virtue of the objectified relationship <a href="../../ifcproductextension/lexical/ifcrelprojectselement.htm">IfcRelProjectsElement</a>. This relationship implies a Boolean 'union' operation between the shape of the master element and the shape of the addition feature.</p>
 <p>The local placement for <span class="self-ref">IfcFeatureElementAddition</span> is defined in its supertype <a href="../../ifckernel/lexical/ifcproduct.htm">IfcProduct</a>. It is defined by the <a href="../../ifcgeometricconstraintresource/lexical/ifclocalplacement.htm">IfcLocalPlacement</a>, which defines the local coordinate system that is referenced by all geometric representations. The local placement is always defined in relation to the local placement of the element to which the feature element is added:</p>
 <ul>
-<li>The <i>PlacementRelTo</i> relationship of <a href="../../ifcgeometricconstraintresource/lexical/ifclocalplacement.htm">IfcLocalPlacement</a> shall point to the local placement of the same <a href="../../ifcproductextension/lexical/ifcelement.htm">IfcElement</a>, which is used in the <i>HasAdditionFeature.RelatingElement</i> inverse attribute.</li>
+<li>The <i>PlacementRelTo</i> attribute of <a href="../../ifcgeometricconstraintresource/lexical/ifcobjectplacement.htm">IfcObjectPlacement</a> shall point (if given) to the object placement of the <a href="../../ifcproductextension/lexical/ifcelement.htm">IfcElement</a>, which is used in the <i>ProjectsElements.RelatingElement</i> inverse attribute (the parent element of the feature).</li>
 </ul>
 <blockquote class="history">
 <p>HISTORY  New entity in IFC2x2.</p>
@@ -195,6 +195,8 @@ IFC4 CHANGE New inverse relationship.
 <tr><td></td><td><i>ContainedInStructure</i></td><td><a href="../../ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm">IfcRelContainedInSpatialStructure</a><br/>@RelatedElements</td><td>S[0:1]</td><td>Containment relationship to the spatial structure element, to which the element is primarily associated. This containment relationship has to be hierachical, i.e. an element may only be assigned directly to zero or one spatial structure.
 </td><td>X</td></tr>
 <tr><td></td><td><i>HasCoverings</i></td><td><a href="../../ifcsharedbldgelements/lexical/ifcrelcoversbldgelements.htm">IfcRelCoversBldgElements</a><br/>@RelatingBuildingElement</td><td>S[0:?]</td><td>Reference to <a href="../../ifcsharedbldgelements/lexical/ifccovering.htm">IfcCovering</a> by virtue of the objectified relationship <i>IfcRelCoversBldgElement</i>. It defines the concept of an element having coverings associated.
+</td><td>X</td></tr>
+<tr><td></td><td><i>HasSurfaceFeatures</i></td><td><a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a><br/>@RelatingElement</td><td>S[0:?]</td><td>Reference to the <a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a> relationship that adheres a <a href="../../ifcstructuralelementsdomain/lexical/ifcsurfacefeature.htm">IfcSurfaceFeature</a> to an element. An element can incorporate zero-to-many surface features in one relationship.
 </td><td>X</td></tr>
 <tr><td colspan="6"><i><a href="../../ifcproductextension/lexical/ifcfeatureelement.htm">IfcFeatureElement</a></i></td></tr>
 <tr><td colspan="6"><i><a href="../../ifcproductextension/lexical/ifcfeatureelementaddition.htm">IfcFeatureElementAddition</a></i></td></tr>

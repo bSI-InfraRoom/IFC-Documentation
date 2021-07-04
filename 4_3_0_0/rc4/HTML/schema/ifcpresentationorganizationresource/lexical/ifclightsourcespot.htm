@@ -44,7 +44,7 @@ The light source spot entity is a subtype of light source. Spot light source ent
 </blockquote>
 <blockquote class="extDef">
 <p>NOTE  Definition according to ISO/IEC 14772-1:1997:<br>
-The Spot light node defines a light source that emits light from a specific point along a specific direction vector and constrained within a solid angle. Spot lights may illuminate geometry nodes that respond to light sources and intersect the solid angle defined by the Spot light. Spot light nodes are specified in the local coordinate system and are affected by ancestors' transformations. Figure 414 shows the definition of spot light. <table><tr><td style="width: 600px"><img src="../../../figures/ifclightsourcespot_fig1.gif" alt="&quot;spot light&quot;" title="Figure 414 &mdash; Light source spot"></td></tr><tr><td><p class="figure">Figure 414 &mdash; Light source spot</p></td></tr></table></p>
+The Spot light node defines a light source that emits light from a specific point along a specific direction vector and constrained within a solid angle. Spot lights may illuminate geometry nodes that respond to light sources and intersect the solid angle defined by the Spot light. Spot light nodes are specified in the local coordinate system and are affected by ancestors' transformations. Figure 413 shows the definition of spot light. <table><tr><td style="width: 600px"><img src="../../../figures/ifclightsourcespot_fig1.gif" alt="&quot;spot light&quot;" title="Figure 413 &mdash; Light source spot"></td></tr><tr><td><p class="figure">Figure 413 &mdash; Light source spot</p></td></tr></table></p>
 </blockquote>
 <blockquote class="note">
 <p>NOTE  Corresponding ISO 10303 entity: light_source_spot. Please refer to ISO/IS 10303-46:1994, p. 33 for the final definition of the formal standard.</p>
@@ -65,7 +65,9 @@ Definition from VRML97 - ISO/IEC 14772-1:1997: The direction field specifies the
 </td><td>X</td></tr>
 <tr><td>11</td><td>ConcentrationExponent</td><td><a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a></td><td>? </td><td>
 Definition from ISO/CD 10303-46:1992: This real is the exponent on the cosine of the angle between the line that starts at the position of the spot light source and is in the direction of the orientation of the spot light source and a line that starts at the position of the spot light source and goes through a point on the surface being shaded.
+<blockquote class="note">
 NOTE  This attribute does not exists in ISO/IEC 14772-1:1997.
+</blockquote>
 </td><td>X</td></tr>
 <tr><td>12</td><td>SpreadAngle</td><td><a href="../../ifcmeasureresource/lexical/ifcpositiveplaneanglemeasure.htm">IfcPositivePlaneAngleMeasure</a></td><td></td><td>
 Definition from ISO/CD 10303-46:1992: This planar angle measure is the angle between the line that starts at the position of the spot light source and is in the direction of the spot light source and any line on the boundary of the cone of influence.
@@ -144,7 +146,9 @@ Definition from VRML97 - ISO/IEC 14772-1:1997: The direction field specifies the
 </td><td>X</td></tr>
 <tr><td>11</td><td>ConcentrationExponent</td><td><a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a></td><td>? </td><td>
 Definition from ISO/CD 10303-46:1992: This real is the exponent on the cosine of the angle between the line that starts at the position of the spot light source and is in the direction of the orientation of the spot light source and a line that starts at the position of the spot light source and goes through a point on the surface being shaded.
+<blockquote class="note">
 NOTE  This attribute does not exists in ISO/IEC 14772-1:1997.
+</blockquote>
 </td><td>X</td></tr>
 <tr><td>12</td><td>SpreadAngle</td><td><a href="../../ifcmeasureresource/lexical/ifcpositiveplaneanglemeasure.htm">IfcPositivePlaneAngleMeasure</a></td><td></td><td>
 Definition from ISO/CD 10303-46:1992: This planar angle measure is the angle between the line that starts at the position of the spot light source and is in the direction of the spot light source and any line on the boundary of the cone of influence.

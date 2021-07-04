@@ -44,6 +44,9 @@
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x2-candidate-4_2_0_0/index.htm">IFC4x2 Candidate 4.2.0.0</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowsegment.htm">IfcFlowSegment</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PositionedRelativeTo</td><td></td><td></td><td>ADDED</td><td></td></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowsegment.htm">IfcFlowSegment</a></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>HasSurfaceFeatures</i></td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
 </details>
 <section>
@@ -64,7 +67,7 @@
 <map name="f">
 <area shape="rect" coords="102,198,290,210" href="../../../schema/ifcelectricaldomain/lexical/ifccablecarriersegment.htm" alt="IfcCableCarrierSegment" />
 <area shape="rect" coords="102,222,290,234" href="../../../schema/ifcelectricaldomain/lexical/ifccablesegment.htm" alt="IfcCableSegment" />
-<area shape="rect" coords="102,246,290,258" href="../../../schema/ifcportsandwaterways/lexical/ifcconveyorsegment.htm" alt="IfcConveyorSegment" />
+<area shape="rect" coords="102,246,290,258" href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcconveyorsegment.htm" alt="IfcConveyorSegment" />
 <area shape="rect" coords="102,270,290,282" href="../../../schema/ifchvacdomain/lexical/ifcductsegment.htm" alt="IfcDuctSegment" />
 <area shape="rect" coords="102,294,290,306" href="../../../schema/ifchvacdomain/lexical/ifcpipesegment.htm" alt="IfcPipeSegment" />
 <area shape="rect" coords="78,150,314,162" href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcdistributionflowelement.htm" alt="IfcDistributionFlowElement" />
@@ -204,6 +207,8 @@ IFC4 CHANGE New inverse relationship.
 </td><td>X</td></tr>
 <tr><td></td><td><i>HasCoverings</i></td><td><a href="../../ifcsharedbldgelements/lexical/ifcrelcoversbldgelements.htm">IfcRelCoversBldgElements</a><br/>@RelatingBuildingElement</td><td>S[0:?]</td><td>Reference to <a href="../../ifcsharedbldgelements/lexical/ifccovering.htm">IfcCovering</a> by virtue of the objectified relationship <i>IfcRelCoversBldgElement</i>. It defines the concept of an element having coverings associated.
 </td><td>X</td></tr>
+<tr><td></td><td><i>HasSurfaceFeatures</i></td><td><a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a><br/>@RelatingElement</td><td>S[0:?]</td><td>Reference to the <a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a> relationship that adheres a <a href="../../ifcstructuralelementsdomain/lexical/ifcsurfacefeature.htm">IfcSurfaceFeature</a> to an element. An element can incorporate zero-to-many surface features in one relationship.
+</td><td>X</td></tr>
 <tr><td colspan="6"><a href="../../ifcproductextension/lexical/ifcdistributionelement.htm">IfcDistributionElement</a></td></tr>
 <tr><td></td><td><i>HasPorts</i></td><td><a href="../../ifcproductextension/lexical/ifcrelconnectsporttoelement.htm">IfcRelConnectsPortToElement</a><br/>@RelatedElement</td><td>S[0:?]</td><td>Reference to the element to port connection relationship. The relationship then refers to the port which is contained in this element.
 <blockquote class="change-ifc2x4">
@@ -332,7 +337,7 @@ IFC4 CHANGE  The inverse attribute is deprecated. Relationship to ports, contai
 </code></div></details>
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">ENTITY</span> IfcFlowSegment<br/>
-&nbsp;<span class="keyword">SUPERTYPE OF</span>(<span class="keyword">ONEOF</span>(<a href="../../ifcelectricaldomain/lexical/ifccablecarriersegment.htm">IfcCableCarrierSegment</a>, <a href="../../ifcelectricaldomain/lexical/ifccablesegment.htm">IfcCableSegment</a>, <a href="../../ifcportsandwaterways/lexical/ifcconveyorsegment.htm">IfcConveyorSegment</a>, <a href="../../ifchvacdomain/lexical/ifcductsegment.htm">IfcDuctSegment</a>, <a href="../../ifchvacdomain/lexical/ifcpipesegment.htm">IfcPipeSegment</a>))<br/>
+&nbsp;<span class="keyword">SUPERTYPE OF</span>(<span class="keyword">ONEOF</span>(<a href="../../ifcelectricaldomain/lexical/ifccablecarriersegment.htm">IfcCableCarrierSegment</a>, <a href="../../ifcelectricaldomain/lexical/ifccablesegment.htm">IfcCableSegment</a>, <a href="../../ifcportsandwaterwaysdomain/lexical/ifcconveyorsegment.htm">IfcConveyorSegment</a>, <a href="../../ifchvacdomain/lexical/ifcductsegment.htm">IfcDuctSegment</a>, <a href="../../ifchvacdomain/lexical/ifcpipesegment.htm">IfcPipeSegment</a>))<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionflowelement.htm">IfcDistributionFlowElement</a>)<b>;</b><br/>
 <span class="keyword">END_ENTITY;</span><br/>
 <p class="std"><a href="../../../annex/annex-d/ifcsharedbldgserviceelements/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>

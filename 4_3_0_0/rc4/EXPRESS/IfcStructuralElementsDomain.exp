@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-09 June 2021
+04 July 2021
 
 *)
 
@@ -47,7 +47,8 @@ REFERENCE FROM IFCPRODUCTEXTENSION
   IfcBuildingElement,
   IfcBuildingElementType,
   IfcFeatureElement,
-  IfcFeatureElementSubtraction
+  IfcFeatureElementSubtraction,
+  IfcRelAdheresToElement
 );
 
 REFERENCE FROM IFCPROFILERESOURCE
@@ -316,6 +317,8 @@ END_ENTITY;
 ENTITY IfcSurfaceFeature
  SUBTYPE OF (IfcFeatureElement);
 	PredefinedType : OPTIONAL IfcSurfaceFeatureTypeEnum;
+ INVERSE
+	AdheresToElement : IfcRelAdheresToElement FOR RelatedSurfaceFeature;
  WHERE
 	HasObjectType : NOT EXISTS(PredefinedType) OR (PredefinedType <> IfcSurfaceFeatureTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType);
 END_ENTITY;

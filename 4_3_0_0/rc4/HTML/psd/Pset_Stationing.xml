@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="b6f3108cb37548f89be90a7f888d8f43" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ifdguid="b6f3108cb37548f89be90a7f888d8f43" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
   <IfcVersion version="IFC4x3_RC4" />
   <Name>Pset_Stationing</Name>
   <Definition>Specifies stationing parameters for _IfcReferent_.</Definition>

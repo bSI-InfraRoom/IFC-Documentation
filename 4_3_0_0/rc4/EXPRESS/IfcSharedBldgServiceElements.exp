@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-09 June 2021
+04 July 2021
 
 *)
 
@@ -112,6 +112,10 @@ TYPE IfcDistributionSystemEnum = ENUMERATION OF
 	,CATENARY_SYSTEM
 	,OVERHEAD_CONTACTLINE_SYSTEM
 	,RETURN_CIRCUIT
+	,FIXEDTRANSMISSIONNETWORK
+	,OPERATIONALTELEPHONYSYSTEM
+	,MOBILENETWORK
+	,MONITORINGSYSTEM
 	,USERDEFINED
 	,NOTDEFINED);
 END_TYPE;

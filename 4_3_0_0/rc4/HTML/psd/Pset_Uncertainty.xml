@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="eb7c91fea3484889bdfa65cc36c81917" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ifdguid="eb7c91fea3484889bdfa65cc36c81917" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
   <IfcVersion version="IFC4x3_RC4" />
   <Name>Pset_Uncertainty</Name>
   <Definition>Property set capturing the geometric uncertainty regarding measurements including how the way that uncertainty was assessed.</Definition>

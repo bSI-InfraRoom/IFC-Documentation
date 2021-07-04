@@ -43,6 +43,10 @@
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x2-candidate-4_2_0_0/index.htm">IFC4x2 Candidate 4.2.0.0</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcstructuralelementsdomain/lexical/ifcsurfacefeature.htm">IfcSurfaceFeature</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PositionedRelativeTo</td><td></td><td></td><td>ADDED</td><td></td></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcstructuralelementsdomain/lexical/ifcsurfacefeature.htm">IfcSurfaceFeature</a></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>HasSurfaceFeatures</i></td><td></td><td></td><td>ADDED</td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>AdheresToElement</i></td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
 </details>
 <section>
@@ -79,6 +83,8 @@
 <th>G</th></tr>
 <tr><td>9</td><td>PredefinedType</td><td><a href="../../ifcstructuralelementsdomain/lexical/ifcsurfacefeaturetypeenum.htm">IfcSurfaceFeatureTypeEnum</a></td><td>? </td><td>
 Indicates the kind of surface feature.
+</td><td>X</td></tr>
+<tr><td></td><td><i>AdheresToElement</i></td><td><a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a><br/>@RelatedSurfaceFeature</td><td></td><td>Reference to the <a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a> relationship that uses this <span class="self-ref">IfcSurfaceFeature</span> to ahere or treat the surface of the <a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a>.RelatingElement.
 </td><td>X</td></tr>
 </table>
 </details>
@@ -230,10 +236,14 @@ IFC4 CHANGE New inverse relationship.
 </td><td>X</td></tr>
 <tr><td></td><td><i>HasCoverings</i></td><td><a href="../../ifcsharedbldgelements/lexical/ifcrelcoversbldgelements.htm">IfcRelCoversBldgElements</a><br/>@RelatingBuildingElement</td><td>S[0:?]</td><td>Reference to <a href="../../ifcsharedbldgelements/lexical/ifccovering.htm">IfcCovering</a> by virtue of the objectified relationship <i>IfcRelCoversBldgElement</i>. It defines the concept of an element having coverings associated.
 </td><td>X</td></tr>
+<tr><td></td><td><i>HasSurfaceFeatures</i></td><td><a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a><br/>@RelatingElement</td><td>S[0:?]</td><td>Reference to the <a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a> relationship that adheres a <a href="../../ifcstructuralelementsdomain/lexical/ifcsurfacefeature.htm">IfcSurfaceFeature</a> to an element. An element can incorporate zero-to-many surface features in one relationship.
+</td><td>X</td></tr>
 <tr><td colspan="6"><i><a href="../../ifcproductextension/lexical/ifcfeatureelement.htm">IfcFeatureElement</a></i></td></tr>
 <tr><td colspan="6"><a href="../../ifcstructuralelementsdomain/lexical/ifcsurfacefeature.htm">IfcSurfaceFeature</a></td></tr>
 <tr><td>9</td><td>PredefinedType</td><td><a href="../../ifcstructuralelementsdomain/lexical/ifcsurfacefeaturetypeenum.htm">IfcSurfaceFeatureTypeEnum</a></td><td>? </td><td>
 Indicates the kind of surface feature.
+</td><td>X</td></tr>
+<tr><td></td><td><i>AdheresToElement</i></td><td><a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a><br/>@RelatedSurfaceFeature</td><td></td><td>Reference to the <a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a> relationship that uses this <span class="self-ref">IfcSurfaceFeature</span> to ahere or treat the surface of the <a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a>.RelatingElement.
 </td><td>X</td></tr>
 </table>
 </details>
@@ -366,12 +376,15 @@ Indicates the kind of surface feature.
 <span class="keyword">ENTITY</span> IfcSurfaceFeature<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifcproductextension/lexical/ifcfeatureelement.htm">IfcFeatureElement</a>)<b>;</b><br/>
 &nbsp;&nbsp;PredefinedType : <span class="keyword">OPTIONAL</span> <a href="../../ifcstructuralelementsdomain/lexical/ifcsurfacefeaturetypeenum.htm">IfcSurfaceFeatureTypeEnum</a>;<br/>
+&nbsp;<span class="keyword">INVERSE</span><br/>
+&nbsp;&nbsp;AdheresToElement : <a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a> <span class="keyword">FOR</span> RelatedSurfaceFeature;<br/>
 &nbsp;<span class="keyword">WHERE</span><br/>
 &nbsp;&nbsp;HasObjectType : NOT EXISTS(PredefinedType) OR (PredefinedType &lt;&gt; <a href="../../ifcstructuralelementsdomain/lexical/ifcsurfacefeaturetypeenum.htm">IfcSurfaceFeatureTypeEnum</a>.USERDEFINED) OR EXISTS(SELF\<a href="../../ifckernel/lexical/ifcobject.htm">IfcObject</a>.ObjectType);<br/><span class="keyword">END_ENTITY;</span><br/>
 <p class="std"><a href="../../../annex/annex-d/ifcstructuralelementsdomain/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
 </code></div>
 </details>
 </section>
+<p><img src="../../../img/external.png" style="border: 0px" title="References" alt="References"/>&nbsp; References: <a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a>
 </p>
 <p><a href="../../../link/ifcsurfacefeature.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
   </body>

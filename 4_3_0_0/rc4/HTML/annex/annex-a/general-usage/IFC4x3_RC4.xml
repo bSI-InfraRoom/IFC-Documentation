@@ -150,6 +150,7 @@
     <cnf:inverse select="HasProjections" exp-attribute="double-tag" />
     <cnf:inverse select="HasOpenings" exp-attribute="double-tag" />
     <cnf:inverse select="HasCoverings" exp-attribute="double-tag" />
+    <cnf:inverse select="HasSurfaceFeatures" exp-attribute="double-tag" />
   </cnf:entity>
   <cnf:entity select="IfcElementarySurface">
     <cnf:attribute select="Position" exp-attribute="attribute-tag" />
@@ -398,6 +399,9 @@
   </cnf:entity>
   <cnf:entity select="IfcReference">
     <cnf:attribute select="InnerReference" exp-attribute="attribute-tag" />
+  </cnf:entity>
+  <cnf:entity select="IfcRelAdheresToElement">
+    <cnf:attribute select="RelatingElement" keep="false" />
   </cnf:entity>
   <cnf:entity select="IfcRelAggregates">
     <cnf:attribute select="RelatingObject" keep="false" />

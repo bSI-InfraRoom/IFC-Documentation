@@ -103,7 +103,9 @@ A list of one or two pcurves which define the surface or surfaces associated wit
 <tr><td>3</td><td>MasterRepresentation</td><td><a href="../../ifcgeometryresource/lexical/ifcpreferredsurfacecurverepresentation.htm">IfcPreferredSurfaceCurveRepresentation</a></td><td></td><td>
 The &lt;em&lt;MasterRepresentation defines the curve used to determine the unique parametrisation of the <span class="self-ref">IfcSurfaceCurve</span>.<br>
 The master_representation takes one of the values <i>Curve3D</i>, <i>PCurve_S1</i> or <i>PCurve_S2</i> to indicate a preference for the 3D curve, or the first or second pcurve, in the associated geometry list, respectively. Multiple representations provide the ability to communicate data in more than one form, even though the data is expected to be geometrically identical.
+<blockquote class="note">
 NOTE  The master representation attribute acknowledges the impracticality of ensuring that multiple forms are indeed identical and allows the indication of a preferred form. This would probably be determined by the creator of the data. All characteristics, such as parametrisation, domain, and results of evaluation, for an entity having multiple representations, are derived from the master representation. Any use of the other representations is a compromise for practical considerations.
+</blockquote>
 </td><td>X</td></tr>
 <tr><td></td><td>BasisSurface<br/>:=IfcGetBasisSurface(SELF)</td><td><a href="../../ifcgeometryresource/lexical/ifcsurface.htm">IfcSurface</a></td><td>S[1:2]</td><td>The surface, or surfaces on which the <span class="self-ref">IfcSurfaceCurve</span> lies. This is determined from the <i>AssociatedGeometry</i> list.
 </td>

@@ -19,41 +19,11 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-09 June 2021
+04 July 2021
 
 *)
 
 SCHEMA IFCSHAREDINFRASTRUCTUREELEMENTS;
-
-TYPE IfcAnnotationTypeEnum = ENUMERATION OF
-	(ASSUMEDPOINT
-	,ASBUILTAREA
-	,ASBUILTLINE
-	,NON_PHYSICAL_SIGNAL
-	,ASSUMEDLINE
-	,WIDTHEVENT
-	,ASSUMEDAREA
-	,SUPERELEVATIONEVENT
-	,ASBUILTPOINT
-	,USERDEFINED
-	,NOTDEFINED);
-END_TYPE;
-
-TYPE IfcBuiltSystemTypeEnum = ENUMERATION OF
-	(REINFORCING
-	,MOORING
-	,OUTERSHELL
-	,TRACKCIRCUIT
-	,EROSIONPREVENTION
-	,FOUNDATION
-	,LOADBEARING
-	,SHADING
-	,FENESTRATION
-	,TRANSPORT
-	,PRESTRESSING
-	,USERDEFINED
-	,NOTDEFINED);
-END_TYPE;
 
 TYPE IfcCourseTypeEnum = ENUMERATION OF
 	(ARMOUR
@@ -88,28 +58,6 @@ TYPE IfcEarthworksFillTypeEnum = ENUMERATION OF
 	,TRANSITIONSECTION
 	,SUBGRADEBED
 	,SLOPEFILL
-	,USERDEFINED
-	,NOTDEFINED);
-END_TYPE;
-
-TYPE IfcFacilityPartCommonTypeEnum = ENUMERATION OF
-	(SEGMENT
-	,ABOVEGROUND
-	,JUNCTION
-	,LEVELCROSSING
-	,BELOWGROUND
-	,SUBSTRUCTURE
-	,TERMINAL
-	,SUPERSTRUCTURE
-	,USERDEFINED
-	,NOTDEFINED);
-END_TYPE;
-
-TYPE IfcFacilityUsageEnum = ENUMERATION OF
-	(LATERAL
-	,REGION
-	,VERTICAL
-	,LONGITUDINAL
 	,USERDEFINED
 	,NOTDEFINED);
 END_TYPE;
@@ -157,59 +105,14 @@ TYPE IfcSignalTypeEnum = ENUMERATION OF
 	,NOTDEFINED);
 END_TYPE;
 
-TYPE IfcTransportElementNonFixedTypeEnum = ENUMERATION OF
-	(VEHICLE
-	,VEHICLETRACKED
-	,ROLLINGSTOCK
-	,VEHICLEWHEELED
-	,VEHICLEAIR
-	,CARGO
-	,VEHICLEMARINE
-	,USERDEFINED
-	,NOTDEFINED);
-END_TYPE;
-
-TYPE IfcFacilityPartTypeSelect = SELECT
-	(IfcBridgePartTypeEnum
-	,IfcFacilityPartCommonTypeEnum
-	,IfcMarinePartTypeEnum
-	,IfcRailwayPartTypeEnum
-	,IfcRoadPartTypeEnum);
-END_TYPE;
-
 TYPE IfcImpactProtectionDeviceTypeSelect = SELECT
 	(IfcImpactProtectionDeviceTypeEnum
 	,IfcVibrationDamperTypeEnum
 	,IfcVibrationIsolatorTypeEnum);
 END_TYPE;
 
-TYPE IfcInterferenceSelect = SELECT
-	(IfcElement
-	,IfcSpatialElement);
-END_TYPE;
-
-TYPE IfcSpatialReferenceSelect = SELECT
-	(IfcGroup
-	,IfcProduct);
-END_TYPE;
-
-TYPE IfcTransportElementTypeSelect = SELECT
-	(IfcTransportElementFixedTypeEnum
-	,IfcTransportElementNonFixedTypeEnum);
-END_TYPE;
-
 ENTITY IfcBorehole
  SUBTYPE OF (IfcGeotechnicalAssembly);
-END_ENTITY;
-
-ENTITY IfcBuiltSystem
- SUBTYPE OF (IfcSystem);
-	PredefinedType : OPTIONAL IfcBuiltSystemTypeEnum;
-	LongName : OPTIONAL IfcLabel;
- WHERE
-	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
-(PredefinedType <> IfcBuiltSystemTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcBuiltSystemTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));
 END_ENTITY;
 
 ENTITY IfcCourse

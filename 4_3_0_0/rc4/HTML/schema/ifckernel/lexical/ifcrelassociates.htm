@@ -83,7 +83,7 @@ IFC4 CHANGE  The attribute datatype has been changed from <a href="../../ifcker
 <area shape="rect" coords="42,150,230,162" href="../../../schema/ifckernel/lexical/ifcrelassociatesdocument.htm" alt="IfcRelAssociatesDocument" />
 <area shape="rect" coords="42,174,230,186" href="../../../schema/ifckernel/lexical/ifcrelassociateslibrary.htm" alt="IfcRelAssociatesLibrary" />
 <area shape="rect" coords="42,198,230,210" href="../../../schema/ifcproductextension/lexical/ifcrelassociatesmaterial.htm" alt="IfcRelAssociatesMaterial" />
-<area shape="rect" coords="42,222,230,234" href="../../../schema/ifcroad/lexical/ifcrelassociatesprofiledef.htm" alt="IfcRelAssociatesProfileDef" />
+<area shape="rect" coords="42,222,230,234" href="../../../schema/ifcproductextension/lexical/ifcrelassociatesprofiledef.htm" alt="IfcRelAssociatesProfileDef" />
 <area shape="rect" coords="18,30,254,42" href="../../../schema/ifckernel/lexical/ifcrelationship.htm" alt="IfcRelationship" />
 <area shape="rect" coords="6,6,266,18" href="../../../schema/ifckernel/lexical/ifcroot.htm" alt="IfcRoot" />
 </map>
@@ -158,7 +158,7 @@ IFC4 CHANGE  The attribute datatype has been changed from <a href="../../ifcker
 </code></div></details>
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">ENTITY</span> IfcRelAssociates<br/>
-&nbsp;<span class="keyword">ABSTRACT</span> <span class="keyword">SUPERTYPE OF</span>(<span class="keyword">ONEOF</span>(<a href="../../ifccontrolextension/lexical/ifcrelassociatesapproval.htm">IfcRelAssociatesApproval</a>, <a href="../../ifckernel/lexical/ifcrelassociatesclassification.htm">IfcRelAssociatesClassification</a>, <a href="../../ifccontrolextension/lexical/ifcrelassociatesconstraint.htm">IfcRelAssociatesConstraint</a>, <a href="../../ifckernel/lexical/ifcrelassociatesdocument.htm">IfcRelAssociatesDocument</a>, <a href="../../ifckernel/lexical/ifcrelassociateslibrary.htm">IfcRelAssociatesLibrary</a>, <a href="../../ifcproductextension/lexical/ifcrelassociatesmaterial.htm">IfcRelAssociatesMaterial</a>, <a href="../../ifcroad/lexical/ifcrelassociatesprofiledef.htm">IfcRelAssociatesProfileDef</a>))<br/>
+&nbsp;<span class="keyword">ABSTRACT</span> <span class="keyword">SUPERTYPE OF</span>(<span class="keyword">ONEOF</span>(<a href="../../ifccontrolextension/lexical/ifcrelassociatesapproval.htm">IfcRelAssociatesApproval</a>, <a href="../../ifckernel/lexical/ifcrelassociatesclassification.htm">IfcRelAssociatesClassification</a>, <a href="../../ifccontrolextension/lexical/ifcrelassociatesconstraint.htm">IfcRelAssociatesConstraint</a>, <a href="../../ifckernel/lexical/ifcrelassociatesdocument.htm">IfcRelAssociatesDocument</a>, <a href="../../ifckernel/lexical/ifcrelassociateslibrary.htm">IfcRelAssociatesLibrary</a>, <a href="../../ifcproductextension/lexical/ifcrelassociatesmaterial.htm">IfcRelAssociatesMaterial</a>, <a href="../../ifcproductextension/lexical/ifcrelassociatesprofiledef.htm">IfcRelAssociatesProfileDef</a>))<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifckernel/lexical/ifcrelationship.htm">IfcRelationship</a>)<b>;</b><br/>
 &nbsp;&nbsp;RelatedObjects : <span class="keyword">SET</span> [1:?] <span class="keyword">OF</span> <a href="../../ifckernel/lexical/ifcdefinitionselect.htm">IfcDefinitionSelect</a>;<br/>
 <span class="keyword">END_ENTITY;</span><br/>

@@ -11,7 +11,7 @@
     <title>IfcReferentTypeEnum</title>
 
     <style type="text/css">
-      body { counter-reset: index1 5 index2 4 index3 2 index4 13 index5 0; }
+      body { counter-reset: index1 5 index2 4 index3 2 index4 17 index5 0; }
     </style>
   </head>
 
@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 <!--
-    parent.index.location.replace("../../toc-5.htm#5.4.2.14");
+    parent.index.location.replace("../../toc-5.htm#5.4.2.18");
 //-->
 </script>
 
@@ -59,7 +59,7 @@ NOTE definition from ISO 19148:2021
 <blockquote class="note">
 NOTE The physical manifestation of the IfcReferent.REFERENCEMARKER can be an IfcSign.MARKER (e.g., a bolt fixed on a post)
 </blockquote>
-</td></tr><tr><td>USERDEFINED</td><td></td></tr><tr><td>NOTDEFINED</td><td></td></tr><tr><td>LANDMARK</td><td>The referent is the location of a physical landmark visible in the field.
+</td></tr><tr><td>LANDMARK</td><td>The referent is the location of a physical landmark visible in the field.
 <blockquote class="note">
 NOTE definition from ISO 19148:2021
 </blockquote>
@@ -72,7 +72,7 @@ NOTE definition from ISO 19148:2021
 NOTE definition from ISO 19148:2021
 </blockquote>
 </td></tr><tr><td>POSITION</td><td>Used to fully describe a linearly referenced location given by the linear element being measured (the <em>IfcAlignment</em> into which the <em>IfcReferent</em> is nested), the method of measurement (<em>Pset_LinearReferencingMethod</em>) and a measure value specified with a distance expression (<em>Pset_DistanceExpression</em>). If a linear referencing method is specified for the position, it overrides any linear referencing method specified for the alignment.”
-</td></tr></table>
+</td></tr><tr><td>USERDEFINED</td><td></td></tr><tr><td>NOTDEFINED</td><td></td></tr></table>
 </details>
 </section>
 <section>
@@ -83,18 +83,18 @@ NOTE definition from ISO 19148:2021
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;milepoint&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;station&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;referencemarker&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;landmark&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;boundary&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;intersection&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;position&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
 </code></div></details>
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">TYPE</span> IfcReferentTypeEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
-&nbsp;KILOPOINT, <br/>&nbsp;MILEPOINT, <br/>&nbsp;STATION, <br/>&nbsp;REFERENCEMARKER, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED, <br/>&nbsp;LANDMARK, <br/>&nbsp;BOUNDARY, <br/>&nbsp;INTERSECTION, <br/>&nbsp;POSITION);<br/><span class="keyword">END_TYPE;</span><br/>
+&nbsp;KILOPOINT, <br/>&nbsp;MILEPOINT, <br/>&nbsp;STATION, <br/>&nbsp;REFERENCEMARKER, <br/>&nbsp;LANDMARK, <br/>&nbsp;BOUNDARY, <br/>&nbsp;INTERSECTION, <br/>&nbsp;POSITION, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
 </p>
 <p class="std"><a href="../../../annex/annex-d/ifcproductextension/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
 </code></div>

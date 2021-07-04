@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-09 June 2021
+04 July 2021
 
 *)
 
@@ -126,6 +126,7 @@ TYPE IfcUnitaryControlElementTypeEnum = ENUMERATION OF
 	,THERMOSTAT
 	,WEATHERSTATION
 	,COMBINED
+	,BASESTATIONCONTROLLER
 	,USERDEFINED
 	,NOTDEFINED);
 END_TYPE;

@@ -236,7 +236,7 @@ of the material. The information contained in this document is subject to change
 		<xs:complexContent>
 			<xs:extension base="ifc:IfcAlignmentParameterSegment">
 				<xs:attribute name="StartDistAlong" type="ifc:IfcLengthMeasure" use="optional"/>
-				<xs:attribute name="HorizontalLength" type="ifc:IfcPositiveLengthMeasure" use="optional"/>
+				<xs:attribute name="HorizontalLength" type="ifc:IfcNonNegativeLengthMeasure" use="optional"/>
 				<xs:attribute name="StartCantLeft" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="EndCantLeft" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="StartCantRight" type="ifc:IfcLengthMeasure" use="optional"/>
@@ -297,11 +297,11 @@ of the material. The information contained in this document is subject to change
 		<xs:complexContent>
 			<xs:extension base="ifc:IfcAlignmentParameterSegment">
 				<xs:attribute name="StartDistAlong" type="ifc:IfcLengthMeasure" use="optional"/>
-				<xs:attribute name="HorizontalLength" type="ifc:IfcPositiveLengthMeasure" use="optional"/>
+				<xs:attribute name="HorizontalLength" type="ifc:IfcNonNegativeLengthMeasure" use="optional"/>
 				<xs:attribute name="StartHeight" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="StartGradient" type="ifc:IfcRatioMeasure" use="optional"/>
 				<xs:attribute name="EndGradient" type="ifc:IfcRatioMeasure" use="optional"/>
-				<xs:attribute name="RadiusOfCurvature" type="ifc:IfcPositiveLengthMeasure" use="optional"/>
+				<xs:attribute name="RadiusOfCurvature" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="PredefinedType" type="ifc:IfcAlignmentVerticalSegmentTypeEnum" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
@@ -2482,18 +2482,6 @@ of the material. The information contained in this document is subject to change
 			<xs:extension base="ifc:IfcFixedReferenceSweptAreaSolid"/>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:element name="IfcDirectrixDistanceSweptAreaSolid" type="ifc:IfcDirectrixDistanceSweptAreaSolid" abstract="true" substitutionGroup="ifc:IfcSweptAreaSolid" nillable="true"/>
-	<xs:complexType name="IfcDirectrixDistanceSweptAreaSolid" abstract="true">
-		<xs:complexContent>
-			<xs:extension base="ifc:IfcSweptAreaSolid">
-				<xs:sequence>
-					<xs:element name="Directrix" type="ifc:IfcCurve" nillable="true"/>
-					<xs:element name="StartDistance" type="ifc:IfcPointByDistanceExpression" nillable="true" minOccurs="0"/>
-					<xs:element name="EndDistance" type="ifc:IfcPointByDistanceExpression" nillable="true" minOccurs="0"/>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
 	<xs:element name="IfcDiscreteAccessory" type="ifc:IfcDiscreteAccessory" substitutionGroup="ifc:IfcElementComponent" nillable="true"/>
 	<xs:complexType name="IfcDiscreteAccessory">
 		<xs:complexContent>
@@ -3014,6 +3002,16 @@ of the material. The information contained in this document is subject to change
 								<xs:element ref="ifc:IfcRelCoversBldgElements" minOccurs="0" maxOccurs="unbounded"/>
 							</xs:sequence>
 							<xs:attribute ref="ifc:itemType" fixed="ifc:IfcRelCoversBldgElements"/>
+							<xs:attribute ref="ifc:cType" fixed="set"/>
+							<xs:attribute ref="ifc:arraySize" use="optional"/>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="HasSurfaceFeatures" nillable="true" minOccurs="0">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="ifc:IfcRelAdheresToElement" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+							<xs:attribute ref="ifc:itemType" fixed="ifc:IfcRelAdheresToElement"/>
 							<xs:attribute ref="ifc:cType" fixed="set"/>
 							<xs:attribute ref="ifc:arraySize" use="optional"/>
 						</xs:complexType>
@@ -4048,14 +4046,6 @@ of the material. The information contained in this document is subject to change
 						</xs:complexType>
 					</xs:element>
 				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-	<xs:element name="IfcInclinedReferenceSweptAreaSolid" type="ifc:IfcInclinedReferenceSweptAreaSolid" substitutionGroup="ifc:IfcDirectrixDistanceSweptAreaSolid" nillable="true"/>
-	<xs:complexType name="IfcInclinedReferenceSweptAreaSolid">
-		<xs:complexContent>
-			<xs:extension base="ifc:IfcDirectrixDistanceSweptAreaSolid">
-				<xs:attribute name="FixedAxisVertical" type="ifc:IfcBoolean" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -6956,6 +6946,25 @@ of the material. The information contained in this document is subject to change
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:element name="IfcRelAdheresToElement" type="ifc:IfcRelAdheresToElement" substitutionGroup="ifc:IfcRelDecomposes" nillable="true"/>
+	<xs:complexType name="IfcRelAdheresToElement">
+		<xs:complexContent>
+			<xs:extension base="ifc:IfcRelDecomposes">
+				<xs:sequence>
+					<xs:element name="RelatedSurfaceFeatures">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="ifc:IfcSurfaceFeature" maxOccurs="unbounded"/>
+							</xs:sequence>
+							<xs:attribute ref="ifc:itemType" fixed="ifc:IfcSurfaceFeature"/>
+							<xs:attribute ref="ifc:cType" fixed="set"/>
+							<xs:attribute ref="ifc:arraySize" use="optional"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:element name="IfcRelAggregates" type="ifc:IfcRelAggregates" substitutionGroup="ifc:IfcRelDecomposes" nillable="true"/>
 	<xs:complexType name="IfcRelAggregates">
 		<xs:complexContent>
@@ -8273,6 +8282,7 @@ of the material. The information contained in this document is subject to change
 			<xs:extension base="ifc:IfcSpiral">
 				<xs:attribute name="SineTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="LinearTerm" type="ifc:IfcLengthMeasure" use="optional"/>
+				<xs:attribute name="ConstantTerm" type="ifc:IfcReal" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -9781,7 +9791,7 @@ of the material. The information contained in this document is subject to change
 	<xs:complexType name="IfcThirdOrderPolynomialSpiral">
 		<xs:complexContent>
 			<xs:extension base="ifc:IfcSpiral">
-				<xs:attribute name="QubicTerm" type="ifc:IfcLengthMeasure" use="optional"/>
+				<xs:attribute name="CubicTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="QuadraticTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="LinearTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="ConstantTerm" type="ifc:IfcReal" use="optional"/>
@@ -11590,7 +11600,8 @@ of the material. The information contained in this document is subject to change
 			<xs:enumeration value="switcher"/>
 			<xs:enumeration value="telephone"/>
 			<xs:enumeration value="tuner"/>
-			<xs:enumeration value="railway_communication_terminal"/>
+			<xs:enumeration value="communicationterminal"/>
+			<xs:enumeration value="recordingequipment"/>
 			<xs:enumeration value="userdefined"/>
 			<xs:enumeration value="notdefined"/>
 		</xs:restriction>
@@ -11902,14 +11913,17 @@ of the material. The information contained in this document is subject to change
 			<xs:enumeration value="router"/>
 			<xs:enumeration value="scanner"/>
 			<xs:enumeration value="automaton"/>
-			<xs:enumeration value="intelligent_peripheral"/>
-			<xs:enumeration value="ip_network_equipment"/>
-			<xs:enumeration value="optical_network_unit"/>
+			<xs:enumeration value="intelligentperipheral"/>
+			<xs:enumeration value="ipnetworkequipment"/>
+			<xs:enumeration value="opticalnetworkunit"/>
 			<xs:enumeration value="telecommand"/>
 			<xs:enumeration value="telephonyexchange"/>
 			<xs:enumeration value="transitioncomponent"/>
 			<xs:enumeration value="transponder"/>
 			<xs:enumeration value="transportequipment"/>
+			<xs:enumeration value="opticallineterminal"/>
+			<xs:enumeration value="linesideelectronicunit"/>
+			<xs:enumeration value="radioblockcenter"/>
 			<xs:enumeration value="userdefined"/>
 			<xs:enumeration value="notdefined"/>
 		</xs:restriction>
@@ -12237,6 +12251,7 @@ of the material. The information contained in this document is subject to change
 			<xs:enumeration value="motorcontrolcentre"/>
 			<xs:enumeration value="distributionframe"/>
 			<xs:enumeration value="distributionboard"/>
+			<xs:enumeration value="dispatchingboard"/>
 			<xs:enumeration value="userdefined"/>
 			<xs:enumeration value="notdefined"/>
 		</xs:restriction>
@@ -12313,6 +12328,10 @@ of the material. The information contained in this document is subject to change
 			<xs:enumeration value="catenary_system"/>
 			<xs:enumeration value="overhead_contactline_system"/>
 			<xs:enumeration value="return_circuit"/>
+			<xs:enumeration value="fixedtransmissionnetwork"/>
+			<xs:enumeration value="operationaltelephonysystem"/>
+			<xs:enumeration value="mobilenetwork"/>
+			<xs:enumeration value="monitoringsystem"/>
 			<xs:enumeration value="userdefined"/>
 			<xs:enumeration value="notdefined"/>
 		</xs:restriction>
@@ -13147,12 +13166,18 @@ of the material. The information contained in this document is subject to change
 	<xs:simpleType name="IfcMobileTelecommunicationsApplianceTypeEnum">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="e_utran_node_b"/>
-			<xs:enumeration value="remote_radio_unit"/>
+			<xs:enumeration value="remoteradiounit"/>
 			<xs:enumeration value="accesspoint"/>
 			<xs:enumeration value="basetransceiverstation"/>
 			<xs:enumeration value="remoteunit"/>
 			<xs:enumeration value="basebandunit"/>
 			<xs:enumeration value="masterunit"/>
+			<xs:enumeration value="gateway_gprs_support_node"/>
+			<xs:enumeration value="subscriberserver"/>
+			<xs:enumeration value="mobileswitchingcenter"/>
+			<xs:enumeration value="mscserver"/>
+			<xs:enumeration value="packetcontrolunit"/>
+			<xs:enumeration value="service_gprs_support_node"/>
 			<xs:enumeration value="userdefined"/>
 			<xs:enumeration value="notdefined"/>
 		</xs:restriction>
@@ -13528,12 +13553,12 @@ of the material. The information contained in this document is subject to change
 			<xs:enumeration value="milepoint"/>
 			<xs:enumeration value="station"/>
 			<xs:enumeration value="referencemarker"/>
-			<xs:enumeration value="userdefined"/>
-			<xs:enumeration value="notdefined"/>
 			<xs:enumeration value="landmark"/>
 			<xs:enumeration value="boundary"/>
 			<xs:enumeration value="intersection"/>
 			<xs:enumeration value="position"/>
+			<xs:enumeration value="userdefined"/>
+			<xs:enumeration value="notdefined"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="IfcReflectanceMethodEnum">
@@ -14268,6 +14293,7 @@ of the material. The information contained in this document is subject to change
 			<xs:enumeration value="thermostat"/>
 			<xs:enumeration value="weatherstation"/>
 			<xs:enumeration value="combined"/>
+			<xs:enumeration value="basestationcontroller"/>
 			<xs:enumeration value="userdefined"/>
 			<xs:enumeration value="notdefined"/>
 		</xs:restriction>

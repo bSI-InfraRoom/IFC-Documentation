@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="7ba3ba80d1e111e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ifdguid="7ba3ba80d1e111e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
   <IfcVersion version="IFC4x3_RC4" />
   <Name>Pset_EnvironmentalImpactIndicators</Name>
   <Definition>Environmental impact indicators are related to a given “functional unit” (ISO 14040 concept). An example of functional unit is a "Double glazing window with PVC frame" and the unit to consider is "one square meter of opening elements filled by this product”.

@@ -47,6 +47,10 @@
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRANSITIONCOMPONENT</td><td></td><td></td><td>ADDED</td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRANSPONDER</td><td></td><td></td><td>ADDED</td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRANSPORTEQUIPMENT</td><td></td><td></td><td>ADDED</td><td></td></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcelectricaldomain/lexical/ifccommunicationsappliancetypeenum.htm">IfcCommunicationsApplianceTypeEnum</a></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LINESIDEELECTRONICUNIT</td><td></td><td></td><td>ADDED</td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RADIOBLOCKCENTER</td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
 </details>
 <section>
@@ -72,14 +76,17 @@
 </td></tr><tr><td>SCANNER</td><td>A machine that has the primary function of scanning the content of printed matter and converting it to digital format that can be stored in a computer.
 </td></tr><tr><td>AUTOMATON</td><td>A self-acting artificial device, the behaviour of which is governed either in a stepwise manner by given decision rules or continuously in time by defined relationships, while the output variables of which are created from its input and state variables.
 Note: definition from IEC 60050-351-42-32.
-</td></tr><tr><td>INTELLIGENT_PERIPHERAL</td><td>An intelligent peripheral is a device that offers a variety of specialized resources according to the corresponding service logical program under the control of SCP. These resources contain the receiver of DTMF (Dual �Tone Multi-Frequency, signal generator, record notice, etc. ). An intelligent peripheral provides dedicated resource functions in the intelligent network, allocates, controls and manages various dedicated resources, communicates with other entities in the network, and completes SRF resource functions as well as the maintenance, management and statistics functions of resources.
-</td></tr><tr><td>IP_NETWORK_EQUIPMENT</td><td>An IP network equipment is a device that provides IP data transmission channel for telecom subsystems or other subsystems e.g., routers, network switches or firewalls.
-</td></tr><tr><td>OPTICAL_NETWORK_UNIT</td><td>An optical network unit is a kind of optical transmission network connection equipment which is installed at user side.
+</td></tr><tr><td>INTELLIGENTPERIPHERAL</td><td>An intelligent peripheral is a device that offers a variety of specialized resources according to the corresponding service logical program under the control of SCP. These resources contain the receiver of DTMF (Dual-Tone Multi-Frequency, signal generator, record notice, etc.). An intelligent peripheral provides dedicated resource functions in the intelligent network, allocates, controls and manages various dedicated resources, communicates with other entities in the network, and completes SRF resource functions as well as the maintenance, management and statistics functions of resources.
+</td></tr><tr><td>IPNETWORKEQUIPMENT</td><td>An IP network equipment is a device that provides IP data transmission channel for telecom subsystems or other subsystems e.g., routers, network switches or firewalls.
+</td></tr><tr><td>OPTICALNETWORKUNIT</td><td>An optical network unit is a kind of optical transmission network connection equipment which is installed at user side.
 </td></tr><tr><td>TELECOMMAND</td><td>A system sending command to control and monitor the switches and circuit breakers or systems directly or not connected (e.g. via wires) within the traction power system remotely.
 </td></tr><tr><td>TELEPHONYEXCHANGE</td><td>A telephony exchange is a device that ensures the routing of telephone calls and communications.
 </td></tr><tr><td>TRANSITIONCOMPONENT</td><td>A transition component is a minor active device that converts electric signals to optical signals at the sender, and converts optical signals to electric signals at the receiver.
 </td></tr><tr><td>TRANSPONDER</td><td>A transponder is a communication, monitoring, or control device that, upon receiving a signal, emits a different signal in response. Transponders can be either passive or active (e.g., electronic beacon, balise).
 </td></tr><tr><td>TRANSPORTEQUIPMENT</td><td>A transport equipment is a network element responsible for providing functionality of transport, multiplexing, switching, management and supervision of transmission channels between different hosts. The data transport service uses three specific metrics: the bandwidth, the jitter, and the packet loss rate.
+</td></tr><tr><td>OPTICALLINETERMINAL</td><td>An optical line terminal is a service provider endpoint of a passive or active optical network. It is the terminal equipment for connecting fiber optic trunks.
+</td></tr><tr><td>LINESIDEELECTRONICUNIT</td><td>The lineside electronic unit (LEU) is the interface between the balise and interlocking in railway. The LEU acquires the information from the interlocking, and sends the appropriate information to the balises in concordance with the lineside signalling (if available).
+</td></tr><tr><td>RADIOBLOCKCENTER</td><td>A radio block center is a specialised computing device in railway with specification for generating Movement Authorities (MA) and transmitting it to trains. It gets information from signalling control and from the trains in its section.
 </td></tr><tr><td>USERDEFINED</td><td>User-defined type.
 </td></tr><tr><td>NOTDEFINED</td><td>Undefined type.
 </td></tr></table>
@@ -102,14 +109,17 @@ Note: definition from IEC 60050-351-42-32.
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;router&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;scanner&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;automaton&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;intelligent_peripheral&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;ip_network_equipment&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;optical_network_unit&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;intelligentperipheral&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;ipnetworkequipment&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;opticalnetworkunit&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;telecommand&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;telephonyexchange&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;transitioncomponent&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;transponder&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;transportequipment&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;opticallineterminal&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;linesideelectronicunit&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;radioblockcenter&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
@@ -117,7 +127,7 @@ Note: definition from IEC 60050-351-42-32.
 </code></div></details>
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">TYPE</span> IfcCommunicationsApplianceTypeEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
-&nbsp;ANTENNA, <br/>&nbsp;COMPUTER, <br/>&nbsp;FAX, <br/>&nbsp;GATEWAY, <br/>&nbsp;MODEM, <br/>&nbsp;NETWORKAPPLIANCE, <br/>&nbsp;NETWORKBRIDGE, <br/>&nbsp;NETWORKHUB, <br/>&nbsp;PRINTER, <br/>&nbsp;REPEATER, <br/>&nbsp;ROUTER, <br/>&nbsp;SCANNER, <br/>&nbsp;AUTOMATON, <br/>&nbsp;INTELLIGENT_PERIPHERAL, <br/>&nbsp;IP_NETWORK_EQUIPMENT, <br/>&nbsp;OPTICAL_NETWORK_UNIT, <br/>&nbsp;TELECOMMAND, <br/>&nbsp;TELEPHONYEXCHANGE, <br/>&nbsp;TRANSITIONCOMPONENT, <br/>&nbsp;TRANSPONDER, <br/>&nbsp;TRANSPORTEQUIPMENT, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
+&nbsp;ANTENNA, <br/>&nbsp;COMPUTER, <br/>&nbsp;FAX, <br/>&nbsp;GATEWAY, <br/>&nbsp;MODEM, <br/>&nbsp;NETWORKAPPLIANCE, <br/>&nbsp;NETWORKBRIDGE, <br/>&nbsp;NETWORKHUB, <br/>&nbsp;PRINTER, <br/>&nbsp;REPEATER, <br/>&nbsp;ROUTER, <br/>&nbsp;SCANNER, <br/>&nbsp;AUTOMATON, <br/>&nbsp;INTELLIGENTPERIPHERAL, <br/>&nbsp;IPNETWORKEQUIPMENT, <br/>&nbsp;OPTICALNETWORKUNIT, <br/>&nbsp;TELECOMMAND, <br/>&nbsp;TELEPHONYEXCHANGE, <br/>&nbsp;TRANSITIONCOMPONENT, <br/>&nbsp;TRANSPONDER, <br/>&nbsp;TRANSPORTEQUIPMENT, <br/>&nbsp;OPTICALLINETERMINAL, <br/>&nbsp;LINESIDEELECTRONICUNIT, <br/>&nbsp;RADIOBLOCKCENTER, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
 </p>
 <p class="std"><a href="../../../annex/annex-d/ifcelectricaldomain/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
 </code></div>

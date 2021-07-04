@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-09 June 2021
+04 July 2021
 
 *)
 
@@ -243,6 +243,18 @@ IfcCartesianTransformationOperator(
     -- Scale
     1.) ||
 IfcCartesianTransformationOperator2D();
+END_ENTITY;
+
+ENTITY IfcOpenCrossProfileDef
+ SUBTYPE OF (IfcProfileDef);
+	HorizontalWidths : IfcBoolean;
+	Widths : LIST [1:?] OF IfcNonNegativeLengthMeasure;
+	Slopes : LIST [1:?] OF IfcPlaneAngleMeasure;
+	Tags : OPTIONAL LIST [2:?] OF IfcLabel;
+ WHERE
+	CorrectProfileType : SELF\IfcProfileDef.ProfileType = IfcProfileTypeEnum.CURVE;
+	CorrespondingSlopeWidths : SIZEOF(Slopes) = SIZEOF(Widths);
+	CorrespondingTags : (NOT EXISTS (Tags)) OR (SIZEOF(Tags) = (SIZEOF(Slopes) + 1));
 END_ENTITY;
 
 ENTITY IfcParameterizedProfileDef

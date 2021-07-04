@@ -11,7 +11,7 @@
     <title>IfcRelReferencedInSpatialStructure</title>
 
     <style type="text/css">
-      body { counter-reset: index1 5 index2 4 index3 3 index4 49 index5 0; }
+      body { counter-reset: index1 5 index2 4 index3 3 index4 53 index5 0; }
     </style>
   </head>
 
@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 <!--
-    parent.index.location.replace("../../toc-5.htm#5.4.3.50");
+    parent.index.location.replace("../../toc-5.htm#5.4.3.54");
 //-->
 </script>
 
@@ -55,7 +55,7 @@ EXAMPLE A wall might be normally contained within a storey, and since it does no
 Predefined spatial structure elements to which elements can be assigned are</p>
 <ul>
 <li>site as <a href="../../ifcproductextension/lexical/ifcsite.htm">IfcSite</a></li>
-<li>facility as <a href="../../ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a> or its subtypes <a href="../../ifcproductextension/lexical/ifcbridge.htm">IfcBridge</a>, <a href="../../ifcproductextension/lexical/ifcbuilding.htm">IfcBuilding</a>, <a href="../../ifcportsandwaterways/lexical/ifcmarinefacility.htm">IfcMarineFacility</a>, <a href="../../ifcrail/lexical/ifcrailway.htm">IfcRailway</a> or <a href="../../ifcroad/lexical/ifcroad.htm">IfcRoad</a></li>
+<li>facility as <a href="../../ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a> or its subtypes <a href="../../ifcproductextension/lexical/ifcbridge.htm">IfcBridge</a>, <a href="../../ifcproductextension/lexical/ifcbuilding.htm">IfcBuilding</a>, <a href="../../ifcportsandwaterwaysdomain/lexical/ifcmarinefacility.htm">IfcMarineFacility</a>, <a href="../../ifcraildomain/lexical/ifcrailway.htm">IfcRailway</a> or <a href="../../ifcroaddomain/lexical/ifcroad.htm">IfcRoad</a></li>
 <li>part of facility as <i>IfcFaciltityPart</i>, or more specifically as <a href="../../ifcproductextension/lexical/ifcbuildingstorey.htm">IfcBuildingStorey</a> or <a href="../../ifcproductextension/lexical/ifcspace.htm">IfcSpace</a></li>
 </ul>
 <p>Elements can also be references in a spatial zone that is provided as <a href="../../ifcproductextension/lexical/ifcspatialzone.htm">IfcSpatialZone</a>.<br>
@@ -68,7 +68,7 @@ Figure 167 shows the use of <a href="../../ifcproductextension/lexical/ifcrelcon
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
 <th>G</th></tr>
-<tr><td>5</td><td>RelatedElements</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a></td><td>S[1:?]</td><td>
+<tr><td>5</td><td>RelatedElements</td><td><a href="../../ifcproductextension/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a></td><td>S[1:?]</td><td>
 </td><td>X</td></tr>
 <tr><td>6</td><td>RelatingStructure</td><td><a href="../../ifcproductextension/lexical/ifcspatialelement.htm">IfcSpatialElement</a></td><td></td><td>
 </td><td>X</td></tr>
@@ -119,7 +119,7 @@ Optional description, provided for exchanging informative comments.
 <tr><td colspan="6"><i><a href="../../ifckernel/lexical/ifcrelationship.htm">IfcRelationship</a></i></td></tr>
 <tr><td colspan="6"><i><a href="../../ifckernel/lexical/ifcrelconnects.htm">IfcRelConnects</a></i></td></tr>
 <tr><td colspan="6"><a href="../../ifcproductextension/lexical/ifcrelreferencedinspatialstructure.htm">IfcRelReferencedInSpatialStructure</a></td></tr>
-<tr><td>5</td><td>RelatedElements</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a></td><td>S[1:?]</td><td>
+<tr><td>5</td><td>RelatedElements</td><td><a href="../../ifcproductextension/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a></td><td>S[1:?]</td><td>
 </td><td>X</td></tr>
 <tr><td>6</td><td>RelatingStructure</td><td><a href="../../ifcproductextension/lexical/ifcspatialelement.htm">IfcSpatialElement</a></td><td></td><td>
 </td><td>X</td></tr>
@@ -150,8 +150,8 @@ Optional description, provided for exchanging informative comments.
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;RelatedElements&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../ifcsharedinfrastructureelements/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a>&quot; maxOccurs=&quot;unbounded&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:itemType&quot; fixed=&quot;ifc:<a href="../../ifcsharedinfrastructureelements/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../ifcproductextension/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a>&quot; maxOccurs=&quot;unbounded&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:itemType&quot; fixed=&quot;ifc:<a href="../../ifcproductextension/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:cType&quot; fixed=&quot;set&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:arraySize&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
@@ -164,7 +164,7 @@ Optional description, provided for exchanging informative comments.
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">ENTITY</span> IfcRelReferencedInSpatialStructure<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifckernel/lexical/ifcrelconnects.htm">IfcRelConnects</a>)<b>;</b><br/>
-&nbsp;&nbsp;RelatedElements : <span class="keyword">SET</span> [1:?] <span class="keyword">OF</span> <a href="../../ifcsharedinfrastructureelements/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a>;<br/>
+&nbsp;&nbsp;RelatedElements : <span class="keyword">SET</span> [1:?] <span class="keyword">OF</span> <a href="../../ifcproductextension/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a>;<br/>
 &nbsp;&nbsp;RelatingStructure : <a href="../../ifcproductextension/lexical/ifcspatialelement.htm">IfcSpatialElement</a>;<br/>
 &nbsp;<span class="keyword">WHERE</span><br/>
 &nbsp;&nbsp;AllowedRelatedElements : SIZEOF(QUERY(temp &lt;* RelatedElements | (&#39;IFCPRODUCTEXTENSION.<a href="../../ifcproductextension/lexical/ifcspatialstructureelement.htm">IfcSpatialStructureElement</a>&#39; IN TYPEOF(temp)) AND (NOT (&#39;IFCPRODUCTEXTENSION.<a href="../../ifcproductextension/lexical/ifcspace.htm">IfcSpace</a>&#39; IN TYPEOF(temp)))<br/>

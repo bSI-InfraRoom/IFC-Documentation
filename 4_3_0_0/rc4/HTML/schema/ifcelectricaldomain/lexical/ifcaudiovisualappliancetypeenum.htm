@@ -61,7 +61,8 @@
 </td></tr><tr><td>SWITCHER</td><td>A device that receives audio and/or video signals, switches sources, and transmits signals to downstream devices.
 </td></tr><tr><td>TELEPHONE</td><td>A telecommunications device that is used to transmit and receive sound, and optionally video.
 </td></tr><tr><td>TUNER</td><td>An electronic receiver that detects, demodulates, and amplifies transmitted signals.
-</td></tr><tr><td>RAILWAY_COMMUNICATION_TERMINAL</td><td>A railway communication terminal is an audio communication device that usually installed along the railway in order to be used by general public or railway agents for communication. It may specifically be used to make calls to emergency services in tunnels.
+</td></tr><tr><td>COMMUNICATIONTERMINAL</td><td>A communication terminal is an audio communication device that is usually installed along transportation infrastructure (railways, roads, tunnels etc.) in order to be used by the general public or operation agents for communication. It may specifically be used to make calls to emergency services in tunnels.
+</td></tr><tr><td>RECORDINGEQUIPMENT</td><td>A recording equipment is a device that records telephone calls or other types of audio data. It also provides the function of archiving and immediate replay.
 </td></tr><tr><td>USERDEFINED</td><td>User-defined type.
 </td></tr><tr><td>NOTDEFINED</td><td>Undefined type.
 </td></tr></table>
@@ -82,7 +83,8 @@
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;switcher&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;telephone&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;tuner&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;railway_communication_terminal&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;communicationterminal&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;recordingequipment&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
@@ -90,7 +92,7 @@
 </code></div></details>
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">TYPE</span> IfcAudioVisualApplianceTypeEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
-&nbsp;AMPLIFIER, <br/>&nbsp;CAMERA, <br/>&nbsp;DISPLAY, <br/>&nbsp;MICROPHONE, <br/>&nbsp;PLAYER, <br/>&nbsp;PROJECTOR, <br/>&nbsp;RECEIVER, <br/>&nbsp;SPEAKER, <br/>&nbsp;SWITCHER, <br/>&nbsp;TELEPHONE, <br/>&nbsp;TUNER, <br/>&nbsp;RAILWAY_COMMUNICATION_TERMINAL, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
+&nbsp;AMPLIFIER, <br/>&nbsp;CAMERA, <br/>&nbsp;DISPLAY, <br/>&nbsp;MICROPHONE, <br/>&nbsp;PLAYER, <br/>&nbsp;PROJECTOR, <br/>&nbsp;RECEIVER, <br/>&nbsp;SPEAKER, <br/>&nbsp;SWITCHER, <br/>&nbsp;TELEPHONE, <br/>&nbsp;TUNER, <br/>&nbsp;COMMUNICATIONTERMINAL, <br/>&nbsp;RECORDINGEQUIPMENT, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
 </p>
 <p class="std"><a href="../../../annex/annex-d/ifcelectricaldomain/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
 </code></div>

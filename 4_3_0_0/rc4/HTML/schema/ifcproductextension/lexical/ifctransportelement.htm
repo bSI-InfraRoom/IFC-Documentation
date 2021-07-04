@@ -11,7 +11,7 @@
     <title>IfcTransportElement</title>
 
     <style type="text/css">
-      body { counter-reset: index1 5 index2 4 index3 3 index4 65 index5 0; }
+      body { counter-reset: index1 5 index2 4 index3 3 index4 69 index5 0; }
     </style>
   </head>
 
@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 <!--
-    parent.index.location.replace("../../toc-5.htm#5.4.3.66");
+    parent.index.location.replace("../../toc-5.htm#5.4.3.70");
 //-->
 </script>
 
@@ -50,6 +50,9 @@
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x2-to-ifc4x3_rc1/index.htm">IFC4x2 to IFC4x3_RC1</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcproductextension/lexical/ifctransportelement.htm">IfcTransportElement</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PredefinedType</td><td>X</td><td>X</td><td>MODIFIED</td><td>Type changed from <i>IfcTransportElementTypeEnum</i> to <i>IfcTransportElementTypeSelect</i>. <br/></td></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcproductextension/lexical/ifctransportelement.htm">IfcTransportElement</a></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>HasSurfaceFeatures</i></td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
 </details>
 <section>
@@ -67,7 +70,7 @@ Depending on local classification systems transport elements and transportation 
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
 <th>G</th></tr>
-<tr><td>9</td><td>PredefinedType</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a></td><td>? </td><td>
+<tr><td>9</td><td>PredefinedType</td><td><a href="../../ifcproductextension/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a></td><td>? </td><td>
 </td><td>X</td></tr>
 </table>
 </details>
@@ -220,8 +223,10 @@ IFC4 CHANGE New inverse relationship.
 </td><td>X</td></tr>
 <tr><td></td><td><i>HasCoverings</i></td><td><a href="../../ifcsharedbldgelements/lexical/ifcrelcoversbldgelements.htm">IfcRelCoversBldgElements</a><br/>@RelatingBuildingElement</td><td>S[0:?]</td><td>Reference to <a href="../../ifcsharedbldgelements/lexical/ifccovering.htm">IfcCovering</a> by virtue of the objectified relationship <i>IfcRelCoversBldgElement</i>. It defines the concept of an element having coverings associated.
 </td><td>X</td></tr>
+<tr><td></td><td><i>HasSurfaceFeatures</i></td><td><a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a><br/>@RelatingElement</td><td>S[0:?]</td><td>Reference to the <a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a> relationship that adheres a <a href="../../ifcstructuralelementsdomain/lexical/ifcsurfacefeature.htm">IfcSurfaceFeature</a> to an element. An element can incorporate zero-to-many surface features in one relationship.
+</td><td>X</td></tr>
 <tr><td colspan="6"><a href="../../ifcproductextension/lexical/ifctransportelement.htm">IfcTransportElement</a></td></tr>
-<tr><td>9</td><td>PredefinedType</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a></td><td>? </td><td>
+<tr><td>9</td><td>PredefinedType</td><td><a href="../../ifcproductextension/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a></td><td>? </td><td>
 </td><td>X</td></tr>
 </table>
 </details>
@@ -342,7 +347,7 @@ IFC4 CHANGE New inverse relationship.
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;PredefinedType&quot; nillable=&quot;true&quot; minOccurs=&quot;0&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../ifcsharedinfrastructureelements/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../ifcproductextension/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:element&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br/>
@@ -353,17 +358,17 @@ IFC4 CHANGE New inverse relationship.
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">ENTITY</span> IfcTransportElement<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifcproductextension/lexical/ifcelement.htm">IfcElement</a>)<b>;</b><br/>
-&nbsp;&nbsp;PredefinedType : <span class="keyword">OPTIONAL</span> <a href="../../ifcsharedinfrastructureelements/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a>;<br/>
+&nbsp;&nbsp;PredefinedType : <span class="keyword">OPTIONAL</span> <a href="../../ifcproductextension/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a>;<br/>
 &nbsp;<span class="keyword">WHERE</span><br/>
 &nbsp;&nbsp;CorrectPredefinedType : NOT(EXISTS(PredefinedType))<br/>
 OR<br/>
 ((PredefinedType &lt;&gt; <a href="../../ifcproductextension/lexical/ifctransportelementfixedtypeenum.htm">IfcTransportElementFixedTypeEnum</a>.USERDEFINED)<br/>
 AND<br/>
-(PredefinedType &lt;&gt; <a href="../../ifcsharedinfrastructureelements/lexical/ifctransportelementnonfixedtypeenum.htm">IfcTransportElementNonFixedTypeEnum</a>.USERDEFINED))<br/>
+(PredefinedType &lt;&gt; <a href="../../ifcproductextension/lexical/ifctransportelementnonfixedtypeenum.htm">IfcTransportElementNonFixedTypeEnum</a>.USERDEFINED))<br/>
 OR<br/>
 (((PredefinedType = <a href="../../ifcproductextension/lexical/ifctransportelementfixedtypeenum.htm">IfcTransportElementFixedTypeEnum</a>.USERDEFINED)<br/>
 OR<br/>
-(PredefinedType = <a href="../../ifcsharedinfrastructureelements/lexical/ifctransportelementnonfixedtypeenum.htm">IfcTransportElementNonFixedTypeEnum</a>.USERDEFINED))<br/>
+(PredefinedType = <a href="../../ifcproductextension/lexical/ifctransportelementnonfixedtypeenum.htm">IfcTransportElementNonFixedTypeEnum</a>.USERDEFINED))<br/>
 AND<br/>
 EXISTS(SELF\<a href="../../ifcproductextension/lexical/ifcelementtype.htm">IfcElementType</a>.ElementType));<br/>&nbsp;&nbsp;CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR<br/>
   (&#39;IFCPRODUCTEXTENSION.<a href="../../ifcproductextension/lexical/ifctransportelementtype.htm">IfcTransportElementType</a>&#39; IN TYPEOF(SELF\<a href="../../ifckernel/lexical/ifcobject.htm">IfcObject</a>.IsTypedBy[1].RelatingType));<br/><span class="keyword">END_ENTITY;</span><br/>

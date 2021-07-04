@@ -39,6 +39,9 @@
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-rc4/index.htm">IFC4x3_RC3 to RC4</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometryresource/lexical/ifcthirdorderpolynomialspiral.htm">IfcThirdOrderPolynomialSpiral</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ConstantTerm</td><td></td><td></td><td>ADDED</td><td></td></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometryresource/lexical/ifcthirdorderpolynomialspiral.htm">IfcThirdOrderPolynomialSpiral</a></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CubicTerm</td><td></td><td>X</td><td>MODIFIED</td><td>Name changed from <i>QubicTerm</i> to <i>CubicTerm</i>. <br/></td></tr>
 </table>
 </details>
 <section>
@@ -59,7 +62,7 @@ K0 ... start curvature</p>
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
 <th>G</th></tr>
-<tr><td>2</td><td>QubicTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
+<tr><td>2</td><td>CubicTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
 </td><td>X</td></tr>
 <tr><td>3</td><td>QuadraticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
 </td><td>X</td></tr>
@@ -106,7 +109,7 @@ IFC2x3 CHANGE  The inverse attribute <i>StyledByItem</i> has been added.
 <tr><td>1</td><td>Position</td><td><a href="../../ifcgeometryresource/lexical/ifcaxis2placement.htm">IfcAxis2Placement</a></td><td>? </td><td>
 </td><td>X</td></tr>
 <tr><td colspan="6"><a href="../../ifcgeometryresource/lexical/ifcthirdorderpolynomialspiral.htm">IfcThirdOrderPolynomialSpiral</a></td></tr>
-<tr><td>2</td><td>QubicTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
+<tr><td>2</td><td>CubicTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
 </td><td>X</td></tr>
 <tr><td>3</td><td>QuadraticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
 </td><td>X</td></tr>
@@ -124,7 +127,7 @@ IFC2x3 CHANGE  The inverse attribute <i>StyledByItem</i> has been added.
 &nbsp;&lt;xs:complexType name=&quot;<a href="../../ifcgeometryresource/lexical/ifcthirdorderpolynomialspiral.htm">IfcThirdOrderPolynomialSpiral</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;QubicTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;CubicTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;QuadraticTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;LinearTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;ConstantTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a>&quot; use=&quot;optional&quot;/&gt;<br/>
@@ -135,7 +138,7 @@ IFC2x3 CHANGE  The inverse attribute <i>StyledByItem</i> has been added.
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">ENTITY</span> IfcThirdOrderPolynomialSpiral<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>)<b>;</b><br/>
-&nbsp;&nbsp;QubicTerm : <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
+&nbsp;&nbsp;CubicTerm : <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;QuadraticTerm : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;LinearTerm : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a>;<br/>

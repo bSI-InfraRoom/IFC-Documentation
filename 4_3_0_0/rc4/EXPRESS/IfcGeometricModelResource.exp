@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-09 June 2021
+04 July 2021
 
 *)
 
@@ -424,6 +424,14 @@ ENTITY IfcSectionedSpine
 	SpineCurveDim : SpineCurve.Dim = 3;
 END_ENTITY;
 
+ENTITY IfcSectionedSurface
+ SUBTYPE OF (IfcSurface);
+	Directrix : IfcCurve;
+	CrossSectionPositions : LIST [2:?] OF IfcPointByDistanceExpression;
+	CrossSections : LIST [2:?] OF IfcProfileDef;
+	FixedAxisVertical : IfcBoolean;
+END_ENTITY;
+
 ENTITY IfcShellBasedSurfaceModel
  SUBTYPE OF (IfcGeometricRepresentationItem);
 	SbsmBoundary : SET [1:?] OF IfcShell;
@@ -456,7 +464,6 @@ END_ENTITY;
 ENTITY IfcSweptAreaSolid
  ABSTRACT SUPERTYPE OF (ONEOF
     (IfcDirectrixCurveSweptAreaSolid
-    ,IfcDirectrixDistanceSweptAreaSolid
     ,IfcExtrudedAreaSolid
     ,IfcRevolvedAreaSolid))
  SUBTYPE OF (IfcSolidModel);

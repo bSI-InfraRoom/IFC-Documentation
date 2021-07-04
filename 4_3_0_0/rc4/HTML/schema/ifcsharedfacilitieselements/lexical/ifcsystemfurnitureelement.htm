@@ -43,6 +43,9 @@
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x2-candidate-4_2_0_0/index.htm">IFC4x2 Candidate 4.2.0.0</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedfacilitieselements/lexical/ifcsystemfurnitureelement.htm">IfcSystemFurnitureElement</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PositionedRelativeTo</td><td></td><td></td><td>ADDED</td><td></td></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedfacilitieselements/lexical/ifcsystemfurnitureelement.htm">IfcSystemFurnitureElement</a></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>HasSurfaceFeatures</i></td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
 </details>
 <section>
@@ -199,6 +202,8 @@ IFC4 CHANGE New inverse relationship.
 <tr><td></td><td><i>ContainedInStructure</i></td><td><a href="../../ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm">IfcRelContainedInSpatialStructure</a><br/>@RelatedElements</td><td>S[0:1]</td><td>Containment relationship to the spatial structure element, to which the element is primarily associated. This containment relationship has to be hierachical, i.e. an element may only be assigned directly to zero or one spatial structure.
 </td><td>X</td></tr>
 <tr><td></td><td><i>HasCoverings</i></td><td><a href="../../ifcsharedbldgelements/lexical/ifcrelcoversbldgelements.htm">IfcRelCoversBldgElements</a><br/>@RelatingBuildingElement</td><td>S[0:?]</td><td>Reference to <a href="../../ifcsharedbldgelements/lexical/ifccovering.htm">IfcCovering</a> by virtue of the objectified relationship <i>IfcRelCoversBldgElement</i>. It defines the concept of an element having coverings associated.
+</td><td>X</td></tr>
+<tr><td></td><td><i>HasSurfaceFeatures</i></td><td><a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a><br/>@RelatingElement</td><td>S[0:?]</td><td>Reference to the <a href="../../ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a> relationship that adheres a <a href="../../ifcstructuralelementsdomain/lexical/ifcsurfacefeature.htm">IfcSurfaceFeature</a> to an element. An element can incorporate zero-to-many surface features in one relationship.
 </td><td>X</td></tr>
 <tr><td colspan="6"><a href="../../ifcproductextension/lexical/ifcfurnishingelement.htm">IfcFurnishingElement</a></td></tr>
 <tr><td colspan="6"><a href="../../ifcsharedfacilitieselements/lexical/ifcsystemfurnitureelement.htm">IfcSystemFurnitureElement</a></td></tr>

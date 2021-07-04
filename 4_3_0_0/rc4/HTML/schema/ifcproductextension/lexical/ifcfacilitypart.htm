@@ -11,7 +11,7 @@
     <title>IfcFacilityPart</title>
 
     <style type="text/css">
-      body { counter-reset: index1 5 index2 4 index3 3 index4 22 index5 0; }
+      body { counter-reset: index1 5 index2 4 index3 3 index4 24 index5 0; }
     </style>
   </head>
 
@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 <!--
-    parent.index.location.replace("../../toc-5.htm#5.4.3.23");
+    parent.index.location.replace("../../toc-5.htm#5.4.3.25");
 //-->
 </script>
 
@@ -49,9 +49,9 @@
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
 <th>G</th></tr>
-<tr><td>10</td><td>PredefinedType</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifcfacilityparttypeselect.htm">IfcFacilityPartTypeSelect</a></td><td></td><td>
+<tr><td>10</td><td>PredefinedType</td><td><a href="../../ifcproductextension/lexical/ifcfacilityparttypeselect.htm">IfcFacilityPartTypeSelect</a></td><td></td><td>
 </td><td>X</td></tr>
-<tr><td>11</td><td>UsageType</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifcfacilityusageenum.htm">IfcFacilityUsageEnum</a></td><td></td><td>
+<tr><td>11</td><td>UsageType</td><td><a href="../../ifcproductextension/lexical/ifcfacilityusageenum.htm">IfcFacilityUsageEnum</a></td><td></td><td>
 </td><td>X</td></tr>
 </table>
 </details>
@@ -207,9 +207,9 @@ IFC4 CHANGE  Attribute made optional.
 </blockquote>
 </td><td>X</td></tr>
 <tr><td colspan="6"><a href="../../ifcproductextension/lexical/ifcfacilitypart.htm">IfcFacilityPart</a></td></tr>
-<tr><td>10</td><td>PredefinedType</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifcfacilityparttypeselect.htm">IfcFacilityPartTypeSelect</a></td><td></td><td>
+<tr><td>10</td><td>PredefinedType</td><td><a href="../../ifcproductextension/lexical/ifcfacilityparttypeselect.htm">IfcFacilityPartTypeSelect</a></td><td></td><td>
 </td><td>X</td></tr>
-<tr><td>11</td><td>UsageType</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifcfacilityusageenum.htm">IfcFacilityUsageEnum</a></td><td></td><td>
+<tr><td>11</td><td>UsageType</td><td><a href="../../ifcproductextension/lexical/ifcfacilityusageenum.htm">IfcFacilityUsageEnum</a></td><td></td><td>
 </td><td>X</td></tr>
 </table>
 </details>
@@ -353,11 +353,11 @@ IFC4 CHANGE  Attribute made optional.
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;PredefinedType&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../ifcsharedinfrastructureelements/lexical/ifcfacilityparttypeselect.htm">IfcFacilityPartTypeSelect</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../ifcproductextension/lexical/ifcfacilityparttypeselect.htm">IfcFacilityPartTypeSelect</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:element&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;UsageType&quot; type=&quot;ifc:<a href="../../ifcsharedinfrastructureelements/lexical/ifcfacilityusageenum.htm">IfcFacilityUsageEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;UsageType&quot; type=&quot;ifc:<a href="../../ifcproductextension/lexical/ifcfacilityusageenum.htm">IfcFacilityUsageEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -365,28 +365,28 @@ IFC4 CHANGE  Attribute made optional.
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">ENTITY</span> IfcFacilityPart<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifcproductextension/lexical/ifcspatialstructureelement.htm">IfcSpatialStructureElement</a>)<b>;</b><br/>
-&nbsp;&nbsp;PredefinedType : <a href="../../ifcsharedinfrastructureelements/lexical/ifcfacilityparttypeselect.htm">IfcFacilityPartTypeSelect</a>;<br/>
-&nbsp;&nbsp;UsageType : <a href="../../ifcsharedinfrastructureelements/lexical/ifcfacilityusageenum.htm">IfcFacilityUsageEnum</a>;<br/>
+&nbsp;&nbsp;PredefinedType : <a href="../../ifcproductextension/lexical/ifcfacilityparttypeselect.htm">IfcFacilityPartTypeSelect</a>;<br/>
+&nbsp;&nbsp;UsageType : <a href="../../ifcproductextension/lexical/ifcfacilityusageenum.htm">IfcFacilityUsageEnum</a>;<br/>
 &nbsp;<span class="keyword">WHERE</span><br/>
 &nbsp;&nbsp;CorrectPredefinedType : ((PredefinedType &lt;&gt; <a href="../../ifcproductextension/lexical/ifcbridgeparttypeenum.htm">IfcBridgePartTypeEnum</a>.USERDEFINED)<br/>
 OR<br/>
-(PredefinedType &lt;&gt; <a href="../../ifcrail/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a>.USERDEFINED)<br/>
+(PredefinedType &lt;&gt; <a href="../../ifcraildomain/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a>.USERDEFINED)<br/>
 OR<br/>
-(PredefinedType &lt;&gt; <a href="../../ifcroad/lexical/ifcroadparttypeenum.htm">IfcRoadPartTypeEnum</a>.USERDEFINED)<br/>
+(PredefinedType &lt;&gt; <a href="../../ifcroaddomain/lexical/ifcroadparttypeenum.htm">IfcRoadPartTypeEnum</a>.USERDEFINED)<br/>
 OR<br/>
-(PredefinedType &lt;&gt; <a href="../../ifcportsandwaterways/lexical/ifcmarineparttypeenum.htm">IfcMarinePartTypeEnum</a>.USERDEFINED)<br/>
+(PredefinedType &lt;&gt; <a href="../../ifcportsandwaterwaysdomain/lexical/ifcmarineparttypeenum.htm">IfcMarinePartTypeEnum</a>.USERDEFINED)<br/>
 OR<br/>
-(PredefinedType &lt;&gt; <a href="../../ifcsharedinfrastructureelements/lexical/ifcfacilitypartcommontypeenum.htm">IfcFacilityPartCommonTypeEnum</a>.USERDEFINED))<br/>
+(PredefinedType &lt;&gt; <a href="../../ifcproductextension/lexical/ifcfacilitypartcommontypeenum.htm">IfcFacilityPartCommonTypeEnum</a>.USERDEFINED))<br/>
 OR<br/>
 (((PredefinedType = <a href="../../ifcproductextension/lexical/ifcbridgeparttypeenum.htm">IfcBridgePartTypeEnum</a>.USERDEFINED)<br/>
 OR<br/>
-(PredefinedType = <a href="../../ifcrail/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a>.USERDEFINED)<br/>
+(PredefinedType = <a href="../../ifcraildomain/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a>.USERDEFINED)<br/>
 OR<br/>
-(PredefinedType = <a href="../../ifcroad/lexical/ifcroadparttypeenum.htm">IfcRoadPartTypeEnum</a>.USERDEFINED)<br/>
+(PredefinedType = <a href="../../ifcroaddomain/lexical/ifcroadparttypeenum.htm">IfcRoadPartTypeEnum</a>.USERDEFINED)<br/>
 OR<br/>
-(PredefinedType = <a href="../../ifcportsandwaterways/lexical/ifcmarineparttypeenum.htm">IfcMarinePartTypeEnum</a>.USERDEFINED)<br/>
+(PredefinedType = <a href="../../ifcportsandwaterwaysdomain/lexical/ifcmarineparttypeenum.htm">IfcMarinePartTypeEnum</a>.USERDEFINED)<br/>
 OR<br/>
-(PredefinedType = <a href="../../ifcsharedinfrastructureelements/lexical/ifcfacilitypartcommontypeenum.htm">IfcFacilityPartCommonTypeEnum</a>.USERDEFINED))<br/>
+(PredefinedType = <a href="../../ifcproductextension/lexical/ifcfacilitypartcommontypeenum.htm">IfcFacilityPartCommonTypeEnum</a>.USERDEFINED))<br/>
 AND<br/>
 EXISTS(SELF\<a href="../../ifckernel/lexical/ifcobject.htm">IfcObject</a>.ObjectType));<br/><span class="keyword">END_ENTITY;</span><br/>
 <p class="std"><a href="../../../annex/annex-d/ifcproductextension/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>

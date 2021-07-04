@@ -11,7 +11,7 @@
     <title>IfcAnnotation</title>
 
     <style type="text/css">
-      body { counter-reset: index1 5 index2 4 index3 3 index4 4 index5 0; }
+      body { counter-reset: index1 5 index2 4 index3 3 index4 5 index5 0; }
     </style>
   </head>
 
@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 <!--
-    parent.index.location.replace("../../toc-5.htm#5.4.3.5");
+    parent.index.location.replace("../../toc-5.htm#5.4.3.6");
 //-->
 </script>
 
@@ -52,7 +52,7 @@
 <details open="open"><summary>Entity definition</summary><p>An annotation is an information element within the geometric (and spatial) context of a project, that adds a note or meaning to the objects which constitutes the project model. Annotations include additional points, curves, text, dimensioning, hatching and other forms of graphical notes. It also includes virtual or symbolic representations of additional model components, not representing products or spatial structures, such as event elements, survey points, contour lines or similar.<br>
 NOTE Additional presentation information (often 2D) such as tag number or hatching, that is directly related to a particular product representation is included within the <a href="../../ifcrepresentationresource/lexical/ifcproductdefinitionshape.htm">IfcProductDefinitionShape</a> having various <a href="../../ifcrepresentationresource/lexical/ifcshaperepresentation.htm">IfcShapeRepresentation</a>'s of the <a href="../../ifcproductextension/lexical/ifcelement.htm">IfcElement</a> (and its subtypes). Only those presentation information, that cannot be directly related to a single product, have to be wrapped within the <span class="self-ref">IfcAnnotation</span>.<br>
 If available, the annotation should be related to the spatial context of the project, by containing the annotation within the appropriate level of the building structure (site, facility, facility part or building, storey, or space). This is handled by the <a href="../../ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm">IfcRelContainedInSpatialStructure</a> relationship.<br>
-The <span class="self-ref">IfcAnnotation</span> can provide specific 0D, 1D, and 2D geometric items as representation of the annotation, offering annotation point, curves, and surfaces. In addition to the predefined type values in <a href="../../ifcsharedinfrastructureelements/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a>, the following values can be used for the <i>ObjectType</i> (with <i>PredefinedType</i> attribute value USERDEFINED).<br>
+The <span class="self-ref">IfcAnnotation</span> can provide specific 0D, 1D, and 2D geometric items as representation of the annotation, offering annotation point, curves, and surfaces. In addition to the predefined type values in <a href="../../ifcproductextension/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a>, the following values can be used for the <i>ObjectType</i> (with <i>PredefinedType</i> attribute value USERDEFINED).<br>
 <strong>'Annotation point'</strong> is an annotation provided by a point that has additional semantic. The inherited attribute <i>ObjectType</i> should be used to capture the type of point annotation, some suggested values are:</p>
 <ul>
 <li><strong>'SurveyPoint'</strong>: A single survey point represented by a Cartesian point. A property set may add the conditions (method, accuracy, etc. to the survey point).</li>
@@ -73,7 +73,7 @@ The <span class="self-ref">IfcAnnotation</span> can provide specific 0D, 1D, and
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
 <th>G</th></tr>
-<tr><td>8</td><td>PredefinedType</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a></td><td>? </td><td>
+<tr><td>8</td><td>PredefinedType</td><td><a href="../../ifcproductextension/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a></td><td>? </td><td>
 </td><td>X</td></tr>
 <tr><td></td><td><i>ContainedInStructure</i></td><td><a href="../../ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm">IfcRelContainedInSpatialStructure</a><br/>@RelatedElements</td><td>S[0:1]</td><td>Relationship to a spatial structure element, to which the associate is primarily associated.
 </td><td>X</td></tr>
@@ -181,7 +181,7 @@ Reference to the representations of the product, being either a representation (
 <tr><td></td><td><i>PositionedRelativeTo</i></td><td><a href="../../ifcproductextension/lexical/ifcrelpositions.htm">IfcRelPositions</a><br/>@RelatedProducts</td><td>S[0:?]</td><td></td><td>X</td></tr>
 <tr><td></td><td><i>ReferencedInStructures</i></td><td><a href="../../ifcproductextension/lexical/ifcrelreferencedinspatialstructure.htm">IfcRelReferencedInSpatialStructure</a><br/>@RelatedElements</td><td>S[0:?]</td><td></td><td>X</td></tr>
 <tr><td colspan="6"><a href="../../ifcproductextension/lexical/ifcannotation.htm">IfcAnnotation</a></td></tr>
-<tr><td>8</td><td>PredefinedType</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a></td><td>? </td><td>
+<tr><td>8</td><td>PredefinedType</td><td><a href="../../ifcproductextension/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a></td><td>? </td><td>
 </td><td>X</td></tr>
 <tr><td></td><td><i>ContainedInStructure</i></td><td><a href="../../ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm">IfcRelContainedInSpatialStructure</a><br/>@RelatedElements</td><td>S[0:1]</td><td>Relationship to a spatial structure element, to which the associate is primarily associated.
 </td><td>X</td></tr>
@@ -312,7 +312,7 @@ Reference to the representations of the product, being either a representation (
 &nbsp;&lt;xs:complexType name=&quot;<a href="../../ifcproductextension/lexical/ifcannotation.htm">IfcAnnotation</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../ifckernel/lexical/ifcproduct.htm">IfcProduct</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../ifcsharedinfrastructureelements/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../ifcproductextension/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -320,7 +320,7 @@ Reference to the representations of the product, being either a representation (
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">ENTITY</span> IfcAnnotation<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifckernel/lexical/ifcproduct.htm">IfcProduct</a>)<b>;</b><br/>
-&nbsp;&nbsp;PredefinedType : <span class="keyword">OPTIONAL</span> <a href="../../ifcsharedinfrastructureelements/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a>;<br/>
+&nbsp;&nbsp;PredefinedType : <span class="keyword">OPTIONAL</span> <a href="../../ifcproductextension/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a>;<br/>
 &nbsp;<span class="keyword">INVERSE</span><br/>
 &nbsp;&nbsp;ContainedInStructure : <span class="keyword">SET</span> [0:1] OF <a href="../../ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm">IfcRelContainedInSpatialStructure</a> <span class="keyword">FOR</span> RelatedElements;<br/>
 <span class="keyword">END_ENTITY;</span><br/>

@@ -41,6 +41,12 @@
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CATENARY_SYSTEM</td><td></td><td></td><td>ADDED</td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OVERHEAD_CONTACTLINE_SYSTEM</td><td></td><td></td><td>ADDED</td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RETURN_CIRCUIT</td><td></td><td></td><td>ADDED</td><td></td></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcdistributionsystemenum.htm">IfcDistributionSystemEnum</a></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FIXEDTRANSMISSIONNETWORK</td><td></td><td></td><td>ADDED</td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OPERATIONALTELEPHONYSYSTEM</td><td></td><td></td><td>ADDED</td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MOBILENETWORK</td><td></td><td></td><td>ADDED</td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MONITORINGSYSTEM</td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
 </details>
 <section>
@@ -97,6 +103,10 @@
 </td></tr><tr><td>CATENARY_SYSTEM</td><td>A longitudinal distribution system that supports contact wires, including catenary wire droppers and stich wires.
 </td></tr><tr><td>OVERHEAD_CONTACTLINE_SYSTEM</td><td>An overhead contact line system above the upper limit of the train using an overhead contact line and a catenary system to supply current to traction units.
 </td></tr><tr><td>RETURN_CIRCUIT</td><td>A distribution system which forms the intended path for the traction return current and the current under fault conditions.
+</td></tr><tr><td>FIXEDTRANSMISSIONNETWORK</td><td>Represents all wired networks that provide a data transmission channel using optical fiber cables, copper cables or both. It aggregates many technologies that are based on the multiplexing method.
+</td></tr><tr><td>OPERATIONALTELEPHONYSYSTEM</td><td>A system that allows communications between operators (e.g. switchtender, traffic regulator, operational agents, etc.) in operational centers and on the infrastructure site (e.g. railway, tunnel or road).
+</td></tr><tr><td>MOBILENETWORK</td><td>Mobile network insures wireless communication by providing a secure platform for voice and data communication between infrastructure operators, including drivers, dispatchers, shunting team members and station controllers.
+</td></tr><tr><td>MONITORINGSYSTEM</td><td>Sensor-based system for building and infastructure environmental monitoring and control.
 </td></tr><tr><td>USERDEFINED</td><td></td></tr><tr><td>NOTDEFINED</td><td></td></tr></table>
 </details>
 </section>
@@ -149,6 +159,10 @@
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;catenary_system&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;overhead_contactline_system&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;return_circuit&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;fixedtransmissionnetwork&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;operationaltelephonysystem&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;mobilenetwork&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;monitoringsystem&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
@@ -156,7 +170,7 @@
 </code></div></details>
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">TYPE</span> IfcDistributionSystemEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
-&nbsp;AIRCONDITIONING, <br/>&nbsp;AUDIOVISUAL, <br/>&nbsp;CHEMICAL, <br/>&nbsp;CHILLEDWATER, <br/>&nbsp;COMMUNICATION, <br/>&nbsp;COMPRESSEDAIR, <br/>&nbsp;CONDENSERWATER, <br/>&nbsp;CONTROL, <br/>&nbsp;CONVEYING, <br/>&nbsp;DATA, <br/>&nbsp;DISPOSAL, <br/>&nbsp;DOMESTICCOLDWATER, <br/>&nbsp;DOMESTICHOTWATER, <br/>&nbsp;DRAINAGE, <br/>&nbsp;EARTHING, <br/>&nbsp;ELECTRICAL, <br/>&nbsp;ELECTROACOUSTIC, <br/>&nbsp;EXHAUST, <br/>&nbsp;FIREPROTECTION, <br/>&nbsp;FUEL, <br/>&nbsp;GAS, <br/>&nbsp;HAZARDOUS, <br/>&nbsp;HEATING, <br/>&nbsp;LIGHTING, <br/>&nbsp;LIGHTNINGPROTECTION, <br/>&nbsp;MUNICIPALSOLIDWASTE, <br/>&nbsp;OIL, <br/>&nbsp;OPERATIONAL, <br/>&nbsp;POWERGENERATION, <br/>&nbsp;RAINWATER, <br/>&nbsp;REFRIGERATION, <br/>&nbsp;SECURITY, <br/>&nbsp;SEWAGE, <br/>&nbsp;SIGNAL, <br/>&nbsp;STORMWATER, <br/>&nbsp;TELEPHONE, <br/>&nbsp;TV, <br/>&nbsp;VACUUM, <br/>&nbsp;VENT, <br/>&nbsp;VENTILATION, <br/>&nbsp;WASTEWATER, <br/>&nbsp;WATERSUPPLY, <br/>&nbsp;CATENARY_SYSTEM, <br/>&nbsp;OVERHEAD_CONTACTLINE_SYSTEM, <br/>&nbsp;RETURN_CIRCUIT, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
+&nbsp;AIRCONDITIONING, <br/>&nbsp;AUDIOVISUAL, <br/>&nbsp;CHEMICAL, <br/>&nbsp;CHILLEDWATER, <br/>&nbsp;COMMUNICATION, <br/>&nbsp;COMPRESSEDAIR, <br/>&nbsp;CONDENSERWATER, <br/>&nbsp;CONTROL, <br/>&nbsp;CONVEYING, <br/>&nbsp;DATA, <br/>&nbsp;DISPOSAL, <br/>&nbsp;DOMESTICCOLDWATER, <br/>&nbsp;DOMESTICHOTWATER, <br/>&nbsp;DRAINAGE, <br/>&nbsp;EARTHING, <br/>&nbsp;ELECTRICAL, <br/>&nbsp;ELECTROACOUSTIC, <br/>&nbsp;EXHAUST, <br/>&nbsp;FIREPROTECTION, <br/>&nbsp;FUEL, <br/>&nbsp;GAS, <br/>&nbsp;HAZARDOUS, <br/>&nbsp;HEATING, <br/>&nbsp;LIGHTING, <br/>&nbsp;LIGHTNINGPROTECTION, <br/>&nbsp;MUNICIPALSOLIDWASTE, <br/>&nbsp;OIL, <br/>&nbsp;OPERATIONAL, <br/>&nbsp;POWERGENERATION, <br/>&nbsp;RAINWATER, <br/>&nbsp;REFRIGERATION, <br/>&nbsp;SECURITY, <br/>&nbsp;SEWAGE, <br/>&nbsp;SIGNAL, <br/>&nbsp;STORMWATER, <br/>&nbsp;TELEPHONE, <br/>&nbsp;TV, <br/>&nbsp;VACUUM, <br/>&nbsp;VENT, <br/>&nbsp;VENTILATION, <br/>&nbsp;WASTEWATER, <br/>&nbsp;WATERSUPPLY, <br/>&nbsp;CATENARY_SYSTEM, <br/>&nbsp;OVERHEAD_CONTACTLINE_SYSTEM, <br/>&nbsp;RETURN_CIRCUIT, <br/>&nbsp;FIXEDTRANSMISSIONNETWORK, <br/>&nbsp;OPERATIONALTELEPHONYSYSTEM, <br/>&nbsp;MOBILENETWORK, <br/>&nbsp;MONITORINGSYSTEM, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
 </p>
 <p class="std"><a href="../../../annex/annex-d/ifcsharedbldgserviceelements/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
 </code></div>

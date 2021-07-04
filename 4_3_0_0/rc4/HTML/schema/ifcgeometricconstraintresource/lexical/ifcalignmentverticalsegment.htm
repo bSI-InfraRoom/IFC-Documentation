@@ -47,6 +47,10 @@
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LayerAssignment</td><td></td><td></td><td>DELETED</td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StyledByItem</td><td></td><td></td><td>DELETED</td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ToVertical</td><td></td><td></td><td>DELETED</td><td></td></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometricconstraintresource/lexical/ifcalignmentverticalsegment.htm">IfcAlignmentVerticalSegment</a></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HorizontalLength</td><td></td><td></td><td>MODIFIED</td><td>Type changed from <i>IfcPositiveLengthMeasure</i> to <i>IfcNonNegativeLengthMeasure</i>. <br/></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RadiusOfCurvature</td><td>X</td><td>X</td><td>MODIFIED</td><td>Type changed from <i>IfcPositiveLengthMeasure</i> to <i>IfcLengthMeasure</i>. <br/></td></tr>
 </table>
 </details>
 <section>
@@ -82,7 +86,7 @@
 <blockquote class="note">
 <p>NOTE  Specific subtypes of the <span class="self-ref">IfcAlignmentVerticalSegment</span> add specific geometric curve parameters. Connectivity between vertical segments is not necessarily tangential, but this can be enforced as a requirement through the attribute <i>TangentialContinuity</i>.</p>
 </blockquote>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcalignment2dverticalsegment.png" alt="&quot;Alignment vertical segment&quot;" title="Figure 324 &mdash; Alignment vertical segment"></td></tr><tr><td><p class="figure">Figure 324 &mdash; Alignment vertical segment</p></td></tr></table></p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcalignment2dverticalsegment.png" alt="&quot;Alignment vertical segment&quot;" title="Figure 321 &mdash; Alignment vertical segment"></td></tr><tr><td><p class="figure">Figure 321 &mdash; Alignment vertical segment</p></td></tr></table></p>
 </details>
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
@@ -94,7 +98,7 @@ NOTE 1  The distance along is measured from the start point of <a href="../../i
 NOTE 2  The unit of measurement is the global length unit, as set by <a href="../../ifckernel/lexical/ifccontext.htm">IfcContext</a>.UnitInContext
 </blockquote>
 </td><td>X</td></tr>
-<tr><td>4</td><td>HorizontalLength</td><td><a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a></td><td></td><td>
+<tr><td>4</td><td>HorizontalLength</td><td><a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a></td><td></td><td>
 Length measured as distance along the horizontal alignment of the segment.
 </td><td>X</td></tr>
 <tr><td>5</td><td>StartHeight</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
@@ -109,8 +113,8 @@ Start gradient of the segment.
 <tr><td>7</td><td>EndGradient</td><td><a href="../../ifcmeasureresource/lexical/ifcratiomeasure.htm">IfcRatioMeasure</a></td><td></td><td>
 End gradient of the segment. In the case of a PredefinedType='.CONSTANTGRADIENT.' the value is the same as <i>StartGradient</i>.
 </td><td>X</td></tr>
-<tr><td>8</td><td>RadiusOfCurvature</td><td><a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a></td><td>? </td><td>
-Radius of parabola or arc.
+<tr><td>8</td><td>RadiusOfCurvature</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+Radius of parabola or arc. Positive values imply a CCW direction whereas negative CW.
 <blockquote class="note">
 NOTE1  For <i>PredefinedType</i> is ARC. The radius of the basis circle for the arc.<br>
 NOTE2  For <i>PredefinedType</i> is PARABOLICARC. Parabola constant (determining the “steepness” of the parabola). The parabola constant is provided by the “minimum parabola radius”, the true radius of a parabola at its vertical axis (the zero-gradient point of the parabola). The minimum radius is twice the focal length of the parabola (the distance between the focal point and the vertex).<br>
@@ -147,7 +151,7 @@ NOTE 1  The distance along is measured from the start point of <a href="../../i
 NOTE 2  The unit of measurement is the global length unit, as set by <a href="../../ifckernel/lexical/ifccontext.htm">IfcContext</a>.UnitInContext
 </blockquote>
 </td><td>X</td></tr>
-<tr><td>4</td><td>HorizontalLength</td><td><a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a></td><td></td><td>
+<tr><td>4</td><td>HorizontalLength</td><td><a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a></td><td></td><td>
 Length measured as distance along the horizontal alignment of the segment.
 </td><td>X</td></tr>
 <tr><td>5</td><td>StartHeight</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
@@ -162,8 +166,8 @@ Start gradient of the segment.
 <tr><td>7</td><td>EndGradient</td><td><a href="../../ifcmeasureresource/lexical/ifcratiomeasure.htm">IfcRatioMeasure</a></td><td></td><td>
 End gradient of the segment. In the case of a PredefinedType='.CONSTANTGRADIENT.' the value is the same as <i>StartGradient</i>.
 </td><td>X</td></tr>
-<tr><td>8</td><td>RadiusOfCurvature</td><td><a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a></td><td>? </td><td>
-Radius of parabola or arc.
+<tr><td>8</td><td>RadiusOfCurvature</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+Radius of parabola or arc. Positive values imply a CCW direction whereas negative CW.
 <blockquote class="note">
 NOTE1  For <i>PredefinedType</i> is ARC. The radius of the basis circle for the arc.<br>
 NOTE2  For <i>PredefinedType</i> is PARABOLICARC. Parabola constant (determining the “steepness” of the parabola). The parabola constant is provided by the “minimum parabola radius”, the true radius of a parabola at its vertical axis (the zero-gradient point of the parabola). The minimum radius is twice the focal length of the parabola (the distance between the focal point and the vertex).<br>
@@ -184,11 +188,11 @@ Predefined type of the vertical alignmnent segment.
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentparametersegment.htm">IfcAlignmentParameterSegment</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;StartDistAlong&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;HorizontalLength&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;HorizontalLength&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;StartHeight&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;StartGradient&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcratiomeasure.htm">IfcRatioMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;EndGradient&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcratiomeasure.htm">IfcRatioMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;RadiusOfCurvature&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;RadiusOfCurvature&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentverticalsegmenttypeenum.htm">IfcAlignmentVerticalSegmentTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
@@ -198,11 +202,11 @@ Predefined type of the vertical alignmnent segment.
 <span class="keyword">ENTITY</span> IfcAlignmentVerticalSegment<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentparametersegment.htm">IfcAlignmentParameterSegment</a>)<b>;</b><br/>
 &nbsp;&nbsp;StartDistAlong : <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
-&nbsp;&nbsp;HorizontalLength : <a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>;<br/>
+&nbsp;&nbsp;HorizontalLength : <a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a>;<br/>
 &nbsp;&nbsp;StartHeight : <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;StartGradient : <a href="../../ifcmeasureresource/lexical/ifcratiomeasure.htm">IfcRatioMeasure</a>;<br/>
 &nbsp;&nbsp;EndGradient : <a href="../../ifcmeasureresource/lexical/ifcratiomeasure.htm">IfcRatioMeasure</a>;<br/>
-&nbsp;&nbsp;RadiusOfCurvature : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>;<br/>
+&nbsp;&nbsp;RadiusOfCurvature : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;PredefinedType : <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentverticalsegmenttypeenum.htm">IfcAlignmentVerticalSegmentTypeEnum</a>;<br/>
 <span class="keyword">END_ENTITY;</span><br/>
 <p class="std"><a href="../../../annex/annex-d/ifcgeometricconstraintresource/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>

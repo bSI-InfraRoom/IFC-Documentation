@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-09 June 2021
+04 July 2021
 
 *)
 
@@ -59,7 +59,8 @@ TYPE IfcAudioVisualApplianceTypeEnum = ENUMERATION OF
 	,SWITCHER
 	,TELEPHONE
 	,TUNER
-	,RAILWAY_COMMUNICATION_TERMINAL
+	,COMMUNICATIONTERMINAL
+	,RECORDINGEQUIPMENT
 	,USERDEFINED
 	,NOTDEFINED);
 END_TYPE;
@@ -125,14 +126,28 @@ TYPE IfcCommunicationsApplianceTypeEnum = ENUMERATION OF
 	,ROUTER
 	,SCANNER
 	,AUTOMATON
-	,INTELLIGENT_PERIPHERAL
-	,IP_NETWORK_EQUIPMENT
-	,OPTICAL_NETWORK_UNIT
+	,INTELLIGENTPERIPHERAL
+	,IPNETWORKEQUIPMENT
+	,OPTICALNETWORKUNIT
 	,TELECOMMAND
 	,TELEPHONYEXCHANGE
 	,TRANSITIONCOMPONENT
 	,TRANSPONDER
 	,TRANSPORTEQUIPMENT
+	,OPTICALLINETERMINAL
+	,LINESIDEELECTRONICUNIT
+	,RADIOBLOCKCENTER
+	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcDistributionBoardTypeEnum = ENUMERATION OF
+	(SWITCHBOARD
+	,CONSUMERUNIT
+	,MOTORCONTROLCENTRE
+	,DISTRIBUTIONFRAME
+	,DISTRIBUTIONBOARD
+	,DISPATCHINGBOARD
 	,USERDEFINED
 	,NOTDEFINED);
 END_TYPE;
@@ -177,6 +192,12 @@ TYPE IfcElectricFlowStorageDeviceTypeEnum = ENUMERATION OF
 	,COMPENSATOR
 	,INDUCTOR
 	,RECHARGER
+	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcElectricFlowTreatmentDeviceTypeEnum = ENUMERATION OF
+	(ELECTRONICFILTER
 	,USERDEFINED
 	,NOTDEFINED);
 END_TYPE;
@@ -232,6 +253,24 @@ TYPE IfcLightFixtureTypeEnum = ENUMERATION OF
 	(POINTSOURCE
 	,DIRECTIONSOURCE
 	,SECURITYLIGHTING
+	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcMobileTelecommunicationsApplianceTypeEnum = ENUMERATION OF
+	(E_UTRAN_NODE_B
+	,REMOTERADIOUNIT
+	,ACCESSPOINT
+	,BASETRANSCEIVERSTATION
+	,REMOTEUNIT
+	,BASEBANDUNIT
+	,MASTERUNIT
+	,GATEWAY_GPRS_SUPPORT_NODE
+	,SUBSCRIBERSERVER
+	,MOBILESWITCHINGCENTER
+	,MSCSERVER
+	,PACKETCONTROLUNIT
+	,SERVICE_GPRS_SUPPORT_NODE
 	,USERDEFINED
 	,NOTDEFINED);
 END_TYPE;
@@ -427,6 +466,25 @@ ENTITY IfcCommunicationsApplianceType
 ((PredefinedType = IfcCommunicationsApplianceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType));
 END_ENTITY;
 
+ENTITY IfcDistributionBoard
+ SUBTYPE OF (IfcFlowController);
+	PredefinedType : OPTIONAL IfcDistributionBoardTypeEnum;
+ WHERE
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
+(PredefinedType <> IfcDistributionBoardTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcDistributionBoardTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));
+	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
+('IFCELECTRICALDOMAIN.IFCDISTRIBUTIONBOARDTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
+END_ENTITY;
+
+ENTITY IfcDistributionBoardType
+ SUBTYPE OF (IfcFlowControllerType);
+	PredefinedType : IfcDistributionBoardTypeEnum;
+ WHERE
+	CorrectPredefinedType : (PredefinedType <> IfcDistributionBoardTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcDistributionBoardTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType));
+END_ENTITY;
+
 ENTITY IfcElectricAppliance
  SUBTYPE OF (IfcFlowTerminal);
 	PredefinedType : OPTIONAL IfcElectricApplianceTypeEnum;
@@ -482,6 +540,25 @@ ENTITY IfcElectricFlowStorageDeviceType
  WHERE
 	CorrectPredefinedType : (PredefinedType <> IfcElectricFlowStorageDeviceTypeEnum.USERDEFINED) OR
 ((PredefinedType = IfcElectricFlowStorageDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType));
+END_ENTITY;
+
+ENTITY IfcElectricFlowTreatmentDevice
+ SUBTYPE OF (IfcFlowTreatmentDevice);
+	PredefinedType : OPTIONAL IfcElectricFlowTreatmentDeviceTypeEnum;
+ WHERE
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
+(PredefinedType <> IfcElectricFlowTreatmentDeviceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcElectricFlowTreatmentDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));
+	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
+('IFCELECTRICALDOMAIN.IFCELECTRICFLOWTREATMENTDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
+END_ENTITY;
+
+ENTITY IfcElectricFlowTreatmentDeviceType
+ SUBTYPE OF (IfcFlowTreatmentDeviceType);
+	PredefinedType : IfcElectricFlowTreatmentDeviceTypeEnum;
+ WHERE
+	CorrectPredefinedType : (PredefinedType <> IfcElectricFlowTreatmentDeviceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcElectricFlowTreatmentDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType));
 END_ENTITY;
 
 ENTITY IfcElectricGenerator
@@ -596,6 +673,25 @@ ENTITY IfcLightFixtureType
  WHERE
 	CorrectPredefinedType : (PredefinedType <> IfcLightFixtureTypeEnum.USERDEFINED) OR
 ((PredefinedType = IfcLightFixtureTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType));
+END_ENTITY;
+
+ENTITY IfcMobileTelecommunicationsAppliance
+ SUBTYPE OF (IfcFlowTerminal);
+	PredefinedType : OPTIONAL IfcMobileTelecommunicationsApplianceTypeEnum;
+ WHERE
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
+(PredefinedType <> IfcMobileTelecommunicationsApplianceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcMobileTelecommunicationsApplianceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));
+	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
+('IFCELECTRICALDOMAIN.IFCMOBILETELECOMMUNICATIONSAPPLIANCETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
+END_ENTITY;
+
+ENTITY IfcMobileTelecommunicationsApplianceType
+ SUBTYPE OF (IfcFlowTerminalType);
+	PredefinedType : IfcMobileTelecommunicationsApplianceTypeEnum;
+ WHERE
+	CorrectPredefinedType : (PredefinedType <> IfcMobileTelecommunicationsApplianceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcMobileTelecommunicationsApplianceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType));
 END_ENTITY;
 
 ENTITY IfcMotorConnection

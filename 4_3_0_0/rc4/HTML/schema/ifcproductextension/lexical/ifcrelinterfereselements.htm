@@ -11,7 +11,7 @@
     <title>IfcRelInterferesElements</title>
 
     <style type="text/css">
-      body { counter-reset: index1 5 index2 4 index3 3 index4 46 index5 0; }
+      body { counter-reset: index1 5 index2 4 index3 3 index4 50 index5 0; }
     </style>
   </head>
 
@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 <!--
-    parent.index.location.replace("../../toc-5.htm#5.4.3.47");
+    parent.index.location.replace("../../toc-5.htm#5.4.3.51");
 //-->
 </script>
 
@@ -46,12 +46,16 @@
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
 <details open="open"><summary>Entity definition</summary><p>The <span class="self-ref">IfcRelInterferesElements</span> objectified relationship indicates that two elements interfere. Interference is a spatial overlap between the two elements. It is a 1 to 1 relationship. The concept of two elements interfering physically or logically is described independently from the elements. The interference may be related to the shape representation of the entities by providing an interference geometry.</p>
-<p>* When the interference geometry is available it can be passed by the optional attribute <i>InterferenceGeometry</i> pointing to <a href="../../ifcgeometricconstraintresource/lexical/ifcconnectiongeometry.htm">IfcConnectionGeometry</a>. The connection geometry is provided as a point, curve, surface, or volume within the local placement coordinate systems of the connecting elements. The <a href="../../ifcgeometricconstraintresource/lexical/ifcconnectionvolumegeometry.htm">IfcConnectionVolumeGeometry</a> is the default type to be used for interference in 3D space, as indicated in e.g. clash detections.<br>
-* If the interference geometry is omitted then the interference is provided as a logical relationship. Under this circumstance, the connection point, curve, surface, or solid has to be recalculated by the receiving application.</p>
+<ul>
+<li>When the interference geometry is available it can be passed by the optional attribute <i>InterferenceGeometry</i> pointing to <a href="../../ifcgeometricconstraintresource/lexical/ifcconnectiongeometry.htm">IfcConnectionGeometry</a>. The connection geometry is provided as a point, curve, surface, or solid within the placement coordinate systems of the connecting elements. The <a href="../../ifcgeometricconstraintresource/lexical/ifcconnectionvolumegeometry.htm">IfcConnectionVolumeGeometry</a> is the default type to be used for interference in 3D space, as indicated in e.g. clash detections.</li>
+<li>If the interference geometry is omitted then the interference is provided as a logical relationship. Under this circumstance, the connection point, curve, surface, or solid has to be recalculated by the receiving application.</li>
+</ul>
 <p>The <i>RelatingElement</i> and <i>RelatedElement</i> define the two elements in the relationship, that may have different roles. This is controlled by the attribute <i>ImpliedOrder</i>.</p>
-<p>* <i>ImpliedOrder</i>=TRUE\S\  The <i>RelatingElement</i> constitutes the primary element of the interference relationship. If the interference is to be resolved by subtracting the overlapping part, it should be subtracted from the <i>RelatingElement</i>. The net result would be the <i>RelatingElement</i> subtracted by the <i>InterferenceGeometry</i>. This would be the case in interference relationships where the <i>RelatedElement</i> creates a void in the <i>RelatingElement</i> dynamically.<br>
-* <i>ImpliedOrder</i>=FALSE\S\  The <i>RelatingElement</i> and <i>RelatedElement</i> have no priority among each other. If the interference is to be resolved then no information about whether the <i>InterferenceGeometry</i> should be subtracted from the <i>RelatingElement</i> or thed <i>RelatedElement</i> can be traced. This would be the case for clash detection results.<br>
-* <i>ImpliedOrder</i>=UNKNOWN No information about the priorities is provided.</p>
+<ul>
+<li><i>ImpliedOrder</i>=TRUE The <i>RelatingElement</i> constitutes the primary element of the interference relationship. If the interference is to be resolved by subtracting the overlapping part, it should be subtracted from the <i>RelatingElement</i>. The net result would be the <i>RelatingElement</i> subtracted by the <i>InterferenceGeometry</i>. This would be the case in interference relationships where the <i>RelatedElement</i> creates a void in the <i>RelatingElement</i> dynamically.</li>
+<li><i>ImpliedOrder</i>=FALSE The <i>RelatingElement</i> and <i>RelatedElement</i> have no priority among each other. If the interference is to be resolved then no information about whether the <i>InterferenceGeometry</i> should be subtracted from the <i>RelatingElement</i> or the <i>RelatedElement</i> can be traced. This would be the case for clash detection results.</li>
+<li><i>ImpliedOrder</i>=UNKNOWN No information about the priorities is provided.</li>
+</ul>
 <blockquote class="history">
 <p>HISTORY  New entity in IFC4.</p>
 </blockquote>
@@ -59,9 +63,9 @@
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
 <th>G</th></tr>
-<tr><td>5</td><td>RelatingElement</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a></td><td></td><td>
+<tr><td>5</td><td>RelatingElement</td><td><a href="../../ifcproductextension/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a></td><td></td><td>
 </td><td>X</td></tr>
-<tr><td>6</td><td>RelatedElement</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a></td><td></td><td>
+<tr><td>6</td><td>RelatedElement</td><td><a href="../../ifcproductextension/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a></td><td></td><td>
 </td><td>X</td></tr>
 <tr><td>7</td><td>InterferenceGeometry</td><td><a href="../../ifcgeometricconstraintresource/lexical/ifcconnectiongeometry.htm">IfcConnectionGeometry</a></td><td>? </td><td>
 </td><td>X</td></tr>
@@ -114,9 +118,9 @@ Optional description, provided for exchanging informative comments.
 <tr><td colspan="6"><i><a href="../../ifckernel/lexical/ifcrelationship.htm">IfcRelationship</a></i></td></tr>
 <tr><td colspan="6"><i><a href="../../ifckernel/lexical/ifcrelconnects.htm">IfcRelConnects</a></i></td></tr>
 <tr><td colspan="6"><a href="../../ifcproductextension/lexical/ifcrelinterfereselements.htm">IfcRelInterferesElements</a></td></tr>
-<tr><td>5</td><td>RelatingElement</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a></td><td></td><td>
+<tr><td>5</td><td>RelatingElement</td><td><a href="../../ifcproductextension/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a></td><td></td><td>
 </td><td>X</td></tr>
-<tr><td>6</td><td>RelatedElement</td><td><a href="../../ifcsharedinfrastructureelements/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a></td><td></td><td>
+<tr><td>6</td><td>RelatedElement</td><td><a href="../../ifcproductextension/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a></td><td></td><td>
 </td><td>X</td></tr>
 <tr><td>7</td><td>InterferenceGeometry</td><td><a href="../../ifcgeometricconstraintresource/lexical/ifcconnectiongeometry.htm">IfcConnectionGeometry</a></td><td>? </td><td>
 </td><td>X</td></tr>
@@ -153,12 +157,12 @@ Logical value indicating whether the interference geometry should be subtracted 
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;RelatingElement&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../ifcsharedinfrastructureelements/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../ifcproductextension/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:element&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;RelatedElement&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../ifcsharedinfrastructureelements/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../ifcproductextension/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:element&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;InterferenceGeometry&quot; type=&quot;ifc:<a href="../../ifcgeometricconstraintresource/lexical/ifcconnectiongeometry.htm">IfcConnectionGeometry</a>&quot; nillable=&quot;true&quot; minOccurs=&quot;0&quot;/&gt;<br/>
@@ -172,8 +176,8 @@ Logical value indicating whether the interference geometry should be subtracted 
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">ENTITY</span> IfcRelInterferesElements<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifckernel/lexical/ifcrelconnects.htm">IfcRelConnects</a>)<b>;</b><br/>
-&nbsp;&nbsp;RelatingElement : <a href="../../ifcsharedinfrastructureelements/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>;<br/>
-&nbsp;&nbsp;RelatedElement : <a href="../../ifcsharedinfrastructureelements/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>;<br/>
+&nbsp;&nbsp;RelatingElement : <a href="../../ifcproductextension/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>;<br/>
+&nbsp;&nbsp;RelatedElement : <a href="../../ifcproductextension/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>;<br/>
 &nbsp;&nbsp;InterferenceGeometry : <span class="keyword">OPTIONAL</span> <a href="../../ifcgeometricconstraintresource/lexical/ifcconnectiongeometry.htm">IfcConnectionGeometry</a>;<br/>
 &nbsp;&nbsp;InterferenceType : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifcidentifier.htm">IfcIdentifier</a>;<br/>
 &nbsp;&nbsp;ImpliedOrder : <a href="../../ifcmeasureresource/lexical/ifclogical.htm">IfcLogical</a>;<br/>

@@ -36,11 +36,14 @@
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometricconstraintresource/lexical/ifcalignmentcantsegment.htm">IfcAlignmentCantSegment</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PredefinedType</td><td>X</td><td>X</td><td>MODIFIED</td><td>Name changed from <i>SmoothingLength</i> to <i>PredefinedType</i>. <br/>Type changed from <i>IfcPositiveLengthMeasure</i> to <i>IfcAlignmentCantSegmentTypeEnum</i>. <br/>Instantiation changed from <i>OPTIONAL</i>. <br/></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PredefinedType</td><td>X</td><td></td><td>DELETED</td><td></td></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometricconstraintresource/lexical/ifcalignmentcantsegment.htm">IfcAlignmentCantSegment</a></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HorizontalLength</td><td></td><td></td><td>MODIFIED</td><td>Type changed from <i>IfcPositiveLengthMeasure</i> to <i>IfcNonNegativeLengthMeasure</i>. <br/></td></tr>
 </table>
 </details>
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
-<details open="open"><summary>Entity definition</summary><p>An <span class="self-ref">IfcAlignmentCantSegment</span> is an individual segment along <a href="../../ifcrail/lexical/ifcalignmentcant.htm">IfcAlignmentCant</a>.
+<details open="open"><summary>Entity definition</summary><p>An <span class="self-ref">IfcAlignmentCantSegment</span> is an individual segment along <a href="../../ifcproductextension/lexical/ifcalignmentcant.htm">IfcAlignmentCant</a>.
 The cant alignment is defined by ordered segments that connect end-to-start. The points defined in a cant alignment segment are defined in a plane with x = distance along horizontal alignment and y = height relative to projected points in vertical alignment.
 The following cant segment types are defined:</p>
 <ul>
@@ -62,7 +65,7 @@ The following cant segment types are defined:</p>
 <tr><td>3</td><td>StartDistAlong</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
 Distance along the horizontal alignment, measured along the IfcAlignment2DHorizontal given in the length unit of the global IfcUnitAssignment.
 </td><td>X</td></tr>
-<tr><td>4</td><td>HorizontalLength</td><td><a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a></td><td></td><td>
+<tr><td>4</td><td>HorizontalLength</td><td><a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a></td><td></td><td>
 Length measured as distance along the horizontal alignment of the segment.
 </td><td>X</td></tr>
 <tr><td>5</td><td>StartCantLeft</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
@@ -102,7 +105,7 @@ Tag to annotate the end point of the alignment segment.
 <tr><td>3</td><td>StartDistAlong</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
 Distance along the horizontal alignment, measured along the IfcAlignment2DHorizontal given in the length unit of the global IfcUnitAssignment.
 </td><td>X</td></tr>
-<tr><td>4</td><td>HorizontalLength</td><td><a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a></td><td></td><td>
+<tr><td>4</td><td>HorizontalLength</td><td><a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a></td><td></td><td>
 Length measured as distance along the horizontal alignment of the segment.
 </td><td>X</td></tr>
 <tr><td>5</td><td>StartCantLeft</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
@@ -130,7 +133,7 @@ Length measured for the right cant at the end of the segment.
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentparametersegment.htm">IfcAlignmentParameterSegment</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;StartDistAlong&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;HorizontalLength&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;HorizontalLength&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;StartCantLeft&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;EndCantLeft&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;StartCantRight&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
@@ -144,7 +147,7 @@ Length measured for the right cant at the end of the segment.
 <span class="keyword">ENTITY</span> IfcAlignmentCantSegment<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentparametersegment.htm">IfcAlignmentParameterSegment</a>)<b>;</b><br/>
 &nbsp;&nbsp;StartDistAlong : <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
-&nbsp;&nbsp;HorizontalLength : <a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>;<br/>
+&nbsp;&nbsp;HorizontalLength : <a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a>;<br/>
 &nbsp;&nbsp;StartCantLeft : <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;EndCantLeft : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;StartCantRight : <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>

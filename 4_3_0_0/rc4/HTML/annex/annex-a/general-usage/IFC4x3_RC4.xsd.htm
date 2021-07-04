@@ -242,8 +242,8 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifcalignmentcant.htm">IfcAlignmentCant</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcalignmentcant.htm">IfcAlignmentCant</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifclinearelement.htm">IfcLinearElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcalignmentcant.htm">IfcAlignmentCant</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcalignmentcant.htm">IfcAlignmentCant</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcalignmentcant.htm">IfcAlignmentCant</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifclinearelement.htm">IfcLinearElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcalignmentcant.htm">IfcAlignmentCant</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifclinearelement.htm">IfcLinearElement</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;RailHeadDistance&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
@@ -255,7 +255,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcgeometricconstraintresource/lexical/ifcalignmentparametersegment.htm">IfcAlignmentParameterSegment</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;StartDistAlong&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;HorizontalLength&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;HorizontalLength&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;StartCantLeft&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;EndCantLeft&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;StartCantRight&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
@@ -316,11 +316,11 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcgeometricconstraintresource/lexical/ifcalignmentparametersegment.htm">IfcAlignmentParameterSegment</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;StartDistAlong&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;HorizontalLength&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;HorizontalLength&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;StartHeight&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;StartGradient&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcratiomeasure.htm">IfcRatioMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;EndGradient&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcratiomeasure.htm">IfcRatioMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;RadiusOfCurvature&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;RadiusOfCurvature&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcgeometricconstraintresource/lexical/ifcalignmentverticalsegmenttypeenum.htm">IfcAlignmentVerticalSegmentTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
@@ -329,7 +329,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcannotation.htm">IfcAnnotation</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifckernel/lexical/ifcproduct.htm">IfcProduct</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -1063,11 +1063,11 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcelementtype.htm">IfcElementType</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcbuiltsystem.htm">IfcBuiltSystem</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcbuiltsystem.htm">IfcBuiltSystem</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcsystem.htm">IfcSystem</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcbuiltsystem.htm">IfcBuiltSystem</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcbuiltsystem.htm">IfcBuiltSystem</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltsystem.htm">IfcBuiltSystem</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcsystem.htm">IfcSystem</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcbuiltsystem.htm">IfcBuiltSystem</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcsystem.htm">IfcSystem</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcbuiltsystemtypeenum.htm">IfcBuiltSystemTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltsystemtypeenum.htm">IfcBuiltSystemTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;LongName&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
@@ -1994,19 +1994,19 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcconveyorsegment.htm">IfcConveyorSegment</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcconveyorsegment.htm">IfcConveyorSegment</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowsegment.htm">IfcFlowSegment</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcconveyorsegment.htm">IfcConveyorSegment</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcconveyorsegment.htm">IfcConveyorSegment</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcconveyorsegment.htm">IfcConveyorSegment</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowsegment.htm">IfcFlowSegment</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcconveyorsegment.htm">IfcConveyorSegment</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowsegment.htm">IfcFlowSegment</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcconveyorsegmenttypeenum.htm">IfcConveyorSegmentTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcconveyorsegmenttypeenum.htm">IfcConveyorSegmentTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcconveyorsegmenttype.htm">IfcConveyorSegmentType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcconveyorsegmenttype.htm">IfcConveyorSegmentType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowsegmenttype.htm">IfcFlowSegmentType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcconveyorsegmenttype.htm">IfcConveyorSegmentType</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcconveyorsegmenttype.htm">IfcConveyorSegmentType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcconveyorsegmenttype.htm">IfcConveyorSegmentType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowsegmenttype.htm">IfcFlowSegmentType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcconveyorsegmenttype.htm">IfcConveyorSegmentType</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowsegmenttype.htm">IfcFlowSegmentType</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcconveyorsegmenttypeenum.htm">IfcConveyorSegmentTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcconveyorsegmenttypeenum.htm">IfcConveyorSegmentTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -2501,18 +2501,6 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcgeometricmodelresource/lexical/ifcfixedreferencesweptareasolid.htm">IfcFixedReferenceSweptAreaSolid</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifcdirectrixdistancesweptareasolid.htm">IfcDirectrixDistanceSweptAreaSolid</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcdirectrixdistancesweptareasolid.htm">IfcDirectrixDistanceSweptAreaSolid</a>&quot; abstract=&quot;true&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcgeometricmodelresource/lexical/ifcsweptareasolid.htm">IfcSweptAreaSolid</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcdirectrixdistancesweptareasolid.htm">IfcDirectrixDistanceSweptAreaSolid</a>&quot; abstract=&quot;true&quot;&gt;<br/>
-&nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcgeometricmodelresource/lexical/ifcsweptareasolid.htm">IfcSweptAreaSolid</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;Directrix&quot; type=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifccurve.htm">IfcCurve</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;StartDistance&quot; type=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcpointbydistanceexpression.htm">IfcPointByDistanceExpression</a>&quot; nillable=&quot;true&quot; minOccurs=&quot;0&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;EndDistance&quot; type=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcpointbydistanceexpression.htm">IfcPointByDistanceExpression</a>&quot; nillable=&quot;true&quot; minOccurs=&quot;0&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
-&nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
-&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcsharedcomponentelements/lexical/ifcdiscreteaccessory.htm">IfcDiscreteAccessory</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcsharedcomponentelements/lexical/ifcdiscreteaccessory.htm">IfcDiscreteAccessory</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedcomponentelements/lexical/ifcelementcomponent.htm">IfcElementComponent</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
 &nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcsharedcomponentelements/lexical/ifcdiscreteaccessory.htm">IfcDiscreteAccessory</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
@@ -2529,19 +2517,19 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifcdistributionboard.htm">IfcDistributionBoard</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcdistributionboard.htm">IfcDistributionBoard</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowcontroller.htm">IfcFlowController</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcdistributionboard.htm">IfcDistributionBoard</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcdistributionboard.htm">IfcDistributionBoard</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcelectricaldomain/lexical/ifcdistributionboard.htm">IfcDistributionBoard</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowcontroller.htm">IfcFlowController</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcdistributionboard.htm">IfcDistributionBoard</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowcontroller.htm">IfcFlowController</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcdistributionboardtypeenum.htm">IfcDistributionBoardTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcelectricaldomain/lexical/ifcdistributionboardtypeenum.htm">IfcDistributionBoardTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifcdistributionboardtype.htm">IfcDistributionBoardType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcdistributionboardtype.htm">IfcDistributionBoardType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowcontrollertype.htm">IfcFlowControllerType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcdistributionboardtype.htm">IfcDistributionBoardType</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcdistributionboardtype.htm">IfcDistributionBoardType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcelectricaldomain/lexical/ifcdistributionboardtype.htm">IfcDistributionBoardType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowcontrollertype.htm">IfcFlowControllerType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcdistributionboardtype.htm">IfcDistributionBoardType</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowcontrollertype.htm">IfcFlowControllerType</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcdistributionboardtypeenum.htm">IfcDistributionBoardTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcelectricaldomain/lexical/ifcdistributionboardtypeenum.htm">IfcDistributionBoardTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -2938,19 +2926,19 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifcelectricflowtreatmentdevice.htm">IfcElectricFlowTreatmentDevice</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcelectricflowtreatmentdevice.htm">IfcElectricFlowTreatmentDevice</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowtreatmentdevice.htm">IfcFlowTreatmentDevice</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcelectricflowtreatmentdevice.htm">IfcElectricFlowTreatmentDevice</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcelectricflowtreatmentdevice.htm">IfcElectricFlowTreatmentDevice</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcelectricaldomain/lexical/ifcelectricflowtreatmentdevice.htm">IfcElectricFlowTreatmentDevice</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowtreatmentdevice.htm">IfcFlowTreatmentDevice</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcelectricflowtreatmentdevice.htm">IfcElectricFlowTreatmentDevice</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowtreatmentdevice.htm">IfcFlowTreatmentDevice</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcelectricflowtreatmentdevicetypeenum.htm">IfcElectricFlowTreatmentDeviceTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcelectricaldomain/lexical/ifcelectricflowtreatmentdevicetypeenum.htm">IfcElectricFlowTreatmentDeviceTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifcelectricflowtreatmentdevicetype.htm">IfcElectricFlowTreatmentDeviceType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcelectricflowtreatmentdevicetype.htm">IfcElectricFlowTreatmentDeviceType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowtreatmentdevicetype.htm">IfcFlowTreatmentDeviceType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcelectricflowtreatmentdevicetype.htm">IfcElectricFlowTreatmentDeviceType</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcelectricflowtreatmentdevicetype.htm">IfcElectricFlowTreatmentDeviceType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcelectricaldomain/lexical/ifcelectricflowtreatmentdevicetype.htm">IfcElectricFlowTreatmentDeviceType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowtreatmentdevicetype.htm">IfcFlowTreatmentDeviceType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcelectricflowtreatmentdevicetype.htm">IfcElectricFlowTreatmentDeviceType</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowtreatmentdevicetype.htm">IfcFlowTreatmentDeviceType</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcelectricflowtreatmentdevicetypeenum.htm">IfcElectricFlowTreatmentDeviceTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcelectricaldomain/lexical/ifcelectricflowtreatmentdevicetypeenum.htm">IfcElectricFlowTreatmentDeviceTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -3033,6 +3021,16 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcsharedbldgelements/lexical/ifcrelcoversbldgelements.htm">IfcRelCoversBldgElements</a>&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:itemType&quot; fixed=&quot;ifc:<a href="../../../schema/ifcsharedbldgelements/lexical/ifcrelcoversbldgelements.htm">IfcRelCoversBldgElements</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:cType&quot; fixed=&quot;set&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:arraySize&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:element&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;HasSurfaceFeatures&quot; nillable=&quot;true&quot; minOccurs=&quot;0&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a>&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:itemType&quot; fixed=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:cType&quot; fixed=&quot;set&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:arraySize&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
@@ -3433,11 +3431,11 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;PredefinedType&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcfacilityparttypeselect.htm">IfcFacilityPartTypeSelect</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcfacilityparttypeselect.htm">IfcFacilityPartTypeSelect</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:element&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;UsageType&quot; type=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcfacilityusageenum.htm">IfcFacilityUsageEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;UsageType&quot; type=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcfacilityusageenum.htm">IfcFacilityUsageEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -4070,14 +4068,6 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifcinclinedreferencesweptareasolid.htm">IfcInclinedReferenceSweptAreaSolid</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcinclinedreferencesweptareasolid.htm">IfcInclinedReferenceSweptAreaSolid</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcdirectrixdistancesweptareasolid.htm">IfcDirectrixDistanceSweptAreaSolid</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcinclinedreferencesweptareasolid.htm">IfcInclinedReferenceSweptAreaSolid</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcdirectrixdistancesweptareasolid.htm">IfcDirectrixDistanceSweptAreaSolid</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;FixedAxisVertical&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>&quot; use=&quot;optional&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
-&nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
-&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcpresentationappearanceresource/lexical/ifcindexedcolourmap.htm">IfcIndexedColourMap</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcpresentationappearanceresource/lexical/ifcindexedcolourmap.htm">IfcIndexedColourMap</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcpresentationdefinitionresource/lexical/ifcpresentationitem.htm">IfcPresentationItem</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
 &nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcpresentationappearanceresource/lexical/ifcindexedcolourmap.htm">IfcIndexedColourMap</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
@@ -4280,16 +4270,16 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcroad/lexical/ifckerb.htm">IfcKerb</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcroad/lexical/ifckerb.htm">IfcKerb</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcroad/lexical/ifckerb.htm">IfcKerb</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcroaddomain/lexical/ifckerb.htm">IfcKerb</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcroaddomain/lexical/ifckerb.htm">IfcKerb</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcroaddomain/lexical/ifckerb.htm">IfcKerb</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;Mountable&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcroad/lexical/ifckerbtype.htm">IfcKerbType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcroad/lexical/ifckerbtype.htm">IfcKerbType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcroad/lexical/ifckerbtype.htm">IfcKerbType</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcroaddomain/lexical/ifckerbtype.htm">IfcKerbType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcroaddomain/lexical/ifckerbtype.htm">IfcKerbType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcroaddomain/lexical/ifckerbtype.htm">IfcKerbType</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;Mountable&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>&quot; use=&quot;optional&quot;/&gt;<br/>
@@ -4558,19 +4548,19 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcpositioningelement.htm">IfcPositioningElement</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcliquidterminal.htm">IfcLiquidTerminal</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcliquidterminal.htm">IfcLiquidTerminal</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowterminal.htm">IfcFlowTerminal</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcliquidterminal.htm">IfcLiquidTerminal</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcliquidterminal.htm">IfcLiquidTerminal</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcliquidterminal.htm">IfcLiquidTerminal</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowterminal.htm">IfcFlowTerminal</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcliquidterminal.htm">IfcLiquidTerminal</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowterminal.htm">IfcFlowTerminal</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcliquidterminaltypeenum.htm">IfcLiquidTerminalTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcliquidterminaltypeenum.htm">IfcLiquidTerminalTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcliquidterminaltype.htm">IfcLiquidTerminalType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcliquidterminaltype.htm">IfcLiquidTerminalType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowterminaltype.htm">IfcFlowTerminalType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcliquidterminaltype.htm">IfcLiquidTerminalType</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcliquidterminaltype.htm">IfcLiquidTerminalType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcliquidterminaltype.htm">IfcLiquidTerminalType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowterminaltype.htm">IfcFlowTerminalType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcliquidterminaltype.htm">IfcLiquidTerminalType</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowterminaltype.htm">IfcFlowTerminalType</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcliquidterminaltypeenum.htm">IfcLiquidTerminalTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcliquidterminaltypeenum.htm">IfcLiquidTerminalTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -4630,11 +4620,11 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcmarinefacility.htm">IfcMarineFacility</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcmarinefacility.htm">IfcMarineFacility</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcmarinefacility.htm">IfcMarineFacility</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmarinefacility.htm">IfcMarineFacility</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmarinefacility.htm">IfcMarineFacility</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmarinefacility.htm">IfcMarineFacility</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcmarinefacilitytypeenum.htm">IfcMarineFacilityTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmarinefacilitytypeenum.htm">IfcMarineFacilityTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -5038,19 +5028,19 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcprofileresource/lexical/ifcmirroredprofiledef.htm">IfcMirroredProfileDef</a>-temp&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifcmobiletelecommunicationsappliance.htm">IfcMobileTelecommunicationsAppliance</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcmobiletelecommunicationsappliance.htm">IfcMobileTelecommunicationsAppliance</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowterminal.htm">IfcFlowTerminal</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcmobiletelecommunicationsappliance.htm">IfcMobileTelecommunicationsAppliance</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcmobiletelecommunicationsappliance.htm">IfcMobileTelecommunicationsAppliance</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcelectricaldomain/lexical/ifcmobiletelecommunicationsappliance.htm">IfcMobileTelecommunicationsAppliance</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowterminal.htm">IfcFlowTerminal</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcmobiletelecommunicationsappliance.htm">IfcMobileTelecommunicationsAppliance</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowterminal.htm">IfcFlowTerminal</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcmobiletelecommunicationsappliancetypeenum.htm">IfcMobileTelecommunicationsApplianceTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcelectricaldomain/lexical/ifcmobiletelecommunicationsappliancetypeenum.htm">IfcMobileTelecommunicationsApplianceTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifcmobiletelecommunicationsappliancetype.htm">IfcMobileTelecommunicationsApplianceType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcmobiletelecommunicationsappliancetype.htm">IfcMobileTelecommunicationsApplianceType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowterminaltype.htm">IfcFlowTerminalType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcmobiletelecommunicationsappliancetype.htm">IfcMobileTelecommunicationsApplianceType</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcmobiletelecommunicationsappliancetype.htm">IfcMobileTelecommunicationsApplianceType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcelectricaldomain/lexical/ifcmobiletelecommunicationsappliancetype.htm">IfcMobileTelecommunicationsApplianceType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowterminaltype.htm">IfcFlowTerminalType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcmobiletelecommunicationsappliancetype.htm">IfcMobileTelecommunicationsApplianceType</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcsharedbldgserviceelements/lexical/ifcflowterminaltype.htm">IfcFlowTerminalType</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcmobiletelecommunicationsappliancetypeenum.htm">IfcMobileTelecommunicationsApplianceTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcelectricaldomain/lexical/ifcmobiletelecommunicationsappliancetypeenum.htm">IfcMobileTelecommunicationsApplianceTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -5062,19 +5052,19 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcmooringdevice.htm">IfcMooringDevice</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcmooringdevice.htm">IfcMooringDevice</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcmooringdevice.htm">IfcMooringDevice</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmooringdevice.htm">IfcMooringDevice</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmooringdevice.htm">IfcMooringDevice</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmooringdevice.htm">IfcMooringDevice</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcmooringdevicetypeenum.htm">IfcMooringDeviceTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmooringdevicetypeenum.htm">IfcMooringDeviceTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcmooringdevicetype.htm">IfcMooringDeviceType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcmooringdevicetype.htm">IfcMooringDeviceType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcmooringdevicetype.htm">IfcMooringDeviceType</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmooringdevicetype.htm">IfcMooringDeviceType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmooringdevicetype.htm">IfcMooringDeviceType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmooringdevicetype.htm">IfcMooringDeviceType</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcmooringdevicetypeenum.htm">IfcMooringDeviceTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmooringdevicetypeenum.htm">IfcMooringDeviceTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -5105,19 +5095,19 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcnavigationelement.htm">IfcNavigationElement</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcnavigationelement.htm">IfcNavigationElement</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcnavigationelement.htm">IfcNavigationElement</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcnavigationelement.htm">IfcNavigationElement</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcnavigationelement.htm">IfcNavigationElement</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcnavigationelement.htm">IfcNavigationElement</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcnavigationelementtypeenum.htm">IfcNavigationElementTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcnavigationelementtypeenum.htm">IfcNavigationElementTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcnavigationelementtype.htm">IfcNavigationElementType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcnavigationelementtype.htm">IfcNavigationElementType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcnavigationelementtype.htm">IfcNavigationElementType</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcnavigationelementtype.htm">IfcNavigationElementType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcnavigationelementtype.htm">IfcNavigationElementType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcnavigationelementtype.htm">IfcNavigationElementType</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcnavigationelementtypeenum.htm">IfcNavigationElementTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcnavigationelementtypeenum.htm">IfcNavigationElementTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -5263,8 +5253,8 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcroad/lexical/ifcopencrossprofiledef.htm">IfcOpenCrossProfileDef</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcroad/lexical/ifcopencrossprofiledef.htm">IfcOpenCrossProfileDef</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcprofileresource/lexical/ifcprofiledef.htm">IfcProfileDef</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcroad/lexical/ifcopencrossprofiledef.htm">IfcOpenCrossProfileDef</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcprofileresource/lexical/ifcopencrossprofiledef.htm">IfcOpenCrossProfileDef</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcprofileresource/lexical/ifcopencrossprofiledef.htm">IfcOpenCrossProfileDef</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcprofileresource/lexical/ifcprofiledef.htm">IfcProfileDef</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcprofileresource/lexical/ifcopencrossprofiledef.htm">IfcOpenCrossProfileDef</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcprofileresource/lexical/ifcprofiledef.htm">IfcProfileDef</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;HorizontalWidths&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>&quot; use=&quot;optional&quot;/&gt;<br/>
@@ -6588,19 +6578,19 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifcrail.htm">IfcRail</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcrail.htm">IfcRail</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcrail.htm">IfcRail</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifcrail.htm">IfcRail</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcraildomain/lexical/ifcrail.htm">IfcRail</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifcrail.htm">IfcRail</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcrailtypeenum.htm">IfcRailTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcraildomain/lexical/ifcrailtypeenum.htm">IfcRailTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifcrailtype.htm">IfcRailType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcrailtype.htm">IfcRailType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcrailtype.htm">IfcRailType</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifcrailtype.htm">IfcRailType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcraildomain/lexical/ifcrailtype.htm">IfcRailType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifcrailtype.htm">IfcRailType</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcrailtypeenum.htm">IfcRailTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcraildomain/lexical/ifcrailtypeenum.htm">IfcRailTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -6620,11 +6610,11 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifcrailway.htm">IfcRailway</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcrailway.htm">IfcRailway</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcrailway.htm">IfcRailway</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifcrailway.htm">IfcRailway</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcraildomain/lexical/ifcrailway.htm">IfcRailway</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifcrailway.htm">IfcRailway</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcrailwaytypeenum.htm">IfcRailwayTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcraildomain/lexical/ifcrailwaytypeenum.htm">IfcRailwayTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -6975,6 +6965,25 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifckernel/lexical/ifcreldecomposes.htm">IfcRelDecomposes</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcreladherestoelement.htm">IfcRelAdheresToElement</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifckernel/lexical/ifcreldecomposes.htm">IfcRelDecomposes</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;RelatedSurfaceFeatures&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcstructuralelementsdomain/lexical/ifcsurfacefeature.htm">IfcSurfaceFeature</a>&quot; maxOccurs=&quot;unbounded&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:itemType&quot; fixed=&quot;ifc:<a href="../../../schema/ifcstructuralelementsdomain/lexical/ifcsurfacefeature.htm">IfcSurfaceFeature</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:cType&quot; fixed=&quot;set&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:arraySize&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:element&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
+&nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
+&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a>&quot; type=&quot;ifc:<a href="../../../schema/ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifckernel/lexical/ifcreldecomposes.htm">IfcRelDecomposes</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
 &nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
@@ -7190,8 +7199,8 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcroad/lexical/ifcrelassociatesprofiledef.htm">IfcRelAssociatesProfileDef</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcroad/lexical/ifcrelassociatesprofiledef.htm">IfcRelAssociatesProfileDef</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifckernel/lexical/ifcrelassociates.htm">IfcRelAssociates</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcroad/lexical/ifcrelassociatesprofiledef.htm">IfcRelAssociatesProfileDef</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcrelassociatesprofiledef.htm">IfcRelAssociatesProfileDef</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcrelassociatesprofiledef.htm">IfcRelAssociatesProfileDef</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifckernel/lexical/ifcrelassociates.htm">IfcRelAssociates</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcrelassociatesprofiledef.htm">IfcRelAssociatesProfileDef</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifckernel/lexical/ifcrelassociates.htm">IfcRelAssociates</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
@@ -7518,12 +7527,12 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;RelatingElement&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:element&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;RelatedElement&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:element&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;InterferenceGeometry&quot; type=&quot;ifc:<a href="../../../schema/ifcgeometricconstraintresource/lexical/ifcconnectiongeometry.htm">IfcConnectionGeometry</a>&quot; nillable=&quot;true&quot; minOccurs=&quot;0&quot;/&gt;<br/>
@@ -7589,8 +7598,8 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;RelatedElements&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a>&quot; maxOccurs=&quot;unbounded&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:itemType&quot; fixed=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a>&quot; maxOccurs=&quot;unbounded&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:itemType&quot; fixed=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:cType&quot; fixed=&quot;set&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:arraySize&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
@@ -7866,11 +7875,11 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcroad/lexical/ifcroad.htm">IfcRoad</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcroad/lexical/ifcroad.htm">IfcRoad</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcroad/lexical/ifcroad.htm">IfcRoad</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcroaddomain/lexical/ifcroad.htm">IfcRoad</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcroaddomain/lexical/ifcroad.htm">IfcRoad</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcroaddomain/lexical/ifcroad.htm">IfcRoad</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcroad/lexical/ifcroadtypeenum.htm">IfcRoadTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcroaddomain/lexical/ifcroadtypeenum.htm">IfcRoadTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -8075,8 +8084,8 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcroad/lexical/ifcsectionedsurface.htm">IfcSectionedSurface</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcroad/lexical/ifcsectionedsurface.htm">IfcSectionedSurface</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcsurface.htm">IfcSurface</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcroad/lexical/ifcsectionedsurface.htm">IfcSectionedSurface</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcgeometricmodelresource/lexical/ifcsectionedsurface.htm">IfcSectionedSurface</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcgeometricmodelresource/lexical/ifcsectionedsurface.htm">IfcSectionedSurface</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcsurface.htm">IfcSurface</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcgeometricmodelresource/lexical/ifcsectionedsurface.htm">IfcSectionedSurface</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcsurface.htm">IfcSurface</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
@@ -8292,6 +8301,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;SineTerm&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;LinearTerm&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;ConstantTerm&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -9800,7 +9810,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcgeometryresource/lexical/ifcthirdorderpolynomialspiral.htm">IfcThirdOrderPolynomialSpiral</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;QubicTerm&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;CubicTerm&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;QuadraticTerm&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;LinearTerm&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;ConstantTerm&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a>&quot; use=&quot;optional&quot;/&gt;<br/>
@@ -9875,19 +9885,19 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifctrackelement.htm">IfcTrackElement</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifctrackelement.htm">IfcTrackElement</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifctrackelement.htm">IfcTrackElement</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifctrackelement.htm">IfcTrackElement</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcraildomain/lexical/ifctrackelement.htm">IfcTrackElement</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifctrackelement.htm">IfcTrackElement</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifctrackelementtypeenum.htm">IfcTrackElementTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcraildomain/lexical/ifctrackelementtypeenum.htm">IfcTrackElementTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifctrackelementtype.htm">IfcTrackElementType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifctrackelementtype.htm">IfcTrackElementType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcrail/lexical/ifctrackelementtype.htm">IfcTrackElementType</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifctrackelementtype.htm">IfcTrackElementType</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcraildomain/lexical/ifctrackelementtype.htm">IfcTrackElementType</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifctrackelementtype.htm">IfcTrackElementType</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelementtype.htm">IfcBuiltElementType</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifctrackelementtypeenum.htm">IfcTrackElementTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcraildomain/lexical/ifctrackelementtypeenum.htm">IfcTrackElementTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -9914,7 +9924,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;PredefinedType&quot; nillable=&quot;true&quot; minOccurs=&quot;0&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:element&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br/>
@@ -9928,7 +9938,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;PredefinedType&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:group ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:element&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br/>
@@ -10828,13 +10838,13 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcexternalreferenceresource/lexical/ifcdocumentreference.htm">IfcDocumentReference</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:choice&gt;<br/>
 &nbsp;&lt;/xs:group&gt;<br/>
-&nbsp;&lt;xs:group name=&quot;<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcfacilityparttypeselect.htm">IfcFacilityPartTypeSelect</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:group name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcfacilityparttypeselect.htm">IfcFacilityPartTypeSelect</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:choice&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbridgeparttypeenum.htm">IfcBridgePartTypeEnum</a>-wrapper&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcfacilitypartcommontypeenum.htm">IfcFacilityPartCommonTypeEnum</a>-wrapper&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcmarineparttypeenum.htm">IfcMarinePartTypeEnum</a>-wrapper&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a>-wrapper&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcroad/lexical/ifcroadparttypeenum.htm">IfcRoadPartTypeEnum</a>-wrapper&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcfacilitypartcommontypeenum.htm">IfcFacilityPartCommonTypeEnum</a>-wrapper&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmarineparttypeenum.htm">IfcMarinePartTypeEnum</a>-wrapper&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcraildomain/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a>-wrapper&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcroaddomain/lexical/ifcroadparttypeenum.htm">IfcRoadPartTypeEnum</a>-wrapper&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:choice&gt;<br/>
 &nbsp;&lt;/xs:group&gt;<br/>
 &nbsp;&lt;xs:group name=&quot;<a href="../../../schema/ifcpresentationappearanceresource/lexical/ifcfillstyleselect.htm">IfcFillStyleSelect</a>&quot;&gt;<br/>
@@ -10872,7 +10882,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifchvacdomain/lexical/ifcvibrationisolatortypeenum.htm">IfcVibrationIsolatorTypeEnum</a>-wrapper&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:choice&gt;<br/>
 &nbsp;&lt;/xs:group&gt;<br/>
-&nbsp;&lt;xs:group name=&quot;<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:group name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcinterferenceselect.htm">IfcInterferenceSelect</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:choice&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcelement.htm">IfcElement</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcspatialelement.htm">IfcSpatialElement</a>&quot;/&gt;<br/>
@@ -11193,7 +11203,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcspace.htm">IfcSpace</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:choice&gt;<br/>
 &nbsp;&lt;/xs:group&gt;<br/>
-&nbsp;&lt;xs:group name=&quot;<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:group name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcspatialreferenceselect.htm">IfcSpatialReferenceSelect</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:choice&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifckernel/lexical/ifcgroup.htm">IfcGroup</a>&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifckernel/lexical/ifcproduct.htm">IfcProduct</a>&quot;/&gt;<br/>
@@ -11245,10 +11255,10 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclinearstiffnessmeasure.htm">IfcLinearStiffnessMeasure</a>-wrapper&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:choice&gt;<br/>
 &nbsp;&lt;/xs:group&gt;<br/>
-&nbsp;&lt;xs:group name=&quot;<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:group name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifctransportelementtypeselect.htm">IfcTransportElementTypeSelect</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:choice&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifctransportelementfixedtypeenum.htm">IfcTransportElementFixedTypeEnum</a>-wrapper&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifctransportelementnonfixedtypeenum.htm">IfcTransportElementNonFixedTypeEnum</a>-wrapper&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifctransportelementnonfixedtypeenum.htm">IfcTransportElementNonFixedTypeEnum</a>-wrapper&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:choice&gt;<br/>
 &nbsp;&lt;/xs:group&gt;<br/>
 &nbsp;&lt;xs:group name=&quot;<a href="../../../schema/ifcgeometryresource/lexical/ifctrimmingselect.htm">IfcTrimmingSelect</a>&quot;&gt;<br/>
@@ -11566,7 +11576,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcannotationtypeenum.htm">IfcAnnotationTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;assumedpoint&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;asbuiltarea&quot;/&gt;<br/>
@@ -11609,7 +11619,8 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;switcher&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;telephone&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;tuner&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;railway_communication_terminal&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;communicationterminal&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;recordingequipment&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
@@ -11776,7 +11787,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcbuiltsystemtypeenum.htm">IfcBuiltSystemTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcbuiltsystemtypeenum.htm">IfcBuiltSystemTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;reinforcing&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;mooring&quot;/&gt;<br/>
@@ -11921,14 +11932,17 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;router&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;scanner&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;automaton&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;intelligent_peripheral&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;ip_network_equipment&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;optical_network_unit&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;intelligentperipheral&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;ipnetworkequipment&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;opticalnetworkunit&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;telecommand&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;telephonyexchange&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;transitioncomponent&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;transponder&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;transportequipment&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;opticallineterminal&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;linesideelectronicunit&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;radioblockcenter&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
@@ -12038,7 +12052,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcconveyorsegmenttypeenum.htm">IfcConveyorSegmentTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcconveyorsegmenttypeenum.htm">IfcConveyorSegmentTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;chuteconveyor&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;beltconveyor&quot;/&gt;<br/>
@@ -12249,13 +12263,14 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcdistributionboardtypeenum.htm">IfcDistributionBoardTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcdistributionboardtypeenum.htm">IfcDistributionBoardTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;switchboard&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;consumerunit&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;motorcontrolcentre&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;distributionframe&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;distributionboard&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;dispatchingboard&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
@@ -12332,6 +12347,10 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;catenary_system&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;overhead_contactline_system&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;return_circuit&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;fixedtransmissionnetwork&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;operationaltelephonysystem&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;mobilenetwork&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;monitoringsystem&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
@@ -12556,7 +12575,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcelectricflowtreatmentdevicetypeenum.htm">IfcElectricFlowTreatmentDeviceTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcelectricflowtreatmentdevicetypeenum.htm">IfcElectricFlowTreatmentDeviceTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;electronicfilter&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
@@ -12697,7 +12716,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcfacilitypartcommontypeenum.htm">IfcFacilityPartCommonTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcfacilitypartcommontypeenum.htm">IfcFacilityPartCommonTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;segment&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;aboveground&quot;/&gt;<br/>
@@ -12711,7 +12730,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcfacilityusageenum.htm">IfcFacilityUsageEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcfacilityusageenum.htm">IfcFacilityUsageEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;lateral&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;region&quot;/&gt;<br/>
@@ -13025,7 +13044,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcliquidterminaltypeenum.htm">IfcLiquidTerminalTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcliquidterminaltypeenum.htm">IfcLiquidTerminalTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;loadingarm&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;hosereel&quot;/&gt;<br/>
@@ -13051,7 +13070,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;logicalnotor&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcmarinefacilitytypeenum.htm">IfcMarineFacilityTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmarinefacilitytypeenum.htm">IfcMarineFacilityTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;canal&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;waterwayshiplift&quot;/&gt;<br/>
@@ -13076,7 +13095,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcmarineparttypeenum.htm">IfcMarinePartTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmarineparttypeenum.htm">IfcMarinePartTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;crest&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;manufacturing&quot;/&gt;<br/>
@@ -13163,20 +13182,26 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcmobiletelecommunicationsappliancetypeenum.htm">IfcMobileTelecommunicationsApplianceTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcelectricaldomain/lexical/ifcmobiletelecommunicationsappliancetypeenum.htm">IfcMobileTelecommunicationsApplianceTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;e_utran_node_b&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;remote_radio_unit&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;remoteradiounit&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;accesspoint&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;basetransceiverstation&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;remoteunit&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;basebandunit&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;masterunit&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;gateway_gprs_support_node&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;subscriberserver&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;mobileswitchingcenter&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;mscserver&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;packetcontrolunit&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;service_gprs_support_node&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcmooringdevicetypeenum.htm">IfcMooringDeviceTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmooringdevicetypeenum.htm">IfcMooringDeviceTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;linetensioner&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;magneticdevice&quot;/&gt;<br/>
@@ -13196,7 +13221,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcnavigationelementtypeenum.htm">IfcNavigationElementTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcnavigationelementtypeenum.htm">IfcNavigationElementTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;beacon&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;buoy&quot;/&gt;<br/>
@@ -13467,7 +13492,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcrailtypeenum.htm">IfcRailTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifcrailtypeenum.htm">IfcRailTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;rackrail&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;blade&quot;/&gt;<br/>
@@ -13489,7 +13514,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;trackstructure&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;trackstructurepart&quot;/&gt;<br/>
@@ -13503,7 +13528,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcrail/lexical/ifcrailwaytypeenum.htm">IfcRailwayTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifcrailwaytypeenum.htm">IfcRailwayTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
@@ -13547,12 +13572,12 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;milepoint&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;station&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;referencemarker&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;landmark&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;boundary&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;intersection&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;position&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
 &nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcpresentationappearanceresource/lexical/ifcreflectancemethodenum.htm">IfcReflectanceMethodEnum</a>&quot;&gt;<br/>
@@ -13622,7 +13647,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcroad/lexical/ifcroadparttypeenum.htm">IfcRoadPartTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcroaddomain/lexical/ifcroadparttypeenum.htm">IfcRoadPartTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;roadsidepart&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;bus_stop&quot;/&gt;<br/>
@@ -13652,7 +13677,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcroad/lexical/ifcroadtypeenum.htm">IfcRoadTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcroaddomain/lexical/ifcroadtypeenum.htm">IfcRoadTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
@@ -14168,7 +14193,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcrail/lexical/ifctrackelementtypeenum.htm">IfcTrackElementTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifctrackelementtypeenum.htm">IfcTrackElementTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;trackendofalignment&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;blockingdevice&quot;/&gt;<br/>
@@ -14215,7 +14240,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
 &nbsp;&lt;/xs:simpleType&gt;<br/>
-&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifctransportelementnonfixedtypeenum.htm">IfcTransportElementNonFixedTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifctransportelementnonfixedtypeenum.htm">IfcTransportElementNonFixedTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;vehicle&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;vehicletracked&quot;/&gt;<br/>
@@ -14287,6 +14312,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;thermostat&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;weatherstation&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;combined&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;basestationcontroller&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
@@ -15293,10 +15319,10 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:simpleContent&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&lt;/xs:element&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcfacilitypartcommontypeenum.htm">IfcFacilityPartCommonTypeEnum</a>-wrapper&quot; nillable=&quot;true&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifcfacilitypartcommontypeenum.htm">IfcFacilityPartCommonTypeEnum</a>-wrapper&quot; nillable=&quot;true&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:simpleContent&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifcfacilitypartcommontypeenum.htm">IfcFacilityPartCommonTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcfacilitypartcommontypeenum.htm">IfcFacilityPartCommonTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attributeGroup ref=&quot;ifc:instanceAttributes&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:simpleContent&gt;<br/>
@@ -15536,10 +15562,10 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:simpleContent&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&lt;/xs:element&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterways/lexical/ifcmarineparttypeenum.htm">IfcMarinePartTypeEnum</a>-wrapper&quot; nillable=&quot;true&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmarineparttypeenum.htm">IfcMarinePartTypeEnum</a>-wrapper&quot; nillable=&quot;true&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:simpleContent&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcportsandwaterways/lexical/ifcmarineparttypeenum.htm">IfcMarinePartTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcportsandwaterwaysdomain/lexical/ifcmarineparttypeenum.htm">IfcMarinePartTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attributeGroup ref=&quot;ifc:instanceAttributes&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:simpleContent&gt;<br/>
@@ -15788,10 +15814,10 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:simpleContent&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&lt;/xs:element&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcrail/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a>-wrapper&quot; nillable=&quot;true&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcraildomain/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a>-wrapper&quot; nillable=&quot;true&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:simpleContent&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcrail/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcraildomain/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attributeGroup ref=&quot;ifc:instanceAttributes&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:simpleContent&gt;<br/>
@@ -15815,10 +15841,10 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:simpleContent&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&lt;/xs:element&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcroad/lexical/ifcroadparttypeenum.htm">IfcRoadPartTypeEnum</a>-wrapper&quot; nillable=&quot;true&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcroaddomain/lexical/ifcroadparttypeenum.htm">IfcRoadPartTypeEnum</a>-wrapper&quot; nillable=&quot;true&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:simpleContent&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcroad/lexical/ifcroadparttypeenum.htm">IfcRoadPartTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcroaddomain/lexical/ifcroadparttypeenum.htm">IfcRoadPartTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attributeGroup ref=&quot;ifc:instanceAttributes&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:simpleContent&gt;<br/>
@@ -16085,10 +16111,10 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:simpleContent&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
 &nbsp;&lt;/xs:element&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifctransportelementnonfixedtypeenum.htm">IfcTransportElementNonFixedTypeEnum</a>-wrapper&quot; nillable=&quot;true&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcproductextension/lexical/ifctransportelementnonfixedtypeenum.htm">IfcTransportElementNonFixedTypeEnum</a>-wrapper&quot; nillable=&quot;true&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:simpleContent&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcsharedinfrastructureelements/lexical/ifctransportelementnonfixedtypeenum.htm">IfcTransportElementNonFixedTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifctransportelementnonfixedtypeenum.htm">IfcTransportElementNonFixedTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attributeGroup ref=&quot;ifc:instanceAttributes&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:simpleContent&gt;<br/>
