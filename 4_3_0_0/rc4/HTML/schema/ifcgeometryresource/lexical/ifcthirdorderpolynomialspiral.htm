@@ -36,39 +36,54 @@
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QubicTerm</td><td>X</td><td>X</td><td>MODIFIED</td><td>Name changed from <i>CurveLength</i> to <i>QubicTerm</i>. <br/>Type changed from <i>IfcPositiveLengthMeasure</i> to <i>IfcLengthMeasure</i>. <br/></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QuadraticTerm</td><td>X</td><td>X</td><td>MODIFIED</td><td>Name changed from <i>Radius</i> to <i>QuadraticTerm</i>. <br/>Type changed from <i>IfcPositiveLengthMeasure</i> to <i>IfcLengthMeasure</i>. <br/>Instantiation changed to <i>OPTIONAL</i>. <br/></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinearTerm</td><td></td><td></td><td>ADDED</td><td></td></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-rc4/index.htm">IFC4x3_RC3 to RC4</a></b></td>
-<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometryresource/lexical/ifcthirdorderpolynomialspiral.htm">IfcThirdOrderPolynomialSpiral</a></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ConstantTerm</td><td></td><td></td><td>ADDED</td><td></td></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-ifc4x3_rc4/index.htm">IFC4x3_RC3 to IFC4x3_RC4</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometryresource/lexical/ifcthirdorderpolynomialspiral.htm">IfcThirdOrderPolynomialSpiral</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CubicTerm</td><td></td><td>X</td><td>MODIFIED</td><td>Name changed from <i>QubicTerm</i> to <i>CubicTerm</i>. <br/></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ConstantTerm</td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
 </details>
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
-<details open="open"><summary>Entity definition</summary><p>The Bloss curve is a curve definition used in particular in rail transitions. It was proposed by Dr. Ing. Bloss.</p>
-<p>It's parametrization is as follows:
-X coordinate:<br>
-<img src="../../../figures/ifctransitioncurvetype-blosscurve-x.png" alt="Image"><br>
-Y coordinate:<br>
-<img src="../../../figures/ifctransitioncurvetype-blosscurve-y.png" alt="Image"></p>
-<p>where Θ is the deflection or bearing angle.</p>
-<p>The curvature of the curve is calculated as.</p>
-<p>K = K0 (s³/QubicTerm³ + s²/QuadraticTerm² + s/LinearTerm
-where
-K ... curvature
-K0 ... start curvature</p>
+<details open="open"><summary>Entity definition</summary><p>The <span class="self-ref">IfcThirdOrderPolynomialSpiral</span> is a specialization of <a href="../../ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>. The curvature <i>κ</i> and radius of the curvature <i>ρ</i>, at any point of the curve, are related to the arc length <i>s</i> by the third order formulae:</p>
+<blockquote>
+<blockquote>
+<p><img src="../../../figures/ifcthirdorderpolynomialspiral_curvature.PNG" alt="formula"></p>
+</blockquote>
+<p>Interpretation of the parameters:</p>
+<blockquote>
+<p>C = SELF\IfcSpiral.Position.Location<br>
+x = SELF\IfcSpiral.Position.P[1]<br>
+y = SELF\IfcSpiral.Position.P[2]<br>
+A<sub>3</sub> = CubicTerm<br>
+A<sub>2</sub> = QuadraticTerm<br>
+A<sub>1</sub> = LinearTerm<br>
+A<sub>0</sub> = ContantTerm</p>
+</blockquote>
+<p>and the third order polynomial spiral is parameterized as:</p>
+<blockquote>
+<p><img src="../../../figures/ifcspiral_parameterization.PNG" alt="formula"></p>
+</blockquote>
+<p>where:</p>
+<blockquote>
+<p><img src="../../../figures/ifcthirdorderpolynomialspiral_theta.PNG" alt="formula"></p>
+</blockquote>
+<p>and the parametric range is: -∞ &lt; <i>u</i> &lt; ∞.</p>
+</blockquote>
 </details>
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
 <th>G</th></tr>
 <tr><td>2</td><td>CubicTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
+The constant that defines the cubic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>3</td><td>QuadraticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the quadratic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>4</td><td>LinearTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the linear term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
-<tr><td>5</td><td>ConstantTerm</td><td><a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a></td><td>? </td><td>
+<tr><td>5</td><td>ConstantTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the constant term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 </table>
 </details>
@@ -110,12 +125,16 @@ IFC2x3 CHANGE  The inverse attribute <i>StyledByItem</i> has been added.
 </td><td>X</td></tr>
 <tr><td colspan="6"><a href="../../ifcgeometryresource/lexical/ifcthirdorderpolynomialspiral.htm">IfcThirdOrderPolynomialSpiral</a></td></tr>
 <tr><td>2</td><td>CubicTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
+The constant that defines the cubic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>3</td><td>QuadraticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the quadratic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>4</td><td>LinearTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the linear term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
-<tr><td>5</td><td>ConstantTerm</td><td><a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a></td><td>? </td><td>
+<tr><td>5</td><td>ConstantTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the constant term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 </table>
 </details>
@@ -130,7 +149,7 @@ IFC2x3 CHANGE  The inverse attribute <i>StyledByItem</i> has been added.
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;CubicTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;QuadraticTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;LinearTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;ConstantTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;ConstantTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -141,7 +160,7 @@ IFC2x3 CHANGE  The inverse attribute <i>StyledByItem</i> has been added.
 &nbsp;&nbsp;CubicTerm : <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;QuadraticTerm : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;LinearTerm : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
-&nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a>;<br/>
+&nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
 <span class="keyword">END_ENTITY;</span><br/>
 <p class="std"><a href="../../../annex/annex-d/ifcgeometryresource/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
 </code></div>

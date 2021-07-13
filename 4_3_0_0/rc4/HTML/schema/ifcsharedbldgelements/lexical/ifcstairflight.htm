@@ -58,7 +58,7 @@
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x2-candidate-4_2_0_0/index.htm">IFC4x2 Candidate 4.2.0.0</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedbldgelements/lexical/ifcstairflight.htm">IfcStairFlight</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PositionedRelativeTo</td><td></td><td></td><td>ADDED</td><td></td></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-ifc4x3_rc4/index.htm">IFC4x3_RC3 to IFC4x3_RC4</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedbldgelements/lexical/ifcstairflight.htm">IfcStairFlight</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>HasSurfaceFeatures</i></td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
@@ -440,13 +440,13 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
 <a id="axis-2d-geometry" />
 <p class="use-head">Axis 2D Geometry</p>
 <p>The <a href="../../templates/axis-2d-geometry.htm">Axis 2D Geometry</a> concept applies to this entity.</p><p>The walking line is represented by a two-dimensional open curve as the axis. The curve is directed into the upward direction (direction has to be interpreted as specified at the subtypes of <a href="../../ifcgeometryresource/lexical/ifccurve.htm">IfcCurve</a>).</p>
-<p>Figure 264 illustrates the axis representation which has the following constraints:</p>
+<p>Figure 268 illustrates the axis representation which has the following constraints:</p>
 <ul>
 <li>In case of straight flights the curve shall be a single item of type <a href="../../ifcgeometryresource/lexical/ifcpolyline.htm">IfcPolyline</a>.</li>
 <li>In case of winding flights the curve shall be a single item of type <a href="../../ifcgeometryresource/lexical/ifccompositecurve.htm">IfcCompositeCurve</a>.</li>
 <li>In case of a curved flight or a spiral flight the curve shall be a single item of type <a href="../../ifcgeometryresource/lexical/ifctrimmedcurve.htm">IfcTrimmedCurve</a>.</li>
 </ul>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcstairflight_01-layout1.gif" alt="&quot;walking line&quot;" title="Figure 264 &mdash; Stair flight axis"></td></tr><tr><td><p class="figure">Figure 264 &mdash; Stair flight axis</p></td></tr></table></p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcstairflight_01-layout1.gif" alt="&quot;walking line&quot;" title="Figure 268 &mdash; Stair flight axis"></td></tr><tr><td><p class="figure">Figure 268 &mdash; Stair flight axis</p></td></tr></table></p>
 
 <br/><br/>
 
@@ -458,20 +458,20 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
 <tr><td><p class="table">Table 196 &mdash; IfcStairFlight FootPrint Geometry</td></tr></table>
 
 <p>The flight foot print, including the flight boundary is represented by a two-dimensional geometric curve set.</p>
-<p>Figure 265 illustrates the footprint representation which has the following constraints:</p>
+<p>Figure 269 illustrates the footprint representation which has the following constraints:</p>
 <ul>
 <li>In case of straight flights the curve set shall consists of a single item of type <a href="../../ifcgeometryresource/lexical/ifcpolyline.htm">IfcPolyline</a>.</li>
 <li>In case of winding flights or curved flights the curve set shall consists of a single item of type <a href="../../ifcgeometryresource/lexical/ifccompositecurve.htm">IfcCompositeCurve</a>.</li>
 <li>In case of a spiral flight the curve set shall consists of a single item of type <a href="../../ifcgeometryresource/lexical/ifcconic.htm">IfcConic</a> or <a href="../../ifcgeometryresource/lexical/ifcpolyline.htm">IfcPolyline</a>.</li>
 </ul>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcstairflight_02-layout1.gif" alt="&quot;boundary&quot;" title="Figure 265 &mdash; Stair flight footprint"></td></tr><tr><td><p class="figure">Figure 265 &mdash; Stair flight footprint</p></td></tr></table></p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcstairflight_02-layout1.gif" alt="&quot;boundary&quot;" title="Figure 269 &mdash; Stair flight footprint"></td></tr><tr><td><p class="figure">Figure 269 &mdash; Stair flight footprint</p></td></tr></table></p>
 
 <br/><br/>
 
 <a id="body-sweptsolid-geometry" />
 <p class="use-head">Body SweptSolid Geometry</p>
-<p>The <a href="../../templates/body-sweptsolid-geometry.htm">Body SweptSolid Geometry</a> concept applies to this entity.</p><p>Figure 266 illustrates the 'Body' geometric representation using a 'SweptSolid' representation type.</p>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcstairflight_03-layout1.gif" alt="&quot;3D&quot;" title="Figure 266 &mdash; Stair flight body"></td></tr><tr><td><p class="figure">Figure 266 &mdash; Stair flight body</p></td></tr></table></p>
+<p>The <a href="../../templates/body-sweptsolid-geometry.htm">Body SweptSolid Geometry</a> concept applies to this entity.</p><p>Figure 270 illustrates the 'Body' geometric representation using a 'SweptSolid' representation type.</p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcstairflight_03-layout1.gif" alt="&quot;3D&quot;" title="Figure 270 &mdash; Stair flight body"></td></tr><tr><td><p class="figure">Figure 270 &mdash; Stair flight body</p></td></tr></table></p>
 
 <br/><br/>
 

@@ -61,13 +61,33 @@
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc2-to-ifc4x3_rc3/index.htm">IFC4x3_RC2 to IFC4x3_RC3</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcproductextension/lexical/ifcalignmentcant.htm">IfcAlignmentCant</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Segments</td><td>X</td><td></td><td>DELETED</td><td></td></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-ifc4x3_rc4/index.htm">IFC4x3_RC3 to IFC4x3_RC4</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcproductextension/lexical/ifcalignmentcant.htm">IfcAlignmentCant</a></td><td></td><td></td><td>MOVED</td><td>Schema changed from <i>IFCRAIL</i> to <i>IFCPRODUCTEXTENSION</i>. <br/></td></tr>
 </table>
 </details>
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
 <details open="open"><summary>Entity definition</summary><p>An <span class="self-ref">IfcAlignmentCant</span> is a lateral inclination profile defined along the horizontal alignment. All points defined in this profile have two coordinate values. The first value is the distance along the horizontal alignment, and the second value is the height relative to the projection of the point along vertical alignment.</p>
+<p><strong>Cant as a railway specificity</strong></p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcalignmentcant_wojtczak_2018.png" alt="&quot;Why cant is applied&quot;" title="Figure 161 &mdash; Cant - compensation for lateral acceleration."></td></tr><tr><td><p class="figure">Figure 161 &mdash; Cant - compensation for lateral acceleration.</p></td></tr></table></p>
+<p>&gt;NOTE figure was first published in (Basics of) Railway Curve Kinematics Presentation, (Wojtczak 2018)</p>
+<p>The diagram in the figure above shows the principle of compensating part of the lateral acceleration by elevating the outer rail relative to the inner rail of a track.</p>
+<p>Almost always the following principles for the placement of horizontal segments and cant segments are implemented:</p>
+<ul>
+<li>Straight horizontal line: no applied cant</li>
+<li>Horizontal circular arc: constant applied cant</li>
+<li>Horizontal transition bend: variation of applied cant according to a defined formula</li>
+</ul>
+<p>In specific difficult topographic environments like mountain lines the extension of a cant transition may differ from the horizontal transition. So far this has only been found for clothoids and is either a so called shortened ramp (can transition is shorter than the corresponding horizontal curvature transition) or a so called “scissor” ramp (overlapping variations of cant on both rails with opposite direction).</p>
+<p>Application of high-performance horizontal transition bends is always combined with a cant transition with identical start and end location.</p>
+<p>In real world designs, such as slow speed sections in railway stations, exceptions to the above principles can be found. It might even happen that the inner rail is elevated relative to the outer rail.</p>
+<p>Detailed geometric modelling of the superelevation has a low priority in the existing processes in most rail companies. This will very probably change with the introduction of 3D modelling in rail design. The following list shows some use cases:</p>
+<ul>
+<li>Correct 3D placement of certain assets (e.g. sleepers)</li>
+<li>Relevant input for calculation of structural gauge space</li>
+<li>Correct calculation of horizontal coordinate values for the Viennese Bend® (high performance transition bend)</li>
+</ul>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcalignmentcant_structural_gauge_and_cant.png" alt="&quot;Cant and structural gauge space&quot;" title="Figure 162 &mdash; Cant and structural gauge space"></td></tr><tr><td><p class="figure">Figure 162 &mdash; Cant and structural gauge space</p></td></tr></table></p>
 </details>
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>

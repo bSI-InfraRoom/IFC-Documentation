@@ -43,7 +43,7 @@
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x2-candidate-4_2_0_0/index.htm">IFC4x2 Candidate 4.2.0.0</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedbldgelements/lexical/ifccolumnstandardcase.htm">IfcColumnStandardCase</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PositionedRelativeTo</td><td></td><td></td><td>ADDED</td><td></td></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-ifc4x3_rc4/index.htm">IFC4x3_RC3 to IFC4x3_RC4</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedbldgelements/lexical/ifccolumnstandardcase.htm">IfcColumnStandardCase</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>HasSurfaceFeatures</i></td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
@@ -262,18 +262,18 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
 <a id="material-profile-set-usage" />
 <p class="use-head">Material Profile Set Usage</p>
 <p>The <a href="../../templates/material-profile-set-usage.htm">Material Profile Set Usage</a> concept applies to this entity.</p><p>The <span class="self-ref">IfcColumnStandardCase</span> defines in addition that the <a href="../../ifcsharedbldgelements/lexical/ifccolumntype.htm">IfcColumnType</a> should have a unique <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a>, that is referenced by the <a href="../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm">IfcMaterialProfileSetUsage</a> assigned to all occurrences of this <a href="../../ifcsharedbldgelements/lexical/ifccolumntype.htm">IfcColumnType</a>. Composite profile columns can be represented by refering to several <a href="../../ifcmaterialresource/lexical/ifcmaterialprofile.htm">IfcMaterialProfile</a>'s within the <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a> that is referenced from the <a href="../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm">IfcMaterialProfileSetUsage</a>.</p>
-<p>Figure 222 illustrates assignment of <a href="../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm">IfcMaterialProfileSetUsage</a> and <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a> to the <span class="self-ref">IfcColumnStandardCase</span> as the column occurrence and to the <a href="../../ifcsharedbldgelements/lexical/ifccolumntype.htm">IfcColumnType</a>. The same <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a> shall be shared by many occurrences of <a href="../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm">IfcMaterialProfileSetUsage</a>. This relationship shall be consistent to the relationship between the <a href="../../ifcsharedbldgelements/lexical/ifccolumntype.htm">IfcColumnType</a> and the <span class="self-ref">IfcColumnStandardCase</span>.</p>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifccolumnstandardcase-01.png" alt="&quot;Material profile set and usage&quot;" title="Figure 222 &mdash; Column profile usage"></td></tr><tr><td><p class="figure">Figure 222 &mdash; Column profile usage</p></td></tr></table></p>
-<p>Figure 223 illustrates cardinal point alignment.</p>
+<p>Figure 226 illustrates assignment of <a href="../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm">IfcMaterialProfileSetUsage</a> and <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a> to the <span class="self-ref">IfcColumnStandardCase</span> as the column occurrence and to the <a href="../../ifcsharedbldgelements/lexical/ifccolumntype.htm">IfcColumnType</a>. The same <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a> shall be shared by many occurrences of <a href="../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm">IfcMaterialProfileSetUsage</a>. This relationship shall be consistent to the relationship between the <a href="../../ifcsharedbldgelements/lexical/ifccolumntype.htm">IfcColumnType</a> and the <span class="self-ref">IfcColumnStandardCase</span>.</p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifccolumnstandardcase-01.png" alt="&quot;Material profile set and usage&quot;" title="Figure 226 &mdash; Column profile usage"></td></tr><tr><td><p class="figure">Figure 226 &mdash; Column profile usage</p></td></tr></table></p>
+<p>Figure 227 illustrates cardinal point alignment.</p>
 <blockquote class="note">
 <p>NOTE  It has to be guaranteed that the use of <i>IfcCardinalPointEnum</i> is consistent to the placement of the extrusion body provided by <i>IfcExtrudedAreaSolid.Position</i></p>
 </blockquote>
 <blockquote class="note">
 <p>NOTE  The cardinal points <strong>7</strong> (top left), and <strong>6</strong> (mid-depth right) are assigned according to the definition at <a href="../../ifcmaterialresource/lexical/ifccardinalpointreference.htm">IfcCardinalPointReference</a></p>
 </blockquote>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifccolumnstandardcase_cardinalpoint.png" alt="&quot;Cardinal point usage&quot;" title="Figure 223 &mdash; Column cardinal points"></td></tr><tr><td><p class="figure">Figure 223 &mdash; Column cardinal points</p></td></tr></table></p>
-<p>Figure 224 illustrates assignment of a composite profile by using <i>IfcCompositeProfile</i> for geometric representation and several <a href="../../ifcmaterialresource/lexical/ifcmaterialprofile.htm">IfcMaterialProfile</a>'s within the <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a>. The number of <a href="../../ifcmaterialresource/lexical/ifcmaterialprofile.htm">IfcMaterialProfile</a>'s within the <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a> is restricted to maximal 2 and requires the use of <a href="../../ifcgeometricmodelresource/lexical/ifcextrudedareasolidtapered.htm">IfcExtrudedAreaSolidTapered</a>, or <a href="../../ifcgeometricmodelresource/lexical/ifcrevolvedareasolidtapered.htm">IfcRevolvedAreaSolidTapered</a> for the correct 'Body' shape representation.</p>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifccolumnstandardcase-02.png" alt="&quot;Material profile set and usage&quot;" title="Figure 224 &mdash; Column composite profiles"></td></tr><tr><td><p class="figure">Figure 224 &mdash; Column composite profiles</p></td></tr></table></p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifccolumnstandardcase_cardinalpoint.png" alt="&quot;Cardinal point usage&quot;" title="Figure 227 &mdash; Column cardinal points"></td></tr><tr><td><p class="figure">Figure 227 &mdash; Column cardinal points</p></td></tr></table></p>
+<p>Figure 228 illustrates assignment of a composite profile by using <i>IfcCompositeProfile</i> for geometric representation and several <a href="../../ifcmaterialresource/lexical/ifcmaterialprofile.htm">IfcMaterialProfile</a>'s within the <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a>. The number of <a href="../../ifcmaterialresource/lexical/ifcmaterialprofile.htm">IfcMaterialProfile</a>'s within the <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a> is restricted to maximal 2 and requires the use of <a href="../../ifcgeometricmodelresource/lexical/ifcextrudedareasolidtapered.htm">IfcExtrudedAreaSolidTapered</a>, or <a href="../../ifcgeometricmodelresource/lexical/ifcrevolvedareasolidtapered.htm">IfcRevolvedAreaSolidTapered</a> for the correct 'Body' shape representation.</p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifccolumnstandardcase-02.png" alt="&quot;Material profile set and usage&quot;" title="Figure 228 &mdash; Column composite profiles"></td></tr><tr><td><p class="figure">Figure 228 &mdash; Column composite profiles</p></td></tr></table></p>
 
 <br/><br/>
 
@@ -312,7 +312,7 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
  <tr>
   <td align="left" valign="top" width="300"><img src="../../../figures/ifccolumnstandardcase_axis-01.png" alt="Axis" border="1"></td>
   <td>
-<blockquote class="example">EXAMPLE&nbsp; As shown in Figure 225, the axis shall be defined along the z axis of
+<blockquote class="example">EXAMPLE&nbsp; As shown in Figure 229, the axis shall be defined along the z axis of
 the object coordinate system. The axis representation can be used to
 represent the system length of a column that may extent the body
 length of the column.</blockquote>
@@ -320,7 +320,7 @@ length of the column.</blockquote>
  </tr>
  
 <tr>
-  <td><p class="figure">Figure 225 &mdash; Column axis representation</p></td>
+  <td><p class="figure">Figure 229 &mdash; Column axis representation</p></td>
   <td>&nbsp;</td>
  </tr>
 </table>
@@ -328,10 +328,10 @@ length of the column.</blockquote>
  
 <tr>
   <td align="left" valign="top" width="300"><img src="../../../figures/ifccolumnstandardcase_axis-02.png" alt="Axis" border="1"></td>
-  <td><blockquote class="example">EXAMPLE&nbsp; As shown in Figure 226, the axis representation shall be used to represent the cardinal point as the offset between the 'Axis' and the extrusion path of the column. The extrusion path is provided as <i>IfcExtrudedAreaSolid.ExtrudedDirection</i> and should be parallel to the 'Axis'. It has to be guaranteed that the value provided by <i>IfcMaterialProfileSetUsage.CardinalPoint</i> is consistent to the <i>IfcExtrudedAreaSolid.Position</i>.</blockquote>
+  <td><blockquote class="example">EXAMPLE&nbsp; As shown in Figure 230, the axis representation shall be used to represent the cardinal point as the offset between the 'Axis' and the extrusion path of the column. The extrusion path is provided as <i>IfcExtrudedAreaSolid.ExtrudedDirection</i> and should be parallel to the 'Axis'. It has to be guaranteed that the value provided by <i>IfcMaterialProfileSetUsage.CardinalPoint</i> is consistent to the <i>IfcExtrudedAreaSolid.Position</i>.</blockquote>
  </td></tr>
  <tr>
-  <td><p class="figure">Figure 226 &mdash; Column axis cardinal point</p></td>
+  <td><p class="figure">Figure 230 &mdash; Column axis cardinal point</p></td>
   <td>&nbsp;</td>
  </tr>
 </table>
@@ -348,7 +348,7 @@ length of the column.</blockquote>
 <li><strong>Extrusion</strong>: perpendicular to the profile direction. The <i>IfcExtrudedAreaSolid.ExtrudedDirection</i> shall be [0.,0.,1.].</li>
 <li><strong>Orientation</strong>: The y-axis of the profile, as determined by <i>IfcSweptAreaSolid.Position.P[2]</i> shall point to the Y-Axis. It indicates the &quot;role&quot; of the column, a role=0° means y-axis of profile = Y-axis of reference coordinate system.</li>
 </ul>
-<p>Figure 227 illustrates a standard geometric representation with cardinal point applied as <strong>5</strong> (mid-depth centre).</p>
+<p>Figure 231 illustrates a standard geometric representation with cardinal point applied as <strong>5</strong> (mid-depth centre).</p>
 <p>The following interpretation of dimension parameter applies for rectangular columns:</p>
 <ul>
 <li><i>IfcRectangleProfileDef.YDim</i> interpreted as column width</li>
@@ -358,7 +358,7 @@ length of the column.</blockquote>
 <ul>
 <li><i>IfcCircleProfileDef.Radius</i> interpreted as column radius.</li>
 </ul>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifccolumnstandardcase_sweptsolid-01.png" alt="&quot;standard column&quot;" title="Figure 227 &mdash; Column body extrusion"></td></tr><tr><td><p class="figure">Figure 227 &mdash; Column body extrusion</p></td></tr></table></p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifccolumnstandardcase_sweptsolid-01.png" alt="&quot;standard column&quot;" title="Figure 231 &mdash; Column body extrusion"></td></tr><tr><td><p class="figure">Figure 231 &mdash; Column body extrusion</p></td></tr></table></p>
 
 <br/><br/>
 
@@ -392,8 +392,8 @@ length of the column.</blockquote>
 <li><strong>Orientation</strong>: see 'SweptSolid' geometric representation</li>
 <li><strong>Boolean result</strong>: The <a href="../../ifcgeometricmodelresource/lexical/ifcbooleanclippingresult.htm">IfcBooleanClippingResult</a> shall be supported, allowing for Boolean differences between the swept solid (here <a href="../../ifcgeometricmodelresource/lexical/ifcextrudedareasolid.htm">IfcExtrudedAreaSolid</a>) and one or several <a href="../../ifcgeometricmodelresource/lexical/ifchalfspacesolid.htm">IfcHalfSpaceSolid</a> (or its subtypes).</li>
 </ul>
-<p>Figure 228 illustrates a 'Clipping' geometric representation with use of <a href="../../ifcgeometricmodelresource/lexical/ifcbooleanclippingresult.htm">IfcBooleanClippingResult</a> between an <a href="../../ifcgeometricmodelresource/lexical/ifcextrudedareasolid.htm">IfcExtrudedAreaSolid</a> and an <a href="../../ifcgeometricmodelresource/lexical/ifchalfspacesolid.htm">IfcHalfSpaceSolid</a> to create a clipped body, with cardinal point applied as <strong>2</strong> (bottom centre).</p>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifccolumnstandardcase_clipping-01.png" alt="&quot;clipped column&quot;" title="Figure 228 &mdash; Column body clipping"></td></tr><tr><td><p class="figure">Figure 228 &mdash; Column body clipping</p></td></tr></table></p>
+<p>Figure 232 illustrates a 'Clipping' geometric representation with use of <a href="../../ifcgeometricmodelresource/lexical/ifcbooleanclippingresult.htm">IfcBooleanClippingResult</a> between an <a href="../../ifcgeometricmodelresource/lexical/ifcextrudedareasolid.htm">IfcExtrudedAreaSolid</a> and an <a href="../../ifcgeometricmodelresource/lexical/ifchalfspacesolid.htm">IfcHalfSpaceSolid</a> to create a clipped body, with cardinal point applied as <strong>2</strong> (bottom centre).</p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifccolumnstandardcase_clipping-01.png" alt="&quot;clipped column&quot;" title="Figure 232 &mdash; Column body clipping"></td></tr><tr><td><p class="figure">Figure 232 &mdash; Column body clipping</p></td></tr></table></p>
 
 <br/><br/>
 

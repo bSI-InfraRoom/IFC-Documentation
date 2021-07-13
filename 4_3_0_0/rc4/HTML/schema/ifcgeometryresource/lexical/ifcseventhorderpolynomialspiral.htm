@@ -30,32 +30,68 @@
 </details>
 <details open="open"><summary>Change log</summary><table class="gridtable">
 <tr><th>Item</th><th>SPF</th><th>XML</th><th>Change</th><th>Description</th></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-rc4/index.htm">IFC4x3_RC3 to RC4</a></b></td>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-ifc4x3_rc4/index.htm">IFC4x3_RC3 to IFC4x3_RC4</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometryresource/lexical/ifcseventhorderpolynomialspiral.htm">IfcSeventhOrderPolynomialSpiral</a></td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
 </details>
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
-<details open="open"><summary>Entity definition</summary><p>The <span class="self-ref">IfcSeventhOrderPolynomialSpiral</span> is a specialization of <a href="../../ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>. The relationship between the curvature of this spiral and the arc length is expressed as a seventh order equation.</p>
+<details open="open"><summary>Entity definition</summary><p>The <span class="self-ref">IfcSeventhOrderPolynomialSpiral</span> is a specialization of <a href="../../ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>. The curvature <i>κ</i> and radius of the curvature <i>ρ</i>, at any point of the curve, are related to the arc length <i>s</i> by the seventh order formulae:</p>
+<blockquote>
+<blockquote>
+<p><img src="../../../figures/ifcseventhorderpolynomialspiral_curvature.PNG" alt="formula"></p>
+</blockquote>
+<p>Interpretation of the parameters:</p>
+<blockquote>
+<p>C = SELF\IfcSpiral.Position.Location<br>
+x = SELF\IfcSpiral.Position.P[1]<br>
+y = SELF\IfcSpiral.Position.P[2]<br>
+A<sub>7</sub> = SepticTerm<br>
+A<sub>6</sub> = SexticTerm<br>
+A<sub>5</sub> = QuinticTerm<br>
+A<sub>4</sub> = QuarticTerm
+A<sub>3</sub> = CubicTerm<br>
+A<sub>2</sub> = QuadraticTerm<br>
+A<sub>1</sub> = LinearTerm<br>
+A<sub>0</sub> = ContantTerm</p>
+</blockquote>
+<p>and the seventh order polynomial spiral is parameterized as:</p>
+<blockquote>
+<p><img src="../../../figures/ifcspiral_parameterization.PNG" alt="formula"></p>
+</blockquote>
+<p>where:</p>
+<blockquote>
+<p><img src="../../../figures/ifcseventhorderpolynomialspiral_theta.PNG" alt="formula"></p>
+</blockquote>
+<p>and the parametric range is: -∞ &lt; <i>u</i> &lt; ∞.</p>
+</blockquote>
 </details>
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
 <th>G</th></tr>
 <tr><td>2</td><td>SepticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
+The constant that defines the septic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>3</td><td>SexticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the sextic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>4</td><td>QuinticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the quintic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>5</td><td>QuarticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the quartic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>6</td><td>CubicTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the cubic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>7</td><td>QuadraticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the quadratic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>8</td><td>LinearTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the linear term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
-<tr><td>9</td><td>ConstantTerm</td><td><a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a></td><td>? </td><td>
+<tr><td>9</td><td>ConstantTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the constant term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 </table>
 </details>
@@ -97,20 +133,28 @@ IFC2x3 CHANGE  The inverse attribute <i>StyledByItem</i> has been added.
 </td><td>X</td></tr>
 <tr><td colspan="6"><a href="../../ifcgeometryresource/lexical/ifcseventhorderpolynomialspiral.htm">IfcSeventhOrderPolynomialSpiral</a></td></tr>
 <tr><td>2</td><td>SepticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
+The constant that defines the septic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>3</td><td>SexticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the sextic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>4</td><td>QuinticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the quintic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>5</td><td>QuarticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the quartic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>6</td><td>CubicTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the cubic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>7</td><td>QuadraticTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the quadratic term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 <tr><td>8</td><td>LinearTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the linear term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
-<tr><td>9</td><td>ConstantTerm</td><td><a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a></td><td>? </td><td>
+<tr><td>9</td><td>ConstantTerm</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td>? </td><td>
+The constant that defines the constant term in the equation which defines the relation between curvature and arc length for the curve.
 </td><td>X</td></tr>
 </table>
 </details>
@@ -129,7 +173,7 @@ IFC2x3 CHANGE  The inverse attribute <i>StyledByItem</i> has been added.
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;CubicTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;QuadraticTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;LinearTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;ConstantTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;ConstantTerm&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -144,7 +188,7 @@ IFC2x3 CHANGE  The inverse attribute <i>StyledByItem</i> has been added.
 &nbsp;&nbsp;CubicTerm : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;QuadraticTerm : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;LinearTerm : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
-&nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a>;<br/>
+&nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
 <span class="keyword">END_ENTITY;</span><br/>
 <p class="std"><a href="../../../annex/annex-d/ifcgeometryresource/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
 </code></div>

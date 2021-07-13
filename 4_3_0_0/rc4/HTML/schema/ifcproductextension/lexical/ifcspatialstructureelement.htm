@@ -35,35 +35,44 @@
 </details>
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
-<details open="open"><summary>Entity definition</summary><p>A spatial structure element is the generalization of all spatial elements that might be used to define a spatial structure. That spatial structure is often used to provide a project structure to organize a building project.<br>
-A spatial project structure might define as many levels of decomposition as necessary for the building project. Elements within the spatial project structure are:</p>
+<details open="open"><summary>Entity definition</summary><p>A spatial structure element is the generalization of all spatial elements that might be used to define a spatial structure. That spatial structure is often used to provide a project structure to organize a building project.</p>
+<p>A spatial project structure might define as many levels of decomposition as necessary for the building project. Elements within the spatial project structure are:</p>
 <ul>
 <li><p>site as <a href="../../ifcproductextension/lexical/ifcsite.htm">IfcSite</a></p>
 </li>
-<li><p>facility as <a href="../../ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a>, or any of its specific subtypes</p>
+<li><p>facility as <a href="../../ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a>, or specifically</p>
+<ul>
+<li>building as <a href="../../ifcproductextension/lexical/ifcbuilding.htm">IfcBuilding</a></li>
+<li>bridge as <a href="../../ifcproductextension/lexical/ifcbridge.htm">IfcBridge</a></li>
+<li>marine facility as <a href="../../ifcportsandwaterwaysdomain/lexical/ifcmarinefacility.htm">IfcMarineFacility</a></li>
+<li>railway as <a href="../../ifcraildomain/lexical/ifcrailway.htm">IfcRailway</a></li>
+<li>road as <a href="../../ifcroaddomain/lexical/ifcroad.htm">IfcRoad</a></li>
+</ul>
 </li>
-<li><p>facility part as <a href="../../ifcproductextension/lexical/ifcfacilitypart.htm">IfcFacilityPart</a></p>
+<li><p>facility part as <a href="../../ifcproductextension/lexical/ifcfacilitypart.htm">IfcFacilityPart</a>, or specifically</p>
+<ul>
+<li>storey as <a href="../../ifcproductextension/lexical/ifcbuildingstorey.htm">IfcBuildingStorey</a></li>
+<li>facility part as <a href="../../ifcproductextension/lexical/ifcfacilitypart.htm">IfcFacilityPart</a></li>
+</ul>
 </li>
 <li><p>space as <a href="../../ifcproductextension/lexical/ifcspace.htm">IfcSpace</a></p>
 </li>
 </ul>
-<p>or aggregations or parts thereof. The composition type declares an element to be either an element itself, or an aggregation (complex) or a decomposition (part). The interpretation of these types is given at each subtype of <span class="self-ref">IfcSpatialStructureElement</span>.<br>
-The <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a> is defined as an 1-to-many relationship and used to establish the relationship between exactly two levels within the spatial project structure. Finally the highest level of the spatial structure is assigned to <a href="../../ifckernel/lexical/ifcproject.htm">IfcProject</a> using the <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a>.<br>
-The subtypes of <span class="self-ref">IfcSpatialStructureElement</span> relate to other elements and systems by establishing the following relationships:</p>
+<p>or aggregations or parts thereof. The composition type declares an element to be either an element itself, or an aggregation (complex) or a decomposition (part). The interpretation of these types is given at each subtype of <span class="self-ref">IfcSpatialStructureElement</span>.</p>
+<p>The <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a> is defined as an 1-to-many relationship and used to establish the relationship between exactly two levels within the spatial project structure. Finally the highest level of the spatial structure is assigned to <a href="../../ifckernel/lexical/ifcproject.htm">IfcProject</a> using the <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a>.</p>
+<p>The subtypes of <span class="self-ref">IfcSpatialStructureElement</span> relate to other elements and systems by establishing the following relationships:</p>
 <ul>
-<li><p><strong>Containment of elements</strong>: <a href="../../ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm">IfcRelContainedInSpatialStructure</a> by inverse attribute <i>ContainsElements</i>, used to assign any element, like building elements, MEP elements, etc. to the spatial structure element in which they are primarily contained.</p>
-</li>
-<li><p><strong>Reference of elements</strong>: <a href="../../ifcproductextension/lexical/ifcrelreferencedinspatialstructure.htm">IfcRelReferencedInSpatialStructure</a> by inverse attribute <i>ReferencesElements</i>, used to reference any element, like building elements, MEP elements, etc. in spatial structure elements, other then the one, where it is contained.</p>
-</li>
-<li><p><strong>Reference of systems</strong>: <a href="../../ifcproductextension/lexical/ifcrelreferencedinspatialstructure.htm">IfcRelReferencedInSpatialStructure</a> by inverse attribute <i>ReferencesElements</i>, used to reference a system, like a building service or electrical distribution system, a zonal system, or a structural analysis system, that is assigned to this spatial structure element.</p>
-</li>
+<li><strong>Containment of elements</strong> : <a href="../../ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm">IfcRelContainedInSpatialStructure</a> by inverse attribute <i>ContainsElements</i>, used to assign any element, like building elements, MEP elements, etc. to the spatial structure element in which they are primarily contained.</li>
+<li><strong>Reference of elements</strong> : <a href="../../ifcproductextension/lexical/ifcrelreferencedinspatialstructure.htm">IfcRelReferencedInSpatialStructure</a> by inverse attribute <i>ReferencesElements</i>, used to reference any element, like building elements, MEP elements, etc. in spatial structure elements, other then the one, where it is contained.</li>
+<li><strong>Reference of systems</strong> : <a href="../../ifcproductextension/lexical/ifcrelservicesbuildings.htm">IfcRelServicesBuildings</a> by inverse attribute <i>ServicedBySystems</i>, used to reference a sytem, like a building service or electrical distribution system, a zonal system, or a structural analysis system, that is assigned to this spatial structure element.</li>
 </ul>
-<p>The subtypes of <span class="self-ref">IfcSpatialStructureElement</span> relate to each other by using the_IfcRelAggregates_ relationship to build the project spatial structure. Figure 202 shows the use of <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a> to establish a spatial structure including site, building, building section and storey. More information is provided at the level of the subtypes.<br>
-<table><tr><td style="width: 600px"><img src="../../../figures/ifcspatialstructureelement-spatialstructure.png" alt="&quot;spatial structure&quot;" title="Figure 202 &mdash; Spatial structure element composition"></td></tr><tr><td><p class="figure">Figure 202 &mdash; Spatial structure element composition</p></td></tr></table></p>
+<p>The subtypes of <span class="self-ref">IfcSpatialStructureElement</span> relate to each other by using the <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a> relationship to build the project spatial structure. Figure 205 shows the use of <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a> to establish a spatial structure including site, building, building section and storey. More information is provided at the level of the subtypes.</p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcspatialstructureelement-spatialstructure.png" alt="&quot;fig1&quot;" title="Figure 205 &mdash; Spatial structure element composition"></td></tr><tr><td><p class="figure">Figure 205 &mdash; Spatial structure element composition</p></td></tr></table></p>
 <blockquote class="history">
 <p>HISTORY  New entity in IFC2x.</p>
 </blockquote>
-<p><strong>Informal Propositions:</strong></p>
+<p class="spec-head">
+Informal Propositions:</p>
 <ol>
 <li>The spatial project structure, established by the <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a>, shall be acyclic.</li>
 <li>A site should not be (directly or indirectly) associated to a building, storey or space.</li>

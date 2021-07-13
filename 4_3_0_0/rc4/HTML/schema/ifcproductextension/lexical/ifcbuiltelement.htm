@@ -37,30 +37,32 @@
 <tr><th>Item</th><th>SPF</th><th>XML</th><th>Change</th><th>Description</th></tr>
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x2-to-ifc4x3_rc1/index.htm">IFC4x2 to IFC4x3_RC1</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a></td><td></td><td></td><td>MODIFIED</td><td>Name changed from <i>IfcBuildingElement</i> to <i>IfcBuiltElement</i>. <br/>Instantiation changed from <i>ABSTRACT</i>. <br/></td></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-ifc4x3_rc4/index.htm">IFC4x3_RC3 to IFC4x3_RC4</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>HasSurfaceFeatures</i></td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
 </details>
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
-<details open="open"><summary>Entity definition</summary><p>The <font color="#ff0000">built </font>element comprises all elements that are primarily part of the construction of a built facility, i.e., its structural and space separating system. <font color="#ff0000">Built </font>elements are all physically existent and tangible things</p>
-<blockquote class="note">
-<p>NOTE Definition from ISO 6707-1:  Major functional part of a building, examples are foundation, floor, roof, wall.<br>
-This <i>Ifc<font color="#ff0000">Built</font>Element</i> is a generalization of all elements that participate in a building system. Typical examples of <strong>Ifc<font color="#ff0000">Built</font>Element</strong>'s are (among others):</p>
+<details open="open"><summary>Entity definition</summary><p>The built element comprises all elements that are primarily part of the construction of a built facility, i.e., its structural and space separating system. Built elements are all physically existent and tangible things</p>
+<blockquote class="extDef">
+<p>NOTE Definition from ISO 6707-1:<br>
+Major functional part of a building, examples are foundation, floor, roof, wall.</p>
 </blockquote>
+<p>This <span class="self-ref">IfcBuiltElement</span> is a generalization of all elements that participate in a building system. Typical examples of <span class="self-ref">IfcBuiltElement</span>'s are (among others):</p>
 <ul>
-<li><font color="#ff0000">built </font>elements within a space separation systems</li>
-<li><font color="#ff0000">built </font>elements within an enclosure system (such as a facade)</li>
-<li><font color="#ff0000">built </font>elements within a fenestration system</li>
-<li><font color="#ff0000">built </font>elements within a load bearing system</li>
-<li><font color="#ff0000">built </font>elements within a foundation system</li>
+<li>built elements within a space separation systems</li>
+<li>built elements within an enclosure system (such as a facade)</li>
+<li>built elements within a fenestration system</li>
+<li>built elements within a load bearing system</li>
+<li>built elements within a foundation system</li>
 </ul>
 <blockquote class="example">
-<p>EXAMPLE <font color="#ff0000">built </font>elements are walls, curtain wall, doors, columns, pile, and others.<br>
-<font color="#ff0000">REMOVE{</font> The <i>Ifc<font color="#ff0000">Built</font>Element</i> is an abstract entity that cannot be instantiated. For arbitrary building elements, that cannot be expressed by a subtype of <i>Ifc<font color="#ff0000">Built</font>Element</i>, use <i>IfcB<font color="#ff0000">uilt</font>ElementProxy</i>.<font color="#ff0000">}</font><br>
-<font color="#ff0000">The IfcBuiltElement can be instantiated in the case when arbitrary built elements cannot be expressed by a subtype of IfcBuiltElement.</font><br>
-HISTORY New entity in IFC1.0</p>
+<p>EXAMPLE  built elements are walls, curtain wall, doors, columns, pile, and others.</p>
+</blockquote>
+<p>The IfcBuiltElement can be instantiated in the case when arbitrary built elements cannot be expressed by a subtype of IfcBuiltElement.</p>
+<blockquote class="history">
+<p>HISTORY  New entity in IFC1.0</p>
 </blockquote>
 </details>
 <details open="open"><summary>Formal Propositions</summary><table class="propositions">

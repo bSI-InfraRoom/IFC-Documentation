@@ -39,6 +39,9 @@
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x2-to-ifc4x3_rc1/index.htm">IFC4x2 to IFC4x3_RC1</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcproductextension/lexical/ifcspatialzonetypeenum.htm">IfcSpatialZoneTypeEnum</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RESERVATION</td><td></td><td></td><td>ADDED</td><td></td></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-ifc4x3_rc4/index.htm">IFC4x3_RC3 to IFC4x3_RC4</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcproductextension/lexical/ifcspatialzonetypeenum.htm">IfcSpatialZoneTypeEnum</a></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTERFERENCE</td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
 </details>
 <section>
@@ -58,6 +61,7 @@
 </td></tr><tr><td>THERMAL</td><td>The spatial zone is used to represent a thermal zone.
 </td></tr><tr><td>TRANSPORT</td><td></td></tr><tr><td>VENTILATION</td><td>The spatial zone is used to represent a ventilation zone.
 </td></tr><tr><td>RESERVATION</td><td>A spatial zone that marks some sort of reservation within the project extent.
+</td></tr><tr><td>INTERFERENCE</td><td>The spatial zone is used to define an interference between <em>IfcSpatialElement</em> occurrences.
 </td></tr><tr><td>USERDEFINED</td><td>User defined type spatial zone.
 </td></tr><tr><td>NOTDEFINED</td><td>Undefined type spatial zone.
 </td></tr></table>
@@ -76,6 +80,7 @@
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;transport&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;ventilation&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;reservation&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;interference&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
@@ -83,7 +88,7 @@
 </code></div></details>
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">TYPE</span> IfcSpatialZoneTypeEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
-&nbsp;CONSTRUCTION, <br/>&nbsp;FIRESAFETY, <br/>&nbsp;LIGHTING, <br/>&nbsp;OCCUPANCY, <br/>&nbsp;SECURITY, <br/>&nbsp;THERMAL, <br/>&nbsp;TRANSPORT, <br/>&nbsp;VENTILATION, <br/>&nbsp;RESERVATION, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
+&nbsp;CONSTRUCTION, <br/>&nbsp;FIRESAFETY, <br/>&nbsp;LIGHTING, <br/>&nbsp;OCCUPANCY, <br/>&nbsp;SECURITY, <br/>&nbsp;THERMAL, <br/>&nbsp;TRANSPORT, <br/>&nbsp;VENTILATION, <br/>&nbsp;RESERVATION, <br/>&nbsp;INTERFERENCE, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
 </p>
 <p class="std"><a href="../../../annex/annex-d/ifcproductextension/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
 </code></div>

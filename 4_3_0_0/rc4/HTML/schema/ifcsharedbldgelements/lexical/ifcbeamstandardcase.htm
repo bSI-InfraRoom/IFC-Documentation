@@ -43,7 +43,7 @@
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x2-candidate-4_2_0_0/index.htm">IFC4x2 Candidate 4.2.0.0</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedbldgelements/lexical/ifcbeamstandardcase.htm">IfcBeamStandardCase</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PositionedRelativeTo</td><td></td><td></td><td>ADDED</td><td></td></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-ifc4x3_rc4/index.htm">IFC4x3_RC3 to IFC4x3_RC4</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedbldgelements/lexical/ifcbeamstandardcase.htm">IfcBeamStandardCase</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>HasSurfaceFeatures</i></td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
@@ -261,12 +261,12 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
 <table>
  <tr>
   <td><img src="../../../figures/ifcbeamstandardcase-01.png" height="500" width="500" alt="Material profile set and usage"></td>
-  <td><blockquote class="example">EXAMPLE&nbsp; Figure 212 illustrates assignment of <a href="../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm">IfcMaterialProfileSetUsage</a> and <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a> to the <span class="self-ref">IfcBeamStandardCase</span> as the beam occurrence and to the <a href="../../ifcsharedbldgelements/lexical/ifcbeamtype.htm">IfcBeamType</a>. The same <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a> shall be shared by many occurrences of <a href="../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm">IfcMaterialProfileSetUsage</a>. This relationship shall be consistent to the relationship between the <a href="../../ifcsharedbldgelements/lexical/ifcbeamtype.htm">IfcBeamType</a> and the <span class="self-ref">IfcBeamStandardCase</span>.</blockquote>
+  <td><blockquote class="example">EXAMPLE&nbsp; Figure 216 illustrates assignment of <a href="../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm">IfcMaterialProfileSetUsage</a> and <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a> to the <span class="self-ref">IfcBeamStandardCase</span> as the beam occurrence and to the <a href="../../ifcsharedbldgelements/lexical/ifcbeamtype.htm">IfcBeamType</a>. The same <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a> shall be shared by many occurrences of <a href="../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm">IfcMaterialProfileSetUsage</a>. This relationship shall be consistent to the relationship between the <a href="../../ifcsharedbldgelements/lexical/ifcbeamtype.htm">IfcBeamType</a> and the <span class="self-ref">IfcBeamStandardCase</span>.</blockquote>
  </td>
  </tr>
  
 <tr>
-  <td><p class="figure">Figure 212 &mdash; Beam profile usage</p></td>
+  <td><p class="figure">Figure 216 &mdash; Beam profile usage</p></td>
   <td>&nbsp;</td>
  </tr>
 </table>
@@ -274,7 +274,7 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
  <tr>
   <td><img src="../../../figures/ifcbeamstandardcase_cardinalpoint.png" height="250" width="500" alt="Cardinal point usage"></td>
   <td>
-<pre><code>&lt;blockquote class=&quot;example&quot;&gt;EXAMPLE&amp;nbsp; Figure 213 illustrates alignment of cardinal points.&lt;/blockquote&gt;
+<pre><code>&lt;blockquote class=&quot;example&quot;&gt;EXAMPLE&amp;nbsp; Figure 217 illustrates alignment of cardinal points.&lt;/blockquote&gt;
 </code></pre>
 <blockquote class="note">NOTE&nbsp; It has to be guaranteed that the use of <i>IfcCardinalPointEnum</i> is consistent to the placement of the extrusion body provided by <i>IfcExtrudedAreaSolid.Position</i></blockquote>
     
@@ -282,7 +282,7 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
  </tr>
  
 <tr>
-  <td><p class="figure">Figure 213 &mdash; Beam cardinal points</p></td>
+  <td><p class="figure">Figure 217 &mdash; Beam cardinal points</p></td>
   <td>&nbsp;</td>
  </tr>
 </table>
@@ -291,11 +291,11 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
 <tr>
   <td><img src="../../../figures/ifcbeamstandardcase-02.png" height="550" width="500" alt="Material profile set and usage"></td>
   <td>
-<blockquote class="example">EXAMPLE&nbsp; Figure 214 illustrates assignment of a composite profile by using <i>IfcCompositeProfile</i> for geometric representation and several <a href="../../ifcmaterialresource/lexical/ifcmaterialprofile.htm">IfcMaterialProfile</a>'s within the <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a>.</blockquote>
+<blockquote class="example">EXAMPLE&nbsp; Figure 218 illustrates assignment of a composite profile by using <i>IfcCompositeProfile</i> for geometric representation and several <a href="../../ifcmaterialresource/lexical/ifcmaterialprofile.htm">IfcMaterialProfile</a>'s within the <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.htm">IfcMaterialProfileSet</a>.</blockquote>
  </td>
  </tr>
  <tr>
-  <td><p class="figure">Figure 214 &mdash; Beam composite profiles</p></td>
+  <td><p class="figure">Figure 218 &mdash; Beam composite profiles</p></td>
  </tr>
 </table>
 
@@ -338,7 +338,7 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
 <td><blockquote class="example">EXAMPLE&nbsp; As shown in Figure 76, the axis shall be defined along the z axis of the object coordinate system. The axis representation can be used to represent the system length of a beam that may extent the body length of the beam.</blockquote>
 </td>
 </tr>
-<tr><td><p class="figure">Figure 215 &mdash; Beam axis representation</p></td><td>&nbsp;</td></tr>
+<tr><td><p class="figure">Figure 219 &mdash; Beam axis representation</p></td><td>&nbsp;</td></tr>
 </table>
 <table>
 <tr><td align="left" valign="top" width="350">
@@ -347,7 +347,7 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
 <i>IfcMaterialProfileSetUsage.CardinalPoint</i> is consistent to the <i>IfcExtrudedAreaSolid.Position</i>.</blockquote>
 </td>
 </tr>
-<tr><td><p class="figure">Figure 216 &mdash; Beam axis cardinal point</p></td><td>&nbsp;</td></tr>
+<tr><td><p class="figure">Figure 220 &mdash; Beam axis cardinal point</p></td><td>&nbsp;</td></tr>
 </table>
 
 <br/><br/>
@@ -363,7 +363,7 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
 <li><strong>Extrusion</strong>: Perpendicular to the profile direction. The <i>IfcExtrudedAreaSolid.ExtrudedDirection</i> shall be [0.,0.,1.].</li>
 <li><strong>Orientation</strong>: The y-axis of the profile, as determined by <i>IfcSweptAreaSolid.Position.P[2]</i> shall point upwards. It indicates the &quot;role&quot; of the beam, a role=0° means y-axis of profile pointing upwards.</li>
 </ul>
-<p>Figure 217 illustrates a standard geometric representation with cardinal point applied as <strong>1</strong> (bottom left).</p>
+<p>Figure 221 illustrates a standard geometric representation with cardinal point applied as <strong>1</strong> (bottom left).</p>
 <p>The following interpretation of dimension parameter applies for rectangular beams with linear extrusions:</p>
 <ul>
 <li><i>IfcRectangleProfileDef.YDim</i> interpreted as beam height</li>
@@ -373,7 +373,7 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
 <ul>
 <li><i>IfcCircleProfileDef.Radius</i> interpreted as beam radius.</li>
 </ul>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcbeamstandardcase_sweptsolid-01.png" alt="&quot;standard beam&quot;" title="Figure 217 &mdash; Beam body extrusion"></td></tr><tr><td><p class="figure">Figure 217 &mdash; Beam body extrusion</p></td></tr></table></p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcbeamstandardcase_sweptsolid-01.png" alt="&quot;standard beam&quot;" title="Figure 221 &mdash; Beam body extrusion"></td></tr><tr><td><p class="figure">Figure 221 &mdash; Beam body extrusion</p></td></tr></table></p>
 
 <br/><br/>
 
@@ -409,8 +409,8 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
 <li><strong>Orientation</strong> : see 'SweptSolid' geometric representation</li>
 <li><strong>Boolean result</strong>: The <a href="../../ifcgeometricmodelresource/lexical/ifcbooleanclippingresult.htm">IfcBooleanClippingResult</a> shall be supported, allowing for Boolean differences between the swept solid (here <a href="../../ifcgeometricmodelresource/lexical/ifcextrudedareasolid.htm">IfcExtrudedAreaSolid</a>) and one or several <a href="../../ifcgeometricmodelresource/lexical/ifchalfspacesolid.htm">IfcHalfSpaceSolid</a> (or its subtypes).</li>
 </ul>
-<p>Figure 218 illustrates a 'Clipping' geometric representation with use of <a href="../../ifcgeometricmodelresource/lexical/ifcbooleanclippingresult.htm">IfcBooleanClippingResult</a> between an <a href="../../ifcgeometricmodelresource/lexical/ifcextrudedareasolid.htm">IfcExtrudedAreaSolid</a> and an <a href="../../ifcgeometricmodelresource/lexical/ifchalfspacesolid.htm">IfcHalfSpaceSolid</a> to create a clipped body, with cardinal point applied as <strong>4</strong> (mid-depth left)</p>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcbeamstandardcase_clipping-01.png" alt="&quot;clipped beam&quot;" title="Figure 218 &mdash; Beam body clipping"></td></tr><tr><td><p class="figure">Figure 218 &mdash; Beam body clipping</p></td></tr></table></p>
+<p>Figure 222 illustrates a 'Clipping' geometric representation with use of <a href="../../ifcgeometricmodelresource/lexical/ifcbooleanclippingresult.htm">IfcBooleanClippingResult</a> between an <a href="../../ifcgeometricmodelresource/lexical/ifcextrudedareasolid.htm">IfcExtrudedAreaSolid</a> and an <a href="../../ifcgeometricmodelresource/lexical/ifchalfspacesolid.htm">IfcHalfSpaceSolid</a> to create a clipped body, with cardinal point applied as <strong>4</strong> (mid-depth left)</p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcbeamstandardcase_clipping-01.png" alt="&quot;clipped beam&quot;" title="Figure 222 &mdash; Beam body clipping"></td></tr><tr><td><p class="figure">Figure 222 &mdash; Beam body clipping</p></td></tr></table></p>
 
 <br/><br/>
 

@@ -44,38 +44,47 @@
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x2-candidate-4_2_0_0/index.htm">IFC4x2 Candidate 4.2.0.0</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedbldgelements/lexical/ifcdoor.htm">IfcDoor</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PositionedRelativeTo</td><td></td><td></td><td>ADDED</td><td></td></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-ifc4x3_rc4/index.htm">IFC4x3_RC3 to IFC4x3_RC4</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedbldgelements/lexical/ifcdoor.htm">IfcDoor</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>HasSurfaceFeatures</i></td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
 </details>
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
-<details open="open"><summary>Entity definition</summary><p>The door is a <font color="#ff0000">built</font> element that is predominately used to provide controlled access for people, goods<font color="#ff0000">, animals and vehicles</font>. It includes constructions with hinged, pivoted, sliding, and additionally revolving and folding operations. <font color="#ff0000">REMOVE: A door consists of a lining and one or several panels.</font><br>
-NOTE Definition according to ISO 6707-1: construction for closing an opening, intended primarily for access with hinged, pivoted or sliding operation.<br>
-The <span class="self-ref">IfcDoor</span> defines a particular occurrence of a door inserted in the spatial context of a project. A door can:</p>
+<details open="open"><summary>Entity definition</summary><p>The door is a built element that is predominately used to provide controlled access for people, goods, animals and vehicles. It includes constructions with hinged, pivoted, sliding, and additionally revolving and folding operations.</p>
+<blockquote class="extDef">
+<p>NOTE  Definition according to ISO 6707-1: construction for closing an opening, intended primarily for access with hinged, pivoted or sliding operation.</p>
+</blockquote>
+<p>The <span class="self-ref">IfcDoor</span> defines a particular occurrence of a door inserted in the spatial context of a project. A door can:</p>
 <ul>
-<li><p>be inserted as a filler in an opening using the <a href="../../ifcproductextension/lexical/ifcrelfillselement.htm">IfcRelFillsElement</a> relationship, then the <span class="self-ref">IfcDoor</span> has an inverse attribute <i>FillsVoids</i> provided;  NOTE View definitions or implementer agreements may restrict the relationship to only include one door into one opening</p>
-</li>
-<li><p>be part of an element assembly, in general an <a href="../../ifcsharedbldgelements/lexical/ifccurtainwall.htm">IfcCurtainWall</a>, using the <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a> relationship, then the <span class="self-ref">IfcDoor</span> has an inverse attribute <i>Decomposes</i> is provided;</p>
-</li>
-<li><p>be a &quot;free standing&quot; door, then the <span class="self-ref">IfcDoor</span> has no inverse attributes <i>FillsVoids</i> or <i>Decomposes</i> provided.</p>
-</li>
+<li>be inserted as a filler in an opening using the <a href="../../ifcproductextension/lexical/ifcrelfillselement.htm">IfcRelFillsElement</a> relationship, then the <span class="self-ref">IfcDoor</span> has an inverse attribute <i>FillsVoids</i> provided;</li>
 </ul>
-<p>This specification provides two entities for door occurrences:</p>
+<blockquote class="note">
+<p>NOTE  View definitions or implementer agreements may restrict the relationship to only include one door into one opening.</p>
+</blockquote>
 <ul>
-<li><p><a href="../../ifcsharedbldgelements/lexical/ifcdoorstandardcase.htm">IfcDoorStandardCase</a> used for all occurrences of doors, that have a ''Profile'' shape representation defined to which a set of shape parameters for lining and framing properties apply. Additionally it requires the provision of an <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a> that references one <a href="../../ifcarchitecturedomain/lexical/ifcdoorliningproperties.htm">IfcDoorLiningProperties</a> and on to many <a href="../../ifcarchitecturedomain/lexical/ifcdoorpanelproperties.htm">IfcDoorPanelProperties</a>;  NOTE see <a href="../../ifcsharedbldgelements/lexical/ifcdoorstandardcase.htm">IfcDoorStandardCase</a> for all specific constraints imposed by this subtype.</p>
-</li>
-<li><p><span class="self-ref">IfcDoor</span> used for all other occurrences of doors, particularly for doors having only ''Brep'', or ''SurfaceModel'' geometry without applying shape parameters.</p>
-</li>
+<li>be part of an element assembly, in general an <a href="../../ifcsharedbldgelements/lexical/ifccurtainwall.htm">IfcCurtainWall</a>, using the <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a> relationship, then the <span class="self-ref">IfcDoor</span> has an inverse attribute <i>Decomposes</i> is provided;</li>
+<li>be a &quot;free standing&quot; door, then the <span class="self-ref">IfcDoor</span> has no inverse attributes <i>FillsVoids</i> or <i>Decomposes</i> provided.</li>
 </ul>
-<p>The actual parameters of the door and/or its shape are defined by the <span class="self-ref">IfcDoor</span> as the occurrence definition (or project instance), or by the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a> as the specific definition (or project type). The following parameters are given:<br>
-at the <span class="self-ref">IfcDoor</span> or <a href="../../ifcsharedbldgelements/lexical/ifcdoorstandardcase.htm">IfcDoorStandardCase</a> for occurrence specific parameters. The <span class="self-ref">IfcDoor</span> specifies:</p>
+<p>This specification provides two main representations for door occurrences:</p>
+<ul>
+<li><span class="self-ref">IfcDoor</span> used for all occurrences of doors, that have a 'Profile' shape representation defined to which a set of shape parameters for lining and framing properties apply. Additionally it requires the provision of an <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a> that references one <a href="../../ifcarchitecturedomain/lexical/ifcdoorliningproperties.htm">IfcDoorLiningProperties</a> and on to many <a href="../../ifcarchitecturedomain/lexical/ifcdoorpanelproperties.htm">IfcDoorPanelProperties</a>;</li>
+</ul>
+<blockquote class="note">
+<p>NOTE  The entity <a href="../../ifcsharedbldgelements/lexical/ifcdoorstandardcase.htm">IfcDoorStandardCase</a> has been deprecated.</p>
+</blockquote>
+<ul>
+<li><span class="self-ref">IfcDoor</span> used for all other occurrences of doors, particularly for doors having only 'Brep', or 'SurfaceModel' geometry without applying shape parameters.</li>
+</ul>
+<p>The actual parameters of the door and/or its shape are defined by the <span class="self-ref">IfcDoor</span> as the occurrence definition (or project instance), or by the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a> as the specific definition (or project type). The following parameters are given:</p>
+<ul>
+<li>at the <span class="self-ref">IfcDoor</span> or <a href="../../ifcsharedbldgelements/lexical/ifcdoorstandardcase.htm">IfcDoorStandardCase</a> for occurrence specific parameters. The <span class="self-ref">IfcDoor</span> specifies:
 <ul>
 <li>the door width and height</li>
-<li>the door opening direction (by the y-axis of the <i>ObjectPlacement</i>)* at the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a>, to which the <span class="self-ref">IfcDoor</span> is related by the inverse relationship <i>IsTypedBy</i> pointing to <a href="../../ifckernel/lexical/ifcreldefinesbytype.htm">IfcRelDefinesByType</a>, for type parameters common to all occurrences of the same type.</li>
+<li>the door opening direction (by the y-axis of the <i>ObjectPlacement</i>)</li>
 </ul>
-<p>at the IfcDoorType, to which the IfcDoor is related by the inverse relationship IsTypedBy pointing to IfcRelDefinesByType, for type parameters common to all occurrences of the same type.</p>
+</li>
+<li>at the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a>, to which the <span class="self-ref">IfcDoor</span> is related by the inverse relationship <i>IsTypedBy</i> pointing to <a href="../../ifckernel/lexical/ifcreldefinesbytype.htm">IfcRelDefinesByType</a>, for type parameters common to all occurrences of the same type.
 <ul>
 <li>the operation type (single swing, double swing, revolving, etc.)</li>
 <li>the door hinge side (by using two different styles for right and left opening doors)</li>
@@ -83,18 +92,23 @@ at the <span class="self-ref">IfcDoor</span> or <a href="../../ifcsharedbldgelem
 <li>the particular attributes for the lining by the <a href="../../ifcarchitecturedomain/lexical/ifcdoorliningproperties.htm">IfcDoorLiningProperties</a></li>
 <li>the particular attributes for the panels by the <a href="../../ifcarchitecturedomain/lexical/ifcdoorpanelproperties.htm">IfcDoorPanelProperties</a></li>
 </ul>
-<p>The geometric representation of <span class="self-ref">IfcDoor</span> is given by the <a href="../../ifcrepresentationresource/lexical/ifcproductdefinitionshape.htm">IfcProductDefinitionShape</a>, allowing multiple geometric representations. The <span class="self-ref">IfcDoor</span> may get its parameter and shape from the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a>. If an <a href="../../ifcgeometryresource/lexical/ifcrepresentationmap.htm">IfcRepresentationMap</a> (a block definition) is defined for the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a>, then the <span class="self-ref">IfcDoor</span> inserts it through the <a href="../../ifcgeometryresource/lexical/ifcmappeditem.htm">IfcMappedItem</a>.<br>
-The geometric representation of <span class="self-ref">IfcDoor</span> is defined using the following (potentially multiple) <a href="../../ifcrepresentationresource/lexical/ifcshaperepresentation.htm">IfcShapeRepresentation</a>''s for its <a href="../../ifcrepresentationresource/lexical/ifcproductdefinitionshape.htm">IfcProductDefinitionShape</a>:</p>
-<ul>
-<li><p><strong>'Profile'</strong>: A<font color="#0000ff">''Curve3D''</font> consisting of a single losed curve defining the outer boundary of the door (lining). The door parametric representation uses this profile in order to apply the door lining and panel parameter. If not provided, the profile of the <a href="../../ifcproductextension/lexical/ifcopeningelement.htm">IfcOpeningElement</a> is taken.</p>
-</li>
-<li><p>'<strong>FootPrint</strong>': A ''GeometricCurveSet'', or ''Annotation2D'' representation defining the 2D shape of the door</p>
-</li>
-<li><p>'<strong>Body</strong>': A ''SweptSolid'', ''SurfaceModel'', or ''Brep'' representation defining the 3D shape of the door.</p>
 </li>
 </ul>
+<blockquote class="history">
+<p>HISTORY  New entity in IFC1.0.</p>
+</blockquote>
+<blockquote class="change-ifc2x4">
+<p>IFC4 CHANGE  The attributes <i>PredefinedType</i> and <i>OperationType</i> are added, the applicable type object has been changed to <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a>.</p>
+</blockquote>
+<p>The geometric representation of <span class="self-ref">IfcDoor</span> is given by the <a href="../../ifcrepresentationresource/lexical/ifcproductdefinitionshape.htm">IfcProductDefinitionShape</a>, allowing multiple geometric representations. The <span class="self-ref">IfcDoor</span> may get its parameter and shape from the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a>. If an <a href="../../ifcgeometryresource/lexical/ifcrepresentationmap.htm">IfcRepresentationMap</a> (a block definition) is defined for the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a>, then the <span class="self-ref">IfcDoor</span> inserts it through the <a href="../../ifcgeometryresource/lexical/ifcmappeditem.htm">IfcMappedItem</a>.</p>
+<p>The geometric representation of <span class="self-ref">IfcDoor</span> is defined using the following (potentially multiple) <a href="../../ifcrepresentationresource/lexical/ifcshaperepresentation.htm">IfcShapeRepresentation</a>'s for its <a href="../../ifcrepresentationresource/lexical/ifcproductdefinitionshape.htm">IfcProductDefinitionShape</a>:</p>
+<ul>
+<li><strong>Profile</strong>: A 'Curve3D' consisting of a single losed curve defining the outer boundary of the door (lining). The door parametric representation uses this profile in order to apply the door lining and panel parameter. If not provided, the profile of the <a href="../../ifcproductextension/lexical/ifcopeningelement.htm">IfcOpeningElement</a> is taken.</li>
+<li><strong>FootPrint</strong>: A 'GeometricCurveSet', or 'Annotation2D' representation defining the 2D shape of the door</li>
+<li><strong>Body</strong>: A 'SweptSolid', 'SurfaceModel', or 'Brep' representation defining the 3D shape of the door.</li>
+</ul>
 <p>In addition the parametric representation of a (limited) door shape is available by applying the parameters from <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a> referencing <a href="../../ifcarchitecturedomain/lexical/ifcdoorliningproperties.htm">IfcDoorLiningProperties</a> and <a href="../../ifcarchitecturedomain/lexical/ifcdoorpanelproperties.htm">IfcDoorPanelProperties</a>. The purpose of the parameter is described at those entities and below (door opening operation by door type).<br>
-The overall size of the <span class="self-ref">IfcDoor</span> to be used to apply the lining or panel parameter provided by the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a> is determined by the IfcShapeRepresentation with the RepresentationIdentifier = ''Profile''.</p>
+The overall size of the <span class="self-ref">IfcDoor</span> to be used to apply the lining or panel parameter provided by the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a> is determined by the IfcShapeRepresentation with the RepresentationIdentifier = 'Profile'.</p>
 </details>
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
@@ -305,7 +319,7 @@ Designator for the user defined operation type, shall only be provided, if the v
 <summary>Concept usage</summary>
 <a id="door-attributes" />
 <p class="use-head">Door Attributes</p>
-<p>The <a href="../../templates/door-attributes.htm">Door Attributes</a> concept applies to this entity.</p><p>The opening direction is determined by the local placement of <span class="self-ref">IfcDoor</span> and the <i>OperationType</i> of the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a> as shown in Figure 233.</p>
+<p>The <a href="../../templates/door-attributes.htm">Door Attributes</a> concept applies to this entity.</p><p>The opening direction is determined by the local placement of <span class="self-ref">IfcDoor</span> and the <i>OperationType</i> of the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a> as shown in Figure 237.</p>
 <blockquote class="note">
 <p>NOTE  There are different definitions in various countries on what a left opening or left hung or left swing door is (same for right). Therefore the IFC definition may derivate from the local standard and need to be mapped appropriately.</p>
 </blockquote>
@@ -396,7 +410,7 @@ pictures).</small></td>
  </tr>
 </tfoot>
 </table>
-</td></tr><tr><td><p class="figure">Figure 233 &mdash; Door swing</p></td></tr></table>
+</td></tr><tr><td><p class="figure">Figure 237 &mdash; Door swing</p></td></tr></table>
 <blockquote class="note">
 <p>NOTE  The <i>OverallWidth</i> and <i>OverallHeight</i> parameters are for informational purpose only.</p>
 </blockquote>
@@ -552,7 +566,7 @@ NOTE This type is deprecated
 <li>the <i>Spatial Containment</i> (defined here), or</li>
 <li>the <i>Element Composition</i>.</li>
 </ul>
-<p>The <span class="self-ref">IfcDoor</span> may also be connected to the <a href="../../ifcproductextension/lexical/ifcopeningelement.htm">IfcOpeningElement</a> in which it is placed as a filler. In this case, the spatial containment relationship shall be provided, see Figure 234.</p>
+<p>The <span class="self-ref">IfcDoor</span> may also be connected to the <a href="../../ifcproductextension/lexical/ifcopeningelement.htm">IfcOpeningElement</a> in which it is placed as a filler. In this case, the spatial containment relationship shall be provided, see Figure 238.</p>
 <table>
  
 <tr valign="bottom">
@@ -571,7 +585,7 @@ structure by
  <tr>
   
 <td>
-<p class="figure">Figure 234 &mdash; Door spatial containment</p>
+<p class="figure">Figure 238 &mdash; Door spatial containment</p>
 </td>
   <td>&nbsp;</td>
  

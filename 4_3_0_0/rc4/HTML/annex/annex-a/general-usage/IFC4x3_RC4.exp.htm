@@ -473,11 +473,11 @@ OR
 <br/>
 <a name="ifcalignmentcantsegmenttypeenum" />
 <span class="keyword">TYPE</span> IfcAlignmentCantSegmentTypeEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
-&nbsp;CONSTANTCANT, <br/>&nbsp;LINEARTRANSITION, <br/>&nbsp;HELMERTCURVE, <br/>&nbsp;BLOSSCURVE, <br/>&nbsp;COSINECURVE, <br/>&nbsp;SINECURVE, <br/>&nbsp;VIENNESEBEND);<br/><span class="keyword">END_TYPE;</span><br/>
+&nbsp;BLOSSCURVE, <br/>&nbsp;CONSTANTCANT, <br/>&nbsp;COSINECURVE, <br/>&nbsp;HELMERTCURVE, <br/>&nbsp;LINEARTRANSITION, <br/>&nbsp;SINECURVE, <br/>&nbsp;VIENNESEBEND);<br/><span class="keyword">END_TYPE;</span><br/>
 <br/>
 <a name="ifcalignmenthorizontalsegmenttypeenum" />
 <span class="keyword">TYPE</span> IfcAlignmentHorizontalSegmentTypeEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
-&nbsp;LINE, <br/>&nbsp;CIRCULARARC, <br/>&nbsp;CLOTHOID, <br/>&nbsp;CUBIC, <br/>&nbsp;HELMERTCURVE, <br/>&nbsp;BLOSSCURVE, <br/>&nbsp;CUBICSPIRAL, <br/>&nbsp;COSINECURVE, <br/>&nbsp;SINECURVE, <br/>&nbsp;VIENNESEBEND);<br/><span class="keyword">END_TYPE;</span><br/>
+&nbsp;LINE, <br/>&nbsp;CIRCULARARC, <br/>&nbsp;CLOTHOID, <br/>&nbsp;CUBIC, <br/>&nbsp;HELMERTCURVE, <br/>&nbsp;BLOSSCURVE, <br/>&nbsp;COSINECURVE, <br/>&nbsp;SINECURVE, <br/>&nbsp;VIENNESEBEND);<br/><span class="keyword">END_TYPE;</span><br/>
 <br/>
 <a name="ifcalignmenttypeenum" />
 <span class="keyword">TYPE</span> IfcAlignmentTypeEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
@@ -1233,7 +1233,7 @@ OR
 <br/>
 <a name="ifcspatialzonetypeenum" />
 <span class="keyword">TYPE</span> IfcSpatialZoneTypeEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
-&nbsp;CONSTRUCTION, <br/>&nbsp;FIRESAFETY, <br/>&nbsp;LIGHTING, <br/>&nbsp;OCCUPANCY, <br/>&nbsp;SECURITY, <br/>&nbsp;THERMAL, <br/>&nbsp;TRANSPORT, <br/>&nbsp;VENTILATION, <br/>&nbsp;RESERVATION, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
+&nbsp;CONSTRUCTION, <br/>&nbsp;FIRESAFETY, <br/>&nbsp;LIGHTING, <br/>&nbsp;OCCUPANCY, <br/>&nbsp;SECURITY, <br/>&nbsp;THERMAL, <br/>&nbsp;TRANSPORT, <br/>&nbsp;VENTILATION, <br/>&nbsp;RESERVATION, <br/>&nbsp;INTERFERENCE, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
 <br/>
 <a name="ifcstackterminaltypeenum" />
 <span class="keyword">TYPE</span> IfcStackTerminalTypeEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
@@ -3230,7 +3230,7 @@ SELF\IfcCartesianTransformationOperator.Axis2,Axis3);<br/>
 <span class="keyword">ENTITY</span> IfcCosine<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="#ifcspiral">IfcSpiral</a>)<b>;</b><br/>
 &nbsp;&nbsp;CosineTerm : <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
-&nbsp;&nbsp;ConstantTerm : <a href="#ifcreal">IfcReal</a>;<br/>
+&nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
 <span class="keyword">END_ENTITY;</span><br/>
 <br/>
 <a name="ifccostitem" />
@@ -7300,6 +7300,7 @@ OR<br/>
 &nbsp;&nbsp;RelatingElement : <a href="#ifcinterferenceselect">IfcInterferenceSelect</a>;<br/>
 &nbsp;&nbsp;RelatedElement : <a href="#ifcinterferenceselect">IfcInterferenceSelect</a>;<br/>
 &nbsp;&nbsp;InterferenceGeometry : <span class="keyword">OPTIONAL</span> <a href="#ifcconnectiongeometry">IfcConnectionGeometry</a>;<br/>
+&nbsp;&nbsp;InterferenceSpace : <span class="keyword">OPTIONAL</span> <a href="#ifcspatialzone">IfcSpatialZone</a>;<br/>
 &nbsp;&nbsp;InterferenceType : <span class="keyword">OPTIONAL</span> <a href="#ifcidentifier">IfcIdentifier</a>;<br/>
 &nbsp;&nbsp;ImpliedOrder : <a href="#ifclogical">IfcLogical</a>;<br/>
 &nbsp;<span class="keyword">WHERE</span><br/>
@@ -7625,7 +7626,7 @@ OR <br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="#ifcspiral">IfcSpiral</a>)<b>;</b><br/>
 &nbsp;&nbsp;QuadraticTerm : <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;LinearTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
-&nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="#ifcreal">IfcReal</a>;<br/>
+&nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
 <span class="keyword">END_ENTITY;</span><br/>
 <br/>
 <a name="ifcsectionproperties" />
@@ -7728,7 +7729,7 @@ OR <br/>
 &nbsp;&nbsp;CubicTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;QuadraticTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;LinearTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
-&nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="#ifcreal">IfcReal</a>;<br/>
+&nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
 <span class="keyword">END_ENTITY;</span><br/>
 <br/>
 <a name="ifcshadingdevice" />
@@ -7852,7 +7853,7 @@ IN TYPEOF(SELF\<a href="#ifcrepresentation">IfcRepresentation</a>.ContextOfItems
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="#ifcspiral">IfcSpiral</a>)<b>;</b><br/>
 &nbsp;&nbsp;SineTerm : <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;LinearTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
-&nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="#ifcreal">IfcReal</a>;<br/>
+&nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
 <span class="keyword">END_ENTITY;</span><br/>
 <br/>
 <a name="ifcsite" />
@@ -8996,7 +8997,7 @@ EXISTS (MessagingIDs);<br/><span class="keyword">END_ENTITY;</span><br/>
 &nbsp;&nbsp;CubicTerm : <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;QuadraticTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;LinearTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
-&nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="#ifcreal">IfcReal</a>;<br/>
+&nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
 <span class="keyword">END_ENTITY;</span><br/>
 <br/>
 <a name="ifctimeperiod" />

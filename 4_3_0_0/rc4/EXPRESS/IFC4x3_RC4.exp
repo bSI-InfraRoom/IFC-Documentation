@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-04 July 2021
+13 July 2021
 
 *)
 
@@ -575,11 +575,11 @@ TYPE IfcAlarmTypeEnum = ENUMERATION OF
 END_TYPE;
 
 TYPE IfcAlignmentCantSegmentTypeEnum = ENUMERATION OF
-	(CONSTANTCANT
-	,LINEARTRANSITION
-	,HELMERTCURVE
-	,BLOSSCURVE
+	(BLOSSCURVE
+	,CONSTANTCANT
 	,COSINECURVE
+	,HELMERTCURVE
+	,LINEARTRANSITION
 	,SINECURVE
 	,VIENNESEBEND);
 END_TYPE;
@@ -591,7 +591,6 @@ TYPE IfcAlignmentHorizontalSegmentTypeEnum = ENUMERATION OF
 	,CUBIC
 	,HELMERTCURVE
 	,BLOSSCURVE
-	,CUBICSPIRAL
 	,COSINECURVE
 	,SINECURVE
 	,VIENNESEBEND);
@@ -2815,6 +2814,7 @@ TYPE IfcSpatialZoneTypeEnum = ENUMERATION OF
 	,TRANSPORT
 	,VENTILATION
 	,RESERVATION
+	,INTERFERENCE
 	,USERDEFINED
 	,NOTDEFINED);
 END_TYPE;
@@ -5515,7 +5515,7 @@ END_ENTITY;
 ENTITY IfcCosine
  SUBTYPE OF (IfcSpiral);
 	CosineTerm : IfcLengthMeasure;
-	ConstantTerm : IfcReal;
+	ConstantTerm : OPTIONAL IfcLengthMeasure;
 END_ENTITY;
 
 ENTITY IfcCostItem
@@ -9993,6 +9993,7 @@ ENTITY IfcRelInterferesElements
 	RelatingElement : IfcInterferenceSelect;
 	RelatedElement : IfcInterferenceSelect;
 	InterferenceGeometry : OPTIONAL IfcConnectionGeometry;
+	InterferenceSpace : OPTIONAL IfcSpatialZone;
 	InterferenceType : OPTIONAL IfcIdentifier;
 	ImpliedOrder : IfcLogical;
  WHERE
@@ -10338,7 +10339,7 @@ ENTITY IfcSecondOrderPolynomialSpiral
  SUBTYPE OF (IfcSpiral);
 	QuadraticTerm : IfcLengthMeasure;
 	LinearTerm : OPTIONAL IfcLengthMeasure;
-	ConstantTerm : OPTIONAL IfcReal;
+	ConstantTerm : OPTIONAL IfcLengthMeasure;
 END_ENTITY;
 
 ENTITY IfcSectionProperties
@@ -10444,7 +10445,7 @@ ENTITY IfcSeventhOrderPolynomialSpiral
 	CubicTerm : OPTIONAL IfcLengthMeasure;
 	QuadraticTerm : OPTIONAL IfcLengthMeasure;
 	LinearTerm : OPTIONAL IfcLengthMeasure;
-	ConstantTerm : OPTIONAL IfcReal;
+	ConstantTerm : OPTIONAL IfcLengthMeasure;
 END_ENTITY;
 
 ENTITY IfcShadingDevice
@@ -10578,7 +10579,7 @@ ENTITY IfcSine
  SUBTYPE OF (IfcSpiral);
 	SineTerm : IfcLengthMeasure;
 	LinearTerm : OPTIONAL IfcLengthMeasure;
-	ConstantTerm : OPTIONAL IfcReal;
+	ConstantTerm : OPTIONAL IfcLengthMeasure;
 END_ENTITY;
 
 ENTITY IfcSite
@@ -11784,7 +11785,7 @@ ENTITY IfcThirdOrderPolynomialSpiral
 	CubicTerm : IfcLengthMeasure;
 	QuadraticTerm : OPTIONAL IfcLengthMeasure;
 	LinearTerm : OPTIONAL IfcLengthMeasure;
-	ConstantTerm : OPTIONAL IfcReal;
+	ConstantTerm : OPTIONAL IfcLengthMeasure;
 END_ENTITY;
 
 ENTITY IfcTimePeriod;

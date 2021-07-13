@@ -43,7 +43,7 @@
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x2-candidate-4_2_0_0/index.htm">IFC4x2 Candidate 4.2.0.0</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedbldgelements/lexical/ifcplatestandardcase.htm">IfcPlateStandardCase</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PositionedRelativeTo</td><td></td><td></td><td>ADDED</td><td></td></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-ifc4x3_rc4/index.htm">IFC4x3_RC3 to IFC4x3_RC4</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcsharedbldgelements/lexical/ifcplatestandardcase.htm">IfcPlateStandardCase</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>HasSurfaceFeatures</i></td><td></td><td></td><td>ADDED</td><td></td></tr>
 </table>
@@ -239,11 +239,11 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
 <p>The <a href="../../templates/material-layer-set-usage.htm">Material Layer Set Usage</a> concept applies to this entity.</p><p>The material of the <span class="self-ref">IfcPlateStandardCase</span> is defined by <a href="../../ifcmaterialresource/lexical/ifcmateriallayersetusage.htm">IfcMaterialLayerSetUsage</a> and attached by the <a href="../../ifcproductextension/lexical/ifcrelassociatesmaterial.htm">IfcRelAssociatesMaterial</a>.<i>RelatingMaterial</i>. It is accessible by the inverse <i>HasAssociations</i> relationship. Multi-layer plates can be represented by refering to several <a href="../../ifcmaterialresource/lexical/ifcmateriallayer.htm">IfcMaterialLayer</a>'s within the <a href="../../ifcmaterialresource/lexical/ifcmateriallayerset.htm">IfcMaterialLayerSet</a> that is referenced from the <a href="../../ifcmaterialresource/lexical/ifcmateriallayersetusage.htm">IfcMaterialLayerSetUsage</a>. </p>
 <p>Material information can also be given at the <a href="../../ifcsharedbldgelements/lexical/ifcplatetype.htm">IfcPlateType</a>, defining the common attribute data for all occurrences of the same type. It is then accessible by the inverse <i>IsDefinedBy</i> relationship pointing to <i>IfcPlateType.HasAssociations</i> and via <i>IfcRelAssociatesMaterial.RelatingMaterial</i>.</p>
 <p>The <span class="self-ref">IfcPlateStandardCase</span> defines in addition that the <a href="../../ifcsharedbldgelements/lexical/ifcplatetype.htm">IfcPlateType</a> should have a unique <a href="../../ifcmaterialresource/lexical/ifcmateriallayerset.htm">IfcMaterialLayerSet</a>, that is referenced by the <a href="../../ifcmaterialresource/lexical/ifcmateriallayersetusage.htm">IfcMaterialLayerSetUsage</a> assigned to all occurrences of this <a href="../../ifcsharedbldgelements/lexical/ifcplatetype.htm">IfcPlateType</a>.</p>
-<p>Figure 244 illustrates assignment of <a href="../../ifcmaterialresource/lexical/ifcmateriallayersetusage.htm">IfcMaterialLayerSetUsage</a> and <a href="../../ifcmaterialresource/lexical/ifcmateriallayerset.htm">IfcMaterialLayerSet</a> to the <span class="self-ref">IfcPlateStandardCase</span> as the plate occurrence and to the <a href="../../ifcsharedbldgelements/lexical/ifcplatetype.htm">IfcPlateType</a>. The same <a href="../../ifcmaterialresource/lexical/ifcmateriallayerset.htm">IfcMaterialLayerSet</a> shall be shared by many occurrences of <a href="../../ifcmaterialresource/lexical/ifcmateriallayersetusage.htm">IfcMaterialLayerSetUsage</a>. This relationship shall be consistent to the relationship between the <a href="../../ifcsharedbldgelements/lexical/ifcplatetype.htm">IfcPlateType</a> and the <span class="self-ref">IfcPlateStandardCase</span>.</p>
+<p>Figure 248 illustrates assignment of <a href="../../ifcmaterialresource/lexical/ifcmateriallayersetusage.htm">IfcMaterialLayerSetUsage</a> and <a href="../../ifcmaterialresource/lexical/ifcmateriallayerset.htm">IfcMaterialLayerSet</a> to the <span class="self-ref">IfcPlateStandardCase</span> as the plate occurrence and to the <a href="../../ifcsharedbldgelements/lexical/ifcplatetype.htm">IfcPlateType</a>. The same <a href="../../ifcmaterialresource/lexical/ifcmateriallayerset.htm">IfcMaterialLayerSet</a> shall be shared by many occurrences of <a href="../../ifcmaterialresource/lexical/ifcmateriallayersetusage.htm">IfcMaterialLayerSetUsage</a>. This relationship shall be consistent to the relationship between the <a href="../../ifcsharedbldgelements/lexical/ifcplatetype.htm">IfcPlateType</a> and the <span class="self-ref">IfcPlateStandardCase</span>.</p>
 <table border="0" cellpadding="2" cellspacing="2">
 <tr><td width="610" align="left" valign="top">
 <p><img src="../../../figures/ifcslab_materialusage-01.png" alt="Material layer set and usage" height="220" width="501">&nbsp;</p></td></tr>
-<tr><td><p class="figure">Figure 244 &mdash; Plate type definition</p></td></tr>
+<tr><td><p class="figure">Figure 248 &mdash; Plate type definition</p></td></tr>
 </table>
 <p>As shown in Figure 106, the following conventions shall be met:</p>
 <ul>
@@ -254,7 +254,7 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
 <li>The <i>Thickness</i> of each <a href="../../ifcmaterialresource/lexical/ifcmateriallayer.htm">IfcMaterialLayer</a> shall be the parallel distance (measured perpendicular to the base plane). The <i>TotalThickness</i> of the <a href="../../ifcmaterialresource/lexical/ifcmateriallayerset.htm">IfcMaterialLayerSet</a> is the sum of all layer thicknesses and in case of a perpendicular extrusion identical with <i>IfcExtrudedAreaSolid.Depth</i></li>
 <li>The <i>IfcMaterialLayerSetUsage.LayerSetDirection</i> i always AXIS3.</li>
 </ul>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcmateriallayersetusage_slab-01.png" alt="&quot;plate material layer set&quot;" title="Figure 245 &mdash; Plate material layers"></td></tr><tr><td><p class="figure">Figure 245 &mdash; Plate material layers</p></td></tr></table></p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcmateriallayersetusage_slab-01.png" alt="&quot;plate material layer set&quot;" title="Figure 249 &mdash; Plate material layers"></td></tr><tr><td><p class="figure">Figure 249 &mdash; Plate material layers</p></td></tr></table></p>
 
 <br/><br/>
 
@@ -286,11 +286,11 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
  <tr>
   <td><img src="../../../figures/ifcslab_standard-layout1.gif" alt="standard plate" border="0" height="274" width="399"></td>
   <td>
-<blockquote class="example">EXAMPLE&nbsp; Figure 246 illustrates a 'SweptSolid' geometric representation. The following interpretation of dimension parameter applies for polygonal plates (in ground floor view): <i>IfcArbitraryClosedProfileDef.OuterCurve</i> being a closed bounded curve is interpreted as area (or foot print) of the plate.</blockquote>
+<blockquote class="example">EXAMPLE&nbsp; Figure 250 illustrates a 'SweptSolid' geometric representation. The following interpretation of dimension parameter applies for polygonal plates (in ground floor view): <i>IfcArbitraryClosedProfileDef.OuterCurve</i> being a closed bounded curve is interpreted as area (or foot print) of the plate.</blockquote>
  </td>
  </tr>
  <tr>
-  <td><p class="figure">Figure 246 &mdash; Plate body extrusion</p></td>
+  <td><p class="figure">Figure 250 &mdash; Plate body extrusion</p></td>
   <td>&nbsp;</td>
  </tr>
 </table>
@@ -311,11 +311,11 @@ IFC4 CHANGE The attribute has been added at the end of the entity definition.
 <table>
  <tr>
   <td><img src="../../../figures/ifcslab_advanced-layout1.gif" alt="advanced plate" border="0" height="274" width="399"></td>
-  <td><blockquote class="example">EXAMPLE&nbsp; Figure 247 illustrates a 'Clipping' geometric representation with definition of a plate using advanced geometric representation. The profile is extruded non-perpendicular and the plate body is clipped at the eave.</blockquote>
+  <td><blockquote class="example">EXAMPLE&nbsp; Figure 251 illustrates a 'Clipping' geometric representation with definition of a plate using advanced geometric representation. The profile is extruded non-perpendicular and the plate body is clipped at the eave.</blockquote>
 </td>
  </tr>
  <tr>
-  <td><p class="figure">Figure 247 &mdash; Plate body clipping</p></td>
+  <td><p class="figure">Figure 251 &mdash; Plate body clipping</p></td>
   <td>&nbsp;</td>
  </tr>
 </table>

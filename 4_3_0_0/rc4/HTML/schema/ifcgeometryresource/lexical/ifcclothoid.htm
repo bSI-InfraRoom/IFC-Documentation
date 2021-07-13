@@ -39,17 +39,51 @@
 </details>
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
-<details open="open"><summary>Entity definition</summary><p>Parametrization:
+<details open="open"><summary>Entity definition</summary><p>A clothoid is a planar curve in the form of a spiral. This curve has the property that the curvature varies linearly with the arc length.
 </p>
 <blockquote class="note">
-<p>NOTE&amp;nbsp:
-λ(u) = C + A√{π}(∫0ucos(π(t2/2))dt x + ∫0usin(π(t2/2))dt y</p>
+<p>NOTE Definition according to ISO 10303-42:2003</p>
+<p>Interpretation of the data shall be as follows:</p>
+<blockquote>
+<pre><code>C = SELF\IfcSpiral.Position.Location  
+x = SELF\IfcSpiral.Position.P[1] 
+y = SELF\IfcSpiral.Position.P[2]   
+A = ClothoidConstant
+</code></pre>
+</blockquote>
+<p>and the clothoid is parameterized as:</p>
+<blockquote>
+<blockquote>
+<p><img src="../../../figures/ifcclothoid_parameterisation.PNG" alt="formula"></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>and the parametric range is: -∞ &lt; <i>u</i> &lt; ∞</p>
+<blockquote>
+</blockquote>
+<p>The arc length <i>s</i> of the curve, from the point C, is given by the formula:</p>
+<blockquote>
+<blockquote>
+<p><img src="../../../figures/ifcclothoid_arclength.PNG" alt="formula"></p>
+</blockquote>
+</blockquote>
+<p>The curvature <i>κ</i> and radius of the curvature <i>ρ</i>, at any point of the curve, are related to the arc length <i>s</i> by the formulae:</p>
+<blockquote>
+<blockquote>
+<p><img src="../../../figures/ifcclothoid_curvature.PNG" alt="formula"></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote class="extDef">
+<p>NOTE Formulae adapted from <strong>clothoid</strong> defined in ISO 10303-42</p>
 </blockquote>
 </details>
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
 <th>G</th></tr>
 <tr><td>2</td><td>ClothoidConstant</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
+The constant which defines the relationship between curvature and arc length for the curve.
 </td><td>X</td></tr>
 </table>
 </details>
@@ -91,6 +125,7 @@ IFC2x3 CHANGE  The inverse attribute <i>StyledByItem</i> has been added.
 </td><td>X</td></tr>
 <tr><td colspan="6"><a href="../../ifcgeometryresource/lexical/ifcclothoid.htm">IfcClothoid</a></td></tr>
 <tr><td>2</td><td>ClothoidConstant</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
+The constant which defines the relationship between curvature and arc length for the curve.
 </td><td>X</td></tr>
 </table>
 </details>

@@ -488,6 +488,7 @@
     <cnf:attribute select="RelatingElement" exp-attribute="double-tag" />
     <cnf:attribute select="RelatedElement" exp-attribute="double-tag" />
     <cnf:attribute select="InterferenceGeometry" exp-attribute="attribute-tag" />
+    <cnf:attribute select="InterferenceSpace" exp-attribute="double-tag" />
   </cnf:entity>
   <cnf:entity select="IfcRelNests">
     <cnf:attribute select="RelatingObject" keep="false" />

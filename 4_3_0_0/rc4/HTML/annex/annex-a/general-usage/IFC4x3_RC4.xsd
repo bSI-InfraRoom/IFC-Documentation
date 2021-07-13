@@ -2052,7 +2052,7 @@ of the material. The information contained in this document is subject to change
 		<xs:complexContent>
 			<xs:extension base="ifc:IfcSpiral">
 				<xs:attribute name="CosineTerm" type="ifc:IfcLengthMeasure" use="optional"/>
-				<xs:attribute name="ConstantTerm" type="ifc:IfcReal" use="optional"/>
+				<xs:attribute name="ConstantTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -7517,6 +7517,7 @@ of the material. The information contained in this document is subject to change
 						</xs:complexType>
 					</xs:element>
 					<xs:element name="InterferenceGeometry" type="ifc:IfcConnectionGeometry" nillable="true" minOccurs="0"/>
+					<xs:element name="InterferenceSpace" type="ifc:IfcSpatialZone" nillable="true" minOccurs="0"/>
 				</xs:sequence>
 				<xs:attribute name="InterferenceType" type="ifc:IfcIdentifier" use="optional"/>
 				<xs:attribute name="ImpliedOrder" type="ifc:IfcLogical" use="optional"/>
@@ -7955,7 +7956,7 @@ of the material. The information contained in this document is subject to change
 			<xs:extension base="ifc:IfcSpiral">
 				<xs:attribute name="QuadraticTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="LinearTerm" type="ifc:IfcLengthMeasure" use="optional"/>
-				<xs:attribute name="ConstantTerm" type="ifc:IfcReal" use="optional"/>
+				<xs:attribute name="ConstantTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -8142,7 +8143,7 @@ of the material. The information contained in this document is subject to change
 				<xs:attribute name="CubicTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="QuadraticTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="LinearTerm" type="ifc:IfcLengthMeasure" use="optional"/>
-				<xs:attribute name="ConstantTerm" type="ifc:IfcReal" use="optional"/>
+				<xs:attribute name="ConstantTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -8282,7 +8283,7 @@ of the material. The information contained in this document is subject to change
 			<xs:extension base="ifc:IfcSpiral">
 				<xs:attribute name="SineTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="LinearTerm" type="ifc:IfcLengthMeasure" use="optional"/>
-				<xs:attribute name="ConstantTerm" type="ifc:IfcReal" use="optional"/>
+				<xs:attribute name="ConstantTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -9794,7 +9795,7 @@ of the material. The information contained in this document is subject to change
 				<xs:attribute name="CubicTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="QuadraticTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 				<xs:attribute name="LinearTerm" type="ifc:IfcLengthMeasure" use="optional"/>
-				<xs:attribute name="ConstantTerm" type="ifc:IfcReal" use="optional"/>
+				<xs:attribute name="ConstantTerm" type="ifc:IfcLengthMeasure" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -11501,11 +11502,11 @@ of the material. The information contained in this document is subject to change
 	</xs:simpleType>
 	<xs:simpleType name="IfcAlignmentCantSegmentTypeEnum">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="constantcant"/>
-			<xs:enumeration value="lineartransition"/>
-			<xs:enumeration value="helmertcurve"/>
 			<xs:enumeration value="blosscurve"/>
+			<xs:enumeration value="constantcant"/>
 			<xs:enumeration value="cosinecurve"/>
+			<xs:enumeration value="helmertcurve"/>
+			<xs:enumeration value="lineartransition"/>
 			<xs:enumeration value="sinecurve"/>
 			<xs:enumeration value="viennesebend"/>
 		</xs:restriction>
@@ -11518,7 +11519,6 @@ of the material. The information contained in this document is subject to change
 			<xs:enumeration value="cubic"/>
 			<xs:enumeration value="helmertcurve"/>
 			<xs:enumeration value="blosscurve"/>
-			<xs:enumeration value="cubicspiral"/>
 			<xs:enumeration value="cosinecurve"/>
 			<xs:enumeration value="sinecurve"/>
 			<xs:enumeration value="viennesebend"/>
@@ -13931,6 +13931,7 @@ of the material. The information contained in this document is subject to change
 			<xs:enumeration value="transport"/>
 			<xs:enumeration value="ventilation"/>
 			<xs:enumeration value="reservation"/>
+			<xs:enumeration value="interference"/>
 			<xs:enumeration value="userdefined"/>
 			<xs:enumeration value="notdefined"/>
 		</xs:restriction>

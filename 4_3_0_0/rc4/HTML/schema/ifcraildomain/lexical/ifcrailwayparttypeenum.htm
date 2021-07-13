@@ -32,13 +32,30 @@
 <tr><th>Item</th><th>SPF</th><th>XML</th><th>Change</th><th>Description</th></tr>
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x2-to-ifc4x3_rc1/index.htm">IFC4x2 to IFC4x3_RC1</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcraildomain/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a></td><td></td><td></td><td>ADDED</td><td></td></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-ifc4x3_rc4/index.htm">IFC4x3_RC3 to IFC4x3_RC4</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcraildomain/lexical/ifcrailwayparttypeenum.htm">IfcRailwayPartTypeEnum</a></td><td></td><td></td><td>MOVED</td><td>Schema changed from <i>IFCRAIL</i> to <i>IFCRAILDOMAIN</i>. <br/></td></tr>
 </table>
 </details>
 <section>
 <h5 class="num">Semantic definitions at the type</h5>
-<details open="open"><summary>Type definition</summary><p>The IfcRailwayPartTypeEnum defines the range of different types of railway part that can be specified.</p>
+<details open="open"><summary>Type definition</summary><p>The <span class="self-ref">IfcRailwayPartTypeEnum</span> defines the range of different types of railway part that can be specified.</p>
+<p>The spatial structure of a railway is sub-divided into several elements for lateral, vertical and longitudinal decomposition:</p>
+<ul>
+<li>TRACKSTRUCTURE is for the track part of the railway (vertical decomposition).</li>
+<li>SUPERSTRUCTURE is for the upper part of the railway (vertical decomposition).</li>
+<li>LINESIDESTRUCTURE is for the lateral part of the railway (lateral decomposition).</li>
+</ul>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/IfcRailwayPartTypeEnum-global.png" alt="&quot;Railway vertical and lateral spatial decomposition &quot;" title="Figure 322 &mdash; Railway decomposition"></td></tr><tr><td><p class="figure">Figure 322 &mdash; Railway decomposition</p></td></tr></table>
+The subpart of the railway is generally either a <a href="../../ifcproductextension/lexical/ifcfacilitypartcommontypeenum.htm">IfcFacilityPartCommonTypeEnum</a> BELOWGROUND (non constructed ground) or SUBSTRUCTURE (constructed ground).</p>
+<p>TRACKSTRUCTURE could have longitudinal decomposition based on track specificities:</p>
+<ul>
+<li>PLAINTRACKSUPESTRUCTURE for the plain line tracks (<a href="../../ifcproductextension/lexical/ifcelementassemblytypeenum.htm">IfcElementAssemblyTypeEnum</a> TRACKPANEL).</li>
+<li>DILATATIONSUPERSTRUCTURE for the area of dilatation panels (<a href="../../ifcproductextension/lexical/ifcelementassemblytypeenum.htm">IfcElementAssemblyTypeEnum</a> DILATATIONPANEL).</li>
+<li>TURNOUTSUPERSTRUCTURE for the area of turnouts (<a href="../../ifcproductextension/lexical/ifcelementassemblytypeenum.htm">IfcElementAssemblyTypeEnum</a> TURNOUTPANEL).</li>
+<li>TRACKSTRUCTUREPART for generic longitudinal decomposition if needed.</li>
+</ul>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/IfcRailwayPartTypeEnum-track.png" alt="&quot;Railway vertical and lateral spatial decomposition &quot;" title="Figure 323 &mdash; Track longitudinal decomposition"></td></tr><tr><td><p class="figure">Figure 323 &mdash; Track longitudinal decomposition</p></td></tr></table></p>
+<p>More generic longitudinal subdivision is provided for LINESIDESTRUCTURE with LINESIDESTRUCTUREPART value if needed.</p>
 </details>
 <details open="open"><summary>Enumeration definition</summary><table class="attributes">
 <tr><th>Constant</th><th>Description</th></tr>

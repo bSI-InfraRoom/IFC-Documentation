@@ -32,13 +32,11 @@
 <tr><th>Item</th><th>SPF</th><th>XML</th><th>Change</th><th>Description</th></tr>
 <td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc1-to-ifc4x3_rc2/index.htm">IFC4x3_RC1 to IFC4x3_RC2</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometricconstraintresource/lexical/ifcalignmentcantsegment.htm">IfcAlignmentCantSegment</a></td><td></td><td></td><td>MOVED</td><td>Schema changed from <i>IFCRAIL</i> to <i>IFCGEOMETRICCONSTRAINTRESOURCE</i>. <br/></td></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-rc4/index.htm">IFC4x3_RC3 to RC4</a></b></td>
-<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometricconstraintresource/lexical/ifcalignmentcantsegment.htm">IfcAlignmentCantSegment</a></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PredefinedType</td><td>X</td><td>X</td><td>MODIFIED</td><td>Name changed from <i>SmoothingLength</i> to <i>PredefinedType</i>. <br/>Type changed from <i>IfcPositiveLengthMeasure</i> to <i>IfcAlignmentCantSegmentTypeEnum</i>. <br/>Instantiation changed from <i>OPTIONAL</i>. <br/></td></tr>
-<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PredefinedType</td><td>X</td><td></td><td>DELETED</td><td></td></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-ifc4x3_rc4/index.htm">IFC4x3_RC3 to IFC4x3_RC4</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometricconstraintresource/lexical/ifcalignmentcantsegment.htm">IfcAlignmentCantSegment</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HorizontalLength</td><td></td><td></td><td>MODIFIED</td><td>Type changed from <i>IfcPositiveLengthMeasure</i> to <i>IfcNonNegativeLengthMeasure</i>. <br/></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PredefinedType</td><td>X</td><td>X</td><td>MODIFIED</td><td>Name changed from <i>SmoothingLength</i> to <i>PredefinedType</i>. <br/>Type changed from <i>IfcPositiveLengthMeasure</i> to <i>IfcAlignmentCantSegmentTypeEnum</i>. <br/>Instantiation changed from <i>OPTIONAL</i>. <br/></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PredefinedType</td><td>X</td><td></td><td>DELETED</td><td></td></tr>
 </table>
 </details>
 <section>
@@ -47,8 +45,13 @@
 The cant alignment is defined by ordered segments that connect end-to-start. The points defined in a cant alignment segment are defined in a plane with x = distance along horizontal alignment and y = height relative to projected points in vertical alignment.
 The following cant segment types are defined:</p>
 <ul>
-<li>line segment - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentcantsegmenttypeenum.htm">IfcAlignmentCantSegmentTypeEnum</a> .LINE.</li>
-<li>transition curve segment - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentcantsegmenttypeenum.htm">IfcAlignmentCantSegmentTypeEnum</a> .NONLINEAR.</li>
+<li>Bloss transition - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentcantsegmenttypeenum.htm">IfcAlignmentCantSegmentTypeEnum</a> .BLOSSCURVE.</li>
+<li>Constant cant - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentcantsegmenttypeenum.htm">IfcAlignmentCantSegmentTypeEnum</a> .CONSTANTCANT.</li>
+<li>Cosine transition - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentcantsegmenttypeenum.htm">IfcAlignmentCantSegmentTypeEnum</a> .COSINECURVE.</li>
+<li>Helmert transition - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentcantsegmenttypeenum.htm">IfcAlignmentCantSegmentTypeEnum</a> .HELMERTCURVE.</li>
+<li>Linear transition - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentcantsegmenttypeenum.htm">IfcAlignmentCantSegmentTypeEnum</a> .LINEARTRANSITION.</li>
+<li>Sine transition - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentcantsegmenttypeenum.htm">IfcAlignmentCantSegmentTypeEnum</a> SINECURVE</li>
+<li>Viennese Bend (R) transition - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentcantsegmenttypeenum.htm">IfcAlignmentCantSegmentTypeEnum</a> .VIENNESEBEND.</li>
 </ul>
 <p>For each cant segment, the following information is provided:</p>
 <ul>

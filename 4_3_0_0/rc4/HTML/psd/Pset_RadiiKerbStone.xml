@@ -11,7 +11,7 @@
   <PropertyDefs>
     <PropertyDef ifdguid="d81fd76910774b0eb8390d44ec1d96c5">
       <Name>CurveShape</Name>
-      <Definition>Shape according to &lt;a href="$element://{9DF817DE-97F9-43e9-A716-0EA93FC4CA4D}"&gt;&lt;font color="#0000ff"&gt;&lt;u&gt;CurveShapeEnum&lt;/u&gt;&lt;/font&gt;&lt;/a&gt;</Definition>
+      <Definition>Shape according to CurveShapeEnum</Definition>
       <PropertyType>
         <TypePropertyEnumeratedValue>
           <EnumList name="PEnum_CurveShapeEnum">

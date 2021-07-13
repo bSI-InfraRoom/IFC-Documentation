@@ -41,23 +41,25 @@
 </details>
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
-<details open="open"><summary>Entity definition</summary><p>An <span class="self-ref">IfcGeographicElementType</span> is used to define an element specification of a geographic element (i.e. the specific product information, that is common to all occurrences of that product type). Geographic element types include for different types of element that may be used to represent information within a geographical landscape external to a building. Within the world of geographic information they are referred to generally as ''features''. <span class="self-ref">IfcGeographicElementType</span>''s include:</p>
+<details open="open"><summary>Entity definition</summary><p>An <span class="self-ref">IfcGeographicElementType</span> is used to define an element specification of a geographic element (i.e. the specific product information, that is common to all occurrences of that product type). Geographic element types include for different types of element that may be used to represent information within a geographical landscape external to a building. Within the world of geographic information they are referred to generally as 'features'. <span class="self-ref">IfcGeographicElementType</span>'s include:</p>
 <ul>
 <li>point features such as seating, bus shelters, signage, trees;</li>
-<li>linear features such as layby''s;</li>
+<li>linear features such as layby's;</li>
 <li>area features such as ponds, lakes, woods and forests;</li>
 <li>drainage such as catchment, reserver or outfall.</li>
 </ul>
-<p>The specification of the specific types are given by the inherited attribute <i>IfcElementType.ElementType</i> given as an <a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>.<br>
-Geographic element types are frequently identified in feature catalogs that are produced for particular purposes. The <span class="self-ref">IfcGeographicElementType</span> entity enables the continued use of existing feature catalogs through capture of their identity and attributes.<br>
-Information from feature catalogs might be captured in various ways:</p>
+<p>The specification of the specific types are given by the inherited attribute <i>IfcElementType.ElementType</i> given as an <a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>.</p>
+<p>Geographic element types are frequently identified in feature catalogs that are produced for particular purposes. The <span class="self-ref">IfcGeographicElementType</span> entity enables the continued use of existing feature catalogs through capture of their identity and attributes.</p>
+<p>Information from feature catalogs might be captured in various ways:</p>
 <ul>
 <li>via property sets, some of which will be specifically defined within the IFC property set catalog whilst others will be created for local use; this is the form of capture that is expected to be most widely used</li>
 <li>through use of the IFC classification model whereby features might be identified through an <a href="../../ifcexternalreferenceresource/lexical/ifcclassificationreference.htm">IfcClassificationReference</a> with additional description; in which case, any further attributes required would still need to be captured in property sets.</li>
 </ul>
 <blockquote class="note">
-<p>NOTE This is due to the range of choices of element type thyat are available and their expression in different languages. It is not considered possible to create a reasonably full list of types within an enumeration. It is suggested that selection of the relevant type be drawn from an available ''feature catalog''.<br>
-HISTORY New entity in IFC4.</p>
+<p>NOTE  This is due to the range of choices of element type thyat are available and their expression in different languages. It is not considered possible to create a reasonably full list of types within an enumeration. It is suggested that selection of the relevant type be drawn from an available 'feature catalog'.</p>
+</blockquote>
+<blockquote class="history">
+<p>HISTORY  New entity in IFC4.</p>
 </blockquote>
 </details>
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">

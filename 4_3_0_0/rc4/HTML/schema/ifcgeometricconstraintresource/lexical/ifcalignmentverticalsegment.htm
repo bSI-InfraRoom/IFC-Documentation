@@ -47,7 +47,7 @@
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LayerAssignment</td><td></td><td></td><td>DELETED</td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StyledByItem</td><td></td><td></td><td>DELETED</td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ToVertical</td><td></td><td></td><td>DELETED</td><td></td></tr>
-<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc4-update/index.htm">IFC4x3_RC4 Update</a></b></td>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc3-to-ifc4x3_rc4/index.htm">IFC4x3_RC3 to IFC4x3_RC4</a></b></td>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometricconstraintresource/lexical/ifcalignmentverticalsegment.htm">IfcAlignmentVerticalSegment</a></td><td></td><td></td><td></td><td></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HorizontalLength</td><td></td><td></td><td>MODIFIED</td><td>Type changed from <i>IfcPositiveLengthMeasure</i> to <i>IfcNonNegativeLengthMeasure</i>. <br/></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RadiusOfCurvature</td><td>X</td><td>X</td><td>MODIFIED</td><td>Type changed from <i>IfcPositiveLengthMeasure</i> to <i>IfcLengthMeasure</i>. <br/></td></tr>
@@ -62,7 +62,7 @@
 <li>line segment - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentverticalsegmenttypeenum.htm">IfcAlignmentVerticalSegmentTypeEnum</a> .LINE.</li>
 <li>circular arc segment - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentverticalsegmenttypeenum.htm">IfcAlignmentVerticalSegmentTypeEnum</a> .ARC.</li>
 <li>parabolic arc segment - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentverticalsegmenttypeenum.htm">IfcAlignmentVerticalSegmentTypeEnum</a> .PARABOLICARC. which can describe symmetric and unsymmetric parabolas</li>
-<li>nonlinear/transition segment - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentverticalsegmenttypeenum.htm">IfcAlignmentVerticalSegmentTypeEnum</a> .NONLINEAR.</li>
+<li>transition segment with linear curvature variation - <a href="../../ifcgeometricconstraintresource/lexical/ifcalignmentverticalsegmenttypeenum.htm">IfcAlignmentVerticalSegmentTypeEnum</a> .CLOTHOID.</li>
 </ul>
 <p>For each vertical segment, the following non-redundant information is provided:</p>
 <ul>
@@ -86,7 +86,7 @@
 <blockquote class="note">
 <p>NOTE  Specific subtypes of the <span class="self-ref">IfcAlignmentVerticalSegment</span> add specific geometric curve parameters. Connectivity between vertical segments is not necessarily tangential, but this can be enforced as a requirement through the attribute <i>TangentialContinuity</i>.</p>
 </blockquote>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcalignment2dverticalsegment.png" alt="&quot;Alignment vertical segment&quot;" title="Figure 321 &mdash; Alignment vertical segment"></td></tr><tr><td><p class="figure">Figure 321 &mdash; Alignment vertical segment</p></td></tr></table></p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcalignment2dverticalsegment.png" alt="&quot;Alignment vertical segment&quot;" title="Figure 329 &mdash; Alignment vertical segment"></td></tr><tr><td><p class="figure">Figure 329 &mdash; Alignment vertical segment</p></td></tr></table></p>
 </details>
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>

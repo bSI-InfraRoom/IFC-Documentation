@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xsi:schemaLocation="http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="f3012b2d-1605-47af-9fac-bd9fc9e5e248" name="mvd">
+<mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xsi:schemaLocation="http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="885bda75-9be3-46bd-b055-cf18828ef50f" name="mvd">
 	<Templates>
 		<ConceptTemplate uuid="3b8e69d9-2824-4ebb-bb95-e5271c122efc" name="Object Assignment" applicableSchema="IFC4" applicableEntity="IfcObjectDefinition">
 			<Definitions>
@@ -3880,6 +3880,71 @@ LinearTerm = L]]>
 															</EntityRules>
 														</AttributeRule>
 														<AttributeRule AttributeName="LinearTerm">
+															<EntityRules>
+																<EntityRule EntityName="IfcLengthMeasure" />
+															</EntityRules>
+														</AttributeRule>
+													</AttributeRules>
+												</EntityRule>
+											</EntityRules>
+										</AttributeRule>
+										<AttributeRule AttributeName="SegmentStart">
+											<EntityRules>
+												<EntityRule EntityName="IfcParameterValue" />
+											</EntityRules>
+										</AttributeRule>
+										<AttributeRule AttributeName="SegmentLength">
+											<EntityRules>
+												<EntityRule EntityName="IfcParameterValue" />
+											</EntityRules>
+										</AttributeRule>
+									</Rules>
+								</ConceptTemplate>
+								<ConceptTemplate uuid="48d363f4-e6a7-4b02-9ddd-af9b44fb50ce" name="Viennese Bend Transition Segment" applicableSchema="IFC4" applicableEntity="IfcCurveSegment">
+									<Definitions>
+										<Definition>
+											<Body><![CDATA[The Viennese Bend (R) transition segment is a kinematic high performance transition. The horizontal curvature is assembled by the baseformula and a term depending on the height of the gravity center line relative to the track plane and by the applied cant values at the start and the end of the segment.
+
+ The x/y coordinates can be calculated using a 7th order polynominal spiral.]]>
+											</Body>
+										</Definition>
+									</Definitions>
+									<Rules>
+										<AttributeRule AttributeName="ParentCurve">
+											<EntityRules>
+												<EntityRule EntityName="IfcSeventhOrderPolynomialSpiral">
+													<AttributeRules>
+														<AttributeRule AttributeName="ConstantTerm">
+															<EntityRules>
+																<EntityRule EntityName="IfcReal" />
+															</EntityRules>
+														</AttributeRule>
+														<AttributeRule AttributeName="QuadraticTerm">
+															<EntityRules>
+																<EntityRule EntityName="IfcLengthMeasure" />
+															</EntityRules>
+														</AttributeRule>
+														<AttributeRule AttributeName="CubicTerm">
+															<EntityRules>
+																<EntityRule EntityName="IfcLengthMeasure" />
+															</EntityRules>
+														</AttributeRule>
+														<AttributeRule AttributeName="QuarticTerm">
+															<EntityRules>
+																<EntityRule EntityName="IfcLengthMeasure" />
+															</EntityRules>
+														</AttributeRule>
+														<AttributeRule AttributeName="QuinticTerm">
+															<EntityRules>
+																<EntityRule EntityName="IfcLengthMeasure" />
+															</EntityRules>
+														</AttributeRule>
+														<AttributeRule AttributeName="SexticTerm">
+															<EntityRules>
+																<EntityRule EntityName="IfcLengthMeasure" />
+															</EntityRules>
+														</AttributeRule>
+														<AttributeRule AttributeName="SepticTerm">
 															<EntityRules>
 																<EntityRule EntityName="IfcLengthMeasure" />
 															</EntityRules>
