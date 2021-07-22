@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xsi:schemaLocation="http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="885bda75-9be3-46bd-b055-cf18828ef50f" name="mvd">
+<mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xsi:schemaLocation="http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="2f0709c8-a9e5-4d7e-9e7a-2be926060893" name="mvd">
 	<Templates>
 		<ConceptTemplate uuid="3b8e69d9-2824-4ebb-bb95-e5271c122efc" name="Object Assignment" applicableSchema="IFC4" applicableEntity="IfcObjectDefinition">
 			<Definitions>
