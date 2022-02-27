@@ -1,0 +1,147 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>IfcClothoid</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 8 index2 7 index3 3 index4 12 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-8.htm#8.7.3.13");
+//-->
+</script>
+
+<h4 class="num">IfcClothoid</h4>
+<details open="open"><summary>Natural language names</summary><table>
+</details>
+<details open="open"><summary>Change log</summary><table class="gridtable">
+<tr><th>Item</th><th>SPF</th><th>XML</th><th>Change</th><th>Description</th></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc1-to-ifc4x3_rc2/index.htm">IFC4x3_RC1 to IFC4x3_RC2</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometryresource/lexical/ifcclothoid.htm">IfcClothoid</a></td><td></td><td></td><td>ADDED</td><td></td></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc4x3_rc2-to-ifc4x3_rc3/index.htm">IFC4x3_RC2 to IFC4x3_RC3</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcgeometryresource/lexical/ifcclothoid.htm">IfcClothoid</a></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Position</td><td></td><td></td><td>MODIFIED</td><td>Instantiation changed to <i>OPTIONAL</i>. <br/></td></tr>
+</table>
+</details>
+<section>
+<h5 class="num">Semantic definitions at the entity</h5>
+<details open="open"><summary>Entity definition</summary><p>A clothoid is a planar curve in the form of a spiral. This curve has the property that the curvature varies linearly with the arc length.
+</p>
+<blockquote class="note">
+<p>NOTE Definition according to ISO 10303-42:2003</p>
+<p>Interpretation of the data shall be as follows:</p>
+<blockquote>
+<pre><code>C = SELF\IfcSpiral.Position.Location  
+x = SELF\IfcSpiral.Position.P[1] 
+y = SELF\IfcSpiral.Position.P[2]   
+A = ClothoidConstant
+</code></pre>
+</blockquote>
+<p>and the clothoid is parameterized as:</p>
+<blockquote>
+<blockquote>
+<p><img src="../../../figures/ifcclothoid_parameterisation.PNG" alt="formula"></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>and the parametric range is: -∞ &lt; <i>u</i> &lt; ∞</p>
+<blockquote>
+</blockquote>
+<p>The arc length <i>s</i> of the curve, from the point C, is given by the formula:</p>
+<blockquote>
+<blockquote>
+<p><img src="../../../figures/ifcclothoid_arclength.PNG" alt="formula"></p>
+</blockquote>
+</blockquote>
+<p>The curvature <i>κ</i> and radius of the curvature <i>ρ</i>, at any point of the curve, are related to the arc length <i>s</i> by the formulae:</p>
+<blockquote>
+<blockquote>
+<p><img src="../../../figures/ifcclothoid_curvature.PNG" alt="formula"></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote class="extDef">
+<p>NOTE Formulae adapted from <strong>clothoid</strong> defined in ISO 10303-42</p>
+</blockquote>
+</details>
+<details open="open"><summary>Attribute definitions</summary><table class="attributes">
+<tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
+<th>I</th></tr>
+<tr><td>2</td><td>ClothoidConstant</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
+The constant which defines the relationship between curvature and arc length for the curve.
+</td><td>X</td></tr>
+</table>
+</details>
+</section>
+<section>
+<h5 class="num">Inherited definitions from supertypes</h5>
+<details open="open"><summary>Entity inheritance</summary><img src="../../../diagrams/ifcclothoid.png" usemap="#f"/>
+<map name="f">
+<area shape="rect" coords="42,78,254,90" href="../../../schema/ifcgeometryresource/lexical/ifcspiral.htm" alt="IfcSpiral" />
+<area shape="rect" coords="30,54,266,66" href="../../../schema/ifcgeometryresource/lexical/ifccurve.htm" alt="IfcCurve" />
+<area shape="rect" coords="18,30,278,42" href="../../../schema/ifcgeometryresource/lexical/ifcgeometricrepresentationitem.htm" alt="IfcGeometricRepresentationItem" />
+<area shape="rect" coords="6,6,290,18" href="../../../schema/ifcgeometryresource/lexical/ifcrepresentationitem.htm" alt="IfcRepresentationItem" />
+</map>
+</details>
+<details><summary>Attribute inheritance</summary><table class="attributes">
+<tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th><th>I</th></tr>
+<tr><td colspan="6"><i><a href="../../ifcgeometryresource/lexical/ifcrepresentationitem.htm">IfcRepresentationItem</a></i></td></tr>
+<tr><td></td><td><i>StyledByItem</i></td><td><a href="../../ifcpresentationappearanceresource/lexical/ifcstyleditem.htm">IfcStyledItem</a><br/>@Item</td><td>S[0:1]</td><td>Reference to the <a href="../../ifcpresentationappearanceresource/lexical/ifcstyleditem.htm">IfcStyledItem</a> that provides presentation information to the representation, e.g. a curve style, including colour and thickness to a geometric curve.
+<blockquote class="change-ifc2x3">
+IFC2x3 CHANGE  The inverse attribute <i>StyledByItem</i> has been added.
+</blockquote>
+</td><td>X</td></tr>
+<tr><td colspan="6"><i><a href="../../ifcgeometryresource/lexical/ifcgeometricrepresentationitem.htm">IfcGeometricRepresentationItem</a></i></td></tr>
+<tr><td colspan="6"><i><a href="../../ifcgeometryresource/lexical/ifccurve.htm">IfcCurve</a></i></td></tr>
+<tr><td></td><td>Dim<br/>:=IfcCurveDim(SELF)</td><td><a href="../../ifcgeometryresource/lexical/ifcdimensioncount.htm">IfcDimensionCount</a></td><td></td><td>The space dimensionality of this abstract class, defined differently for all subtypes, i.e. for IfcLine, IfcConic and IfcBoundedCurve.
+</td>
+<td>X</td></tr>
+<tr><td colspan="6"><i><a href="../../ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a></i></td></tr>
+<tr><td>1</td><td>Position</td><td><span class="self-ref">-</span></td><td></td><td>
+<i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
+<tr><td colspan="6"><a href="../../ifcgeometryresource/lexical/ifcclothoid.htm">IfcClothoid</a></td></tr>
+<tr><td>2</td><td>ClothoidConstant</td><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a></td><td></td><td>
+The constant which defines the relationship between curvature and arc length for the curve.
+</td><td>X</td></tr>
+</table>
+</details>
+</section>
+</section>
+<section>
+<h5 class="num">Formal representations</h5>
+<details><summary>XML Specification</summary><div class="xsd"><code class="xsd">&nbsp;&lt;xs:element name=&quot;<a href="../../ifcgeometryresource/lexical/ifcclothoid.htm">IfcClothoid</a>&quot; type=&quot;ifc:<a href="../../ifcgeometryresource/lexical/ifcclothoid.htm">IfcClothoid</a>&quot; substitutionGroup=&quot;ifc:<a href="../../ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../ifcgeometryresource/lexical/ifcclothoid.htm">IfcClothoid</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;ClothoidConstant&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
+&nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
+&nbsp;&lt;/xs:complexType&gt;<br/>
+</code></div></details>
+<details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
+<span class="keyword">ENTITY</span> IfcClothoid<br/>
+&nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>)<b>;</b><br/>
+&nbsp;&nbsp;ClothoidConstant : <a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>;<br/>
+<span class="keyword">END_ENTITY;</span><br/>
+<p class="std"><a href="../../../annex/annex-d/ifcgeometryresource/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
+</code></div>
+</details>
+</section>
+</p>
+<p><a href="../../../link/ifcclothoid.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

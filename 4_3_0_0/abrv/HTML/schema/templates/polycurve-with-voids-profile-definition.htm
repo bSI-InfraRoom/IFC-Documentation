@@ -1,0 +1,42 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../details-shim.css">
+    <script type="text/javascript" src="../../details-shim.js"></script>
+    <title>PolyCurve with Voids Profile Definition</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 0 index2 0 index3 0 index4 -1 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../toc-4.htm#4.1.4.1.2");
+//-->
+</script>
+
+<h5 class="std">4.1.4.1.2 PolyCurve with Voids Profile Definition</h5>
+<p>Poly curve profile definitons define the closed two-dimensional curve used for the cross-section by a indexed poly curve having straight and circular arc segments.</p>
+<blockquote class="note">
+<p>NOTE  The indexed poly curve has been introduced to provide a less complex and less data set size consuming definition compared to the composite curve.</p>
+</blockquote>
+<p class="fig-ref">Figure 28 illustrates an instance diagram.</p>
+<table><tr><td><img alt="PolyCurve with Voids Profile Definition" src="./diagrams/polycurve-with-voids-profile-definition.png" usemap="#f28"><map name="f28"><area shape="rect" coords="8,8,176,92" href="../ifcprofileresource/lexical/ifcarbitraryprofiledefwithvoids.htm" alt="IfcArbitraryProfileDefWithVoids" /><area shape="rect" coords="208,8,376,20" href="../ifcprofileresource/lexical/ifcprofiletypeenum.htm" alt="IfcProfileTypeEnum" /><area shape="rect" coords="208,40,376,52" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="208,72,376,144" href="../ifcgeometryresource/lexical/ifcindexedpolycurve.htm" alt="IfcIndexedPolyCurve" /><area shape="rect" coords="408,8,576,68" href="../ifcgeometricmodelresource/lexical/ifccartesianpointlist2d.htm" alt="IfcCartesianPointList2D" /><area shape="rect" coords="408,88,576,100" href="../ifcgeometryresource/lexical/ifcarcindex.htm" alt="IfcArcIndex" /><area shape="rect" coords="408,120,576,132" href="../ifcgeometryresource/lexical/ifclineindex.htm" alt="IfcLineIndex" /><area shape="rect" coords="408,152,576,164" href="../ifcmeasureresource/lexical/ifcboolean.htm" alt="IfcBoolean" /><area shape="rect" coords="208,164,376,236" href="../ifcgeometryresource/lexical/ifcindexedpolycurve.htm" alt="IfcIndexedPolyCurve" /></map></td></tr><tr><td><p class="figure">Figure 28 &mdash; PolyCurve with Voids Profile Definition</p></td></tr></table>
+
+<details><summary>mvdXML Specification</summary><div class="xsd"><code class="xsd">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;ConceptTemplate xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; uuid=&quot;d3b8661b-e65b-4077-adc7-c6742d219691&quot; name=&quot;PolyCurve with Voids Profile Definition&quot; applicableSchema=&quot;IFC4&quot; applicableEntity=&quot;<a href="../ifcprofileresource/lexical/ifcarbitraryprofiledefwithvoids.htm">IfcArbitraryProfileDefWithVoids</a>&quot;&gt;&lt;Rules&gt;&lt;AttributeRule AttributeName=&quot;ProfileType&quot;&gt;&lt;EntityRules&gt;&lt;EntityRule EntityName=&quot;<a href="../ifcprofileresource/lexical/ifcprofiletypeenum.htm">IfcProfileTypeEnum</a>&quot; /&gt;&lt;/EntityRules&gt;&lt;/AttributeRule&gt;&lt;AttributeRule AttributeName=&quot;ProfileName&quot;&gt;&lt;EntityRules&gt;&lt;EntityRule EntityName=&quot;<a href="../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>&quot; /&gt;&lt;/EntityRules&gt;&lt;/AttributeRule&gt;&lt;AttributeRule AttributeName=&quot;OuterCurve&quot;&gt;&lt;EntityRules&gt;&lt;EntityRule EntityName=&quot;<a href="../ifcgeometryresource/lexical/ifcindexedpolycurve.htm">IfcIndexedPolyCurve</a>&quot;&gt;&lt;AttributeRules&gt;&lt;AttributeRule AttributeName=&quot;Points&quot;&gt;&lt;EntityRules&gt;&lt;EntityRule EntityName=&quot;<a href="../ifcgeometricmodelresource/lexical/ifccartesianpointlist2d.htm">IfcCartesianPointList2D</a>&quot; /&gt;&lt;/EntityRules&gt;&lt;/AttributeRule&gt;&lt;AttributeRule AttributeName=&quot;Segments&quot;&gt;&lt;EntityRules&gt;&lt;EntityRule EntityName=&quot;<a href="../ifcgeometryresource/lexical/ifcarcindex.htm">IfcArcIndex</a>&quot; /&gt;&lt;EntityRule EntityName=&quot;<a href="../ifcgeometryresource/lexical/ifclineindex.htm">IfcLineIndex</a>&quot; /&gt;&lt;/EntityRules&gt;&lt;/AttributeRule&gt;&lt;AttributeRule AttributeName=&quot;SelfIntersect&quot;&gt;&lt;EntityRules&gt;&lt;EntityRule EntityName=&quot;<a href="../ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>&quot; /&gt;&lt;/EntityRules&gt;&lt;/AttributeRule&gt;&lt;/AttributeRules&gt;&lt;/EntityRule&gt;&lt;/EntityRules&gt;&lt;/AttributeRule&gt;&lt;AttributeRule AttributeName=&quot;InnerCurves&quot;&gt;&lt;EntityRules&gt;&lt;EntityRule EntityName=&quot;<a href="../ifcgeometryresource/lexical/ifcindexedpolycurve.htm">IfcIndexedPolyCurve</a>&quot; /&gt;&lt;/EntityRules&gt;&lt;/AttributeRule&gt;&lt;/Rules&gt;&lt;/ConceptTemplate&gt;<br/>
+</code></div>
+</details>
+</p>
+<p><a href="../../link/polycurve-with-voids-profile-definition.htm" target="_top" ><img src="../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

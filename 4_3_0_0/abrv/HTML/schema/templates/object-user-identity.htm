@@ -1,0 +1,502 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../details-shim.css">
+    <script type="text/javascript" src="../../details-shim.js"></script>
+    <title>Object User Identity</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 0 index2 0 index3 0 index4 -1 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../toc-4.htm#4.4.3");
+//-->
+</script>
+
+<h3 class="std">4.4.3 Object User Identity</h3>
+<p>An object may be labeled for human identification where the <i>Name</i> may indicate a well-known identifier. While there is no restriction on usage of such identifier, it is recommended the <i>Name</i> is unique within it's containing scope. Further guidance on usage is provided at specific entities; for example, for spaces, the <i>Name</i> may reflect a room number. An object may have a description provided via the <i>Description</i> attribute that provides further context in identifying or locating the object.</p>
+<p>Specific subtypes introduce additional attributes for <i>User Identity</i>.</p>
+<ul>
+<li>Spatial objects may be further identified via the <i>LongName</i> attribute. This value should generally correspond to building signage describing floor levels or rooms. While the <i>Name</i> attribute generally provides a coded or abbreviated identifier, the <i>LongName</i> provides a functional name for the location such as &quot;Reception Area&quot;. See concept template <i>Spatial Element Occurrence Attributes</i></li>
+<li>Physical elements may be further identified via the <i>Tag</i> attribute. This is a human readable identifier such as an element or item number While there is no restriction on usage of such tags, it is recommended the <i>Tag</i> is unique within it's containing scope. See concept template <i>Element Occurrence Attributes</i></li>
+</ul>
+<p class="fig-ref">Figure 72 illustrates an instance diagram.</p>
+<table><tr><td><img alt="Object User Identity" src="./diagrams/object-user-identity.png" usemap="#f72"><map name="f72"><area shape="rect" coords="8,8,176,212" href="../ifckernel/lexical/ifcobject.htm" alt="IfcObject" /><area shape="rect" coords="208,8,376,20" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="208,40,376,52" href="../ifcmeasureresource/lexical/ifctext.htm" alt="IfcText" /><area shape="rect" coords="208,72,376,156" href="../ifckernel/lexical/ifcreldefinesbytype.htm" alt="IfcRelDefinesByType" /><area shape="rect" coords="408,8,576,188" href="../ifckernel/lexical/ifctypeobject.htm" alt="IfcTypeObject" /><area shape="rect" coords="608,8,776,20" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="608,40,776,52" href="../ifcmeasureresource/lexical/ifctext.htm" alt="IfcText" /></map></td></tr><tr><td><p class="figure">Figure 72 &mdash; Object User Identity</p></td></tr></table>
+
+<hr/>
+<h4>IFC4.3 AbRV - Scope settings</h4>
+<table class="exchange">
+<tr><th>Entity</th><th><a href="../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr><tr><td><a href="../ifcbuildingcontrolsdomain/lexical/ifcactuator.htm">IfcActuator</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcbuildingcontrolsdomain/lexical/ifcalarm.htm">IfcAlarm</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcalignment.htm">IfcAlignment</a></td><td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcalignmentcant.htm">IfcAlignmentCant</a></td><td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcalignmenthorizontal.htm">IfcAlignmentHorizontal</a></td><td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcalignmentsegment.htm">IfcAlignmentSegment</a></td><td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcalignmentvertical.htm">IfcAlignmentVertical</a></td><td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcannotation.htm">IfcAnnotation</a></td><td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifcaudiovisualappliance.htm">IfcAudioVisualAppliance</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedbldgelements/lexical/ifcbeam.htm">IfcBeam</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifccablecarrierfitting.htm">IfcCableCarrierFitting</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifccablecarriersegment.htm">IfcCableCarrierSegment</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifccablefitting.htm">IfcCableFitting</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifccablesegment.htm">IfcCableSegment</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedbldgelements/lexical/ifccolumn.htm">IfcColumn</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifccommunicationsappliance.htm">IfcCommunicationsAppliance</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcbuildingcontrolsdomain/lexical/ifccontroller.htm">IfcController</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedbldgelements/lexical/ifccovering.htm">IfcCovering</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcsharedcomponentelements/lexical/ifcdiscreteaccessory.htm">IfcDiscreteAccessory</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifcdistributionboard.htm">IfcDistributionBoard</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedbldgserviceelements/lexical/ifcdistributionchamberelement.htm">IfcDistributionChamberElement</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcdistributionelement.htm">IfcDistributionElement</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedbldgserviceelements/lexical/ifcdistributionport.htm">IfcDistributionPort</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedbldgelements/lexical/ifcdoor.htm">IfcDoor</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifcelectricappliance.htm">IfcElectricAppliance</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifcelectricflowstoragedevice.htm">IfcElectricFlowStorageDevice</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifcelectricflowtreatmentdevice.htm">IfcElectricFlowTreatmentDevice</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcelementassembly.htm">IfcElementAssembly</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcfacilitypart.htm">IfcFacilityPart</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedcomponentelements/lexical/ifcfastener.htm">IfcFastener</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcbuildingcontrolsdomain/lexical/ifcflowinstrument.htm">IfcFlowInstrument</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcstructuralelementsdomain/lexical/ifcfooting.htm">IfcFooting</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedfacilitieselements/lexical/ifcfurniture.htm">IfcFurniture</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifckernel/lexical/ifcgroup.htm">IfcGroup</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifchvacdomain/lexical/ifcheatexchanger.htm">IfcHeatExchanger</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcsharedinfrastructureelements/lexical/ifcimpactprotectiondevice.htm">IfcImpactProtectionDevice</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifcjunctionbox.htm">IfcJunctionBox</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifclightfixture.htm">IfcLightFixture</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifclinearelement.htm">IfcLinearElement</a></td><td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedcomponentelements/lexical/ifcmechanicalfastener.htm">IfcMechanicalFastener</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedbldgelements/lexical/ifcmember.htm">IfcMember</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifcmobiletelecommunicationsappliance.htm">IfcMobileTelecommunicationsAppliance</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifckernel/lexical/ifcobject.htm">IfcObject</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifcoutlet.htm">IfcOutlet</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedinfrastructureelements/lexical/ifcpavement.htm">IfcPavement</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifcprotectivedevice.htm">IfcProtectiveDevice</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcraildomain/lexical/ifcrail.htm">IfcRail</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcsharedbldgelements/lexical/ifcrailing.htm">IfcRailing</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcraildomain/lexical/ifcrailway.htm">IfcRailway</a></td><td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcreferent.htm">IfcReferent</a></td><td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcbuildingcontrolsdomain/lexical/ifcsensor.htm">IfcSensor</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedbldgelements/lexical/ifcshadingdevice.htm">IfcShadingDevice</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcsharedinfrastructureelements/lexical/ifcsign.htm">IfcSign</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedinfrastructureelements/lexical/ifcsignal.htm">IfcSignal</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcsite.htm">IfcSite</a></td><td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedbldgelements/lexical/ifcslab.htm">IfcSlab</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifcswitchingdevice.htm">IfcSwitchingDevice</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcraildomain/lexical/ifctrackelement.htm">IfcTrackElement</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcelectricaldomain/lexical/ifctransformer.htm">IfcTransformer</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifctransportelement.htm">IfcTransportElement</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcbuildingcontrolsdomain/lexical/ifcunitarycontrolelement.htm">IfcUnitaryControlElement</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcsharedbldgelements/lexical/ifcwall.htm">IfcWall</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedbldgelements/lexical/ifcwindow.htm">IfcWindow</a></td><td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+</table>
+<details><summary>mvdXML Specification</summary><div class="xsd"><code class="xsd">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;ConceptTemplate xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; uuid=&quot;c19ec186-9cfd-47fc-a4d4-9fb35008d04a&quot; name=&quot;Object User Identity&quot; applicableSchema=&quot;IFC4&quot; applicableEntity=&quot;<a href="../ifckernel/lexical/ifcobject.htm">IfcObject</a>&quot;&gt;&lt;Rules&gt;&lt;AttributeRule RuleID=&quot;ObjectName&quot; AttributeName=&quot;Name&quot;&gt;&lt;EntityRules&gt;&lt;EntityRule EntityName=&quot;<a href="../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>&quot; /&gt;&lt;/EntityRules&gt;&lt;/AttributeRule&gt;&lt;AttributeRule RuleID=&quot;ObjectDescription&quot; AttributeName=&quot;Description&quot;&gt;&lt;EntityRules&gt;&lt;EntityRule EntityName=&quot;<a href="../ifcmeasureresource/lexical/ifctext.htm">IfcText</a>&quot; /&gt;&lt;/EntityRules&gt;&lt;/AttributeRule&gt;&lt;AttributeRule AttributeName=&quot;IsTypedBy&quot;&gt;&lt;EntityRules&gt;&lt;EntityRule EntityName=&quot;<a href="../ifckernel/lexical/ifcreldefinesbytype.htm">IfcRelDefinesByType</a>&quot;&gt;&lt;AttributeRules&gt;&lt;AttributeRule AttributeName=&quot;RelatingType&quot;&gt;&lt;EntityRules&gt;&lt;EntityRule EntityName=&quot;<a href="../ifckernel/lexical/ifctypeobject.htm">IfcTypeObject</a>&quot;&gt;&lt;AttributeRules&gt;&lt;AttributeRule RuleID=&quot;TypeName&quot; AttributeName=&quot;Name&quot;&gt;&lt;EntityRules&gt;&lt;EntityRule EntityName=&quot;<a href="../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>&quot; /&gt;&lt;/EntityRules&gt;&lt;/AttributeRule&gt;&lt;AttributeRule RuleID=&quot;TypeDescription&quot; AttributeName=&quot;Description&quot;&gt;&lt;EntityRules&gt;&lt;EntityRule EntityName=&quot;<a href="../ifcmeasureresource/lexical/ifctext.htm">IfcText</a>&quot; /&gt;&lt;/EntityRules&gt;&lt;/AttributeRule&gt;&lt;/AttributeRules&gt;&lt;/EntityRule&gt;&lt;/EntityRules&gt;&lt;/AttributeRule&gt;&lt;/AttributeRules&gt;&lt;/EntityRule&gt;&lt;/EntityRules&gt;&lt;/AttributeRule&gt;&lt;/Rules&gt;&lt;/ConceptTemplate&gt;<br/>
+</code></div>
+</details>
+</p>
+<p><a href="../../link/object-user-identity.htm" target="_top" ><img src="../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>
