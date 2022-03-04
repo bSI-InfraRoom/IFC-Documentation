@@ -1,0 +1,149 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>Pset_RailwayBalise</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 7 index2 7 index3 4 index4 110 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-7.htm#7.7.4.111");
+//-->
+</script>
+
+<h4 class="std">7.7.4.111 Pset_RailwayBalise</h4>
+<p><span class="self-ref">PSET_TYPEDRIVENOVERRIDE</span>
+/
+<a href="../../ifcelectricaldomain/lexical/ifccommunicationsappliance.htm">IfcCommunicationsAppliance</a>
+ / <span class="self-ref">TRANSPONDER</span>
+</p>Properties  applicable to a railway balise. This property set is applied to a type or occurrence of <em>IfcCommunicationsAppliance</em> with predefined type TRANSPONDER.
+
+<details open="open"><summary>Properties</summary><p><a href="http://lookup.bsdd.buildingsmart.com/api/4.0/IfdPSet/0DuBuFsLbhFEecCeXGV$De/ifcVersion/2x4" target="ifd"><img border="0" src="../../../img/external.png" title="Link to IFD"/> buildingSMART Data Dictionary</a></p>
+
+<p><a href="../../../psd/Pset_RailwayBalise.xml"><img border="0" src="../../../img/diagram.png" title="Link to PSD-XML"/> PSD-XML</a></p>
+
+
+<table class="gridtable">
+<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+<tr><td>NominalHeight</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a>
+</td><td>
+Nominal height of the object.
+
+</td></tr>
+<tr><td>NominalWidth</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Nominal Width</b></td><td>The nominal width of the object.
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>公称幅</b></td><td>呼び幅寸法。
+</td></tr>
+</table>
+</td></tr>
+<tr><td>NominalWeight</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcmassmeasure.htm">IfcMassMeasure</a>
+</td><td>
+Nominal weight of the object.
+
+</td></tr>
+<tr><td>NominalLength</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Nominal Length</b></td><td>Nominal length of the object.
+</td></tr>
+</table>
+</td></tr>
+<tr><td>FailureInformation</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifctext.htm">IfcText</a>
+</td><td>
+The information for failure description.
+
+</td></tr>
+<tr><td>RailwayBaliseType</td><td>
+<span class="self-ref">P_ENUMERATEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+/
+ <a href="../../../penum/penum_railwaybalisetype.htm">PEnum_RailwayBaliseType</a></td><td>
+Type of the railway balise.
+
+</td></tr>
+<tr><td>DetectionRange</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>
+</td><td>
+The detection range of the equipment.
+
+</td></tr>
+<tr><td>InformationLength</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcinteger.htm">IfcInteger</a>
+</td><td>
+Indicates supported bytes of the data Information, e.g.127 bytes.
+
+</td></tr>
+<tr><td>TransmissionRate</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcintegercountratemeasure.htm">IfcIntegerCountRateMeasure</a>
+</td><td>
+Data transmission rate between the device and the receiving module in bits per second.
+
+</td></tr>
+<tr><td>OperationalTemperatureRange</td><td>
+<span class="self-ref">P_BOUNDEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcthermodynamictemperaturemeasure.htm">IfcThermodynamicTemperatureMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Operational Temperature Range</b></td><td>Allowable operation ambient air temperature range.
+</td></tr>
+<tr><td><img src="../../../img/locale-fr.png" /></td><td><b>PlageTempératureOpérationelle</b></td><td>Opération admise sur la plage de température de l'air ambiant
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>動作温度範囲</b></td><td>動作を許容する周囲温度の範囲
+</td></tr>
+</table>
+</td></tr>
+<tr><td>IP_Code</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>IP_ Code</b></td><td>IP Code, the International Protection Marking, IEC 60529), classifies and rates the degree of protection provided against intrusion.
+</td></tr>
+</table>
+</td></tr>
+</table>
+</details>
+</p>
+<p><a href="../../../link/pset_railwaybalise.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

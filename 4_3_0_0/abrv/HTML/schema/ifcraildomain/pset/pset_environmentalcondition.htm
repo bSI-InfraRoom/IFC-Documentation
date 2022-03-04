@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>Pset_EnvironmentalCondition</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 7 index2 7 index3 4 index4 70 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-7.htm#7.7.4.71");
+//-->
+</script>
+
+<h4 class="std">7.7.4.71 Pset_EnvironmentalCondition</h4>
+<p><span class="self-ref">PSET_TYPEDRIVENOVERRIDE</span>
+/
+<a href="../../ifcproductextension/lexical/ifcelement.htm">IfcElement</a>
+</p>Properties defining environment conditions required by the element.
+
+<details open="open"><summary>Properties</summary><p><a href="http://lookup.bsdd.buildingsmart.com/api/4.0/IfdPSet/3t33MdTJIcbl0LWHXpEfQh/ifcVersion/2x4" target="ifd"><img border="0" src="../../../img/external.png" title="Link to IFD"/> buildingSMART Data Dictionary</a></p>
+
+<p><a href="../../../psd/Pset_EnvironmentalCondition.xml"><img border="0" src="../../../img/diagram.png" title="Link to PSD-XML"/> PSD-XML</a></p>
+
+
+<table class="gridtable">
+<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+<tr><td>ReferenceAirRelativeHumidity</td><td>
+<span class="self-ref">P_BOUNDEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcnormalisedratiomeasure.htm">IfcNormalisedRatioMeasure</a>
+</td><td>
+Measurement of the ratio of water vapor in the air.
+
+</td></tr>
+<tr><td>ReferenceEnvironmentTemperature</td><td>
+<span class="self-ref">P_BOUNDEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcthermodynamictemperaturemeasure.htm">IfcThermodynamicTemperatureMeasure</a>
+</td><td>
+Ideal temperature range.
+
+</td></tr>
+<tr><td>MaximumAtmosphericPressure</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpressuremeasure.htm">IfcPressureMeasure</a>
+</td><td>
+Maximum level of atmospheric pressure that the equipment can operate effectively in.
+
+</td></tr>
+<tr><td>StorageTemperatureRange</td><td>
+<span class="self-ref">P_BOUNDEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcthermodynamictemperaturemeasure.htm">IfcThermodynamicTemperatureMeasure</a>
+</td><td>
+Allowed storage temperature range that the element complies with.
+
+</td></tr>
+<tr><td>MaximumWindSpeed</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclinearvelocitymeasure.htm">IfcLinearVelocityMeasure</a>
+</td><td>
+Maximum resistance to wind load exposure.
+
+</td></tr>
+<tr><td>OperationalTemperatureRange</td><td>
+<span class="self-ref">P_BOUNDEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcthermodynamictemperaturemeasure.htm">IfcThermodynamicTemperatureMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Operational Temperature Range</b></td><td>Allowable operation ambient air temperature range.
+</td></tr>
+<tr><td><img src="../../../img/locale-fr.png" /></td><td><b>PlageTempératureOpérationelle</b></td><td>Opération admise sur la plage de température de l'air ambiant
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>動作温度範囲</b></td><td>動作を許容する周囲温度の範囲
+</td></tr>
+</table>
+</td></tr>
+<tr><td>MaximumRainIntensity</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a>
+</td><td>
+Maximum level of rain intensity that the equipment can operate effectively in. It is usually measured in millimeter per hour (mm/h).
+
+</td></tr>
+<tr><td>SaltMistLevel</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+</td><td>
+Maximum level of salt mist that the equipment can operate effectively in. It is provided according to an international or national standard.
+
+</td></tr>
+<tr><td>SeismicResistance</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a>
+</td><td>
+Maximum magnitude of earthquake that the equipment complies with. The value indicates earthquake intensity measured in Richter scale.
+
+</td></tr>
+<tr><td>SmokeLevel</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+</td><td>
+Maximum level of smoke that the equipment complies with. It is provided according to an international or national standard.
+
+</td></tr>
+<tr><td>MaximumSolarRadiation</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcreal.htm">IfcReal</a>
+</td><td>
+Maximum level of solar irradiance that the equipment can operate effectively in. This is usually tested and measured by a national or international standard. The value indicates power density measured in watt per square meter (w/m2).
+
+</td></tr>
+</table>
+</details>
+</p>
+<p><a href="../../../link/pset_environmentalcondition.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

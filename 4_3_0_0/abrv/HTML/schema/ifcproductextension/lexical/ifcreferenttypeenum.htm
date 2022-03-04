@@ -11,7 +11,7 @@
     <title>IfcReferentTypeEnum</title>
 
     <style type="text/css">
-      body { counter-reset: index1 5 index2 2 index3 2 index4 6 index5 0; }
+      body { counter-reset: index1 5 index2 2 index3 2 index4 11 index5 0; }
     </style>
   </head>
 
@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 <!--
-    parent.index.location.replace("../../toc-5.htm#5.2.2.7");
+    parent.index.location.replace("../../toc-5.htm#5.2.2.12");
 //-->
 </script>
 
@@ -51,7 +51,8 @@
 </details>
 <details open="open"><summary>Enumeration definition</summary><table class="attributes">
 <tr><th>Constant</th><th>Description</th></tr>
-<tr><td>KILOPOINT</td><td></td></tr><tr><td>MILEPOINT</td><td></td></tr><tr><td>STATION</td><td></td></tr><tr><td>REFERENCEMARKER</td><td><p>The reference marker is a notation referent, typically located in the right of way of the road, rail or other transportation system. Usually reference markers are initially spaced at a uniform distance along the linear element being measured, though subsequent re-alignments can result in uneven spacing between the markers.</p>
+<tr><td>STATION</td><td><p>Represents a linearly measured location along the linear positioning element into which the <a href="../../ifcproductextension/lexical/ifcreferent.htm">IfcReferent</a> is nested. The location is described by a station value or a station equation using <a href="../../ifcsharedinfrastructureelements/pset/pset_stationing.htm">Pset_Stationing</a> and optionally the method of measurement (<a href="../../ifcsharedinfrastructureelements/pset/pset_linearreferencingmethod.htm">Pset_LinearReferencingMethod</a>). If a linear referencing method is specified for the STATION referent, it overrides any linear referencing method specified for the alignment.</p>
+</td></tr><tr><td>REFERENCEMARKER</td><td><p>The reference marker is a notation referent, typically located in the right of way of the road, rail or other transportation system. Usually reference markers are initially spaced at a uniform distance along the linear element being measured, though subsequent re-alignments can result in uneven spacing between the markers.</p>
 <blockquote class="note">
 <p>NOTE definition from ISO 19148:2021</p>
 </blockquote>
@@ -70,7 +71,7 @@
 <blockquote class="note">
 <p>NOTE definition from ISO 19148:2021</p>
 </blockquote>
-</td></tr><tr><td>POSITION</td><td><p>Used to fully describe a linearly referenced location given by the linear element being measured (the <a href="../../ifcproductextension/lexical/ifcalignment.htm">IfcAlignment</a> into which the <a href="../../ifcproductextension/lexical/ifcreferent.htm">IfcReferent</a> is nested), the method of measurement (<a href="../../ifcsharedinfrastructureelements/pset/pset_linearreferencingmethod.htm">Pset_LinearReferencingMethod</a>) and a measure value specified with a distance expression (<i>Pset_DistanceExpression</i>). If a linear referencing method is specified for the position, it overrides any linear referencing method specified for the alignment.”</p>
+</td></tr><tr><td>POSITION</td><td><p>Used to fully represent and describe a fixed location, relative to which other elements can be positioned using <a href="../../ifcproductextension/lexical/ifcrelpositions.htm">IfcRelPositions</a>.</p>
 </td></tr><tr><td>USERDEFINED</td><td></td></tr><tr><td>NOTDEFINED</td><td></td></tr></table>
 </details>
 </section>
@@ -78,8 +79,6 @@
 <h5 class="num">Formal representations</h5>
 <details><summary>XML Specification</summary><div class="xsd"><code class="xsd">&nbsp;&lt;xs:simpleType name=&quot;<a href="../../ifcproductextension/lexical/ifcreferenttypeenum.htm">IfcReferentTypeEnum</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;kilopoint&quot;/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;milepoint&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;station&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;referencemarker&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;landmark&quot;/&gt;<br/>
@@ -93,7 +92,7 @@
 </code></div></details>
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">TYPE</span> IfcReferentTypeEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
-&nbsp;KILOPOINT, <br/>&nbsp;MILEPOINT, <br/>&nbsp;STATION, <br/>&nbsp;REFERENCEMARKER, <br/>&nbsp;LANDMARK, <br/>&nbsp;BOUNDARY, <br/>&nbsp;INTERSECTION, <br/>&nbsp;POSITION, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
+&nbsp;STATION, <br/>&nbsp;REFERENCEMARKER, <br/>&nbsp;LANDMARK, <br/>&nbsp;BOUNDARY, <br/>&nbsp;INTERSECTION, <br/>&nbsp;POSITION, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
 </p>
 <p class="std"><a href="../../../annex/annex-d/ifcproductextension/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
 </code></div>

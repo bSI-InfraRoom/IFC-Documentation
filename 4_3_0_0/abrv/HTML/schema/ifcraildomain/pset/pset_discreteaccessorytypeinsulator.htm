@@ -1,0 +1,161 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>Pset_DiscreteAccessoryTypeInsulator</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 7 index2 7 index3 4 index4 38 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-7.htm#7.7.4.39");
+//-->
+</script>
+
+<h4 class="std">7.7.4.39 Pset_DiscreteAccessoryTypeInsulator</h4>
+<p><span class="self-ref">PSET_TYPEDRIVENOVERRIDE</span>
+/
+<a href="../../ifcsharedcomponentelements/lexical/ifcdiscreteaccessory.htm">IfcDiscreteAccessory</a>
+ / <span class="self-ref">INSULATOR</span>
+</p>Properties of an insulator. The property set can be used by the predefined type INSULATOR of IfcDiscreteAccessory.
+
+<details open="open"><summary>Properties</summary><p><a href="http://lookup.bsdd.buildingsmart.com/api/4.0/IfdPSet/0gvQ9DkosW_LgM0Ggr1BiM/ifcVersion/2x4" target="ifd"><img border="0" src="../../../img/external.png" title="Link to IFD"/> buildingSMART Data Dictionary</a></p>
+
+<p><a href="../../../psd/Pset_DiscreteAccessoryTypeInsulator.xml"><img border="0" src="../../../img/diagram.png" title="Link to PSD-XML"/> PSD-XML</a></p>
+
+
+<table class="gridtable">
+<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+<tr><td>RatedCurrent</td><td>
+<span class="self-ref">P_BOUNDEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectriccurrentmeasure.htm">IfcElectricCurrentMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Rated Current</b></td><td>The current that a device is designed to handle.
+</td></tr>
+</table>
+</td></tr>
+<tr><td>RatedVoltage</td><td>
+<span class="self-ref">P_BOUNDEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectricvoltagemeasure.htm">IfcElectricVoltageMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Rated Voltage</b></td><td>The range of allowed voltage that a device is certified to handle. The upper bound of this value is the maximum.
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>定格電圧</b></td><td>使用できることが許可されている許容電圧。
+</td></tr>
+</table>
+</td></tr>
+<tr><td>InsulationVoltage</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectricvoltagemeasure.htm">IfcElectricVoltageMeasure</a>
+</td><td>
+The max voltage for normal insulation operation.
+
+</td></tr>
+<tr><td>BreakdownVoltageTolerance</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectricvoltagemeasure.htm">IfcElectricVoltageMeasure</a>
+</td><td>
+Nominal value of the spark gap breakdown voltage tolerance.
+
+</td></tr>
+<tr><td>InsulationMethod</td><td>
+<span class="self-ref">P_ENUMERATEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+/
+ <a href="../../../penum/penum_insulatortype.htm">PEnum_InsulatorType</a></td><td>
+The method used to insulate.
+
+</td></tr>
+<tr><td>OperationalTemperatureRange</td><td>
+<span class="self-ref">P_BOUNDEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcthermodynamictemperaturemeasure.htm">IfcThermodynamicTemperatureMeasure</a>
+*</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Operational Temperature Range</b></td><td>Allowable operation ambient air temperature range.
+</td></tr>
+<tr><td><img src="../../../img/locale-fr.png" /></td><td><b>PlageTempératureOpérationelle</b></td><td>Opération admise sur la plage de température de l'air ambiant
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>動作温度範囲</b></td><td>動作を許容する周囲温度の範囲
+</td></tr>
+</table>
+</td></tr>
+<tr><td>CreepageDistance</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>
+</td><td>
+Shortest distance or the sum of the shortest distances along the surface on an insulator between two conductive parts which normally have the operating voltage between them. (IEV ref 471-01-04)
+
+</td></tr>
+<tr><td>InstallationMethod</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Installation Method</b></td><td>Method of installation of cable/conductor or other elements. Installation methods are typically defined by reference in standards such as IEC 60364-5-52, table 52A-1 or BS7671 Appendix 4 Table 4A1 etc. Selection of the value to be used should be determined from such a standard according to local usage.
+</td></tr>
+</table>
+</td></tr>
+<tr><td>LightningPeakVoltage</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectricvoltagemeasure.htm">IfcElectricVoltageMeasure</a>
+</td><td>
+The peak lightning voltage that the insulator could withstand.
+
+</td></tr>
+<tr><td>BendingStrength</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpressuremeasure.htm">IfcPressureMeasure</a>
+</td><td>
+Bending strength.
+
+</td></tr>
+<tr><td>RMSWithstandVoltage</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectricvoltagemeasure.htm">IfcElectricVoltageMeasure</a>
+</td><td>
+Rms value of sinusoidal power frequency voltage that the insulation of the given equipment can withstand during tests made under specified conditions and for a specified duration. (IEV ref 614-03-22）
+
+</td></tr>
+<tr><td>Voltage</td><td>
+<span class="self-ref">P_BOUNDEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectricvoltagemeasure.htm">IfcElectricVoltageMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Voltage</b></td><td>The actual voltage and operable range.
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>電圧</b></td><td>実電圧と動作可能範囲。
+</td></tr>
+</table>
+</td></tr>
+</table>
+</details>
+</p>
+<p><a href="../../../link/pset_discreteaccessorytypeinsulator.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

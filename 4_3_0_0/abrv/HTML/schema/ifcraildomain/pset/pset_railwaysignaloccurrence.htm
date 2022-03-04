@@ -1,0 +1,149 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>Pset_RailwaySignalOccurrence</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 7 index2 7 index3 4 index4 114 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-7.htm#7.7.4.115");
+//-->
+</script>
+
+<h4 class="std">7.7.4.115 Pset_RailwaySignalOccurrence</h4>
+<p><span class="self-ref">PSET_OCCURRENCEDRIVEN</span>
+/
+<a href="../../ifcsharedinfrastructureelements/lexical/ifcsignal.htm">IfcSignal</a>
+</p>Properties common to the definition of occurrences of <em>IfcSignal</em> applied in railways.
+
+<details open="open"><summary>Properties</summary><p><a href="http://lookup.bsdd.buildingsmart.com/api/4.0/IfdPSet/3KOFA7iV6l0gT2EY8PRA7y/ifcVersion/2x4" target="ifd"><img border="0" src="../../../img/external.png" title="Link to IFD"/> buildingSMART Data Dictionary</a></p>
+
+<p><a href="../../../psd/Pset_RailwaySignalOccurrence.xml"><img border="0" src="../../../img/diagram.png" title="Link to PSD-XML"/> PSD-XML</a></p>
+
+
+<table class="gridtable">
+<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+<tr><td>ApproachSpeed</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclinearvelocitymeasure.htm">IfcLinearVelocityMeasure</a>
+</td><td>
+The design speed of trains approaching the signal if different from the line speed.
+
+</td></tr>
+<tr><td>HandSignallingProhibited</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>
+</td><td>
+Indicates if hand signalling is prohibited in case of any failure.
+
+</td></tr>
+<tr><td>LimitedClearances</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifctext.htm">IfcText</a>
+</td><td>
+Special conditions for placing the signal post telephone: tunnels, bridges, viaducts.
+
+</td></tr>
+<tr><td>NumberOfLampsNotUsed</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcinteger.htm">IfcInteger</a>
+</td><td>
+Number of lamps which are not needed and blanked out (sealed).
+
+</td></tr>
+<tr><td>RequiresOLEMesh</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>
+</td><td>
+Indicates whether an OLE mesh is required to protect the signal or maintainer.
+
+</td></tr>
+<tr><td>RequiresSafetyHandrail</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>
+</td><td>
+Indicates whether a safety handrail is required.
+
+</td></tr>
+<tr><td>SignalPostTelephoneID</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcidentifier.htm">IfcIdentifier</a>
+</td><td>
+The identifier of the signal post telephone attached to the signal.
+
+</td></tr>
+<tr><td>SignalPostTelephoneType</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+</td><td>
+Indicates the type of the signal post telephone, e.g. locked, direct line, dial phone.
+
+</td></tr>
+<tr><td>SpecialPositionArrangement</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+</td><td>
+Type of special position at which the signal is placed.
+
+</td></tr>
+<tr><td>HinderingObstaclesDescription</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifctext.htm">IfcText</a>
+</td><td>
+Description of obstacles that hinder the visibility for the staff in the station.
+
+</td></tr>
+<tr><td>SignalWalkwayLength</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>
+</td><td>
+Indicates the length of the walkway from signal to signal post telephone.
+
+</td></tr>
+<tr><td>RequiresBannerSignal</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>
+</td><td>
+Indicates whether a banner repeater signal is required.
+
+</td></tr>
+<tr><td>DistanceToStopMark</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>
+</td><td>
+Distance from the signal to the nearest stop mark at a platform.
+
+</td></tr>
+</table>
+</details>
+</p>
+<p><a href="../../../link/pset_railwaysignaloccurrence.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

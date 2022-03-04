@@ -11,7 +11,7 @@
     <title>IfcMeasureValue</title>
 
     <style type="text/css">
-      body { counter-reset: index1 8 index2 9 index3 2 index4 43 index5 0; }
+      body { counter-reset: index1 8 index2 9 index3 2 index4 66 index5 0; }
     </style>
   </head>
 
@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 <!--
-    parent.index.location.replace("../../toc-8.htm#8.9.2.44");
+    parent.index.location.replace("../../toc-8.htm#8.9.2.67");
 //-->
 </script>
 
@@ -71,9 +71,11 @@ A measure value is a value as defined in ISO 31-0 (clause 2).</p>
 </td><td></td></tr><tr><td><a href="../../ifcmeasureresource/lexical/ifcmassmeasure.htm">IfcMassMeasure</a>
 </td><td></td></tr><tr><td><a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>
 </td><td></td></tr><tr><td><a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>
+</td><td></td></tr><tr><td><a href="../../ifcmeasureresource/lexical/ifcelectriccurrentmeasure.htm">IfcElectricCurrentMeasure</a>
 </td><td></td></tr><tr><td><a href="../../ifcmeasureresource/lexical/ifccountmeasure.htm">IfcCountMeasure</a>
 </td><td></td></tr><tr><td><a href="../../ifcmeasureresource/lexical/ifcareameasure.htm">IfcAreaMeasure</a>
 </td><td></td></tr><tr><td><a href="../../ifcmeasureresource/lexical/ifcnormalisedratiomeasure.htm">IfcNormalisedRatioMeasure</a>
+</td><td></td></tr><tr><td><a href="../../ifcmeasureresource/lexical/ifccomplexnumber.htm">IfcComplexNumber</a>
 </td><td></td></tr><tr><td><a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a>
 </td><td></td></tr></table>
 </details>
@@ -83,7 +85,9 @@ A measure value is a value as defined in ISO 31-0 (clause 2).</p>
 <details><summary>XML Specification</summary><div class="xsd"><code class="xsd">&nbsp;&lt;xs:group name=&quot;<a href="../../ifcmeasureresource/lexical/ifcmeasurevalue.htm">IfcMeasureValue</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:choice&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcareameasure.htm">IfcAreaMeasure</a>-wrapper&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifccomplexnumber.htm">IfcComplexNumber</a>-wrapper&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifccountmeasure.htm">IfcCountMeasure</a>-wrapper&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcelectriccurrentmeasure.htm">IfcElectricCurrentMeasure</a>-wrapper&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>-wrapper&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcmassmeasure.htm">IfcMassMeasure</a>-wrapper&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a>-wrapper&quot;/&gt;<br/>
@@ -103,7 +107,7 @@ A measure value is a value as defined in ISO 31-0 (clause 2).</p>
 </code></div></details>
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">TYPE</span> IfcMeasureValue = <span class="keyword">SELECT</span> (<br/>
-&nbsp;<a href="../../ifcmeasureresource/lexical/ifcvolumemeasure.htm">IfcVolumeMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifctimemeasure.htm">IfcTimeMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcthermodynamictemperaturemeasure.htm">IfcThermodynamicTemperatureMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcpositiveratiomeasure.htm">IfcPositiveRatioMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcratiomeasure.htm">IfcRatioMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcpositiveplaneanglemeasure.htm">IfcPositivePlaneAngleMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcplaneanglemeasure.htm">IfcPlaneAngleMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcparametervalue.htm">IfcParameterValue</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcnumericmeasure.htm">IfcNumericMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcmassmeasure.htm">IfcMassMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifccountmeasure.htm">IfcCountMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcareameasure.htm">IfcAreaMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcnormalisedratiomeasure.htm">IfcNormalisedRatioMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a>);<br/><span class="keyword">END_TYPE;</span><br/>
+&nbsp;<a href="../../ifcmeasureresource/lexical/ifcvolumemeasure.htm">IfcVolumeMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifctimemeasure.htm">IfcTimeMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcthermodynamictemperaturemeasure.htm">IfcThermodynamicTemperatureMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcpositiveratiomeasure.htm">IfcPositiveRatioMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcratiomeasure.htm">IfcRatioMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcpositiveplaneanglemeasure.htm">IfcPositivePlaneAngleMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcplaneanglemeasure.htm">IfcPlaneAngleMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcparametervalue.htm">IfcParameterValue</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcnumericmeasure.htm">IfcNumericMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcmassmeasure.htm">IfcMassMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcelectriccurrentmeasure.htm">IfcElectricCurrentMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifccountmeasure.htm">IfcCountMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcareameasure.htm">IfcAreaMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcnormalisedratiomeasure.htm">IfcNormalisedRatioMeasure</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifccomplexnumber.htm">IfcComplexNumber</a>, <br/>&nbsp;<a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.htm">IfcNonNegativeLengthMeasure</a>);<br/><span class="keyword">END_TYPE;</span><br/>
 </p>
 <p class="std"><a href="../../../annex/annex-d/ifcmeasureresource/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
 </code></div>

@@ -54,7 +54,7 @@
 <p>NOTE  The <span class="self-ref">IfcDoorLiningProperties</span> shall only be applied by the receiving application to parametrically define the 3D shape of a door, if the attribute <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a>.ParameterTakesPrecedence is set TRUE.</p>
 </blockquote>
 <p>The <span class="self-ref">IfcDoorLiningProperties</span> are included in the list of properties of <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a>.HasPropertySets. More information about the door lining can be included in the same list of the <i>IfcDoorTyype</i> using another <a href="../../ifckernel/lexical/ifcpropertyset.htm">IfcPropertySet</a> for dynamic extensions.</p>
-<p>The <span class="self-ref">IfcDoorLiningProperties</span> does not hold its own geometric representation. However it defines parameters which can be used to create the shape of the door type (which is inserted by the <a href="../../ifcsharedbldgelements/lexical/ifcdoor.htm">IfcDoor</a> into the spatial context of the project) as shown in Figure 166. The parameters of the <span class="self-ref">IfcDoorLiningProperties</span> define a standard door lining, including (if given) a threshold and a transom. The outer boundary of the lining is determined by the 'Profile' shape representation assigned to the <a href="../../ifcsharedbldgelements/lexical/ifcdoor.htm">IfcDoor</a>, which inserts the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a>.</p>
+<p>The <span class="self-ref">IfcDoorLiningProperties</span> does not hold its own geometric representation. However it defines parameters which can be used to create the shape of the door type (which is inserted by the <a href="../../ifcsharedbldgelements/lexical/ifcdoor.htm">IfcDoor</a> into the spatial context of the project) as shown in Figure 171. The parameters of the <span class="self-ref">IfcDoorLiningProperties</span> define a standard door lining, including (if given) a threshold and a transom. The outer boundary of the lining is determined by the 'Profile' shape representation assigned to the <a href="../../ifcsharedbldgelements/lexical/ifcdoor.htm">IfcDoor</a>, which inserts the <a href="../../ifcsharedbldgelements/lexical/ifcdoortype.htm">IfcDoorType</a>.</p>
 <p> </p>
 <table>
  <tr>
@@ -118,7 +118,7 @@
   </td>
  </tr>
  <tr>
-  <td><p class="figure">Figure 166 &mdash; Door lining properties</p></td>
+  <td><p class="figure">Figure 171 &mdash; Door lining properties</p></td>
  </tr>
 </table>
 <blockquote class="note">
@@ -339,23 +339,6 @@ IFC4 CHANGE  New attribute added at the end of the entity definition.
 </td><td>X</td></tr>
 </table>
 </details>
-</section>
-<section>
-<h5 class="num">Definitions applying to IFC4.3 AbRV - Scope settings</h5>
-<hr />
-<section>
-<details>
-<summary>Concept inheritance</summary>
-<p><table class="attributes">
-<tr><th><b>#</b></th><th><b>Concept</b></th><th><b>Template</b></th><th><b>Model View</b></th></tr>
-<tr><td colspan="3"><a href="../../ifckernel/lexical/ifcroot.htm"><a href="../../ifckernel/lexical/ifcroot.htm">IfcRoot</a></a></td></tr><tr><td> </td><td><a href="../../ifckernel/lexical/ifcroot.htm#object-occurrence-attributes">Object Occurrence Attributes</a></td><td><a href="../../templates/object-occurrence-attributes.htm">Object Occurrence Attributes</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcroot.htm#property-sets">Property Sets</a></td><td><a href="../../templates/property-sets.htm">Property Sets</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcroot.htm#revision-control">Revision Control</a></td><td><a href="../../templates/revision-control.htm">Revision Control</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcroot.htm#software-identity">Software Identity</a></td><td><a href="../../templates/software-identity.htm">Software Identity</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-
-</table>
-</details>
-</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

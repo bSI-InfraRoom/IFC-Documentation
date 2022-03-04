@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ifdguid="a4db95cf06af45628d73bbd65fbcc8da" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd"><IfcVersion version="IFC4X3_RC4" /><Name>Pset_LinearReferencingMethod</Name><Definition>Describes the manner in which measurements are made along (and optionally offset from) a linear element.
 
-&gt; NOTE Definition according to ISO 19148:2021</Definition><Applicability /><ApplicableClasses><ClassName>IfcAlignment</ClassName><ClassName>IfcReferent/(.POSITION.)</ClassName></ApplicableClasses><ApplicableTypeValue>IfcAlignment,IfcReferent/(.POSITION.)</ApplicableTypeValue><PropertyDefs><PropertyDef ifdguid="361d880a8ed24d92bec001d40de485b3"><Name>LRMName</Name><Definition>Gives the name of this Linear Referencing Method, such as “kilometre-point”. 
+&gt; NOTE Definition according to ISO 19148:2021</Definition><Applicability /><ApplicableClasses><ClassName>IfcAlignment</ClassName><ClassName>IfcReferent</ClassName></ApplicableClasses><ApplicableTypeValue>IfcAlignment,IfcReferent</ApplicableTypeValue><PropertyDefs><PropertyDef ifdguid="361d880a8ed24d92bec001d40de485b3"><Name>LRMName</Name><Definition>Gives the name of this Linear Referencing Method, such as “kilometre-point”. 
 
 &gt; NOTE&amp;nbsp;Definition according to ISO 19148:2021.
 &gt;

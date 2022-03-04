@@ -11,7 +11,7 @@
     <title>IfcLocalPlacement</title>
 
     <style type="text/css">
-      body { counter-reset: index1 8 index2 5 index3 3 index4 2 index5 0; }
+      body { counter-reset: index1 8 index2 5 index3 3 index4 3 index5 0; }
     </style>
   </head>
 
@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 <!--
-    parent.index.location.replace("../../toc-8.htm#8.5.3.3");
+    parent.index.location.replace("../../toc-8.htm#8.5.3.4");
 //-->
 </script>
 
@@ -45,7 +45,7 @@
 <details open="open"><summary>Entity definition</summary><p>An <span class="self-ref">IfcLocalPlacement</span> defines the relative placement of a product in relation to the placement of another product or the absolute placement of a product within the geometric representation context of the project.</p>
 <p>The <span class="self-ref">IfcLocalPlacement</span> allows that an <a href="../../ifckernel/lexical/ifcproduct.htm">IfcProduct</a> can be placed by this <span class="self-ref">IfcLocalPlacement</span> (through the attribute_ObjectPlacement_) within the local coordinate system of the object placement of another <a href="../../ifckernel/lexical/ifcproduct.htm">IfcProduct</a>, which is referenced by the <i>PlacementRelTo</i>. Rules to prevent cyclic relative placements have to be introduced on the application level.</p>
 <p>If the <i>PlacementRelTo</i> is not given, then the <a href="../../ifckernel/lexical/ifcproduct.htm">IfcProduct</a> is placed absolutely within the world coordinate system.</p>
-<p>The following conventions shall apply as default relative positions if the relative placement is used. The conventions are given for all five direct subtypes of <a href="../../ifckernel/lexical/ifcproduct.htm">IfcProduct</a>, the <a href="../../ifcproductextension/lexical/ifcspatialstructureelement.htm">IfcSpatialStructureElement</a>, <a href="../../ifcproductextension/lexical/ifcelement.htm">IfcElement</a>, <a href="../../ifcproductextension/lexical/ifcannotation.htm">IfcAnnotation</a>, <i>IfcGrid</i>, <a href="../../ifcproductextension/lexical/ifcport.htm">IfcPort</a>. More detailed placement information is given at the level of subtypes of those five types mentioned.</p>
+<p>The following conventions shall apply as default relative positions if the relative placement is used. The conventions are given for all five direct subtypes of <a href="../../ifckernel/lexical/ifcproduct.htm">IfcProduct</a>, the <a href="../../ifcproductextension/lexical/ifcspatialstructureelement.htm">IfcSpatialStructureElement</a>, <a href="../../ifcproductextension/lexical/ifcelement.htm">IfcElement</a>, <a href="../../ifcproductextension/lexical/ifcannotation.htm">IfcAnnotation</a>, <a href="../../ifcproductextension/lexical/ifcgrid.htm">IfcGrid</a>, <a href="../../ifcproductextension/lexical/ifcport.htm">IfcPort</a>. More detailed placement information is given at the level of subtypes of those five types mentioned.</p>
 <ul>
 <li>For the subtypes of <a href="../../ifcproductextension/lexical/ifcspatialstructureelement.htm">IfcSpatialStructureElement</a> the following conventions apply
 <ul>
@@ -54,7 +54,7 @@
 <li><a href="../../ifcproductextension/lexical/ifcfacilitypart.htm">IfcFacilityPart</a> shall be placed relative to the local placement of <a href="../../ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a></li>
 </ul>
 </li>
-<li>For <i>IfcGrid</i> and <a href="../../ifcproductextension/lexical/ifcannotation.htm">IfcAnnotation</a> the convention applies that it shall be placed relative
+<li>For <a href="../../ifcproductextension/lexical/ifcgrid.htm">IfcGrid</a> and <a href="../../ifcproductextension/lexical/ifcannotation.htm">IfcAnnotation</a> the convention applies that it shall be placed relative
 <ul>
 <li>to the local placement of its container, either <a href="../../ifcproductextension/lexical/ifcsite.htm">IfcSite</a>, <a href="../../ifcproductextension/lexical/ifcbuilding.htm">IfcBuilding</a>, or <a href="../../ifcproductextension/lexical/ifcbuildingstorey.htm">IfcBuildingStorey</a>
 <ul>
@@ -145,7 +145,6 @@ Geometric placement that defines the transformation from the related coordinate 
 </td><td>X</td></tr>
 </table>
 </details>
-</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

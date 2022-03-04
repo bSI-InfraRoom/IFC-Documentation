@@ -11,7 +11,7 @@
     <title>IfcRelVoidsElement</title>
 
     <style type="text/css">
-      body { counter-reset: index1 5 index2 2 index3 3 index4 32 index5 0; }
+      body { counter-reset: index1 5 index2 2 index3 3 index4 38 index5 0; }
     </style>
   </head>
 
@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 <!--
-    parent.index.location.replace("../../toc-5.htm#5.2.3.33");
+    parent.index.location.replace("../../toc-5.htm#5.2.3.39");
 //-->
 </script>
 
@@ -45,8 +45,8 @@
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
 <details open="open"><summary>Entity definition</summary><p><span class="self-ref">IfcRelVoidsElement</span> is an objectified relationship between a building element and one opening element that creates a void in the element. It is a one-to-one relationship. This relationship implies a Boolean operation of subtraction between the geometric bodies of the element and the opening.</p>
-<p>As shown in Figure 142, the insertion of a void into a wall is represented by the relationship <span class="self-ref">IfcRelVoidsElement</span>. The opening is created within the wall by <i>IfcWall(StandardCase) o-- IfcRelVoidsElement --o IfcOpeningElement</i>.</p>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcrelvoidselements-fig1.png" alt="&quot;relationships for voiding&quot;" title="Figure 142 &mdash; Relationship for element voiding"></td></tr><tr><td><p class="figure">Figure 142 &mdash; Relationship for element voiding</p></td></tr></table></p>
+<p>As shown in Figure 146, the insertion of a void into a wall is represented by the relationship <span class="self-ref">IfcRelVoidsElement</span>. The opening is created within the wall by <i>IfcWall(StandardCase) o-- IfcRelVoidsElement --o IfcOpeningElement</i>.</p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcrelvoidselements-fig1.png" alt="&quot;relationships for voiding&quot;" title="Figure 146 &mdash; Relationship for element voiding"></td></tr><tr><td><p class="figure">Figure 146 &mdash; Relationship for element voiding</p></td></tr></table></p>
 <blockquote class="history">
 <p>HISTORY  New entity in IFC1.0</p>
 </blockquote>
@@ -65,7 +65,7 @@ IFC2x CHANGE  The data type has been changed from <i>IfcBuildingElement</i> to 
 Reference to the feature subtraction element which defines a void in the associated element.
 
 <blockquote>
-IFC2x CHANGE  The data type has been changed from <i>IfcOpeningElement</i> to <a href="../../ifcproductextension/lexical/ifcfeatureelementsubtraction.htm">IfcFeatureElementSubtraction</a> with upward compatibility for file based exchange.
+IFC2x CHANGE  The data type has been changed from <a href="../../ifcproductextension/lexical/ifcopeningelement.htm">IfcOpeningElement</a> to <a href="../../ifcproductextension/lexical/ifcfeatureelementsubtraction.htm">IfcFeatureElementSubtraction</a> with upward compatibility for file based exchange.
 </blockquote>
 </td><td>X</td></tr>
 </table>
@@ -115,28 +115,11 @@ IFC2x CHANGE  The data type has been changed from <i>IfcBuildingElement</i> to 
 Reference to the feature subtraction element which defines a void in the associated element.
 
 <blockquote>
-IFC2x CHANGE  The data type has been changed from <i>IfcOpeningElement</i> to <a href="../../ifcproductextension/lexical/ifcfeatureelementsubtraction.htm">IfcFeatureElementSubtraction</a> with upward compatibility for file based exchange.
+IFC2x CHANGE  The data type has been changed from <a href="../../ifcproductextension/lexical/ifcopeningelement.htm">IfcOpeningElement</a> to <a href="../../ifcproductextension/lexical/ifcfeatureelementsubtraction.htm">IfcFeatureElementSubtraction</a> with upward compatibility for file based exchange.
 </blockquote>
 </td><td>X</td></tr>
 </table>
 </details>
-</section>
-<section>
-<h5 class="num">Definitions applying to IFC4.3 AbRV - Scope settings</h5>
-<hr />
-<section>
-<details>
-<summary>Concept inheritance</summary>
-<p><table class="attributes">
-<tr><th><b>#</b></th><th><b>Concept</b></th><th><b>Template</b></th><th><b>Model View</b></th></tr>
-<tr><td colspan="3"><a href="../../ifckernel/lexical/ifcroot.htm"><a href="../../ifckernel/lexical/ifcroot.htm">IfcRoot</a></a></td></tr><tr><td> </td><td><a href="../../ifckernel/lexical/ifcroot.htm#object-occurrence-attributes">Object Occurrence Attributes</a></td><td><a href="../../templates/object-occurrence-attributes.htm">Object Occurrence Attributes</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcroot.htm#property-sets">Property Sets</a></td><td><a href="../../templates/property-sets.htm">Property Sets</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcroot.htm#revision-control">Revision Control</a></td><td><a href="../../templates/revision-control.htm">Revision Control</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcroot.htm#software-identity">Software Identity</a></td><td><a href="../../templates/software-identity.htm">Software Identity</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-
-</table>
-</details>
-</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

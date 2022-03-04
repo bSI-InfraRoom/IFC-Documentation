@@ -1,0 +1,83 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>Pset_ElectricalFeederLine</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 7 index2 7 index3 4 index4 51 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-7.htm#7.7.4.52");
+//-->
+</script>
+
+<h4 class="std">7.7.4.52 Pset_ElectricalFeederLine</h4>
+<p><span class="self-ref">PSET_TYPEDRIVENOVERRIDE</span>
+/
+<a href="../../ifcelectricaldomain/lexical/ifccablesegment.htm">IfcCableSegment</a>
+ / <span class="self-ref">CONDUCTORSEGMENT</span>
+</p>Properties of conductors used as feeder line. This property set is applicable to a type or occurence of <em>IfcCableSegment</em> with predefined type CONDUCTORSEGMENT.
+
+<details open="open"><summary>Properties</summary><p><a href="http://lookup.bsdd.buildingsmart.com/api/4.0/IfdPSet/301fehHw1k9DOwIddh7E4r/ifcVersion/2x4" target="ifd"><img border="0" src="../../../img/external.png" title="Link to IFD"/> buildingSMART Data Dictionary</a></p>
+
+<p><a href="../../../psd/Pset_ElectricalFeederLine.xml"><img border="0" src="../../../img/diagram.png" title="Link to PSD-XML"/> PSD-XML</a></p>
+
+
+<table class="gridtable">
+<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+<tr><td>CurrentCarryingCapacity</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectriccurrentmeasure.htm">IfcElectricCurrentMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Current Carrying Capasity</b></td><td>Maximum value of electric current which can be carried continuously by a conductor, a device or an apparatus, under specified conditions without its steady-state temperature exceeding a  specified value. Based on IEC60826-11-13. NOTE: The temperature specified value is maximum Design Ambient Temperature.
+</td></tr>
+</table>
+</td></tr>
+<tr><td>DesignAmbientTemperature</td><td>
+<span class="self-ref">P_BOUNDEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcthermodynamictemperaturemeasure.htm">IfcThermodynamicTemperatureMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Design Ambient Temperature</b></td><td>The highest and lowest local ambient temperature likely to be encountered.
+</td></tr>
+</table>
+</td></tr>
+<tr><td>ElectricalClearanceDistance</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>
+</td><td>
+The distance between two conductive parts along a string stretched the shortest way between these conductive parts. (IEV ref 441-17-31)
+
+</td></tr>
+<tr><td>ElectricalFeederType</td><td>
+<span class="self-ref">P_ENUMERATEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+/
+ <a href="../../../penum/penum_electricalfeedertype.htm">PEnum_ElectricalFeederType</a></td><td>
+Type of electrical feeder.
+
+</td></tr>
+</table>
+</details>
+</p>
+<p><a href="../../../link/pset_electricalfeederline.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

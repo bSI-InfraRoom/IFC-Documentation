@@ -11,7 +11,7 @@
     <title>IfcSpatialStructureElement</title>
 
     <style type="text/css">
-      body { counter-reset: index1 5 index2 2 index3 3 index4 38 index5 0; }
+      body { counter-reset: index1 5 index2 2 index3 3 index4 44 index5 0; }
     </style>
   </head>
 
@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 <!--
-    parent.index.location.replace("../../toc-5.htm#5.2.3.39");
+    parent.index.location.replace("../../toc-5.htm#5.2.3.45");
 //-->
 </script>
 
@@ -42,10 +42,10 @@
 <li><p>facility as <a href="../../ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a>, or specifically</p>
 <ul>
 <li>building as <a href="../../ifcproductextension/lexical/ifcbuilding.htm">IfcBuilding</a></li>
-<li>bridge as <i>IfcBridge</i></li>
-<li>marine facility as <i>IfcMarineFacility</i></li>
+<li>bridge as <a href="../../ifcproductextension/lexical/ifcbridge.htm">IfcBridge</a></li>
+<li>marine facility as <a href="../../ifcportsandwaterwaysdomain/lexical/ifcmarinefacility.htm">IfcMarineFacility</a></li>
 <li>railway as <a href="../../ifcraildomain/lexical/ifcrailway.htm">IfcRailway</a></li>
-<li>road as <i>IfcRoad</i></li>
+<li>road as <a href="../../ifcroaddomain/lexical/ifcroad.htm">IfcRoad</a></li>
 </ul>
 </li>
 <li><p>facility part as <a href="../../ifcproductextension/lexical/ifcfacilitypart.htm">IfcFacilityPart</a>, or specifically</p>
@@ -65,8 +65,8 @@
 <li><strong>Reference of elements</strong> : <a href="../../ifcproductextension/lexical/ifcrelreferencedinspatialstructure.htm">IfcRelReferencedInSpatialStructure</a> by inverse attribute <i>ReferencesElements</i>, used to reference any element, like building elements, MEP elements, etc. in spatial structure elements, other then the one, where it is contained.</li>
 <li><strong>Reference of systems</strong> : <i>IfcRelServicesBuildings</i> by inverse attribute <i>ServicedBySystems</i>, used to reference a sytem, like a building service or electrical distribution system, a zonal system, or a structural analysis system, that is assigned to this spatial structure element.</li>
 </ul>
-<p>The subtypes of <span class="self-ref">IfcSpatialStructureElement</span> relate to each other by using the <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a> relationship to build the project spatial structure. Figure 147 shows the use of <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a> to establish a spatial structure including site, building, building section and storey. More information is provided at the level of the subtypes.</p>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcspatialstructureelement-spatialstructure.png" alt="&quot;fig1&quot;" title="Figure 147 &mdash; Spatial structure element composition"></td></tr><tr><td><p class="figure">Figure 147 &mdash; Spatial structure element composition</p></td></tr></table></p>
+<p>The subtypes of <span class="self-ref">IfcSpatialStructureElement</span> relate to each other by using the <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a> relationship to build the project spatial structure. Figure 151 shows the use of <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a> to establish a spatial structure including site, building, building section and storey. More information is provided at the level of the subtypes.</p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcspatialstructureelement-spatialstructure.png" alt="&quot;fig1&quot;" title="Figure 151 &mdash; Spatial structure element composition"></td></tr><tr><td><p class="figure">Figure 151 &mdash; Spatial structure element composition</p></td></tr></table></p>
 <blockquote class="history">
 <p>HISTORY  New entity in IFC2x.</p>
 </blockquote>
@@ -240,56 +240,6 @@ IFC4 CHANGE  Attribute made optional.
 </td><td>X</td></tr>
 </table>
 </details>
-</section>
-<section>
-<h5 class="num">Definitions applying to IFC4.3 AbRV - Scope settings</h5>
-<hr />
-<section>
-<details>
-<summary>Concept inheritance</summary>
-<p><table class="attributes">
-<tr><th><b>#</b></th><th><b>Concept</b></th><th><b>Template</b></th><th><b>Model View</b></th></tr>
-<tr><td colspan="3"><a href="../../ifckernel/lexical/ifcobjectdefinition.htm"><a href="../../ifckernel/lexical/ifcobjectdefinition.htm">IfcObjectDefinition</a></a></td></tr><tr><td> </td><td><a href="../../ifckernel/lexical/ifcobjectdefinition.htm#library-association">Library Association</a></td><td><a href="../../templates/library-association.htm">Library Association</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobjectdefinition.htm#material-constituent-set">Material Constituent Set</a></td><td><a href="../../templates/material-constituent-set.htm">Material Constituent Set</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobjectdefinition.htm#material-layer-set">Material Layer Set</a></td><td><a href="../../templates/material-layer-set.htm">Material Layer Set</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobjectdefinition.htm#material-profile-set">Material Profile Set</a></td><td><a href="../../templates/material-profile-set.htm">Material Profile Set</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobjectdefinition.htm#material-single">Material Single</a></td><td><a href="../../templates/material-single.htm">Material Single</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobjectdefinition.htm#object-assignment">Object Assignment</a></td><td><a href="../../templates/object-assignment.htm">Object Assignment</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobjectdefinition.htm#object-association">Object Association</a></td><td><a href="../../templates/object-association.htm">Object Association</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobjectdefinition.htm#object-composition">Object Composition</a></td><td><a href="../../templates/object-composition.htm">Object Composition</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobjectdefinition.htm#object-attributes">Object Attributes</a></td><td><a href="../../templates/object-attributes.htm">Object Attributes</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobjectdefinition.htm#object-occurrence-attributes">Object Occurrence Attributes</a></td><td><a href="../../templates/object-occurrence-attributes.htm">Object Occurrence Attributes</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobjectdefinition.htm#property-sets">Property Sets</a></td><td><a href="../../templates/property-sets.htm">Property Sets</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobjectdefinition.htm#revision-control">Revision Control</a></td><td><a href="../../templates/revision-control.htm">Revision Control</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobjectdefinition.htm#software-identity">Software Identity</a></td><td><a href="../../templates/software-identity.htm">Software Identity</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-
-<tr><td colspan="3"><a href="../../ifckernel/lexical/ifcobject.htm"><a href="../../ifckernel/lexical/ifcobject.htm">IfcObject</a></a></td></tr><tr><td> </td><td><a href="../../ifckernel/lexical/ifcobject.htm#object-connectivity">Object Connectivity</a></td><td><a href="../../templates/object-connectivity.htm">Object Connectivity</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobject.htm#object-user-identity">Object User Identity</a></td><td><a href="../../templates/object-user-identity.htm">Object User Identity</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobject.htm#property-sets-with-override">Property Sets with Override</a></td><td><a href="../../templates/property-sets-with-override.htm">Property Sets with Override</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcobject.htm#quantity-sets">Quantity Sets</a></td><td><a href="../../templates/quantity-sets.htm">Quantity Sets</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-
-<tr><td colspan="3"><a href="../../ifckernel/lexical/ifcproduct.htm"><a href="../../ifckernel/lexical/ifcproduct.htm">IfcProduct</a></a></td></tr><tr><td> </td><td><a href="../../ifckernel/lexical/ifcproduct.htm#body-geometry">Body Geometry</a></td><td><a href="../../templates/body-geometry.htm">Body Geometry</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcproduct.htm#box-geometry">Box Geometry</a></td><td><a href="../../templates/box-geometry.htm">Box Geometry</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcproduct.htm#cog-geometry">CoG Geometry</a></td><td><a href="../../templates/cog-geometry.htm">CoG Geometry</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcproduct.htm#footprint-geometry">FootPrint Geometry</a></td><td><a href="../../templates/footprint-geometry.htm">FootPrint Geometry</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcproduct.htm#footprint-geomset-geometry">FootPrint GeomSet Geometry</a></td><td><a href="../../templates/footprint-geomset-geometry.htm">FootPrint GeomSet Geometry</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcproduct.htm#product-linear-placement">Product Linear Placement</a></td><td><a href="../../templates/product-linear-placement.htm">Product Linear Placement</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcproduct.htm#product-local-placement">Product Local Placement</a></td><td><a href="../../templates/product-local-placement.htm">Product Local Placement</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcproduct.htm#product-relative-positioning">Product Relative Positioning</a></td><td><a href="../../templates/product-relative-positioning.htm">Product Relative Positioning</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcproduct.htm#reference-geometry">Reference Geometry</a></td><td><a href="../../templates/reference-geometry.htm">Reference Geometry</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcproduct.htm#reference-sweptsolid-geometry">Reference SweptSolid Geometry</a></td><td><a href="../../templates/reference-sweptsolid-geometry.htm">Reference SweptSolid Geometry</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcproduct.htm#reference-sweptsolid-polycurve-geometry">Reference SweptSolid PolyCurve Geometry</a></td><td><a href="../../templates/reference-sweptsolid-polycurve-geometry.htm">Reference SweptSolid PolyCurve Geometry</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcproduct.htm#reference-tessellation-geometry">Reference Tessellation Geometry</a></td><td><a href="../../templates/reference-tessellation-geometry.htm">Reference Tessellation Geometry</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifckernel/lexical/ifcproduct.htm#property-sets-for-objects">Pset_Risk</a></td><td><a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-
-<tr><td colspan="3"><a href="../../ifcproductextension/lexical/ifcspatialelement.htm"><a href="../../ifcproductextension/lexical/ifcspatialelement.htm">IfcSpatialElement</a></a></td></tr><tr><td> </td><td><a href="../../ifcproductextension/lexical/ifcspatialelement.htm#spatial-composition">Spatial Composition</a></td><td><a href="../../templates/spatial-composition.htm">Spatial Composition</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifcproductextension/lexical/ifcspatialelement.htm#spatial-container">Spatial Container</a></td><td><a href="../../templates/spatial-container.htm">Spatial Container</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifcproductextension/lexical/ifcspatialelement.htm#spatial-element-attributes">Spatial Element Attributes</a></td><td><a href="../../templates/spatial-element-attributes.htm">Spatial Element Attributes</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-<tr><td> </td><td><a href="../../ifcproductextension/lexical/ifcspatialelement.htm#spatial-service-connectivity">Spatial Service Connectivity</a></td><td><a href="../../templates/spatial-service-connectivity.htm">Spatial Service Connectivity</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
-
-</table>
-</details>
-</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

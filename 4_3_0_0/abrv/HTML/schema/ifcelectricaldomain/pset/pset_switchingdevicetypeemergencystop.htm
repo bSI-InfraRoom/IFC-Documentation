@@ -1,0 +1,164 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>Pset_SwitchingDeviceTypeEmergencyStop</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 7 index2 3 index3 4 index4 46 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-7.htm#7.3.4.47");
+//-->
+</script>
+
+<h4 class="std">7.3.4.47 Pset_SwitchingDeviceTypeEmergencyStop</h4>
+<p><span class="self-ref">PSET_TYPEDRIVENOVERRIDE</span>
+/
+<a href="../../ifcelectricaldomain/lexical/ifcswitchingdevice.htm">IfcSwitchingDevice</a>
+ / <span class="self-ref">EMERGENCYSTOP</span>
+</p><table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Switching Device Type Emergency Stop</b></td><td>An emergency stop device acts to remove as quickly as possible any danger that may have arisen unexpectedly.
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b></b></td><td>IEC 826-08-03の定義:
+緊急停止スイッチは予期せずして起こるさまざまな危険を可能な限り迅速に取り除くように動作する装置である。
+</td></tr>
+</table>
+<details open="open"><summary>Properties</summary><p><a href="http://lookup.bsdd.buildingsmart.com/api/4.0/IfdPSet/0Wr8W0qWuHuO00025QrE$V/ifcVersion/2x4" target="ifd"><img border="0" src="../../../img/external.png" title="Link to IFD"/> buildingSMART Data Dictionary</a></p>
+
+<p><a href="../../../psd/Pset_SwitchingDeviceTypeEmergencyStop.xml"><img border="0" src="../../../img/diagram.png" title="Link to PSD-XML"/> PSD-XML</a></p>
+
+
+<table class="gridtable">
+<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+<tr><td>SwitchOperation</td><td>
+<span class="self-ref">P_ENUMERATEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+/
+ <a href="../../../penum/penum_switchingdeviceemergencystoptype.htm">PEnum_SwitchingDeviceEmergencyStopType</a></td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Switch Operation</b></td><td>Indicates operation of emergency stop switch.
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>スイッチ操作</b></td><td>緊急停止スイッチの操作を示す。
+</td></tr>
+</table>
+</td></tr>
+<tr><td>NumberOfPhases</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcinteger.htm">IfcInteger</a>
+</td><td>
+Number of phases that the equipment operates on.
+
+</td></tr>
+<tr><td>ReferenceEnvironmentTemperature</td><td>
+<span class="self-ref">P_BOUNDEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcthermodynamictemperaturemeasure.htm">IfcThermodynamicTemperatureMeasure</a>
+</td><td>
+Ideal temperature range.
+
+</td></tr>
+<tr><td>BreakingCapacity</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectriccurrentmeasure.htm">IfcElectricCurrentMeasure</a>
+</td><td>
+The current that a fuse, circuit breaker, or other electrical apparatus is able to interrupt without being destroyed or causing an electric arc with unacceptable duration.
+
+</td></tr>
+<tr><td>NumberOfEarthFaultRelays</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcinteger.htm">IfcInteger</a>
+</td><td>
+Indicates the number of relays used for preventing earth fault.
+
+</td></tr>
+<tr><td>NumberOfEmergencyButtons</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcinteger.htm">IfcInteger</a>
+</td><td>
+The number of emergency buttons built in the device.
+
+</td></tr>
+<tr><td>NumberOfRelays</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcinteger.htm">IfcInteger</a>
+</td><td>
+Indicates number of relays built in the device.
+
+</td></tr>
+<tr><td>NumberOfOverCurrentRelays</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcinteger.htm">IfcInteger</a>
+</td><td>
+Indicates number of relays used for preventing over current.
+
+</td></tr>
+<tr><td>NumberOfAffectedPoles</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcinteger.htm">IfcInteger</a>
+</td><td>
+Number of poles that the equipment affects.
+
+</td></tr>
+<tr><td>NominalCurrent</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectriccurrentmeasure.htm">IfcElectricCurrentMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Nominal Current</b></td><td>The nominal current that is designed to be measured.
+</td></tr>
+</table>
+</td></tr>
+<tr><td>RatedFrequency</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcfrequencymeasure.htm">IfcFrequencyMeasure</a>
+</td><td>
+Frequency of the AC electric power supply when the device or system reaches its optimum operating condition.
+
+</td></tr>
+<tr><td>RatedVoltage</td><td>
+<span class="self-ref">P_BOUNDEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectricvoltagemeasure.htm">IfcElectricVoltageMeasure</a>
+*</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Rated Voltage</b></td><td>The voltage that a device is designed to handle.
+</td></tr>
+</table>
+</td></tr>
+<tr><td>TransformationRatio</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpositiveratiomeasure.htm">IfcPositiveRatioMeasure</a>
+</td><td>
+The ratio of the actual primary current or voltage to the actual secondary current or voltage.
+
+</td></tr>
+</table>
+</details>
+</p>
+<p><a href="../../../link/pset_switchingdevicetypeemergencystop.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

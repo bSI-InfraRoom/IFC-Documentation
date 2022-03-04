@@ -1,0 +1,99 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>Pset_CableSegmentTypeWirePairSegment</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 7 index2 7 index3 4 index4 18 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-7.htm#7.7.4.19");
+//-->
+</script>
+
+<h4 class="std">7.7.4.19 Pset_CableSegmentTypeWirePairSegment</h4>
+<p><span class="self-ref">PSET_TYPEDRIVENOVERRIDE</span>
+/
+<a href="../../ifcelectricaldomain/lexical/ifccablesegment.htm">IfcCableSegment</a>
+ / <span class="self-ref">WIREPAIRSEGMENT</span>
+</p>Properties of wire pair segments. This property set is applicable to a type or occurence of <em>IfcCableSegment</em> with predefined type WIREPAIRSEGMENT.
+
+<details open="open"><summary>Properties</summary><p><a href="http://lookup.bsdd.buildingsmart.com/api/4.0/IfdPSet/23RWfrWBNKEmpDYItQpcmx/ifcVersion/2x4" target="ifd"><img border="0" src="../../../img/external.png" title="Link to IFD"/> buildingSMART Data Dictionary</a></p>
+
+<p><a href="../../../psd/Pset_CableSegmentTypeWirePairSegment.xml"><img border="0" src="../../../img/diagram.png" title="Link to PSD-XML"/> PSD-XML</a></p>
+
+
+<table class="gridtable">
+<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+<tr><td>CharacteristicImpedance</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectricresistancemeasure.htm">IfcElectricResistanceMeasure</a>
+</td><td>
+A quantity defined for a mode of propagation at a given frequency in a specific uniform transmission line or uniform waveguide by one of the three following relations:<br>
+Z1 = S/ |I|2
+Z2 = |U|2 / S
+Z3 = U / I
+where Z is the complex characteristic impedance, S the complex power and U and I are the values, usually complex, respectively of a voltage and a current conventionally defined for each type of mode by analogy with transmission line equations.
+
+</td></tr>
+<tr><td>ConductorDiameter</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>
+</td><td>
+Indicates the conductor diameter. It is only used for twisted and untwisted wire pair.
+
+</td></tr>
+<tr><td>CoreConductorDiameter</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>
+</td><td>
+Indicates the core conductor diameter. It is only used for coaxial wire pair.
+
+</td></tr>
+<tr><td>JacketColour</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+</td><td>
+Indicates the colour of the cable or fitting jacket.
+
+</td></tr>
+<tr><td>ShieldConductorDiameter</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>
+</td><td>
+Indicates the shielded conductor diameter. It is only used for coaxial wire pair.
+
+</td></tr>
+<tr><td>WirePairType</td><td>
+<span class="self-ref">P_ENUMERATEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+/
+ <a href="../../../penum/penum_wirepairtype.htm">PEnum_WirePairType</a></td><td>
+Indicates the type of wire pair, i.e., twisted, untwisted or coaxial pair.
+
+</td></tr>
+</table>
+</details>
+</p>
+<p><a href="../../../link/pset_cablesegmenttypewirepairsegment.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

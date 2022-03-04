@@ -47,7 +47,7 @@
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
 <details open="open"><summary>Entity definition</summary><p>This entity captures a value driven by a formula, with additional qualifications including unit basis, valid date range, and categorization.</p>
-<p>The extent of the <span class="self-ref">IfcAppliedValue</span> is determined by the <i>AppliedValue</i> attribute which may be defined either as an <a href="../../ifcmeasureresource/lexical/ifcmeasurewithunit.htm">IfcMeasureWithUnit</a> or as an <i>IfcMonetaryMeasure</i> or as an <a href="../../ifcmeasureresource/lexical/ifcratiomeasure.htm">IfcRatioMeasure</a> via the <i>IfcAppliedValueSelect</i> type.</p>
+<p>The extent of the <span class="self-ref">IfcAppliedValue</span> is determined by the <i>AppliedValue</i> attribute which may be defined either as an <a href="../../ifcmeasureresource/lexical/ifcmeasurewithunit.htm">IfcMeasureWithUnit</a> or as an <a href="../../ifcmeasureresource/lexical/ifcmonetarymeasure.htm">IfcMonetaryMeasure</a> or as an <a href="../../ifcmeasureresource/lexical/ifcratiomeasure.htm">IfcRatioMeasure</a> via the <i>IfcAppliedValueSelect</i> type.</p>
 <p>Optionally, an <span class="self-ref">IfcAppliedValue</span> may have an applicable date. This is intended to fix the date on which the value became relevant for use. It may be the date on which the value was set in the model or it may be a prior or future date when the value becomes operable. Similarly, an <span class="self-ref">IfcAppliedValue</span> may have a 'fixed until' date. This is intended to fix the date on which the value ceases to be relevant for use.</p>
 <p>An instance of <span class="self-ref">IfcAppliedValue</span> may have a unit basis asserted. This is defined as an <a href="../../ifcmeasureresource/lexical/ifcmeasurewithunit.htm">IfcMeasureWithUnit</a> that determines the extent of the unit value for application purposes. It is assumed that when this attribute is asserted, then the value given to <span class="self-ref">IfcAppliedValue</span> is that for unit quantity. This is not enforced within the schema and thus needs to be controlled within an application.</p>
 <p>Applied values may be referenced from a document (such as a price list). The relationship between one or more occurrences of <span class="self-ref">IfcAppliedValue</span> (or its subtypes) is achieved through the use of the <i>IfcExternalReferenceRelationship</i> in which the document provides the <i>IfcExternalReferenceRelationship.RelatingExtReference</i> and the value occurrences are the <i>IfcExternalReferenceRelationship.RelatedResourceObjects</i>.</p>
@@ -116,7 +116,6 @@
 <i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
 </table>
 </details>
-</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

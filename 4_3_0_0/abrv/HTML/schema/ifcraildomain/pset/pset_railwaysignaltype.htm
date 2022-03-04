@@ -1,0 +1,143 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>Pset_RailwaySignalType</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 7 index2 7 index3 4 index4 116 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-7.htm#7.7.4.117");
+//-->
+</script>
+
+<h4 class="std">7.7.4.117 Pset_RailwaySignalType</h4>
+<p><span class="self-ref">PSET_TYPEDRIVENOVERRIDE</span>
+/
+<a href="../../ifcsharedinfrastructureelements/lexical/ifcsignal.htm">IfcSignal</a>
+</p>Properties common to the definition of occurrences and types of <em>IfcSignal</em> applied in railways.
+
+<details open="open"><summary>Properties</summary><p><a href="http://lookup.bsdd.buildingsmart.com/api/4.0/IfdPSet/1z0VlGfyup5NjFUaN_TsoD/ifcVersion/2x4" target="ifd"><img border="0" src="../../../img/external.png" title="Link to IFD"/> buildingSMART Data Dictionary</a></p>
+
+<p><a href="../../../psd/Pset_RailwaySignalType.xml"><img border="0" src="../../../img/diagram.png" title="Link to PSD-XML"/> PSD-XML</a></p>
+
+
+<table class="gridtable">
+<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+<tr><td>SignalIndicatorType</td><td>
+<span class="self-ref">P_ENUMERATEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+/
+ <a href="../../../penum/penum_signalindicatortype.htm">PEnum_SignalIndicatorType</a></td><td>
+Type of the indicators on a signal, e.g. route indicator, speed restriction indicator etc.
+
+</td></tr>
+<tr><td>LensDiffuserType</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+</td><td>
+Type of the lens diffuser the signal is equipped with.
+
+</td></tr>
+<tr><td>HasConductorRailGuardBoard</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>
+</td><td>
+Indicates if a guard board is provided.
+
+</td></tr>
+<tr><td>MaximumDisplayDistance</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>
+</td><td>
+The maximum distance that can be displayed. The value relates only to the signal type, not to the circumstances at a special position.
+
+</td></tr>
+<tr><td>RequiredDisplayDistance</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>
+</td><td>
+The required distance that has to be displayed. The value relates only to the signal type, not to the circumstances at a special position.
+
+</td></tr>
+<tr><td>IsHighType</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>
+</td><td>
+Indicates if the signal is high (TRUE) or dwarf (ground mounted) (FALSE).
+
+</td></tr>
+<tr><td>SignalHoodLength</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>
+</td><td>
+Nominal length of the signal hood, which is the signal lamp cover against glaring sun.
+
+</td></tr>
+<tr><td>HotStripOrientation</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+</td><td>
+Position of the hot strip, which indicates the direction of the focus of the light beam and is given in terms like &quot;left upper quadrant (LUQ)&quot; or &quot;5 o'clock&quot;.
+
+</td></tr>
+<tr><td>LensDiffuserOrientation</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+</td><td>
+Orientation the lens diffuser has to have, which indicates the direction of the lens diffuser and is given in terms like &quot;left upper quadrant (LUQ)&quot; or &quot;5 o'clock&quot;.
+
+</td></tr>
+<tr><td>NumberOfLamps</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcinteger.htm">IfcInteger</a>
+</td><td>
+Number of lamps the signal is composed of.
+
+</td></tr>
+<tr><td>SignalMessage</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifctext.htm">IfcText</a>
+</td><td>
+All possible message available at this signal, e.g. &quot;3/4- display automatic blocking&quot;.
+
+</td></tr>
+<tr><td>RailwaySignalType</td><td>
+<span class="self-ref">P_ENUMERATEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+/
+ <a href="../../../penum/penum_railwaysignaltype.htm">PEnum_RailwaySignalType</a></td><td>
+The type of railway signal, e.g. home signal, starting signal, shunting signal, level crossing signal.
+
+</td></tr>
+</table>
+</details>
+</p>
+<p><a href="../../../link/pset_railwaysignaltype.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

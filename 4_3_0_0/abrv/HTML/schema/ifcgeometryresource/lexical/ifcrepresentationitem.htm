@@ -43,16 +43,16 @@ A representation item is an element of product data that participates in one or 
 <p>NOTE  The assignment of a style is only applicable to the subtypes <a href="../../ifcgeometryresource/lexical/ifcgeometricrepresentationitem.htm">IfcGeometricRepresentationItem</a>, <a href="../../ifcgeometryresource/lexical/ifcmappeditem.htm">IfcMappedItem</a> and some selected subtypes of <i>IfcTopologicalRepresentationItem</i> (<i>IfcVertexPoint</i>, <i>IfcEdgeCurve</i>, <i>IfcFaceSurface</i>).</p>
 </blockquote>
 <p>In case that presentation style information is applied, it can be either applied by an <a href="../../ifcpresentationappearanceresource/lexical/ifcstyleditem.htm">IfcStyledItem</a>, or by an assignment to an <i>IfcPresentationLayerWithStyle</i>. If both are present, and both style assignments include the same subtype of <a href="../../ifcpresentationappearanceresource/lexical/ifcpresentationstyle.htm">IfcPresentationStyle</a>, then the style assigned by <a href="../../ifcpresentationappearanceresource/lexical/ifcstyleditem.htm">IfcStyledItem</a> takes priority.</p>
-<p>Figure 195 shows an instance diagram explaining the use of <a href="../../ifcpresentationappearanceresource/lexical/ifcstyleditem.htm">IfcStyledItem</a> and <i>IfcPresentationLayerWithStyle</i> to apply presentation styles.</p>
+<p>Figure 201 shows an instance diagram explaining the use of <a href="../../ifcpresentationappearanceresource/lexical/ifcstyleditem.htm">IfcStyledItem</a> and <i>IfcPresentationLayerWithStyle</i> to apply presentation styles.</p>
 <blockquote class="example">
 <p>EXAMPLE  The assignment of style information by a styled item and a presentation layer with style. Since the presentation styles are different, <a href="../../ifcpresentationappearanceresource/lexical/ifccurvestyle.htm">IfcCurveStyle</a> and <a href="../../ifcpresentationappearanceresource/lexical/ifcsurfacestyle.htm">IfcSurfaceStyle</a>, both are applied to the geometric representation item.</p>
 </blockquote>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcrepresentationitem_style-1.png" alt="&quot;styles assigned by layer and styled item&quot;" title="Figure 195 &mdash; Representation item style"></td></tr><tr><td><p class="figure">Figure 195 &mdash; Representation item style</p></td></tr></table></p>
-<p>Figure 196 shows in instance diagram explaining the override of <i>IfcPresentationLayerWithStyle</i> by <a href="../../ifcpresentationappearanceresource/lexical/ifcstyleditem.htm">IfcStyledItem</a> to apply presentation styles.</p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcrepresentationitem_style-1.png" alt="&quot;styles assigned by layer and styled item&quot;" title="Figure 201 &mdash; Representation item style"></td></tr><tr><td><p class="figure">Figure 201 &mdash; Representation item style</p></td></tr></table></p>
+<p>Figure 202 shows in instance diagram explaining the override of <i>IfcPresentationLayerWithStyle</i> by <a href="../../ifcpresentationappearanceresource/lexical/ifcstyleditem.htm">IfcStyledItem</a> to apply presentation styles.</p>
 <blockquote class="example">
 <p>EXAMPLE  The assignment of style information by a styled item and a presentation layer with style. Since the presentation styles for curve style are aprovided by both, the <a href="../../ifcpresentationappearanceresource/lexical/ifccurvestyle.htm">IfcCurveStyle</a> provided by the <a href="../../ifcpresentationappearanceresource/lexical/ifcstyleditem.htm">IfcStyledItem</a> overrides the <a href="../../ifcpresentationappearanceresource/lexical/ifccurvestyle.htm">IfcCurveStyle</a> provided by the <i>IfcPresentationLayerWithStyle</i></p>
 </blockquote>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcrepresentationitem_style-2.png" alt="&quot;styles assigned by layer and styled item&quot;" title="Figure 196 &mdash; Representation item style override"></td></tr><tr><td><p class="figure">Figure 196 &mdash; Representation item style override</p></td></tr></table></p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcrepresentationitem_style-2.png" alt="&quot;styles assigned by layer and styled item&quot;" title="Figure 202 &mdash; Representation item style override"></td></tr><tr><td><p class="figure">Figure 202 &mdash; Representation item style override</p></td></tr></table></p>
 <blockquote class="note">
 <p>NOTE  Entity adapted from <strong>representation_map</strong> defined in ISO 10303-43.</p>
 </blockquote>
@@ -93,7 +93,6 @@ IFC2x3 CHANGE  The inverse attribute <i>StyledByItem</i> has been added.
 </td><td>X</td></tr>
 </table>
 </details>
-</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

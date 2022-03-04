@@ -26,7 +26,7 @@
 
 <h3 class="std">4.2.2 Group Assignment</h3>
 <p><i>Group Assignment</i> established an arbitrary collection of objects within a group. The grouping relationship does not apply any other meaning then grouping objects under some aspect. It is non-hierarchical, that is objects can be grouped into different logical groups, and it does not interfere with other relationship concepts, such as <i>ObjectAggregation</i>.</p>
-<p>The <i>Group Assignment</i> concept establish a given object as being the group collection for other objects. An <i>IfcZone</i> is a specific group object for collecting spaces, <a href="../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm">IfcDistributionSystem</a> is a specific group object for collecting distribution elements. Usually a grouping relationship is applied to group elements for a particular purpose or function. It usually implies the existence of a grouping relationship and the provision of some identity under which the group is characterized.</p>
+<p>The <i>Group Assignment</i> concept establish a given object as being the group collection for other objects. An <a href="../ifcproductextension/lexical/ifczone.htm">IfcZone</a> is a specific group object for collecting spaces, <a href="../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm">IfcDistributionSystem</a> is a specific group object for collecting distribution elements. Usually a grouping relationship is applied to group elements for a particular purpose or function. It usually implies the existence of a grouping relationship and the provision of some identity under which the group is characterized.</p>
 <ul>
 <li>Group collection is handled by an instance of <a href="../ifckernel/lexical/ifcrelassignstogroup.htm">IfcRelAssignsToGroup</a>, which assigns all group members to the <a href="../ifckernel/lexical/ifcgroup.htm">IfcGroup</a> being the collection.</li>
 <li>Objects included in group as collected items are linked by <i>IsGroupedBy</i> pointing to <a href="../ifckernel/lexical/ifcrelassignstogroup.htm">IfcRelAssignsToGroup</a></li>
@@ -49,7 +49,14 @@
 <th><a href="../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
 <th><a href="../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
 <th><a href="../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
-</tr><tr><td><a href="../ifckernel/lexical/ifcgroup.htm">IfcGroup</a></td><td>-<br/>R</td>
+</tr><tr><td><a href="../ifcsharedbldgserviceelements/lexical/ifcdistributioncircuit.htm">IfcDistributionCircuit</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifckernel/lexical/ifcgroup.htm">IfcGroup</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
 <td>-<br/>R</td>

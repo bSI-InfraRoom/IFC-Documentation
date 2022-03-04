@@ -1,0 +1,231 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>Pset_CableSegmentTypeConductorSegment</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 7 index2 3 index3 4 index4 10 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-7.htm#7.3.4.11");
+//-->
+</script>
+
+<h4 class="std">7.3.4.11 Pset_CableSegmentTypeConductorSegment</h4>
+<p><span class="self-ref">PSET_TYPEDRIVENOVERRIDE</span>
+/
+<a href="../../ifcelectricaldomain/lexical/ifccablesegment.htm">IfcCableSegment</a>
+ / <span class="self-ref">CONDUCTORSEGMENT</span>
+</p><table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Cable Segment Type Conductor Segment</b></td><td>An electrical conductor is a single linear element with the specific purpose to lead electric current. The core of one lead is normally single wired or multiwired which are intertwined. According to IEC 60050: IEV 195-01-07, a conductor is a conductive part intended to carry a specified electric current.
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b></b></td><td>電気導体は電流を導く目的で使用される線状の導体である。
+1本の導体の中心は、1本のワイヤーまたは、寄り合わせた複数のワイヤーからなる。IEC 60050：IEV 195-01-07によると、導体は指定された電流を運ぶことを目的とする伝導部分である。
+</td></tr>
+</table>
+<details open="open"><summary>Properties</summary><p><a href="http://lookup.bsdd.buildingsmart.com/api/4.0/IfdPSet/0atRS0qSWHuO00025QrE$V/ifcVersion/2x4" target="ifd"><img border="0" src="../../../img/external.png" title="Link to IFD"/> buildingSMART Data Dictionary</a></p>
+
+<p><a href="../../../psd/Pset_CableSegmentTypeConductorSegment.xml"><img border="0" src="../../../img/diagram.png" title="Link to PSD-XML"/> PSD-XML</a></p>
+
+
+<table class="gridtable">
+<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+<tr><td>CrossSectionalArea</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcareameasure.htm">IfcAreaMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Cross Sectional Area</b></td><td>Cross section area of the phase(s) lead(s).
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>断面積</b></td><td>位相、リードの断面積。
+</td></tr>
+</table>
+</td></tr>
+<tr><td>Function</td><td>
+<span class="self-ref">P_ENUMERATEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+/
+ <a href="../../../penum/penum_functionenum.htm">PEnum_FunctionEnum</a></td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Function</b></td><td>Type of function for which the conductor is intended.
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>機能</b></td><td>導体の機能のタイプ。
+</td></tr>
+</table>
+</td></tr>
+<tr><td>Material</td><td>
+<span class="self-ref">P_ENUMERATEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+/
+ <a href="../../../penum/penum_materialenum.htm">PEnum_MaterialEnum</a></td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Material</b></td><td>Type of material from which the conductor is constructed.
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>材料</b></td><td>導体を構成する材料のタイプ。
+</td></tr>
+</table>
+</td></tr>
+<tr><td>Construction</td><td>
+<span class="self-ref">P_ENUMERATEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+/
+ <a href="../../../penum/penum_constructionenum.htm">PEnum_ConstructionEnum</a></td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Construction</b></td><td>Purpose of informing on how the vonductor is constucted (interwined or solid). I.e. Solid (IEV 461-01-06), stranded (IEV 461-01-07), solid-/finestranded(IEV 461-01-11) (not flexible/flexible).
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>構造</b></td><td>導体の構成（より線か単線）の定義。すなわち単線（IEV 461-01-06）、より線（IEV 461-01-07）、フレキシブル導体（IEV 461-01-11）（フレキシブルか否か）で定義。
+</td></tr>
+</table>
+</td></tr>
+<tr><td>Shape</td><td>
+<span class="self-ref">P_ENUMERATEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>
+/
+ <a href="../../../penum/penum_shapeenum.htm">PEnum_ShapeEnum</a></td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Shape</b></td><td>Indication of the shape of the conductor.
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>形状</b></td><td>導体の形状を表示。
+</td></tr>
+</table>
+</td></tr>
+<tr><td>NominalCurrent</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectriccurrentmeasure.htm">IfcElectricCurrentMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Nominal Current</b></td><td>The nominal current that is designed to be measured.
+</td></tr>
+</table>
+</td></tr>
+<tr><td>ACResistance</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectricresistancemeasure.htm">IfcElectricResistanceMeasure</a>
+</td><td>
+The resistance under AC.
+
+</td></tr>
+<tr><td>ThermalExpansionCoefficient</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcthermalexpansioncoefficientmeasure.htm">IfcThermalExpansionCoefficientMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Thermal Expansion Coefficient</b></td><td>Quantity characterizing the variation with thermodynamic temperature T of the distance l between two points of a body, under given conditions (IEC 113-04-27). The ratio is defined per Kelvin.
+</td></tr>
+</table>
+</td></tr>
+<tr><td>CurrentCarryingCapacity</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectriccurrentmeasure.htm">IfcElectricCurrentMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Current Carrying Capasity</b></td><td>Maximum value of electric current which can be carried continuously by a conductor, a device or an apparatus, under specified conditions without its steady-state temperature exceeding a  specified value. Based on IEC60826-11-13. NOTE: The temperature specified value is maximum Design Ambient Temperature.
+</td></tr>
+</table>
+</td></tr>
+<tr><td>UltimateTensileStrength</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcforcemeasure.htm">IfcForceMeasure</a>
+</td><td>
+Indicates the maximum stress that a material or element can withstand before breaking while being stretched or pulled.
+
+</td></tr>
+<tr><td>MassPerLength</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcmassperlengthmeasure.htm">IfcMassPerLengthMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Mass Per Length</b></td><td>Mass per length, i.e. mass of a beam with a unit length of extrusion. For example measured in kg/m.
+</td></tr>
+</table>
+</td></tr>
+<tr><td>TensileStrength</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpressuremeasure.htm">IfcPressureMeasure</a>
+</td><td>
+Indicates the ability to withstand breakage apart under applied force.
+
+</td></tr>
+<tr><td>YoungModulus</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcmodulusofelasticitymeasure.htm">IfcModulusOfElasticityMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Young Modulus</b></td><td>A measure of the Young's modulus of elasticity of the material.
+</td></tr>
+</table>
+</td></tr>
+<tr><td>DCResistance</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectricresistancemeasure.htm">IfcElectricResistanceMeasure</a>
+</td><td>
+The resistance under direct current and 20 degrees centigrade.
+
+</td></tr>
+<tr><td>OverallDiameter</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcpositivelengthmeasure.htm">IfcPositiveLengthMeasure</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Overall Diameter</b></td><td>The overall diameter of a Cable/Bus.
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>直径</b></td><td>ケーブルや母線の外形寸法（直径）を示す。
+</td></tr>
+</table>
+</td></tr>
+<tr><td>NumberOfCores</td><td>
+<span class="self-ref">P_SINGLEVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcinteger.htm">IfcInteger</a>
+</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Number Of Cores</b></td><td>The number of cores in Cable/Bus.
+</td></tr>
+<tr><td><img src="../../../img/locale-ja.png" /></td><td><b>芯数</b></td><td>ケーブルや母線の芯数を示す。
+</td></tr>
+</table>
+</td></tr>
+<tr><td>RatedVoltage</td><td>
+<span class="self-ref">P_BOUNDEDVALUE</span>
+/
+<a href="../../ifcmeasureresource/lexical/ifcelectricvoltagemeasure.htm">IfcElectricVoltageMeasure</a>
+*</td><td>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Rated Voltage</b></td><td>The voltage that a device is designed to handle.
+</td></tr>
+</table>
+</td></tr>
+</table>
+</details>
+</p>
+<p><a href="../../../link/pset_cablesegmenttypeconductorsegment.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>
