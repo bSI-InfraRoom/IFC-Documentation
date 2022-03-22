@@ -19,11 +19,16 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-Friday, 11 March 2022
+Tuesday, 22 March 2022
 
 *)
 
 SCHEMA IFCROADDOMAIN;
+
+TYPE IfcKerbTypeEnum = ENUMERATION OF
+	(USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
 
 TYPE IfcRoadPartTypeEnum = ENUMERATION OF
 	(ROADSIDEPART
@@ -61,12 +66,21 @@ END_TYPE;
 
 ENTITY IfcKerb
  SUBTYPE OF (IfcBuiltElement);
-	Mountable : IfcBoolean;
+	PredefinedType : OPTIONAL IfcKerbTypeEnum;
+ WHERE
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
+(PredefinedType <> IfcKerbTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcKerbTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));
+	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
+('IFCROADDOMAIN.IFCKERBTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
 END_ENTITY;
 
 ENTITY IfcKerbType
  SUBTYPE OF (IfcBuiltElementType);
-	Mountable : IfcBoolean;
+	PredefinedType : IfcKerbTypeEnum;
+ WHERE
+	CorrectPredefinedType : (PredefinedType <> IfcKerbTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcKerbTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType));
 END_ENTITY;
 
 ENTITY IfcRoad

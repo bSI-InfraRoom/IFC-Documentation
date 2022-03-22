@@ -2072,6 +2072,11 @@ Used for three-phase transformer which includes a N-conductor." TemplateType="p_
 				<IfcSimplePropertyTemplate id="ImpellerDiameter_1sr0m0qSiHuO00025QrEV" GlobalId="1sr0m0qSiHuO00025QrE$V" Name="ImpellerDiameter" Description="Diameter of compressor impeller - used to scale performance of geometrically similar compressors." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
 				<IfcSimplePropertyTemplate id="ImpellerDiameter_1zo480qVuHuO00025QrEV" GlobalId="1zo480qVuHuO00025QrE$V" Name="ImpellerDiameter" Description="Diameter of pump impeller - used to scale performance of geometrically similar pumps." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
 				<IfcSimplePropertyTemplate id="IncomingStation_2ScYZDmQ9C9vR878Q0zliC" GlobalId="2ScYZDmQ9C9vR878Q0zliC" Name="IncomingStation" Description="The optional station value of the incoming segment that ends at this location. This value needs to be set if the intention is to specify a station equation, i.e. a location where stationing changes." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLengthMeasure" />
+				<IfcSimplePropertyTemplate id="Increasing_34FH6g00XEcAJrdjKZ3gOO" GlobalId="34FH6g00XEcAJrdjKZ3gOO" Name="Increasing" Description="It is meant for use in referents of predefined type REFERENCEMARKER being nested to a given alignment.
+
+If present and true, or if not present, then the relevant subsequently nested STATION referents are generally expected to have Pset_Stationing.Station values being greater than the REFERENCEMARKER&apos;s Pset_Stationing.Station value.
+
+If present and false, then the relevant subsequently nested STATION referents are expected to have Pset_Stationing.Station values being lower than the REFERENCEMARKER&apos;s Pset_Stationing.Station value." TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
 				<IfcSimplePropertyTemplate id="IndicationRodMovementRange_2EWdqFr25C5QKm2WsoAIDD" GlobalId="2EWdqFr25C5QKm2WsoAIDD" Name="IndicationRodMovementRange" Description="Indicates the range of indication rod movement." TemplateType="p_boundedvalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
 				<IfcSimplePropertyTemplate id="IndoorEnvironment_2h9yA6q2T9ZfOglK_Wohce" GlobalId="2h9yA6q2T9ZfOglK_Wohce" Name="IndoorEnvironment" Description="Adjustment of the service life resulting from the effect of the indoor environment (where appropriate)." TemplateType="p_boundedvalue" PrimaryMeasureType="IfcPositiveRatioMeasure" />
 				<IfcSimplePropertyTemplate id="Inductance_26NOHc5AHAsRdIVvvqQ_g" GlobalId="26NOHc5AHAsRdIVv$vqQ_g" Name="Inductance" Description="Measure of the Inductance." TemplateType="p_singlevalue" PrimaryMeasureType="IfcInductanceMeasure" />
@@ -2093,7 +2098,7 @@ Used for three-phase transformer which includes a N-conductor." TemplateType="p_
 				<IfcSimplePropertyTemplate id="InputPressure_1rc_A0qRqHuO00025QrEV" GlobalId="1rc_A0qRqHuO00025QrE$V" Name="InputPressure" Description="Maximum design pressure for the actuator." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPressureMeasure" />
 				<IfcSimplePropertyTemplate id="InputPressure_2SMXa0qRqHuO00025QrEV" GlobalId="2SMXa0qRqHuO00025QrE$V" Name="InputPressure" Description="Maximum input control air pressure requirement." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPressureMeasure" />
 				<IfcSimplePropertyTemplate id="InputSignalType_3mt7oNhWL3QuPz1Q2ybJCo" GlobalId="3mt7oNhWL3QuPz1Q2ybJCo" Name="InputSignalType" Description="The type of the input signal." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" id="i779" Name="PEnum_InputOutputSignalType">
+					<Enumerators xsi:type="IfcPropertyEnumeration" id="i780" Name="PEnum_InputOutputSignalType">
 						<EnumerationValues>
 							<IfcLabel-wrapper>CURRENT</IfcLabel-wrapper>
 							<IfcLabel-wrapper>VOLTAGE</IfcLabel-wrapper>
@@ -2268,6 +2273,7 @@ Used for three-phase transformer which includes a N-conductor." TemplateType="p_
 				<IfcSimplePropertyTemplate id="IsLocked_2RDCAlPobEcu7w2dT8CcG" GlobalId="2RDCAlPobEcu$7w2dT8CcG" Name="IsLocked" Description="Indicates whether the element is locked (TRUE) or not (FALSE)." TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
 				<IfcSimplePropertyTemplate id="IsMain_38kVnOpG9ExQCWZaM22lh" GlobalId="38kVnOpG9ExQCWZ$aM22lh" Name="IsMain" Description="Identifies if the current instance is a main distribution point or topmost level in an electrical distribution hierarchy (= TRUE) or a sub-main distribution point (= FALSE)." TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
 				<IfcSimplePropertyTemplate id="IsMonitored_3KGj0PEan4G86e5DwEt_YL" GlobalId="3KGj0PEan4G86e5DwEt_YL" Name="IsMonitored" Description="This property defines if the Drain Chanel is monitored (TRUE) or not (FALSE)." TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
+				<IfcSimplePropertyTemplate id="IsMountable_0nASgQh6r2huzTgAp_avpJ" GlobalId="0nASgQh6r2huzTgAp_avpJ" Name="IsMountable" Description="Specifies whether the kerb can be readily climbed by a vehicle or not." TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
 				<IfcSimplePropertyTemplate id="IsMountedFlatCable_0cChT80zD6mAhzFtp7usP" GlobalId="0cChT80zD6mAhzFtp$7usP" Name="IsMountedFlatCable" Description="Indication of whether the cable occurrences are mounted flat (= TRUE) or in a trefoil pattern (= FALSE)." TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
 				<IfcSimplePropertyTemplate id="IsMoveable_2PCpjtVLvAUPcovP4wWML" GlobalId="2PCpjtVLvAUPco$vP4wWML" Name="IsMoveable" Description="True if element is moveable." TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
 				<IfcSimplePropertyTemplate id="IsNeutralPrimaryTerminalAvailable_3IAEq0qX4HuO00025QrEV" GlobalId="3IAEq0qX4HuO00025QrE$V" Name="IsNeutralPrimaryTerminalAvailable" Description="An indication of whether the neutral point of the primary winding is available as a terminal (=TRUE) or not (= FALSE)." TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
@@ -2311,7 +2317,7 @@ Used for three-phase transformer which includes a N-conductor." TemplateType="p_
 				<IfcSimplePropertyTemplate id="IsWired_1o65E0qTqHuO00025QrEV" GlobalId="1o65E0qTqHuO00025QrE$V" Name="IsWired" Description="Indication whether the glass includes a contained wire mesh to prevent break-in (TRUE) or not (FALSE)" TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
 				<IfcSimplePropertyTemplate id="JacketColour_1vHztIiLn2ZvGH5JLPMVP" GlobalId="1vHztIiLn2ZvG$H5JLPMVP" Name="JacketColour" Description="Indicates the colour of the cable or fitting jacket." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 				<IfcSimplePropertyTemplate id="JointRelativePosition_06BnzJB6b9zhMKCUAtPkfJ" GlobalId="06BnzJB6b9zhMKCUAtPkfJ" Name="JointRelativePosition" Description="Indicates the relative position of the joint, which lies in the left or right rail or in the middle, or in combination. The left rail is to the left as facing in the direction of increasing stationing values, and the right rail is to the right." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" id="i923" Name="PEnum_RelativePosition">
+					<Enumerators xsi:type="IfcPropertyEnumeration" id="i925" Name="PEnum_RelativePosition">
 						<EnumerationValues>
 							<IfcLabel-wrapper>LEFT</IfcLabel-wrapper>
 							<IfcLabel-wrapper>RIGHT</IfcLabel-wrapper>
@@ -2706,7 +2712,7 @@ It is provided according to the national building code." TemplateType="p_singlev
 				<IfcSimplePropertyTemplate id="MinimumUpstreamNavigableWaterLevel_3yYWu7oXT8NRxYQB125AQ" GlobalId="3yYWu7oXT8NRxYQB125A$Q" Name="MinimumUpstreamNavigableWaterLevel" Description="Design minimum upstream water level for the lock complex" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLengthMeasure" />
 				<IfcSimplePropertyTemplate id="MinumumLineSlope_0yz2ivXvf3NhJNscddZLN0" GlobalId="0yz2ivXvf3NhJNscddZLN0" Name="MinumumLineSlope" Description="Minimum allowable line angle in degrees (negative if below horizontal from quay)" TemplateType="p_singlevalue" PrimaryMeasureType="IfcPlaneAngleMeasure" />
 				<IfcSimplePropertyTemplate id="MitigatedRiskConsequence_2FMrp8g1P97QhZQC8NiD8G" GlobalId="2FMrp8g1P97QhZQC8NiD8G" Name="MitigatedRiskConsequence" Description="Identifies the consequence of the hazard given the planned mitigation." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" id="i1114" Name="PEnum_RiskRating">
+					<Enumerators xsi:type="IfcPropertyEnumeration" id="i1116" Name="PEnum_RiskRating">
 						<EnumerationValues>
 							<IfcLabel-wrapper>CRITICAL</IfcLabel-wrapper>
 							<IfcLabel-wrapper>VERYHIGH</IfcLabel-wrapper>
@@ -2724,10 +2730,10 @@ It is provided according to the national building code." TemplateType="p_singlev
 					</Enumerators>
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="MitigatedRiskLikelihood_2mh3cZyunB0ONymM2LqXn" GlobalId="2mh3cZyunB0ONymM2LqXn$" Name="MitigatedRiskLikelihood" Description="Identifies the likelihood of the hazard given the planned mitigation." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1114" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1116" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="MitigatedRiskSignificance_3aZMkhheX3pPXI0xXDCzn0" GlobalId="3aZMkhheX3pPXI0xXDCzn0" Name="MitigatedRiskSignificance" Description="Identifies the signifiance of the risk given the mitigation of likelihood and consequence." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1114" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1116" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="MitigationPlanned_1qnDxn1uP53Og8CTc_unk3" GlobalId="1qnDxn1uP53Og8CTc_unk3" Name="MitigationPlanned" Description="The planned (agreed and irrevocable) mitigation of the likelhood and consequences of the hazard." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 				<IfcSimplePropertyTemplate id="MitigationProposed_0AFQA2rm9398mY_MHHcg3U" GlobalId="0AFQA2rm9398mY_MHHcg3U" Name="MitigationProposed" Description="Any proposed, but not yet agreed and irrevocable, mitigation of the likelhood and consequences of the hazard." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
@@ -3152,7 +3158,7 @@ It is defined according to the presiding national building code." TemplateType="
 				<IfcSimplePropertyTemplate id="OutletTemperatureRange_2ZqF20qSGHuO00025QrEV" GlobalId="2ZqF20qSGHuO00025QrE$V" Name="OutletTemperatureRange" Description="Allowable outlet temperature of either the water or the steam." TemplateType="p_boundedvalue" PrimaryMeasureType="IfcThermodynamicTemperatureMeasure" />
 				<IfcSimplePropertyTemplate id="OutputCapacity_1Tde00qWeHuO00025QrEV" GlobalId="1Tde00qWeHuO00025QrE$V" Name="OutputCapacity" Description="Total nominal heat output as listed by the manufacturer." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPowerMeasure" />
 				<IfcSimplePropertyTemplate id="OutputSignalType_2TKPRtqQfDlgGubE0HD4kt" GlobalId="2TKPRtqQfDlgGubE0HD4kt" Name="OutputSignalType" Description="The type of the output signal." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i779" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i780" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="OutsideAirPerPerson_0UlY0qX4HuO00025QrEV" GlobalId="0Ul$Y0qX4HuO00025QrE$V" Name="OutsideAirPerPerson" Description="Design quantity of outside air to be provided per person in the space." TemplateType="p_singlevalue" PrimaryMeasureType="IfcVolumetricFlowRateMeasure" />
 				<IfcSimplePropertyTemplate id="OutsideDiameter_2Msku0qX8HuO00025QrEV" GlobalId="2Msku0qX8HuO00025QrE$V" Name="OutsideDiameter" Description="Actual outside diameter of the tube in the tube bundle." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
@@ -3322,7 +3328,7 @@ UNIT indicates that the coil is part of a cooling or heating unit, like cooled b
 				<IfcSimplePropertyTemplate id="PortCapacity_2wGIZukqb5y8_rmxPBWB8h" GlobalId="2wGIZukqb5y8_rmxPBWB8h" Name="PortCapacity" Description="Indicates the number of ports in the passive device that can be used to interconnect cables." TemplateType="p_singlevalue" PrimaryMeasureType="IfcInteger" />
 				<IfcSimplePropertyTemplate id="PortNumber_30TII0qTGHuO00025QrEV" GlobalId="30TII0qTGHuO00025QrE$V" Name="PortNumber" Description="The port index for logically ordering the port within the containing element or element type." TemplateType="p_singlevalue" PrimaryMeasureType="IfcInteger" />
 				<IfcSimplePropertyTemplate id="PositionInTrack_2JKUv68rCQfoodxwEHNq" GlobalId="2$JKUv68rC$QfoodxwEHNq" Name="PositionInTrack" Description="Indicates the relative position of the element in track, which lies to the left or right as facing in the direction of increasing stationing values." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i923" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i925" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Power_13VYb5tj10cOr5hZsTbt3R" GlobalId="13VYb5tj10cOr5hZsTbt3R" Name="Power" Description="The actual power and operable range." TemplateType="p_boundedvalue" PrimaryMeasureType="IfcPowerMeasure" />
 				<IfcSimplePropertyTemplate id="PowerCapacity_1mAfVHVQfDtBcb3W2OBiX" GlobalId="1mAfVHVQfDtBcb3$W2OBiX" Name="PowerCapacity" Description="Power capacity of the equipment" TemplateType="p_singlevalue" PrimaryMeasureType="IfcElectricChargeMeasure" />
@@ -3706,7 +3712,7 @@ Used for three-phase transformer which includes a N-conductor." TemplateType="p_
 CFC: Chlorofluorocarbons.
 HCFC: Hydrochlorofluorocarbons.
 HFC: Hydrofluorocarbons." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" id="i1618" Name="PEnum_RefrigerantClass">
+					<Enumerators xsi:type="IfcPropertyEnumeration" id="i1620" Name="PEnum_RefrigerantClass">
 						<EnumerationValues>
 							<IfcLabel-wrapper>CFC</IfcLabel-wrapper>
 							<IfcLabel-wrapper>HCFC</IfcLabel-wrapper>
@@ -3725,14 +3731,14 @@ HFC: Hydrofluorocarbons." TemplateType="p_enumeratedvalue" PrimaryMeasureType="I
 CFC: Chlorofluorocarbons.
 HCFC: Hydrochlorofluorocarbons.
 HFC: Hydrofluorocarbons." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1618" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1620" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="RefrigerantClass_2KxZm0qSmHuO00025QrEV" GlobalId="2KxZm0qSmHuO00025QrE$V" Name="RefrigerantClass" Description="Refrigerant class used by the condenser.
 
 CFC: Chlorofluorocarbons.
 HCFC: Hydrochlorofluorocarbons.
 HFC: Hydrofluorocarbons." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1618" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1620" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="RegeneratedSoundCurve_1zPO80qT4HuO00025QrEV" GlobalId="1zPO80qT4HuO00025QrE$V" Name="RegeneratedSoundCurve" Description="Regenerated sound versus air flow rate." TemplateType="p_tablevalue" PrimaryMeasureType="IfcVolumetricFlowRateMeasure" SecondaryMeasureType="IfcSoundPressureMeasure" />
 				<IfcSimplePropertyTemplate id="ReheatType_2rhvK0qRuHuO00025QrEV" GlobalId="2rhvK0qRuHuO00025QrE$V" Name="ReheatType" Description="Terminal box reheat type." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
@@ -3881,7 +3887,7 @@ Note: new property in IFC4" TemplateType="p_singlevalue" PrimaryMeasureType="Ifc
 				<IfcSimplePropertyTemplate id="RotationAccomodated_3HTi12lhD0vuMfKNNsFxD" GlobalId="3HTi12lhD0vuMfKNNsFx$D" Name="RotationAccomodated" Description="A list of exactly three boelean values representing an accomodated rotation (value TRUE or 1) or no rotation (value FALSE or 0) about the corresponding axis where the first value represents axis X, second value axis Y and third value axis Z." TemplateType="p_listvalue" PrimaryMeasureType="IfcBoolean" />
 				<IfcSimplePropertyTemplate id="Roughness_2Xt540qWSHuO00025QrEV" GlobalId="2Xt540qWSHuO00025QrE$V" Name="Roughness" Description="A measure of the vertical deviations of the surface." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 				<IfcSimplePropertyTemplate id="RRUConnectionType_2llH13EvAY8Lc9VG04k0Z" GlobalId="2llH13$EvAY8Lc9VG04k0Z" Name="RRUConnectionType" Description="Indicates the connection type between the remote radio unit and baseband unit." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" id="i1685" Name="PEnum_UnitConnectionType">
+					<Enumerators xsi:type="IfcPropertyEnumeration" id="i1687" Name="PEnum_UnitConnectionType">
 						<EnumerationValues>
 							<IfcLabel-wrapper>CHAIN</IfcLabel-wrapper>
 							<IfcLabel-wrapper>MIXED</IfcLabel-wrapper>
@@ -3894,7 +3900,7 @@ Note: new property in IFC4" TemplateType="p_singlevalue" PrimaryMeasureType="Ifc
 					</Enumerators>
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="RUConnectionType_3QHGcFv6z8IQq_4_0gv5Jf" GlobalId="3QHGcFv6z8IQq_4_0gv5Jf" Name="RUConnectionType" Description="Indicate the connection type between the remote unit and the master unit." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1685" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1687" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="s_0JLjW0qUKHuO00025QrEV" GlobalId="0JLjW0qUKHuO00025QrE$V" Name="s" Description="Measure s according to ISO 2553" TemplateType="p_singlevalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
 				<IfcSimplePropertyTemplate id="SafetyDocument_0oiMmeRHTAL8wF_F2pVv8T" GlobalId="0oiMmeRHTAL8wF_F2pVv8T" Name="SafetyDocument" Description="Manufacturer&apos;s safety document" TemplateType="p_referencevalue" PrimaryMeasureType="IfcDocumentReference" />
@@ -3921,7 +3927,18 @@ Note: new property in IFC4" TemplateType="p_singlevalue" PrimaryMeasureType="Ifc
 				<IfcSimplePropertyTemplate id="SecondarySurfaceArea_0QlBW0qSeHuO00025QrEV" GlobalId="0QlBW0qSeHuO00025QrE$V" Name="SecondarySurfaceArea" Description="Secondary heat transfer surface area created by fins." TemplateType="p_singlevalue" PrimaryMeasureType="IfcAreaMeasure" />
 				<IfcSimplePropertyTemplate id="SecondaryVoltage_1ZIvG0qX4HuO00025QrEV" GlobalId="1ZIvG0qX4HuO00025QrE$V" Name="SecondaryVoltage" Description="The voltage that has been transformed and is running out of the transformer on the secondary side." TemplateType="p_singlevalue" PrimaryMeasureType="IfcElectricVoltageMeasure" />
 				<IfcSimplePropertyTemplate id="SecondCurvatureRadius_0qWEu0qX0HuO00025QrEV" GlobalId="0qWEu0qX0HuO00025QrE$V" Name="SecondCurvatureRadius" Description="SecondCurvatureRadius should be defined as the top or right side radius of curvature value." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
-				<IfcSimplePropertyTemplate id="SectioningDeviceType_1jE33PRSX1EQ4q4oa7Kb3F" GlobalId="1jE33PRSX1EQ4q4oa7Kb3F" Name="SectioningDeviceType" Description="Indicates the sectioning device type." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+				<IfcSimplePropertyTemplate id="SectioningDeviceType_1jE33PRSX1EQ4q4oa7Kb3F" GlobalId="1jE33PRSX1EQ4q4oa7Kb3F" Name="SectioningDeviceType" Description="Indicates the sectioning device type." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
+					<Enumerators xsi:type="IfcPropertyEnumeration" Name="PEnum_SectioningDeviceType">
+						<EnumerationValues>
+							<IfcLabel-wrapper>DIFFERENT_POWER_SUPPLY_SEPARATION</IfcLabel-wrapper>
+							<IfcLabel-wrapper>PHASE_SEPARATION</IfcLabel-wrapper>
+							<IfcLabel-wrapper>SAME_FEEDING_SECTION_SEPARATION</IfcLabel-wrapper>
+							<IfcLabel-wrapper>OTHER</IfcLabel-wrapper>
+							<IfcLabel-wrapper>NOTKNOWN</IfcLabel-wrapper>
+							<IfcLabel-wrapper>UNSET</IfcLabel-wrapper>
+						</EnumerationValues>
+					</Enumerators>
+				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="SecurityLightingType_3rsJo0qUiHuO00025QrEV" GlobalId="3rsJo0qUiHuO00025QrE$V" Name="SecurityLightingType" Description="The type of security lighting." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
 					<Enumerators xsi:type="IfcPropertyEnumeration" Name="PEnum_LightFixtureSecurityLightingType">
 						<EnumerationValues>
@@ -4310,7 +4327,7 @@ tripping_unit." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 				<IfcSimplePropertyTemplate id="StartSmoothingLength_01PipsVZr9Q8Qgw9_KMfFV" GlobalId="01PipsVZr9Q8Qgw9_KMfFV" Name="StartSmoothingLength" Description="Length for the circular transition change of curvature at the start of the cant segment, measured from the start of the cant segment to the end of the circular transition change of curvature." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
 				<IfcSimplePropertyTemplate id="Station_2wUFXsqVDB8fwdTk7zGJXN" GlobalId="2wUFXsqVDB8fwdTk7zGJXN" Name="Station" Description="The station value at this location." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLengthMeasure" />
 				<IfcSimplePropertyTemplate id="Status_002JG0qWWHuO00025QrEV" GlobalId="002JG0qWWHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" id="i1855" Name="PEnum_ElementStatus">
+					<Enumerators xsi:type="IfcPropertyEnumeration" id="i1858" Name="PEnum_ElementStatus">
 						<EnumerationValues>
 							<IfcLabel-wrapper>NEW</IfcLabel-wrapper>
 							<IfcLabel-wrapper>EXISTING</IfcLabel-wrapper>
@@ -4323,274 +4340,274 @@ tripping_unit." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 					</Enumerators>
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_05abe0qSSHuO00025QrEV" GlobalId="05abe0qSSHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_05g4y0qVCHuO00025QrEV" GlobalId="05g4y0qVCHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_08y0g0qVGHuO00025QrEV" GlobalId="08y0g0qVGHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_09SAq0qSGHuO00025QrEV" GlobalId="09SAq0qSGHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_09VQQ0qTuHuO00025QrEV" GlobalId="09VQQ0qTuHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0CBig0qUCHuO00025QrEV" GlobalId="0CBig0qUCHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0D5Yi0qUWHuO00025QrEV" GlobalId="0D5Yi0qUWHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0DRV20qVyHuO00025QrEV" GlobalId="0DRV20qVyHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0EKLC0qVmHuO00025QrEV" GlobalId="0EKLC0qVmHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0EW2q0qS4HuO00025QrEV" GlobalId="0EW2q0qS4HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0g52E0qXCHuO00025QrEV" GlobalId="0g52E0qXCHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0GE0ZFN_PDM9vp5yT9CKUr" GlobalId="0GE0ZFN_PDM9vp5yT9CKUr" Name="Status" Description="" TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0hnFE0qU4HuO00025QrEV" GlobalId="0hnFE0qU4HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0jDFA0qSOHuO00025QrEV" GlobalId="0jDFA0qSOHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0l_Gq0qV4HuO00025QrEV" GlobalId="0l_Gq0qV4HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0L4w80qSiHuO00025QrEV" GlobalId="0L4w80qSiHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0lHeE0qRqHuO00025QrEV" GlobalId="0lHeE0qRqHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0ND2k0qU0HuO00025QrEV" GlobalId="0ND2k0qU0HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0o2vs0qUeHuO00025QrEV" GlobalId="0o2vs0qUeHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0owGC0qTiHuO00025QrEV" GlobalId="0owGC0qTiHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0Q9o00qT0HuO00025QrEV" GlobalId="0Q9o00qT0HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0R776yD1b15fWhkijME2BM" GlobalId="0R776yD1b15fWhkijME2BM" Name="Status" Description="" TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0SEw_0qSqHuO00025QrEV" GlobalId="0SEw_0qSqHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_0uyDi0qVyHuO00025QrEV" GlobalId="0uyDi0qVyHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_107kM0qWqHuO00025QrEV" GlobalId="107kM0qWqHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_10ebfaOlX82fn9pBND2gTI" GlobalId="10ebfaOlX82fn9pBND2gTI" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_11wQ4bRUr9fho1munoGPl" GlobalId="11wQ4bRUr9fho1muno$GPl" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished, &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_12qWY0qXOHuO00025QrEV" GlobalId="12qWY0qXOHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_16Ysu0qSaHuO00025QrEV" GlobalId="16Ysu0qSaHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_18nUg0qX8HuO00025QrEV" GlobalId="18nUg0qX8HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1B4L00qUGHuO00025QrEV" GlobalId="1B4L00qUGHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1BT100qX4HuO00025QrEV" GlobalId="1BT100qX4HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1clYk0qSyHuO00025QrEV" GlobalId="1clYk0qSyHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1ephq0qSGHuO00025QrEV" GlobalId="1ephq0qSGHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1EQWC0qWSHuO00025QrEV" GlobalId="1EQWC0qWSHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1Fa3M0qV4HuO00025QrEV" GlobalId="1Fa3M0qV4HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1FY3c0qU4HuO00025QrEV" GlobalId="1FY3c0qU4HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1hrgS0qTuHuO00025QrEV" GlobalId="1hrgS0qTuHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1My8v0zEn4Hek5k3AKjbvV" GlobalId="1My8v0zEn4Hek5k3AKjbvV" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1OXmG0qVqHuO00025QrEV" GlobalId="1OXmG0qVqHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1pD6GEhpb3kQoohaFgDAHz" GlobalId="1pD6GEhpb3kQoohaFgDAHz" Name="Status" Description="" TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1QWv_0qSeHuO00025QrEV" GlobalId="1QWv_0qSeHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1Rqxq0qWWHuO00025QrEV" GlobalId="1Rqxq0qWWHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1sapi0qU8HuO00025QrEV" GlobalId="1sapi0qU8HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1Sb340qRyHuO00025QrEV" GlobalId="1Sb340qRyHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1ujyA0qVyHuO00025QrEV" GlobalId="1ujyA0qVyHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1uNls0qUOHuO00025QrEV" GlobalId="1uNls0qUOHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1UP__0qTCHuO00025QrEV" GlobalId="1UP__0qTCHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1V2u20qUaHuO00025QrEV" GlobalId="1V2u20qUaHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1Xfg_0qS8HuO00025QrEV" GlobalId="1Xfg_0qS8HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1XgAw0qSOHuO00025QrEV" GlobalId="1XgAw0qSOHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1xvue0qT0HuO00025QrEV" GlobalId="1xvue0qT0HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_1z3xk0qRuHuO00025QrEV" GlobalId="1z3xk0qRuHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_23_lO0qTyHuO00025QrEV" GlobalId="23_lO0qTyHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2caGq0qUSHuO00025QrEV" GlobalId="2caGq0qUSHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2DrYQ0qUeHuO00025QrEV" GlobalId="2DrYQ0qUeHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2f1bs0qWqHuO00025QrEV" GlobalId="2f1bs0qWqHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2IwgG0qV4HuO00025QrEV" GlobalId="2IwgG0qV4HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2iwwq0qXWHuO00025QrEV" GlobalId="2iwwq0qXWHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2j9880qV4HuO00025QrEV" GlobalId="2j9880qV4HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2jQ560qU0HuO00025QrEV" GlobalId="2jQ560qU0HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2jqPnPi7zFNRXOEExuOpW" GlobalId="2jqPnPi7zFNRX$OEExuOpW" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2LIV_0qUiHuO00025QrEV" GlobalId="2LIV_0qUiHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2mMaQ0qSuHuO00025QrEV" GlobalId="2mMaQ0qSuHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2moW00qXKHuO00025QrEV" GlobalId="2moW00qXKHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2Ni5U0qVCHuO00025QrEV" GlobalId="2Ni5U0qVCHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2OUyO0qS0HuO00025QrEV" GlobalId="2OUyO0qS0HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2qpp40qSSHuO00025QrEV" GlobalId="2qpp40qSSHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2uEDk0qWmHuO00025QrEV" GlobalId="2uEDk0qWmHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2UHSk0qW4HuO00025QrEV" GlobalId="2UHSk0qW4HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2Umd00qSaHuO00025QrEV" GlobalId="2Umd00qSaHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2v34O0qUaHuO00025QrEV" GlobalId="2v34O0qUaHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2Vfz60qSeHuO00025QrEV" GlobalId="2Vfz60qSeHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_2xRA40qUKHuO00025QrEV" GlobalId="2xRA40qUKHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_31drK0qSOHuO00025QrEV" GlobalId="31drK0qSOHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_35evK0qWyHuO00025QrEV" GlobalId="35evK0qWyHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_36Vi0qVuHuO00025QrEV" GlobalId="36V$i0qVuHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_3I9Ey0qWaHuO00025QrEV" GlobalId="3I9Ey0qWaHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_3IbhUWyhjEC90GDNQ1lKhS" GlobalId="3IbhUWyhjEC90GDNQ1lKhS" Name="Status" Description="" TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_3iucu0qTyHuO00025QrEV" GlobalId="3iucu0qTyHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_3lXPa0qSWHuO00025QrEV" GlobalId="3lXPa0qSWHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_3lzb80qX4HuO00025QrEV" GlobalId="3lzb80qX4HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_3mF220qWGHuO00025QrEV" GlobalId="3mF220qWGHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_3N8NY0qU0HuO00025QrEV" GlobalId="3N8NY0qU0HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_3P0J40qWmHuO00025QrEV" GlobalId="3P0J40qWmHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_3PG0C0qV4HuO00025QrEV" GlobalId="3PG0C0qV4HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_3PKFg0qXCHuO00025QrEV" GlobalId="3PKFg0qXCHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_3T5be0qTuHuO00025QrEV" GlobalId="3T5be0qTuHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_3Xr160qT0HuO00025QrEV" GlobalId="3Xr160qT0HuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="Status_3zvAo0qUeHuO00025QrEV" GlobalId="3zvAo0qUeHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1855" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1858" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="SteadyDeviceType_1vPhB_I5FigMapMG3Ne8f" GlobalId="1vPh$B_I5FigMapMG3Ne8f" Name="SteadyDeviceType" Description="Type of Steady Device: To indicate the mode of registration." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
 					<Enumerators xsi:type="IfcPropertyEnumeration" Name="PEnum_SteadyDeviceType">
@@ -5250,13 +5267,13 @@ Walking line position is given by the &apos;WalkingLineOffset&apos;. The resulti
 				<IfcSimplePropertyTemplate id="UniformlyDistributedLoad_2oFKKjPUb4bA5i8GWGN0uJ" GlobalId="2oFKKjPUb4bA5i8GWGN0uJ" Name="UniformlyDistributedLoad" Description="Uniformly Distributed Load" TemplateType="p_singlevalue" PrimaryMeasureType="IfcForceMeasure" />
 				<IfcSimplePropertyTemplate id="Unit_2FJo40qU4HuO00025QrEV" GlobalId="2FJo40qU4HuO00025QrE$V" Name="Unit" Description="The unit of the quantity the environmental indicators values are related with." TemplateType="p_singlevalue" PrimaryMeasureType="IfcText" />
 				<IfcSimplePropertyTemplate id="UnmitigatedRiskConsequence_1t9ADGHCfFUQZuSCWzXhY3" GlobalId="1t9ADGHCfFUQZuSCWzXhY3" Name="UnmitigatedRiskConsequence" Description="Identifies the consequence of the hazard prior to any specific mitigation." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1114" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1116" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="UnmitigatedRiskLikelihood_1Mb3S0h15VueTBwV26oa" GlobalId="1Mb3$S0h15Vue$TBwV26oa" Name="UnmitigatedRiskLikelihood" Description="Identifies the likelihood of the hazard prior to any specific mitigation." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1114" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1116" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="UnmitigatedRiskSignificance_0e40TDcGfEt9qzhUbiDnYC" GlobalId="0e40TDcGfEt9qzhUbiDnYC" Name="UnmitigatedRiskSignificance" Description="Identifies the signifiance of the risk given the likelihood and consequence prior to any specific mitigation." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1114" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i1116" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="UplinkRadioBand_16u1AonQD7qeK0DpO8DyYZ" GlobalId="16u1AonQD7qeK0DpO8DyYZ" Name="UplinkRadioBand" Description="Indicates the frequency range, delimited by a lower frequency and an upper frequency, allocated for uplink transmission." TemplateType="p_boundedvalue" PrimaryMeasureType="IfcFrequencyMeasure" />
 				<IfcSimplePropertyTemplate id="UpperCurrent1_0Hc0y0qViHuO00025QrEV" GlobalId="0Hc0y0qViHuO00025QrE$V" Name="UpperCurrent1" Description="The current in [x In], indicating that for currents larger than UpperCurrent1 the I2t part of the L-function will trip the current." TemplateType="p_singlevalue" PrimaryMeasureType="IfcElectricCurrentMeasure" />
@@ -5425,7 +5442,7 @@ CROSSOVER_4_PORT: Valve with 4 separate ports." TemplateType="p_enumeratedvalue"
 				<IfcSimplePropertyTemplate id="VisibleLightTransmittance_20Pc_0qTqHuO00025QrEV" GlobalId="20Pc_0qTqHuO00025QrE$V" Name="VisibleLightTransmittance" Description="Fraction of the visible light that passes the glazing at normal incidence. It is a value without unit." TemplateType="p_singlevalue" PrimaryMeasureType="IfcNormalisedRatioMeasure" />
 				<IfcSimplePropertyTemplate id="Voltage_27jQobBL4UhVjgWuhQGvz" GlobalId="27j$QobBL4UhVjgWuhQGvz" Name="Voltage" Description="The actual voltage and operable range." TemplateType="p_boundedvalue" PrimaryMeasureType="IfcElectricVoltageMeasure" />
 				<IfcSimplePropertyTemplate id="VoltageLevel_0jKEI0qVuHuO00025QrEV" GlobalId="0jKEI0qVuHuO00025QrE$V" Name="VoltageLevel" Description="The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" id="i2220" Name="PEnum_VoltageLevels">
+					<Enumerators xsi:type="IfcPropertyEnumeration" id="i2223" Name="PEnum_VoltageLevels">
 						<EnumerationValues>
 							<IfcLabel-wrapper>U230</IfcLabel-wrapper>
 							<IfcLabel-wrapper>U400</IfcLabel-wrapper>
@@ -5440,19 +5457,19 @@ CROSSOVER_4_PORT: Valve with 4 separate ports." TemplateType="p_enumeratedvalue"
 					</Enumerators>
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="VoltageLevel_0z6Ve0qVaHuO00025QrEV" GlobalId="0z6Ve0qVaHuO00025QrE$V" Name="VoltageLevel" Description="The voltage level of the protective device for which the data of the instance is valid. More than one value may be selected in the enumeration." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i2220" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i2223" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="VoltageLevel_2EmeI0qVaHuO00025QrEV" GlobalId="2EmeI0qVaHuO00025QrE$V" Name="VoltageLevel" Description="The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i2220" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i2223" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="VoltageLevel_2sPHq0qVWHuO00025QrEV" GlobalId="2sPHq0qVWHuO00025QrE$V" Name="VoltageLevel" Description="The voltage levels of the protective device for which the data of the instance is valid. More than one value may be selected in the enumeration." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i2220" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i2223" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="VoltageLevel_3ixsU0qVaHuO00025QrEV" GlobalId="3ixsU0qVaHuO00025QrE$V" Name="VoltageLevel" Description="The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i2220" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i2223" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="VoltageLevel_3tNJ60qVWHuO00025QrEV" GlobalId="3tNJ60qVWHuO00025QrE$V" Name="VoltageLevel" Description="The voltage levels of the fuse for which the data of the instance is valid. More than one value may be selected in the enumeration." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
-					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i2220" />
+					<Enumerators xsi:type="IfcPropertyEnumeration" xsi:nil="true" href="i2223" />
 				</IfcSimplePropertyTemplate>
 				<IfcSimplePropertyTemplate id="VoltageRegulationRate_2JurpF5z9eRwfdnERHveS" GlobalId="2JurpF5$z9eRwfdnERHveS" Name="VoltageRegulationRate" Description="When the input side voltage changes from the lowest allowable input value to the specified maximum value, the relative change value of the output voltage is the percentage of the rated output voltage." TemplateType="p_singlevalue" PrimaryMeasureType="IfcRatioMeasure" />
 				<IfcSimplePropertyTemplate id="Volume_299MY0qX8HuO00025QrEV" GlobalId="299MY0qX8HuO00025QrE$V" Name="Volume" Description="Total volume of fluid in the tubes and their headers." TemplateType="p_singlevalue" PrimaryMeasureType="IfcVolumeMeasure" />
@@ -5751,7 +5768,7 @@ SoundLevel attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties ins
 						<IfcSimplePropertyTemplate xsi:nil="true" href="RailwayCommunicationTerminalType_33g1QhHOT0svusBGtik1jV" />
 					</HasPropertyTemplates>
 				</IfcPropertySetTemplate>
-				<IfcPropertySetTemplate GlobalId="3osp7raMQ5ih2ElNgqb2iB" Name="Pset_AudioVisualApplianceTypeRecordingEquipment" Description="Properties common to _IfcAudioVisualAppliance_ with predefined type set to RECORDINGEQUIPMENT." ApplicableEntity="IfcAudioVisualAppliance/RECORDINGEQUIPMENT">
+				<IfcPropertySetTemplate GlobalId="3osp7raMQ5ih2ElNgqb2iB" Name="Pset_AudioVisualApplianceTypeRecordingEquipment" Description="Properties common to _IfcAudioVisualAppliance_ with predefined type set to RECORDINGEQUIPMENT." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcAudioVisualAppliance/RECORDINGEQUIPMENT">
 					<HasPropertyTemplates>
 						<IfcSimplePropertyTemplate xsi:nil="true" href="NumberOfInterfaces_3D0wHuI4P3guCzHoS3Y4Zf" />
 						<IfcSimplePropertyTemplate xsi:nil="true" href="StorageCapacity_1l1lxKbmn2bAy1hWV7EsM1" />
@@ -6157,7 +6174,7 @@ HISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure." Tem
 						<IfcSimplePropertyTemplate xsi:nil="true" href="FiberType_33hW6SI9L88u4r9StkBaiz" />
 					</HasPropertyTemplates>
 				</IfcPropertySetTemplate>
-				<IfcPropertySetTemplate GlobalId="2_fHVOZ3rFCg8JQ7Ujpx3c" Name="Pset_CableSegmentTypeFiberTubeSegment" Description="Properties of Fiber tubes segments. This property set is applicable to a type or occurence of _IfcCableSegment_ with predefined type FIBERTUBESEGMENT." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcCableSegment/FIBERTUBESEGMENT">
+				<IfcPropertySetTemplate GlobalId="2_fHVOZ3rFCg8JQ7Ujpx3c" Name="Pset_CableSegmentTypeFiberTubeSegment" Description="Properties of Fiber tubes segments. This property set is applicable to a type or occurence of _IfcCableSegment_ with predefined type FIBERTUBESEGMENT." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcCableSegment/FIBERTUBE">
 					<HasPropertyTemplates>
 						<IfcSimplePropertyTemplate xsi:nil="true" href="FiberTubeColour_3m0FdinCDDhAUaTzdvYyG" />
 						<IfcSimplePropertyTemplate xsi:nil="true" href="NumberOfFibers_0ql_hsVrT7ZeyOizbL_4bp" />
@@ -6314,12 +6331,12 @@ HISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure." Tem
 						<IfcSimplePropertyTemplate xsi:nil="true" href="NumberOfInterfaces_3D0wHuI4P3guCzHoS3Y4Zf" />
 					</HasPropertyTemplates>
 				</IfcPropertySetTemplate>
-				<IfcPropertySetTemplate GlobalId="1y3mhYYUglyebURQtI1TUM" Name="Pset_CommunicationsApplianceTypeIntelligentPeripheral" Description="Properties common to a intelligent peripheral. This property set is applied to a type or occurrence of _IfcCommunicationsAppliance_ with predefined type of INTELLIGENT_PERIPHERAL." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcCommunicationsAppliance/INTELLIGENT_PERIPHERAL">
+				<IfcPropertySetTemplate GlobalId="1y3mhYYUglyebURQtI1TUM" Name="Pset_CommunicationsApplianceTypeIntelligentPeripheral" Description="Properties common to a intelligent peripheral. This property set is applied to a type or occurrence of _IfcCommunicationsAppliance_ with predefined type of INTELLIGENT_PERIPHERAL." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcCommunicationsAppliance/INTELLIGENTPERIPHERAL">
 					<HasPropertyTemplates>
 						<IfcSimplePropertyTemplate xsi:nil="true" href="UserCapacity_2eXzZatEr5bOQ1ApLLVBvv" />
 					</HasPropertyTemplates>
 				</IfcPropertySetTemplate>
-				<IfcPropertySetTemplate GlobalId="0AUNbrd5guo7$_Si9pnZIg" Name="Pset_CommunicationsApplianceTypeIpNetworkEquipment" Description="Properties common to a IP network equipment. This property set is applied to a type or occurrence of _IfcCommunicationsAppliance_ with predefined type of IP_NETWORK_EQUIPMENT." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcCommunicationsAppliance/IP_NETWORK_EQUIPMENT">
+				<IfcPropertySetTemplate GlobalId="0AUNbrd5guo7$_Si9pnZIg" Name="Pset_CommunicationsApplianceTypeIpNetworkEquipment" Description="Properties common to a IP network equipment. This property set is applied to a type or occurrence of _IfcCommunicationsAppliance_ with predefined type of IP_NETWORK_EQUIPMENT." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcCommunicationsAppliance/IPNETWORKEQUIPMENT">
 					<HasPropertyTemplates>
 						<IfcSimplePropertyTemplate xsi:nil="true" href="NumberOfSlots_3ol50yqfz8ZAv5ApU0vpo5" />
 						<IfcSimplePropertyTemplate xsi:nil="true" href="EquipmentCapacity_37sz88SXT3JOvbrpAb4kbe" />
@@ -6343,7 +6360,7 @@ HISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure." Tem
 						<IfcSimplePropertyTemplate xsi:nil="true" href="NumberOfInterfaces_3D0wHuI4P3guCzHoS3Y4Zf" />
 					</HasPropertyTemplates>
 				</IfcPropertySetTemplate>
-				<IfcPropertySetTemplate GlobalId="1Qow3jpcp$TBM45huFXC6s" Name="Pset_CommunicationsApplianceTypeOpticalNetworkUnit" Description="Properties common to a optical network unit. This property set is applied to a type or occurrence of _IfcCommunicationsAppliance_ with predefined type OPTICAL_NETWORK_UNIT." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcCommunicationsAppliance/OPTICAL_NETWORK_UNIT">
+				<IfcPropertySetTemplate GlobalId="1Qow3jpcp$TBM45huFXC6s" Name="Pset_CommunicationsApplianceTypeOpticalNetworkUnit" Description="Properties common to a optical network unit. This property set is applied to a type or occurrence of _IfcCommunicationsAppliance_ with predefined type OPTICAL_NETWORK_UNIT." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcCommunicationsAppliance/OPTICALNETWORKUNIT">
 					<HasPropertyTemplates>
 						<IfcSimplePropertyTemplate xsi:nil="true" href="OpticalNetworkUnitType_3MqyyGk_v15RyXHBF73XE8" />
 						<IfcSimplePropertyTemplate xsi:nil="true" href="NumberOfInterfaces_3D0wHuI4P3guCzHoS3Y4Zf" />
@@ -7573,10 +7590,11 @@ History: New in IFC4" TemplateType="pset_typedrivenoverride" ApplicableEntity="I
 						<IfcSimplePropertyTemplate xsi:nil="true" href="DataConnectionType_2cODWDnK9A9RCBk2DE0YiP" />
 					</HasPropertyTemplates>
 				</IfcPropertySetTemplate>
-				<IfcPropertySetTemplate GlobalId="0CRTLokRH2J9JcHKqarM_t" Name="Pset_KerbCommon" Description="Properties for a kerb." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcKerb">
+				<IfcPropertySetTemplate GlobalId="0CRTLokRH2J9JcHKqarM_t" Name="Pset_KerbCommon" Description="Properties for a kerb." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcKerb,IfcKerbType">
 					<HasPropertyTemplates>
 						<IfcSimplePropertyTemplate xsi:nil="true" href="CombinedKerbGutter_2XVviYqS9BKeFimfQfNm7U" />
 						<IfcSimplePropertyTemplate xsi:nil="true" href="Upstand_3VCJVzwh9CCfDp_58_XB7_" />
+						<IfcSimplePropertyTemplate xsi:nil="true" href="IsMountable_0nASgQh6r2huzTgAp_avpJ" />
 					</HasPropertyTemplates>
 				</IfcPropertySetTemplate>
 				<IfcPropertySetTemplate GlobalId="1leKE_dk557vIttvjUYIFZ" Name="Pset_KerbStone" Description="Properties for kerb stones." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcKerb">
@@ -7853,7 +7871,7 @@ HISTORY: This property set replaces the entity IfcManufacturerInformation from p
 						<IfcSimplePropertyTemplate xsi:nil="true" href="NumberOfInterfaces_3D0wHuI4P3guCzHoS3Y4Zf" />
 					</HasPropertyTemplates>
 				</IfcPropertySetTemplate>
-				<IfcPropertySetTemplate GlobalId="3pWyJDmZ1AvBjUxT4v4XHE" Name="Pset_MobileTelecommunicationsApplianceTypeCommon" Description="Properties common to the definition of all occurrences of  _IfcMobileTelecommunicationsAppliance_ and types of _IfcMobileTelecommunicationsApplianceType_." ApplicableEntity="IfcMobileTelecommunicationsAppliance">
+				<IfcPropertySetTemplate GlobalId="3pWyJDmZ1AvBjUxT4v4XHE" Name="Pset_MobileTelecommunicationsApplianceTypeCommon" Description="Properties common to the definition of all occurrences of  _IfcMobileTelecommunicationsAppliance_ and types of _IfcMobileTelecommunicationsApplianceType_." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcMobileTelecommunicationsAppliance">
 					<HasPropertyTemplates>
 						<IfcSimplePropertyTemplate xsi:nil="true" href="Reference_00pQO0qSSHuO00025QrEV" />
 						<IfcSimplePropertyTemplate xsi:nil="true" href="Status_002JG0qWWHuO00025QrEV" />
@@ -8632,7 +8650,7 @@ This property set represent the short time protection (S-curve) of an electronic
 						<IfcSimplePropertyTemplate xsi:nil="true" href="NameFormat_0GYqVYWxT8AgvoGFCd4ZW3" />
 					</HasPropertyTemplates>
 				</IfcPropertySetTemplate>
-				<IfcPropertySetTemplate GlobalId="06bLLo7i963w9BQKYrtFZ3" Name="Pset_RepairOccurrence" Description="Properties defining repair information for occurrences of element, asset or system." ApplicableEntity="IfcElement,IfcAsset,IfcSystem">
+				<IfcPropertySetTemplate GlobalId="06bLLo7i963w9BQKYrtFZ3" Name="Pset_RepairOccurrence" Description="Properties defining repair information for occurrences of element, asset or system." TemplateType="pset_occurrencedriven" ApplicableEntity="IfcElement,IfcAsset,IfcSystem">
 					<HasPropertyTemplates>
 						<IfcSimplePropertyTemplate xsi:nil="true" href="RepairContent_2uB5y1E3H1zuDscjqI6Rjw" />
 						<IfcSimplePropertyTemplate xsi:nil="true" href="RepairDate_1fKpvOEozEKQHboTTf4_f7" />
@@ -9099,6 +9117,7 @@ SoundLevel attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties ins
 					<HasPropertyTemplates>
 						<IfcSimplePropertyTemplate xsi:nil="true" href="IncomingStation_2ScYZDmQ9C9vR878Q0zliC" />
 						<IfcSimplePropertyTemplate xsi:nil="true" href="Station_2wUFXsqVDB8fwdTk7zGJXN" />
+						<IfcSimplePropertyTemplate xsi:nil="true" href="Increasing_34FH6g00XEcAJrdjKZ3gOO" />
 					</HasPropertyTemplates>
 				</IfcPropertySetTemplate>
 				<IfcPropertySetTemplate GlobalId="2fJCduL3bDRALN5pAWwCGd" Name="Pset_SumpBusterCommon" Description="Properties for a sump buster." ApplicableEntity="IfcElementAssembly/(.SUMPBUSTER.)">
@@ -9368,7 +9387,7 @@ SoundLevel attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties ins
 						<IfcSimplePropertyTemplate xsi:nil="true" href="FireExit_0Caee0qX8HuO00025QrEV" />
 					</HasPropertyTemplates>
 				</IfcPropertySetTemplate>
-				<IfcPropertySetTemplate GlobalId="3oBPVwLDfBb8msBZBG7fkg" Name="Pset_TransportEquipmentOTN" Description="Properties in this property set are applied to transport equipment that act in optical transport network (OTN) system." ApplicableEntity="IfcCommunicationsAppliance/TRANSPORTEQUIPMENT">
+				<IfcPropertySetTemplate GlobalId="3oBPVwLDfBb8msBZBG7fkg" Name="Pset_TransportEquipmentOTN" Description="Properties in this property set are applied to transport equipment that act in optical transport network (OTN) system." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcCommunicationsAppliance/TRANSPORTEQUIPMENT">
 					<HasPropertyTemplates>
 						<IfcSimplePropertyTemplate xsi:nil="true" href="SingleChannelAveragePower_3rB_Tjhz6S8Z3ZXo0VSc6" />
 						<IfcSimplePropertyTemplate xsi:nil="true" href="ChromaticDispersionTolerance_1GC7m4ctzEMR6sRVs2Rji" />

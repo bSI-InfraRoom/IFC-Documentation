@@ -864,8 +864,8 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcgeometryresource/lexical/ifccosine.htm">IfcCosine</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifccosine.htm">IfcCosine</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcgeometryresource/lexical/ifccosine.htm">IfcCosine</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcgeometryresource/lexical/ifccosinespiral.htm">IfcCosineSpiral</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifccosinespiral.htm">IfcCosineSpiral</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcgeometryresource/lexical/ifccosinespiral.htm">IfcCosineSpiral</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;CosineTerm&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
@@ -1984,7 +1984,7 @@ of the material. The information contained in this document is subject to change
 &nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcroaddomain/lexical/ifckerb.htm">IfcKerb</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;Mountable&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../../schema/ifcroaddomain/lexical/ifckerbtypeenum.htm">IfcKerbTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
@@ -3874,8 +3874,8 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
 &nbsp;&lt;/xs:complexType&gt;<br/>
-&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcgeometryresource/lexical/ifcsine.htm">IfcSine</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcsine.htm">IfcSine</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
-&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcgeometryresource/lexical/ifcsine.htm">IfcSine</a>&quot;&gt;<br/>
+&nbsp;&lt;xs:element name=&quot;<a href="../../../schema/ifcgeometryresource/lexical/ifcsinespiral.htm">IfcSineSpiral</a>&quot; type=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcsinespiral.htm">IfcSineSpiral</a>&quot; substitutionGroup=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../../schema/ifcgeometryresource/lexical/ifcsinespiral.htm">IfcSineSpiral</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../../schema/ifcgeometryresource/lexical/ifcspiral.htm">IfcSpiral</a>&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;SineTerm&quot; type=&quot;ifc:<a href="../../../schema/ifcmeasureresource/lexical/ifclengthmeasure.htm">IfcLengthMeasure</a>&quot; use=&quot;optional&quot;/&gt;<br/>
@@ -6179,6 +6179,12 @@ of the material. The information contained in this document is subject to change
 &nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;data&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;power&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
+&nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>
+&nbsp;&lt;/xs:simpleType&gt;<br/>
+&nbsp;&lt;xs:simpleType name=&quot;<a href="../../../schema/ifcroaddomain/lexical/ifckerbtypeenum.htm">IfcKerbTypeEnum</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:string&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;userdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;notdefined&quot;/&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:restriction&gt;<br/>

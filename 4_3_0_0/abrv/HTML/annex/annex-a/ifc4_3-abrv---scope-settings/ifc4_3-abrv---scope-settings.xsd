@@ -845,8 +845,8 @@ of the material. The information contained in this document is subject to change
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:element name="IfcCosine" type="ifc:IfcCosine" substitutionGroup="ifc:IfcSpiral" nillable="true"/>
-	<xs:complexType name="IfcCosine">
+	<xs:element name="IfcCosineSpiral" type="ifc:IfcCosineSpiral" substitutionGroup="ifc:IfcSpiral" nillable="true"/>
+	<xs:complexType name="IfcCosineSpiral">
 		<xs:complexContent>
 			<xs:extension base="ifc:IfcSpiral">
 				<xs:attribute name="CosineTerm" type="ifc:IfcLengthMeasure" use="optional"/>
@@ -1965,7 +1965,7 @@ of the material. The information contained in this document is subject to change
 	<xs:complexType name="IfcKerb">
 		<xs:complexContent>
 			<xs:extension base="ifc:IfcBuiltElement">
-				<xs:attribute name="Mountable" type="ifc:IfcBoolean" use="optional"/>
+				<xs:attribute name="PredefinedType" type="ifc:IfcKerbTypeEnum" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -3855,8 +3855,8 @@ of the material. The information contained in this document is subject to change
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:element name="IfcSine" type="ifc:IfcSine" substitutionGroup="ifc:IfcSpiral" nillable="true"/>
-	<xs:complexType name="IfcSine">
+	<xs:element name="IfcSineSpiral" type="ifc:IfcSineSpiral" substitutionGroup="ifc:IfcSpiral" nillable="true"/>
+	<xs:complexType name="IfcSineSpiral">
 		<xs:complexContent>
 			<xs:extension base="ifc:IfcSpiral">
 				<xs:attribute name="SineTerm" type="ifc:IfcLengthMeasure" use="optional"/>
@@ -6160,6 +6160,12 @@ of the material. The information contained in this document is subject to change
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="data"/>
 			<xs:enumeration value="power"/>
+			<xs:enumeration value="userdefined"/>
+			<xs:enumeration value="notdefined"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="IfcKerbTypeEnum">
+		<xs:restriction base="xs:string">
 			<xs:enumeration value="userdefined"/>
 			<xs:enumeration value="notdefined"/>
 		</xs:restriction>

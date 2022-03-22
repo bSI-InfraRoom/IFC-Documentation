@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-Friday, 11 March 2022
+Tuesday, 22 March 2022
 
 *)
 
@@ -468,7 +468,7 @@ ENTITY IfcConic
 	Position : IfcAxis2Placement;
 END_ENTITY;
 
-ENTITY IfcCosine
+ENTITY IfcCosineSpiral
  SUBTYPE OF (IfcSpiral);
 	CosineTerm : IfcLengthMeasure;
 	ConstantTerm : OPTIONAL IfcLengthMeasure;
@@ -850,7 +850,7 @@ ENTITY IfcSeventhOrderPolynomialSpiral
 	ConstantTerm : OPTIONAL IfcLengthMeasure;
 END_ENTITY;
 
-ENTITY IfcSine
+ENTITY IfcSineSpiral
  SUBTYPE OF (IfcSpiral);
 	SineTerm : IfcLengthMeasure;
 	LinearTerm : OPTIONAL IfcLengthMeasure;
@@ -865,10 +865,10 @@ END_ENTITY;
 ENTITY IfcSpiral
  ABSTRACT SUPERTYPE OF (ONEOF
     (IfcClothoid
-    ,IfcCosine
+    ,IfcCosineSpiral
     ,IfcSecondOrderPolynomialSpiral
     ,IfcSeventhOrderPolynomialSpiral
-    ,IfcSine
+    ,IfcSineSpiral
     ,IfcThirdOrderPolynomialSpiral))
  SUBTYPE OF (IfcCurve);
 	Position : OPTIONAL IfcAxis2Placement;

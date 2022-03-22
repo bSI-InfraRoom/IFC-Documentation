@@ -597,6 +597,10 @@ OR
 <span class="keyword">TYPE</span> IfcJunctionBoxTypeEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
 &nbsp;DATA, <br/>&nbsp;POWER, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
 <br/>
+<a name="ifckerbtypeenum" />
+<span class="keyword">TYPE</span> IfcKerbTypeEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
+&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
+<br/>
 <a name="ifclamptypeenum" />
 <span class="keyword">TYPE</span> IfcLampTypeEnum = <span class="keyword">ENUMERATION OF</span> (<br/>
 &nbsp;COMPACTFLUORESCENT, <br/>&nbsp;FLUORESCENT, <br/>&nbsp;HALOGEN, <br/>&nbsp;HIGHPRESSUREMERCURY, <br/>&nbsp;HIGHPRESSURESODIUM, <br/>&nbsp;LED, <br/>&nbsp;METALHALIDE, <br/>&nbsp;OLED, <br/>&nbsp;TUNGSTENFILAMENT, <br/>&nbsp;USERDEFINED, <br/>&nbsp;NOTDEFINED);<br/><span class="keyword">END_TYPE;</span><br/>
@@ -1770,8 +1774,8 @@ SELF\IfcCartesianTransformationOperator.Axis2,Axis3);<br/>
 &nbsp;&nbsp;HasCoordinateOperation : <span class="keyword">SET</span> [0:1] OF <a href="#ifccoordinateoperation">IfcCoordinateOperation</a> <span class="keyword">FOR</span> SourceCRS;<br/>
 <span class="keyword">END_ENTITY;</span><br/>
 <br/>
-<a name="ifccosine" />
-<span class="keyword">ENTITY</span> IfcCosine<br/>
+<a name="ifccosinespiral" />
+<span class="keyword">ENTITY</span> IfcCosineSpiral<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="#ifcspiral">IfcSpiral</a>)<b>;</b><br/>
 &nbsp;&nbsp;CosineTerm : <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;ConstantTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
@@ -2814,8 +2818,12 @@ EXISTS(SELF\<a href="#ifcobject">IfcObject</a>.ObjectType));<br/>&nbsp;&nbsp;Cor
 <a name="ifckerb" />
 <span class="keyword">ENTITY</span> IfcKerb<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="#ifcbuiltelement">IfcBuiltElement</a>)<b>;</b><br/>
-&nbsp;&nbsp;Mountable : <a href="#ifcboolean">IfcBoolean</a>;<br/>
-<span class="keyword">END_ENTITY;</span><br/>
+&nbsp;&nbsp;PredefinedType : <span class="keyword">OPTIONAL</span> <a href="#ifckerbtypeenum">IfcKerbTypeEnum</a>;<br/>
+&nbsp;<span class="keyword">WHERE</span><br/>
+&nbsp;&nbsp;CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR<br/>
+(PredefinedType &lt;&gt; <a href="#ifckerbtypeenum">IfcKerbTypeEnum</a>.<span class="self-ref">USERDEFINED</span>) OR<br/>
+((PredefinedType = <a href="#ifckerbtypeenum">IfcKerbTypeEnum</a>.<span class="self-ref">USERDEFINED</span>) AND EXISTS(SELF\<a href="#ifcobject">IfcObject</a>.ObjectType));<br/>&nbsp;&nbsp;CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR<br/>
+(&#39;IFCROADDOMAIN.<span class="self-ref">IfcStrippedOptional</span>&#39; IN TYPEOF(SELF\<a href="#ifcobject">IfcObject</a>.IsTypedBy[1].RelatingType));<br/><span class="keyword">END_ENTITY;</span><br/>
 <br/>
 <a name="ifclamp" />
 <span class="keyword">ENTITY</span> IfcLamp<br/>
@@ -4256,8 +4264,8 @@ IN TYPEOF(SELF\<a href="#ifcrepresentation">IfcRepresentation</a>.ContextOfItems
 &nbsp;&nbsp;AccessState : <span class="keyword">OPTIONAL</span> <a href="#ifcstateenum">IfcStateEnum</a>;<br/>
 <span class="keyword">END_ENTITY;</span><br/>
 <br/>
-<a name="ifcsine" />
-<span class="keyword">ENTITY</span> IfcSine<br/>
+<a name="ifcsinespiral" />
+<span class="keyword">ENTITY</span> IfcSineSpiral<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="#ifcspiral">IfcSpiral</a>)<b>;</b><br/>
 &nbsp;&nbsp;SineTerm : <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
 &nbsp;&nbsp;LinearTerm : <span class="keyword">OPTIONAL</span> <a href="#ifclengthmeasure">IfcLengthMeasure</a>;<br/>
@@ -4387,7 +4395,7 @@ AND<br/>
 <br/>
 <a name="ifcspiral" />
 <span class="keyword">ENTITY</span> IfcSpiral<br/>
-&nbsp;<span class="keyword">ABSTRACT</span> <span class="keyword">SUPERTYPE OF</span>(<span class="keyword">ONEOF</span>(<a href="#ifcclothoid">IfcClothoid</a>, <a href="#ifccosine">IfcCosine</a>, <a href="#ifcsecondorderpolynomialspiral">IfcSecondOrderPolynomialSpiral</a>, <a href="#ifcseventhorderpolynomialspiral">IfcSeventhOrderPolynomialSpiral</a>, <a href="#ifcsine">IfcSine</a>, <a href="#ifcthirdorderpolynomialspiral">IfcThirdOrderPolynomialSpiral</a>))<br/>
+&nbsp;<span class="keyword">ABSTRACT</span> <span class="keyword">SUPERTYPE OF</span>(<span class="keyword">ONEOF</span>(<a href="#ifcclothoid">IfcClothoid</a>, <a href="#ifccosinespiral">IfcCosineSpiral</a>, <a href="#ifcsecondorderpolynomialspiral">IfcSecondOrderPolynomialSpiral</a>, <a href="#ifcseventhorderpolynomialspiral">IfcSeventhOrderPolynomialSpiral</a>, <a href="#ifcsinespiral">IfcSineSpiral</a>, <a href="#ifcthirdorderpolynomialspiral">IfcThirdOrderPolynomialSpiral</a>))<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="#ifccurve">IfcCurve</a>)<b>;</b><br/>
 &nbsp;&nbsp;Position : <span class="keyword">OPTIONAL</span> <span class="self-ref">IfcStrippedOptional</span>;<br/>
 <span class="keyword">END_ENTITY;</span><br/>

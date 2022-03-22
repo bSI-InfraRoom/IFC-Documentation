@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-Friday, 11 March 2022
+Tuesday, 22 March 2022
 
 *)
 
@@ -1318,6 +1318,11 @@ TYPE IfcJunctionBoxTypeEnum = ENUMERATION OF
 	(DATA
 	,POWER
 	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcKerbTypeEnum = ENUMERATION OF
+	(USERDEFINED
 	,NOTDEFINED);
 END_TYPE;
 
@@ -3325,7 +3330,7 @@ ENTITY IfcCoordinateReferenceSystem
 	HasCoordinateOperation : SET [0:1] OF IfcCoordinateOperation FOR SourceCRS;
 END_ENTITY;
 
-ENTITY IfcCosine
+ENTITY IfcCosineSpiral
  SUBTYPE OF (IfcSpiral);
 	CosineTerm : IfcLengthMeasure;
 	ConstantTerm : OPTIONAL IfcLengthMeasure;
@@ -4529,7 +4534,13 @@ END_ENTITY;
 
 ENTITY IfcKerb
  SUBTYPE OF (IfcBuiltElement);
-	Mountable : IfcBoolean;
+	PredefinedType : OPTIONAL IfcKerbTypeEnum;
+ WHERE
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
+(PredefinedType <> IfcKerbTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcKerbTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));
+	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
+('IFC4X3_RC4.IFCKERBTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
 END_ENTITY;
 
 ENTITY IfcLamp
@@ -6078,7 +6089,7 @@ ENTITY IfcSimplePropertyTemplate
 	AccessState : OPTIONAL IfcStateEnum;
 END_ENTITY;
 
-ENTITY IfcSine
+ENTITY IfcSineSpiral
  SUBTYPE OF (IfcSpiral);
 	SineTerm : IfcLengthMeasure;
 	LinearTerm : OPTIONAL IfcLengthMeasure;
@@ -6217,10 +6228,10 @@ END_ENTITY;
 ENTITY IfcSpiral
  ABSTRACT SUPERTYPE OF (ONEOF
     (IfcClothoid
-    ,IfcCosine
+    ,IfcCosineSpiral
     ,IfcSecondOrderPolynomialSpiral
     ,IfcSeventhOrderPolynomialSpiral
-    ,IfcSine
+    ,IfcSineSpiral
     ,IfcThirdOrderPolynomialSpiral))
  SUBTYPE OF (IfcCurve);
 	Position : OPTIONAL IfcStrippedOptional;
