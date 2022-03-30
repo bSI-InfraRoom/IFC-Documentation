@@ -31,8 +31,8 @@
 <li>The subtypes of <a href="../ifcproductextension/lexical/ifcelement.htm">IfcElement</a> are placed within the project spatial hierarchy using the objectified relationship <a href="../ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm">IfcRelContainedInSpatialStructure</a>, refering to it by its inverse attribute <i>SELF\IfcElement.ContainedInStructure</i>. Subtypes of <a href="../ifcproductextension/lexical/ifcspatialelement.htm">IfcSpatialElement</a> are valid spatial containers.</li>
 <li>The subtypes of <a href="../ifcproductextension/lexical/ifcelement.htm">IfcElement</a> may be aggregated into an element assembly using the objectified relationship <a href="../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a>, refering to it by its inverse attribute <i>SELF\IfcObjectDefinition.Decomposes</i>. Any subtype of <a href="../ifcproductextension/lexical/ifcelement.htm">IfcElement</a> can be an element assembly, with <a href="../ifcproductextension/lexical/ifcelementassembly.htm">IfcElementAssembly</a> as a special focus subtype. In this case it should not be additionally contained in the project spatial hierarchy, i.e. <i>SELF\IfcElement.ContainedInStructure</i> should be <i>NIL</i>.</li>
 </ul>
-<p class="fig-ref">Figure 89 illustrates an instance diagram.</p>
-<table><tr><td><img alt="Spatial Containment" src="./diagrams/spatial-containment.png" usemap="#f89"><map name="f89"><area shape="rect" coords="8,8,176,428" href="../ifcproductextension/lexical/ifcelement.htm" alt="IfcElement" /><area shape="rect" coords="208,8,376,92" href="../ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm" alt="IfcRelContainedInSpatialStructure" /><area shape="rect" coords="408,8,576,344" href="../ifcproductextension/lexical/ifcspatialelement.htm" alt="IfcSpatialElement" /><area shape="rect" coords="608,8,776,20" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /></map></td></tr><tr><td><p class="figure">Figure 89 &mdash; Spatial Containment</p></td></tr></table>
+<p class="fig-ref">Figure 90 illustrates an instance diagram.</p>
+<table><tr><td><img alt="Spatial Containment" src="./diagrams/spatial-containment.png" usemap="#f90"><map name="f90"><area shape="rect" coords="8,8,176,428" href="../ifcproductextension/lexical/ifcelement.htm" alt="IfcElement" /><area shape="rect" coords="208,8,376,92" href="../ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm" alt="IfcRelContainedInSpatialStructure" /><area shape="rect" coords="408,8,576,344" href="../ifcproductextension/lexical/ifcspatialelement.htm" alt="IfcSpatialElement" /><area shape="rect" coords="608,8,776,20" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /></map></td></tr><tr><td><p class="figure">Figure 90 &mdash; Spatial Containment</p></td></tr></table>
 
 <hr/>
 <h4>IFC4.3 AbRV - Scope settings</h4>
@@ -280,9 +280,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcsharedbldgelements/lexical/ifccovering.htm">IfcCovering</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -369,7 +369,7 @@
 <td>-<br/>-</td>
 <td>-<br/>R</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
 <td>-<br/>R</td>
 </tr>
 <tr><td><a href="../ifchvacdomain/lexical/ifcductfitting.htm">IfcDuctFitting</a></td><td>-<br/>R</td>
@@ -880,9 +880,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcstructuralelementsdomain/lexical/ifcpile.htm">IfcPile</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -917,6 +917,14 @@
 <td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcsharedbldgelements/lexical/ifcplate.htm">IfcPlate</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcprojectionelement.htm">IfcProjectionElement</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
@@ -1064,9 +1072,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcelectricaldomain/lexical/ifcsolardevice.htm">IfcSolarDevice</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -1130,6 +1138,14 @@
 <td>-<br/>-</td>
 <td>-<br/>R</td>
 <td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedfacilitieselements/lexical/ifcsystemfurnitureelement.htm">IfcSystemFurnitureElement</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 <td>-<br/>R</td>
 </tr>
 <tr><td><a href="../ifchvacdomain/lexical/ifctank.htm">IfcTank</a></td><td>-<br/>R</td>
@@ -1248,9 +1264,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcplumbingfireprotectiondomain/lexical/ifcwasteterminal.htm">IfcWasteTerminal</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>

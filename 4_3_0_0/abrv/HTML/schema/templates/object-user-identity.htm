@@ -31,8 +31,8 @@
 <li>Spatial objects may be further identified via the <i>LongName</i> attribute. This value should generally correspond to building signage describing floor levels or rooms. While the <i>Name</i> attribute generally provides a coded or abbreviated identifier, the <i>LongName</i> provides a functional name for the location such as &quot;Reception Area&quot;. See concept template <i>Spatial Element Occurrence Attributes</i></li>
 <li>Physical elements may be further identified via the <i>Tag</i> attribute. This is a human readable identifier such as an element or item number While there is no restriction on usage of such tags, it is recommended the <i>Tag</i> is unique within it's containing scope. See concept template <i>Element Occurrence Attributes</i></li>
 </ul>
-<p class="fig-ref">Figure 72 illustrates an instance diagram.</p>
-<table><tr><td><img alt="Object User Identity" src="./diagrams/object-user-identity.png" usemap="#f72"><map name="f72"><area shape="rect" coords="8,8,176,212" href="../ifckernel/lexical/ifcobject.htm" alt="IfcObject" /><area shape="rect" coords="208,8,376,20" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="208,40,376,52" href="../ifcmeasureresource/lexical/ifctext.htm" alt="IfcText" /><area shape="rect" coords="208,72,376,156" href="../ifckernel/lexical/ifcreldefinesbytype.htm" alt="IfcRelDefinesByType" /><area shape="rect" coords="408,8,576,188" href="../ifckernel/lexical/ifctypeobject.htm" alt="IfcTypeObject" /><area shape="rect" coords="608,8,776,20" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="608,40,776,52" href="../ifcmeasureresource/lexical/ifctext.htm" alt="IfcText" /></map></td></tr><tr><td><p class="figure">Figure 72 &mdash; Object User Identity</p></td></tr></table>
+<p class="fig-ref">Figure 73 illustrates an instance diagram.</p>
+<table><tr><td><img alt="Object User Identity" src="./diagrams/object-user-identity.png" usemap="#f73"><map name="f73"><area shape="rect" coords="8,8,176,212" href="../ifckernel/lexical/ifcobject.htm" alt="IfcObject" /><area shape="rect" coords="208,8,376,20" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="208,40,376,52" href="../ifcmeasureresource/lexical/ifctext.htm" alt="IfcText" /><area shape="rect" coords="208,72,376,156" href="../ifckernel/lexical/ifcreldefinesbytype.htm" alt="IfcRelDefinesByType" /><area shape="rect" coords="408,8,576,188" href="../ifckernel/lexical/ifctypeobject.htm" alt="IfcTypeObject" /><area shape="rect" coords="608,8,776,20" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="608,40,776,52" href="../ifcmeasureresource/lexical/ifctext.htm" alt="IfcText" /></map></td></tr><tr><td><p class="figure">Figure 73 &mdash; Object User Identity</p></td></tr></table>
 
 <hr/>
 <h4>IFC4.3 AbRV - Scope settings</h4>
@@ -132,6 +132,14 @@
 <td>-<br/>R</td>
 <td>-<br/>R</td>
 </tr>
+<tr><td><a href="../ifcsharedfacilitieselements/lexical/ifcasset.htm">IfcAsset</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
 <tr><td><a href="../ifcelectricaldomain/lexical/ifcaudiovisualappliance.htm">IfcAudioVisualAppliance</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
@@ -205,6 +213,14 @@
 <td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcbuiltsystem.htm">IfcBuiltSystem</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
@@ -452,12 +468,20 @@
 <td>-<br/>R</td>
 <td>-<br/>R</td>
 </tr>
+<tr><td><a href="../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm">IfcDistributionSystem</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
 <tr><td><a href="../ifcsharedbldgelements/lexical/ifcdoor.htm">IfcDoor</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
 <td>-<br/>R</td>
 </tr>
 <tr><td><a href="../ifchvacdomain/lexical/ifcductfitting.htm">IfcDuctFitting</a></td><td>-<br/>R</td>
@@ -918,11 +942,11 @@
 </tr>
 <tr><td><a href="../ifcproductextension/lexical/ifclinearelement.htm">IfcLinearElement</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcproductextension/lexical/ifclinearpositioningelement.htm">IfcLinearPositioningElement</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -1032,9 +1056,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcstructuralelementsdomain/lexical/ifcpile.htm">IfcPile</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -1093,6 +1117,14 @@
 <td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifckernel/lexical/ifcproduct.htm">IfcProduct</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcprojectionelement.htm">IfcProjectionElement</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
@@ -1272,9 +1304,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcelectricaldomain/lexical/ifcsolardevice.htm">IfcSolarDevice</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -1324,6 +1356,14 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 </tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcspatialzone.htm">IfcSpatialZone</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
 <tr><td><a href="../ifcplumbingfireprotectiondomain/lexical/ifcstackterminal.htm">IfcStackTerminal</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
@@ -1364,12 +1404,28 @@
 <td>-<br/>R</td>
 <td>-<br/>R</td>
 </tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcsystem.htm">IfcSystem</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedfacilitieselements/lexical/ifcsystemfurnitureelement.htm">IfcSystemFurnitureElement</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+</tr>
 <tr><td><a href="../ifchvacdomain/lexical/ifctank.htm">IfcTank</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
-<td>-<br/>-</td>
+<td>-<br/>R</td>
 <td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcstructuralelementsdomain/lexical/ifctendon.htm">IfcTendon</a></td><td>-<br/>R</td>
@@ -1480,9 +1536,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcplumbingfireprotectiondomain/lexical/ifcwasteterminal.htm">IfcWasteTerminal</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -1501,6 +1557,14 @@
 <td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcsharedbldgelements/lexical/ifcwindow.htm">IfcWindow</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifczone.htm">IfcZone</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>

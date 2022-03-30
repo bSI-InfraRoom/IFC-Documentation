@@ -26,8 +26,8 @@
 
 <h4 class="std">4.8.2.1 Product Linear Placement</h4>
 <p>A Product Linear Placement takes into account the ISO 19148 Linear referencing standard. Linear placement is defined by a position relative to a <a href="../ifcproductextension/lexical/ifclinearpositioningelement.htm">IfcLinearPositioningElement</a> (distance along and optionally lateral, vertical and longitudinal offsets), a horizontal reference direction, and a vertical axis direction. Each product placed with Product Linear Placement has an absolute placement on the <a href="../ifcproductextension/lexical/ifclinearpositioningelement.htm">IfcLinearPositioningElement</a>.<i>Representation</i> where the <a href="../ifcproductextension/lexical/ifclinearpositioningelement.htm">IfcLinearPositioningElement</a>  is typically instantiated as an IfcAlignment. Therefore, similarly to how <a href="../ifcproductextension/lexical/ifcspatialelement.htm">IfcSpatialElement</a>.<i>ObjectPlacement</i> sets the context for all contained elements, the <a href="../ifcproductextension/lexical/ifclinearpositioningelement.htm">IfcLinearPositioningElement</a>.<i>ObjectPlacement</i> sets the context for all elements positioned on it. Consequently, each product placement that uses Product Linear Placement references the <a href="../ifcgeometricconstraintresource/lexical/ifcobjectplacement.htm">IfcObjectPlacement</a> of the <a href="../ifcproductextension/lexical/ifclinearpositioningelement.htm">IfcLinearPositioningElement</a> through <a href="../ifcgeometricconstraintresource/lexical/ifclinearplacement.htm">IfcLinearPlacement</a>.<i>PlacementRelTo</i>.</p>
-<p class="fig-ref">Figure 117 illustrates an instance diagram.</p>
-<table><tr><td><img alt="Product Linear Placement" src="./diagrams/product-linear-placement.png" usemap="#f117"><map name="f117"><area shape="rect" coords="8,8,176,272" href="../ifckernel/lexical/ifcproduct.htm" alt="IfcProduct" /><area shape="rect" coords="208,8,376,80" href="../ifcgeometricconstraintresource/lexical/ifclinearplacement.htm" alt="IfcLinearPlacement" /><area shape="rect" coords="408,8,576,68" href="../ifcgeometricconstraintresource/lexical/ifclocalplacement.htm" alt="IfcLocalPlacement" /><area shape="rect" coords="608,8,776,296" href="../ifcproductextension/lexical/ifclinearpositioningelement.htm" alt="IfcLinearPositioningElement" /><area shape="rect" coords="808,8,976,20" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="408,88,576,160" href="../ifcgeometryresource/lexical/ifcaxis2placementlinear.htm" alt="IfcAxis2PlacementLinear" /></map></td></tr><tr><td><p class="figure">Figure 117 &mdash; Product Linear Placement</p></td></tr></table>
+<p class="fig-ref">Figure 118 illustrates an instance diagram.</p>
+<table><tr><td><img alt="Product Linear Placement" src="./diagrams/product-linear-placement.png" usemap="#f118"><map name="f118"><area shape="rect" coords="8,8,176,272" href="../ifckernel/lexical/ifcproduct.htm" alt="IfcProduct" /><area shape="rect" coords="208,8,376,80" href="../ifcgeometricconstraintresource/lexical/ifclinearplacement.htm" alt="IfcLinearPlacement" /><area shape="rect" coords="408,8,576,68" href="../ifcgeometricconstraintresource/lexical/ifclocalplacement.htm" alt="IfcLocalPlacement" /><area shape="rect" coords="608,8,776,296" href="../ifcproductextension/lexical/ifclinearpositioningelement.htm" alt="IfcLinearPositioningElement" /><area shape="rect" coords="808,8,976,20" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="408,88,576,160" href="../ifcgeometryresource/lexical/ifcaxis2placementlinear.htm" alt="IfcAxis2PlacementLinear" /></map></td></tr><tr><td><p class="figure">Figure 118 &mdash; Product Linear Placement</p></td></tr></table>
 
 <hr/>
 <h4>IFC4.3 AbRV - Scope settings</h4>
@@ -347,9 +347,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcsharedbldgelements/lexical/ifccovering.htm">IfcCovering</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -444,7 +444,7 @@
 <td>-<br/>-</td>
 <td>-<br/>R</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
 <td>-<br/>R</td>
 </tr>
 <tr><td><a href="../ifchvacdomain/lexical/ifcductfitting.htm">IfcDuctFitting</a></td><td>-<br/>R</td>
@@ -1003,9 +1003,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcstructuralelementsdomain/lexical/ifcpile.htm">IfcPile</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -1064,6 +1064,14 @@
 <td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifckernel/lexical/ifcproduct.htm">IfcProduct</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcprojectionelement.htm">IfcProjectionElement</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
@@ -1243,9 +1251,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcelectricaldomain/lexical/ifcsolardevice.htm">IfcSolarDevice</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -1295,6 +1303,14 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 </tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcspatialzone.htm">IfcSpatialZone</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
 <tr><td><a href="../ifcplumbingfireprotectiondomain/lexical/ifcstackterminal.htm">IfcStackTerminal</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
@@ -1333,6 +1349,14 @@
 <td>-<br/>-</td>
 <td>-<br/>R</td>
 <td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedfacilitieselements/lexical/ifcsystemfurnitureelement.htm">IfcSystemFurnitureElement</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 <td>-<br/>R</td>
 </tr>
 <tr><td><a href="../ifchvacdomain/lexical/ifctank.htm">IfcTank</a></td><td>-<br/>R</td>
@@ -1451,9 +1475,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcplumbingfireprotectiondomain/lexical/ifcwasteterminal.htm">IfcWasteTerminal</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>

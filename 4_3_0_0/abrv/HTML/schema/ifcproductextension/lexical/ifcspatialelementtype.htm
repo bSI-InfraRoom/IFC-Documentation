@@ -67,10 +67,11 @@ The type denotes a particular type that indicates the object further. The use ha
 <details open="open"><summary>Entity inheritance</summary><img src="../../../diagrams/ifcspatialelementtype.png" usemap="#f"/>
 <map name="f">
 <area shape="rect" coords="66,126,254,138" href="../../../schema/ifcproductextension/lexical/ifcspatialstructureelementtype.htm" alt="IfcSpatialStructureElementType" />
-<area shape="rect" coords="42,78,278,90" href="../../../schema/ifckernel/lexical/ifctypeproduct.htm" alt="IfcTypeProduct" />
-<area shape="rect" coords="30,54,290,66" href="../../../schema/ifckernel/lexical/ifctypeobject.htm" alt="IfcTypeObject" />
-<area shape="rect" coords="18,30,302,42" href="../../../schema/ifckernel/lexical/ifcobjectdefinition.htm" alt="IfcObjectDefinition" />
-<area shape="rect" coords="6,6,314,18" href="../../../schema/ifckernel/lexical/ifcroot.htm" alt="IfcRoot" />
+<area shape="rect" coords="326,126,514,138" href="../../../schema/ifcproductextension/lexical/ifcspatialzonetype.htm" alt="IfcSpatialZoneType" />
+<area shape="rect" coords="42,78,538,90" href="../../../schema/ifckernel/lexical/ifctypeproduct.htm" alt="IfcTypeProduct" />
+<area shape="rect" coords="30,54,550,66" href="../../../schema/ifckernel/lexical/ifctypeobject.htm" alt="IfcTypeObject" />
+<area shape="rect" coords="18,30,562,42" href="../../../schema/ifckernel/lexical/ifcobjectdefinition.htm" alt="IfcObjectDefinition" />
+<area shape="rect" coords="6,6,574,18" href="../../../schema/ifckernel/lexical/ifcroot.htm" alt="IfcRoot" />
 </map>
 </details>
 <details><summary>Attribute inheritance</summary><table class="attributes">
@@ -187,7 +188,7 @@ The type denotes a particular type that indicates the object further. The use ha
 </code></div></details>
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">ENTITY</span> IfcSpatialElementType<br/>
-&nbsp;<span class="keyword">ABSTRACT</span> <span class="keyword">SUPERTYPE OF</span>(<a href="../../ifcproductextension/lexical/ifcspatialstructureelementtype.htm">IfcSpatialStructureElementType</a>)<br/>
+&nbsp;<span class="keyword">ABSTRACT</span> <span class="keyword">SUPERTYPE OF</span>(<span class="keyword">ONEOF</span>(<a href="../../ifcproductextension/lexical/ifcspatialstructureelementtype.htm">IfcSpatialStructureElementType</a>, <a href="../../ifcproductextension/lexical/ifcspatialzonetype.htm">IfcSpatialZoneType</a>))<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifckernel/lexical/ifctypeproduct.htm">IfcTypeProduct</a>)<b>;</b><br/>
 &nbsp;&nbsp;ElementType : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>;<br/>
 <span class="keyword">END_ENTITY;</span><br/>

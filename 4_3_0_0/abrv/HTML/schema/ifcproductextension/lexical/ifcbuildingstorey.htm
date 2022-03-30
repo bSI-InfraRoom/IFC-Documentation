@@ -63,18 +63,18 @@
 <p>EXAMPLE  In split level houses, a storey is split into two or more partial storeys, each with a different elevation. It can be handled by defining a storey, which includes two or more partial storeys with the individual elevations.</p>
 </blockquote>
 <p>The <span class="self-ref">IfcBuildingStorey</span> is used to build the spatial structure of a building (that serves as the primary project breakdown and is required to be hierarchical). The spatial structure elements are linked together by using the objectified relationship <a href="../../ifckernel/lexical/ifcrelaggregates.htm">IfcRelAggregates</a>.</p>
-<p>Figure 138 shows the <span class="self-ref">IfcBuildingStorey</span> as part of the s patial structure. It also serves as the spatial container for building and other elements.</p>
+<p>Figure 139 shows the <span class="self-ref">IfcBuildingStorey</span> as part of the s patial structure. It also serves as the spatial container for building and other elements.</p>
 <blockquote class="note">
 <p>NOTE  Detailed requirements on mandatory element containment and placement structure relationships are given in view definitions and implementer agreements.</p>
 </blockquote>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcbuildingstorey-spatialstructure.png" alt="&quot;IfcBuildingStorey as part of a spatial structure&quot;" title="Figure 138 &mdash; Building storey composition"></td></tr><tr><td><p class="figure">Figure 138 &mdash; Building storey composition</p></td></tr></table></p>
-<p>Figure 139 describes the heights and elevations of the <span class="self-ref">IfcBuildingStorey</span>.</p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcbuildingstorey-spatialstructure.png" alt="&quot;IfcBuildingStorey as part of a spatial structure&quot;" title="Figure 139 &mdash; Building storey composition"></td></tr><tr><td><p class="figure">Figure 139 &mdash; Building storey composition</p></td></tr></table></p>
+<p>Figure 140 describes the heights and elevations of the <span class="self-ref">IfcBuildingStorey</span>.</p>
 <ul>
 <li>elevation of storey provided by: <i>IfcBuildingStorey.Elevation</i> as a local height value relative to <i>IfcBuilding.ElevationOfRefHeight</i>, it is usually the top of construction slab</li>
 <li>net height of storey, also referred to as total height or system height (top of construction slab to top of construction slab above): provided by BaseQuantity with Name=&quot;GrossHeight&quot;</li>
 <li>net height of storey (top of construction slab to bottom of construction slab above): provided by BaseQuantity with Name=&quot;NetHeight&quot;</li>
 </ul>
-<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcbuildingstorey_heights.png" alt="&quot;space heights&quot;" title="Figure 139 &mdash; Building storey elevations"></td></tr><tr><td><p class="figure">Figure 139 &mdash; Building storey elevations</p></td></tr></table></p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/ifcbuildingstorey_heights.png" alt="&quot;space heights&quot;" title="Figure 140 &mdash; Building storey elevations"></td></tr><tr><td><p class="figure">Figure 140 &mdash; Building storey elevations</p></td></tr></table></p>
 <blockquote class="history">
 <p>HISTORY  New entity in IFC1.0</p>
 </blockquote>
@@ -246,7 +246,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 <summary>Concept usage</summary>
 <a id="storey-attributes" />
 <p class="use-head">Storey Attributes</p>
-<p>The <a href="../../templates/storey-attributes.htm">Storey Attributes</a> concept template applies to this entity as shown in Table 428.<table>
+<p>The <a href="../../templates/storey-attributes.htm">Storey Attributes</a> concept template applies to this entity as shown in Table 474.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Description</b></th></tr>
@@ -254,7 +254,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 428 &mdash; IfcBuildingStorey Storey Attributes</td></tr></table>
+<tr><td><p class="table">Table 474 &mdash; IfcBuildingStorey Storey Attributes</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -293,7 +293,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="property-sets-for-objects" />
 <p class="use-head">Pset_BuildingStoreyCommon</p>
-<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 429.<table>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 475.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
@@ -317,7 +317,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 429 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
+<tr><td><p class="table">Table 475 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -356,7 +356,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="quantity-sets" />
 <p class="use-head">Qto_BuildingStoreyBaseQuantities</p>
-<p>The <a href="../../templates/quantity-sets.htm">Quantity Sets</a> concept template applies to this entity as shown in Table 430.<table>
+<p>The <a href="../../templates/quantity-sets.htm">Quantity Sets</a> concept template applies to this entity as shown in Table 476.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>QsetName</b></th><th><b>Quantities</b></th><th><b>Description</b></th></tr>
@@ -366,7 +366,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 430 &mdash; IfcBuildingStorey Quantity Sets</td></tr></table>
+<tr><td><p class="table">Table 476 &mdash; IfcBuildingStorey Quantity Sets</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -405,7 +405,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="property-sets-for-objects" />
 <p class="use-head">Pset_PropertyAgreement</p>
-<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 431.<table>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 477.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
@@ -429,7 +429,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 431 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
+<tr><td><p class="table">Table 477 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -468,7 +468,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="spatial-composition" />
 <p class="use-head">Spatial Composition</p>
-<p>The <a href="../../templates/spatial-composition.htm">Spatial Composition</a> concept template applies to this entity as shown in Table 432.<table>
+<p>The <a href="../../templates/spatial-composition.htm">Spatial Composition</a> concept template applies to this entity as shown in Table 478.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>RelatingObject</b></th><th><b>Description</b></th></tr>
@@ -476,7 +476,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 432 &mdash; IfcBuildingStorey Spatial Composition</td></tr></table>
+<tr><td><p class="table">Table 478 &mdash; IfcBuildingStorey Spatial Composition</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -515,7 +515,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="spatial-container" />
 <p class="use-head">Spatial Container</p>
-<p>The <a href="../../templates/spatial-container.htm">Spatial Container</a> concept template applies to this entity as shown in Table 433.<table>
+<p>The <a href="../../templates/spatial-container.htm">Spatial Container</a> concept template applies to this entity as shown in Table 479.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Type</b></th><th><b>Description</b></th></tr>
@@ -523,7 +523,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 433 &mdash; IfcBuildingStorey Spatial Container</td></tr></table>
+<tr><td><p class="table">Table 479 &mdash; IfcBuildingStorey Spatial Container</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -562,7 +562,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="spatial-element-attributes" />
 <p class="use-head">Spatial Element Attributes</p>
-<p>The <a href="../../templates/spatial-element-attributes.htm">Spatial Element Attributes</a> concept template applies to this entity as shown in Table 434.<table>
+<p>The <a href="../../templates/spatial-element-attributes.htm">Spatial Element Attributes</a> concept template applies to this entity as shown in Table 480.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Description</b></th></tr>
@@ -570,7 +570,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 434 &mdash; IfcBuildingStorey Spatial Element Attributes</td></tr></table>
+<tr><td><p class="table">Table 480 &mdash; IfcBuildingStorey Spatial Element Attributes</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -609,7 +609,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="spatial-service-connectivity" />
 <p class="use-head">Spatial Service Connectivity</p>
-<p>The <a href="../../templates/spatial-service-connectivity.htm">Spatial Service Connectivity</a> concept template applies to this entity as shown in Table 435.<table>
+<p>The <a href="../../templates/spatial-service-connectivity.htm">Spatial Service Connectivity</a> concept template applies to this entity as shown in Table 481.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>ReferencedInStructures</b></th><th><b>Description</b></th></tr>
@@ -617,7 +617,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 435 &mdash; IfcBuildingStorey Spatial Service Connectivity</td></tr></table>
+<tr><td><p class="table">Table 481 &mdash; IfcBuildingStorey Spatial Service Connectivity</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -656,7 +656,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="property-sets-for-objects" />
 <p class="use-head">Pset_ProcessCapacity</p>
-<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 436.<table>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 482.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
@@ -680,7 +680,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 436 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
+<tr><td><p class="table">Table 482 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -719,7 +719,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="property-sets-for-objects" />
 <p class="use-head">Pset_ThermalLoadAggregate</p>
-<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 437.<table>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 483.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
@@ -743,7 +743,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 437 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
+<tr><td><p class="table">Table 483 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -782,7 +782,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="property-sets-for-objects" />
 <p class="use-head">Pset_ThermalLoadDesignCriteria</p>
-<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 438.<table>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 484.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
@@ -806,7 +806,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 438 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
+<tr><td><p class="table">Table 484 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -845,7 +845,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="body-geometry" />
 <p class="use-head">Body Geometry</p>
-<p>The <a href="../../templates/body-geometry.htm">Body Geometry</a> concept template applies to this entity as shown in Table 439.<table>
+<p>The <a href="../../templates/body-geometry.htm">Body Geometry</a> concept template applies to this entity as shown in Table 485.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Description</b></th></tr>
@@ -853,7 +853,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 439 &mdash; IfcBuildingStorey Body Geometry</td></tr></table>
+<tr><td><p class="table">Table 485 &mdash; IfcBuildingStorey Body Geometry</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -892,7 +892,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="box-geometry" />
 <p class="use-head">Box Geometry</p>
-<p>The <a href="../../templates/box-geometry.htm">Box Geometry</a> concept template applies to this entity as shown in Table 440.<table>
+<p>The <a href="../../templates/box-geometry.htm">Box Geometry</a> concept template applies to this entity as shown in Table 486.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Description</b></th></tr>
@@ -900,7 +900,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 440 &mdash; IfcBuildingStorey Box Geometry</td></tr></table>
+<tr><td><p class="table">Table 486 &mdash; IfcBuildingStorey Box Geometry</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -939,7 +939,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="cog-geometry" />
 <p class="use-head">CoG Geometry</p>
-<p>The <a href="../../templates/cog-geometry.htm">CoG Geometry</a> concept template applies to this entity as shown in Table 441.<table>
+<p>The <a href="../../templates/cog-geometry.htm">CoG Geometry</a> concept template applies to this entity as shown in Table 487.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Description</b></th></tr>
@@ -947,7 +947,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 441 &mdash; IfcBuildingStorey CoG Geometry</td></tr></table>
+<tr><td><p class="table">Table 487 &mdash; IfcBuildingStorey CoG Geometry</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -986,7 +986,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="footprint-geometry" />
 <p class="use-head">FootPrint Geometry</p>
-<p>The <a href="../../templates/footprint-geometry.htm">FootPrint Geometry</a> concept template applies to this entity as shown in Table 442.<table>
+<p>The <a href="../../templates/footprint-geometry.htm">FootPrint Geometry</a> concept template applies to this entity as shown in Table 488.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Items</b></th><th><b>Description</b></th></tr>
@@ -994,7 +994,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 442 &mdash; IfcBuildingStorey FootPrint Geometry</td></tr></table>
+<tr><td><p class="table">Table 488 &mdash; IfcBuildingStorey FootPrint Geometry</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1033,7 +1033,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="footprint-geomset-geometry" />
 <p class="use-head">FootPrint GeomSet Geometry</p>
-<p>The <a href="../../templates/footprint-geomset-geometry.htm">FootPrint GeomSet Geometry</a> concept template applies to this entity as shown in Table 443.<table>
+<p>The <a href="../../templates/footprint-geomset-geometry.htm">FootPrint GeomSet Geometry</a> concept template applies to this entity as shown in Table 489.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Items</b></th><th><b>Description</b></th></tr>
@@ -1041,7 +1041,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 443 &mdash; IfcBuildingStorey FootPrint GeomSet Geometry</td></tr></table>
+<tr><td><p class="table">Table 489 &mdash; IfcBuildingStorey FootPrint GeomSet Geometry</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1080,7 +1080,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="product-linear-placement" />
 <p class="use-head">Product Linear Placement</p>
-<p>The <a href="../../templates/product-linear-placement.htm">Product Linear Placement</a> concept template applies to this entity as shown in Table 444.<table>
+<p>The <a href="../../templates/product-linear-placement.htm">Product Linear Placement</a> concept template applies to this entity as shown in Table 490.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>HasPlacement</b></th><th><b>RelativePlacement</b></th><th><b>RelativeToElement</b></th><th><b>Description</b></th></tr>
@@ -1088,7 +1088,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 444 &mdash; IfcBuildingStorey Product Linear Placement</td></tr></table>
+<tr><td><p class="table">Table 490 &mdash; IfcBuildingStorey Product Linear Placement</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1127,7 +1127,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="product-local-placement" />
 <p class="use-head">Product Local Placement</p>
-<p>The <a href="../../templates/product-local-placement.htm">Product Local Placement</a> concept template applies to this entity as shown in Table 445.<table>
+<p>The <a href="../../templates/product-local-placement.htm">Product Local Placement</a> concept template applies to this entity as shown in Table 491.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>HasPlacement</b></th><th><b>RelativeToElement</b></th><th><b>Description</b></th></tr>
@@ -1135,7 +1135,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 445 &mdash; IfcBuildingStorey Product Local Placement</td></tr></table>
+<tr><td><p class="table">Table 491 &mdash; IfcBuildingStorey Product Local Placement</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1174,7 +1174,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="product-relative-positioning" />
 <p class="use-head">Product Relative Positioning</p>
-<p>The <a href="../../templates/product-relative-positioning.htm">Product Relative Positioning</a> concept template applies to this entity as shown in Table 446.<table>
+<p>The <a href="../../templates/product-relative-positioning.htm">Product Relative Positioning</a> concept template applies to this entity as shown in Table 492.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>PositioningElement</b></th><th><b>Description</b></th></tr>
@@ -1182,7 +1182,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 446 &mdash; IfcBuildingStorey Product Relative Positioning</td></tr></table>
+<tr><td><p class="table">Table 492 &mdash; IfcBuildingStorey Product Relative Positioning</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1221,7 +1221,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="reference-geometry" />
 <p class="use-head">Reference Geometry</p>
-<p>The <a href="../../templates/reference-geometry.htm">Reference Geometry</a> concept template applies to this entity as shown in Table 447.<table>
+<p>The <a href="../../templates/reference-geometry.htm">Reference Geometry</a> concept template applies to this entity as shown in Table 493.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Description</b></th></tr>
@@ -1229,7 +1229,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 447 &mdash; IfcBuildingStorey Reference Geometry</td></tr></table>
+<tr><td><p class="table">Table 493 &mdash; IfcBuildingStorey Reference Geometry</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1268,7 +1268,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="reference-sweptsolid-geometry" />
 <p class="use-head">Reference SweptSolid Geometry</p>
-<p>The <a href="../../templates/reference-sweptsolid-geometry.htm">Reference SweptSolid Geometry</a> concept template applies to this entity as shown in Table 448.<table>
+<p>The <a href="../../templates/reference-sweptsolid-geometry.htm">Reference SweptSolid Geometry</a> concept template applies to this entity as shown in Table 494.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Description</b></th></tr>
@@ -1276,7 +1276,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 448 &mdash; IfcBuildingStorey Reference SweptSolid Geometry</td></tr></table>
+<tr><td><p class="table">Table 494 &mdash; IfcBuildingStorey Reference SweptSolid Geometry</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1315,7 +1315,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="reference-sweptsolid-polycurve-geometry" />
 <p class="use-head">Reference SweptSolid PolyCurve Geometry</p>
-<p>The <a href="../../templates/reference-sweptsolid-polycurve-geometry.htm">Reference SweptSolid PolyCurve Geometry</a> concept template applies to this entity as shown in Table 449.<table>
+<p>The <a href="../../templates/reference-sweptsolid-polycurve-geometry.htm">Reference SweptSolid PolyCurve Geometry</a> concept template applies to this entity as shown in Table 495.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Description</b></th></tr>
@@ -1323,7 +1323,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 449 &mdash; IfcBuildingStorey Reference SweptSolid PolyCurve Geometry</td></tr></table>
+<tr><td><p class="table">Table 495 &mdash; IfcBuildingStorey Reference SweptSolid PolyCurve Geometry</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1362,7 +1362,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="reference-tessellation-geometry" />
 <p class="use-head">Reference Tessellation Geometry</p>
-<p>The <a href="../../templates/reference-tessellation-geometry.htm">Reference Tessellation Geometry</a> concept template applies to this entity as shown in Table 450.<table>
+<p>The <a href="../../templates/reference-tessellation-geometry.htm">Reference Tessellation Geometry</a> concept template applies to this entity as shown in Table 496.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Description</b></th></tr>
@@ -1370,7 +1370,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 450 &mdash; IfcBuildingStorey Reference Tessellation Geometry</td></tr></table>
+<tr><td><p class="table">Table 496 &mdash; IfcBuildingStorey Reference Tessellation Geometry</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1409,7 +1409,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="property-sets-for-objects" />
 <p class="use-head">Pset_Risk</p>
-<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 451.<table>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 497.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
@@ -1433,7 +1433,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 451 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
+<tr><td><p class="table">Table 497 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1472,7 +1472,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="property-sets-for-objects" />
 <p class="use-head">Pset_Tolerance</p>
-<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 452.<table>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 498.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
@@ -1496,7 +1496,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 452 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
+<tr><td><p class="table">Table 498 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1535,7 +1535,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="property-sets-for-objects" />
 <p class="use-head">Pset_Uncertainty</p>
-<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 453.<table>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 499.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
@@ -1559,7 +1559,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 453 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
+<tr><td><p class="table">Table 499 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1598,10 +1598,10 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="object-connectivity" />
 <p class="use-head">Object Connectivity</p>
-<p>The <a href="../../templates/object-connectivity.htm">Object Connectivity</a> concept template applies to this entity as shown in Table 454.<table>
+<p>The <a href="../../templates/object-connectivity.htm">Object Connectivity</a> concept template applies to this entity as shown in Table 500.<table>
 <tr><td>
 </td></tr>
-<tr><td><p class="table">Table 454 &mdash; IfcBuildingStorey Object Connectivity</td></tr></table>
+<tr><td><p class="table">Table 500 &mdash; IfcBuildingStorey Object Connectivity</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1640,7 +1640,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="object-user-identity" />
 <p class="use-head">Object User Identity</p>
-<p>The <a href="../../templates/object-user-identity.htm">Object User Identity</a> concept template applies to this entity as shown in Table 455.<table>
+<p>The <a href="../../templates/object-user-identity.htm">Object User Identity</a> concept template applies to this entity as shown in Table 501.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Description</b></th></tr>
@@ -1648,7 +1648,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 455 &mdash; IfcBuildingStorey Object User Identity</td></tr></table>
+<tr><td><p class="table">Table 501 &mdash; IfcBuildingStorey Object User Identity</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1687,7 +1687,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="property-sets-for-objects" />
 <p class="use-head">Property Sets for Objects</p>
-<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 456.<table>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 502.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
@@ -1711,7 +1711,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 456 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
+<tr><td><p class="table">Table 502 &mdash; IfcBuildingStorey Property Sets for Objects</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1750,7 +1750,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="property-sets-with-override" />
 <p class="use-head">Property Sets with Override</p>
-<p>The <a href="../../templates/property-sets-with-override.htm">Property Sets with Override</a> concept template applies to this entity as shown in Table 457.<table>
+<p>The <a href="../../templates/property-sets-with-override.htm">Property Sets with Override</a> concept template applies to this entity as shown in Table 503.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Properties</b></th><th><b>TypeProperties</b></th><th><b>Description</b></th></tr>
@@ -1758,7 +1758,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 457 &mdash; IfcBuildingStorey Property Sets with Override</td></tr></table>
+<tr><td><p class="table">Table 503 &mdash; IfcBuildingStorey Property Sets with Override</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1797,7 +1797,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="quantity-sets" />
 <p class="use-head">Quantity Sets</p>
-<p>The <a href="../../templates/quantity-sets.htm">Quantity Sets</a> concept template applies to this entity as shown in Table 458.<table>
+<p>The <a href="../../templates/quantity-sets.htm">Quantity Sets</a> concept template applies to this entity as shown in Table 504.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>QsetName</b></th><th><b>Quantities</b></th><th><b>Description</b></th></tr>
@@ -1807,7 +1807,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 458 &mdash; IfcBuildingStorey Quantity Sets</td></tr></table>
+<tr><td><p class="table">Table 504 &mdash; IfcBuildingStorey Quantity Sets</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1846,7 +1846,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="library-association" />
 <p class="use-head">Library Association</p>
-<p>The <a href="../../templates/library-association.htm">Library Association</a> concept template applies to this entity as shown in Table 459.<table>
+<p>The <a href="../../templates/library-association.htm">Library Association</a> concept template applies to this entity as shown in Table 505.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Description</b></th></tr>
@@ -1854,7 +1854,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 459 &mdash; IfcBuildingStorey Library Association</td></tr></table>
+<tr><td><p class="table">Table 505 &mdash; IfcBuildingStorey Library Association</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1893,7 +1893,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="material-constituent-set" />
 <p class="use-head">Material Constituent Set</p>
-<p>The <a href="../../templates/material-constituent-set.htm">Material Constituent Set</a> concept template applies to this entity as shown in Table 460.<table>
+<p>The <a href="../../templates/material-constituent-set.htm">Material Constituent Set</a> concept template applies to this entity as shown in Table 506.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Description</b></th></tr>
@@ -1901,7 +1901,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 460 &mdash; IfcBuildingStorey Material Constituent Set</td></tr></table>
+<tr><td><p class="table">Table 506 &mdash; IfcBuildingStorey Material Constituent Set</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1940,7 +1940,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="material-layer-set" />
 <p class="use-head">Material Layer Set</p>
-<p>The <a href="../../templates/material-layer-set.htm">Material Layer Set</a> concept template applies to this entity as shown in Table 461.<table>
+<p>The <a href="../../templates/material-layer-set.htm">Material Layer Set</a> concept template applies to this entity as shown in Table 507.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>HasLayer</b></th><th><b>Description</b></th></tr>
@@ -1948,7 +1948,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 461 &mdash; IfcBuildingStorey Material Layer Set</td></tr></table>
+<tr><td><p class="table">Table 507 &mdash; IfcBuildingStorey Material Layer Set</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -1987,7 +1987,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="material-profile-set" />
 <p class="use-head">Material Profile Set</p>
-<p>The <a href="../../templates/material-profile-set.htm">Material Profile Set</a> concept template applies to this entity as shown in Table 462.<table>
+<p>The <a href="../../templates/material-profile-set.htm">Material Profile Set</a> concept template applies to this entity as shown in Table 508.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>HasProfiles</b></th><th><b>Description</b></th></tr>
@@ -1995,7 +1995,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 462 &mdash; IfcBuildingStorey Material Profile Set</td></tr></table>
+<tr><td><p class="table">Table 508 &mdash; IfcBuildingStorey Material Profile Set</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -2034,10 +2034,10 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="material-single" />
 <p class="use-head">Material Single</p>
-<p>The <a href="../../templates/material-single.htm">Material Single</a> concept template applies to this entity as shown in Table 463.<table>
+<p>The <a href="../../templates/material-single.htm">Material Single</a> concept template applies to this entity as shown in Table 509.<table>
 <tr><td>
 </td></tr>
-<tr><td><p class="table">Table 463 &mdash; IfcBuildingStorey Material Single</td></tr></table>
+<tr><td><p class="table">Table 509 &mdash; IfcBuildingStorey Material Single</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -2076,10 +2076,10 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="object-assignment" />
 <p class="use-head">Object Assignment</p>
-<p>The <a href="../../templates/object-assignment.htm">Object Assignment</a> concept template applies to this entity as shown in Table 464.<table>
+<p>The <a href="../../templates/object-assignment.htm">Object Assignment</a> concept template applies to this entity as shown in Table 510.<table>
 <tr><td>
 </td></tr>
-<tr><td><p class="table">Table 464 &mdash; IfcBuildingStorey Object Assignment</td></tr></table>
+<tr><td><p class="table">Table 510 &mdash; IfcBuildingStorey Object Assignment</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -2118,10 +2118,10 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="object-association" />
 <p class="use-head">Object Association</p>
-<p>The <a href="../../templates/object-association.htm">Object Association</a> concept template applies to this entity as shown in Table 465.<table>
+<p>The <a href="../../templates/object-association.htm">Object Association</a> concept template applies to this entity as shown in Table 511.<table>
 <tr><td>
 </td></tr>
-<tr><td><p class="table">Table 465 &mdash; IfcBuildingStorey Object Association</td></tr></table>
+<tr><td><p class="table">Table 511 &mdash; IfcBuildingStorey Object Association</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -2160,10 +2160,10 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="object-composition" />
 <p class="use-head">Object Composition</p>
-<p>The <a href="../../templates/object-composition.htm">Object Composition</a> concept template applies to this entity as shown in Table 466.<table>
+<p>The <a href="../../templates/object-composition.htm">Object Composition</a> concept template applies to this entity as shown in Table 512.<table>
 <tr><td>
 </td></tr>
-<tr><td><p class="table">Table 466 &mdash; IfcBuildingStorey Object Composition</td></tr></table>
+<tr><td><p class="table">Table 512 &mdash; IfcBuildingStorey Object Composition</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -2202,10 +2202,10 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="object-attributes" />
 <p class="use-head">Object Attributes</p>
-<p>The <a href="../../templates/object-attributes.htm">Object Attributes</a> concept template applies to this entity as shown in Table 467.<table>
+<p>The <a href="../../templates/object-attributes.htm">Object Attributes</a> concept template applies to this entity as shown in Table 513.<table>
 <tr><td>
 </td></tr>
-<tr><td><p class="table">Table 467 &mdash; IfcBuildingStorey Object Attributes</td></tr></table>
+<tr><td><p class="table">Table 513 &mdash; IfcBuildingStorey Object Attributes</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -2244,10 +2244,10 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="object-occurrence-attributes" />
 <p class="use-head">Object Occurrence Attributes</p>
-<p>The <a href="../../templates/object-occurrence-attributes.htm">Object Occurrence Attributes</a> concept template applies to this entity as shown in Table 468.<table>
+<p>The <a href="../../templates/object-occurrence-attributes.htm">Object Occurrence Attributes</a> concept template applies to this entity as shown in Table 514.<table>
 <tr><td>
 </td></tr>
-<tr><td><p class="table">Table 468 &mdash; IfcBuildingStorey Object Occurrence Attributes</td></tr></table>
+<tr><td><p class="table">Table 514 &mdash; IfcBuildingStorey Object Occurrence Attributes</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -2286,10 +2286,10 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="property-sets" />
 <p class="use-head">Property Sets</p>
-<p>The <a href="../../templates/property-sets.htm">Property Sets</a> concept template applies to this entity as shown in Table 469.<table>
+<p>The <a href="../../templates/property-sets.htm">Property Sets</a> concept template applies to this entity as shown in Table 515.<table>
 <tr><td>
 </td></tr>
-<tr><td><p class="table">Table 469 &mdash; IfcBuildingStorey Property Sets</td></tr></table>
+<tr><td><p class="table">Table 515 &mdash; IfcBuildingStorey Property Sets</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -2328,10 +2328,10 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="revision-control" />
 <p class="use-head">Revision Control</p>
-<p>The <a href="../../templates/revision-control.htm">Revision Control</a> concept template applies to this entity as shown in Table 470.<table>
+<p>The <a href="../../templates/revision-control.htm">Revision Control</a> concept template applies to this entity as shown in Table 516.<table>
 <tr><td>
 </td></tr>
-<tr><td><p class="table">Table 470 &mdash; IfcBuildingStorey Revision Control</td></tr></table>
+<tr><td><p class="table">Table 516 &mdash; IfcBuildingStorey Revision Control</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -2370,7 +2370,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 
 <a id="software-identity" />
 <p class="use-head">Software Identity</p>
-<p>The <a href="../../templates/software-identity.htm">Software Identity</a> concept template applies to this entity as shown in Table 471.<table>
+<p>The <a href="../../templates/software-identity.htm">Software Identity</a> concept template applies to this entity as shown in Table 517.<table>
 <tr><td>
 <table class="gridtable">
 <tr><th><b>Description</b></th></tr>
@@ -2378,7 +2378,7 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 </td></tr>
 </table>
 </td></tr>
-<tr><td><p class="table">Table 471 &mdash; IfcBuildingStorey Software Identity</td></tr></table>
+<tr><td><p class="table">Table 517 &mdash; IfcBuildingStorey Software Identity</td></tr></table>
 
 <table class="exchange">
 <tr>
@@ -2419,399 +2419,399 @@ NOTE  If the geometric data is provided (<i>ObjectPlacement</i> is specified), 
 <details><summary>mvdXML Specification</summary>
 <div class="xsd"><code class="xsd">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br/>
-&lt;ConceptRoot xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; uuid=&quot;e941a82c-5386-4b42-94f5-0513e5e9a6eb&quot; name=&quot;1.1.2.5.7.2.1 IfcBuildingStorey&quot; applicableRootEntity=&quot;IfcBuildingStorey&quot;&gt;<br/>
+&lt;ConceptRoot xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; uuid=&quot;375076ce-a906-417c-be6b-407ae5fac540&quot; name=&quot;1.1.2.5.7.2.1 IfcBuildingStorey&quot; applicableRootEntity=&quot;IfcBuildingStorey&quot;&gt;<br/>
 &nbsp;&lt;Concepts&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;841235aa-93d3-49b6-9f6a-7a487ccd388d&quot; name=&quot;Storey Attributes&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;d2c4835c-fe4a-47f0-acb7-65e6fd923a96&quot; name=&quot;Storey Attributes&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;488c9bb2-3102-4b89-bd20-42aa7060ae08&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;455c94e8-e5f4-42e5-91e0-6547ff2d5d91&quot; name=&quot;Pset_BuildingStoreyCommon&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;8140dcef-a02c-40e6-9634-85b952cd748b&quot; name=&quot;Pset_BuildingStoreyCommon&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_BuildingStoreyCommon&amp;apos;&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;4d4f7355-9bbb-4b77-afcc-0107b1f443ce&quot; name=&quot;Qto_BuildingStoreyBaseQuantities&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;f9171465-9dbf-4247-a6f3-00acaf6f978c&quot; name=&quot;Qto_BuildingStoreyBaseQuantities&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;6652398e-6579-4460-8cb4-26295acfacc7&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;QsetName[Value]=&amp;apos;Qto_BuildingStoreyBaseQuantities&amp;apos;&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;55768e6e-ab1b-45b5-9020-7966ceb84c5f&quot; name=&quot;Pset_PropertyAgreement&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;40b927fc-e48f-4145-a5d5-996bbbd93fef&quot; name=&quot;Pset_PropertyAgreement&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_PropertyAgreement&amp;apos;&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;9ebb9bdd-d91f-4162-a4e0-d7dd3ea5758d&quot; name=&quot;Spatial Composition&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;25b8f278-3d86-453d-8ab3-929847f75d42&quot; name=&quot;Spatial Composition&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;8c0fd2f7-71bb-4e6e-8fdb-0c02b352f14a&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;5ca84659-22ef-40ff-8a24-90460e8b0ab2&quot; name=&quot;Spatial Container&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;2a988914-47e0-448b-bba5-e0e7f91800f1&quot; name=&quot;Spatial Container&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;61dd08ed-fd01-4955-9337-8afd284a0e6f&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;91227510-84e5-47d4-99df-8365553c30fb&quot; name=&quot;Spatial Element Attributes&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;144d71ff-7c9d-4c79-a8fa-e0e602894811&quot; name=&quot;Spatial Element Attributes&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;9661dfc6-707f-49a8-8881-7142b07f3bb1&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;520a647b-08c4-42aa-900e-28203d9c5f23&quot; name=&quot;Spatial Service Connectivity&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;def59a36-ba9d-4d30-9975-60385b458e64&quot; name=&quot;Spatial Service Connectivity&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;e3461692-f4c5-4dfa-a8f5-0734a0698f6b&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;a2f63dee-7b09-407c-a959-108ea4dccc36&quot; name=&quot;Pset_ProcessCapacity&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;9e2b91f4-0304-4837-b727-8abef9fdd00b&quot; name=&quot;Pset_ProcessCapacity&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_ProcessCapacity&amp;apos;&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;97c72ab1-c86a-46b3-8b56-72fd979fde45&quot; name=&quot;Pset_ThermalLoadAggregate&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;e5f11733-9e36-4d49-8d92-004bc43160d8&quot; name=&quot;Pset_ThermalLoadAggregate&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_ThermalLoadAggregate&amp;apos;&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;54211f7d-5e7b-481e-8235-540af9af0ff9&quot; name=&quot;Pset_ThermalLoadDesignCriteria&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;80d65c58-7385-48be-97d4-e583ff06b5bf&quot; name=&quot;Pset_ThermalLoadDesignCriteria&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_ThermalLoadDesignCriteria&amp;apos;&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;7b7a26bd-1266-44ca-8230-b2c753db08b8&quot; name=&quot;Body Geometry&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;70c97638-eb39-43ef-be29-65bacffd4195&quot; name=&quot;Body Geometry&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;c446bd16-2de3-4b97-b34f-4446ac0badc2&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;ae0ed03c-669e-4983-9e41-8203db553a59&quot; name=&quot;Box Geometry&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;eb77b9f6-d032-440a-a58a-c19eed6aee1b&quot; name=&quot;Box Geometry&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;b942ceb1-b818-4683-871b-9c979fa34dd5&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;53dbb5e0-ae73-4131-9048-490dbfce1bde&quot; name=&quot;CoG Geometry&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;01feac28-85b3-4c8e-bc64-e4d7f08111d5&quot; name=&quot;CoG Geometry&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;a13f0eca-6c45-4a95-bfa6-03cc7da6a6cf&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;5b4bf593-d3b0-4449-8a26-35a9299eeb5c&quot; name=&quot;FootPrint Geometry&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;c6202a28-dbb6-4b45-bdaa-c289ccf78d94&quot; name=&quot;FootPrint Geometry&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;4f5777d7-68e9-459c-aa2c-46adf3e88d31&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;d5b81fbf-47ca-4b04-aaab-e6ca1a803430&quot; name=&quot;FootPrint GeomSet Geometry&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;c974aa88-36ab-4d94-8a98-d1e1611bc286&quot; name=&quot;FootPrint GeomSet Geometry&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;9456d6d6-a62a-48b4-baff-be2e38baac9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;642232b9-ae55-4eb0-8bd6-963ee0058621&quot; name=&quot;Product Linear Placement&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;3b8c3819-68c8-4e35-86f1-ab93ee3fc7c9&quot; name=&quot;Product Linear Placement&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;8b71ce7c-35cf-4aaf-9402-f060c8c57bf3&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;b4b9a914-40ce-4039-9d21-0cfc044d04e1&quot; name=&quot;Product Local Placement&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;86859be7-3e38-4f8c-8546-c2ad551ddc8f&quot; name=&quot;Product Local Placement&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;cbe85b5f-7912-4a43-8bb7-1e63bf40b26d&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;fd61397a-c38e-42ad-94a9-c4dd029fde18&quot; name=&quot;Product Relative Positioning&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;33e51076-d14e-4e17-be8e-fa777ea99282&quot; name=&quot;Product Relative Positioning&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;6dc82845-b142-4624-a9a5-37d1e4995761&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;08f1ca3c-9ff3-4495-bab9-e503cde59ce6&quot; name=&quot;Reference Geometry&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;363e774e-36f4-4872-bd24-1bc53b1082bd&quot; name=&quot;Reference Geometry&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;d68f9f1b-223a-4a8a-912b-b83f032a74f2&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;ed85b581-baee-41ce-8a19-9548cc811e53&quot; name=&quot;Reference SweptSolid Geometry&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;1cb8dc56-2a04-4513-a3a0-abb7f13c3cde&quot; name=&quot;Reference SweptSolid Geometry&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;158a3bda-e2da-43c5-97d3-4c12f5e75995&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;c7c9eec6-746b-413b-ac33-cb224bd7aa9b&quot; name=&quot;Reference SweptSolid PolyCurve Geometry&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;032d53d3-96e9-4727-b941-75c48627d2ca&quot; name=&quot;Reference SweptSolid PolyCurve Geometry&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;903ec934-3d30-4988-a9ab-21815fc634d7&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;a9883f1b-eb32-4849-a0e3-5702181343d9&quot; name=&quot;Reference Tessellation Geometry&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;af4449ef-27e7-407e-bb65-c99aa345baef&quot; name=&quot;Reference Tessellation Geometry&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;c10a7cd4-27e6-465f-a76e-da460daed660&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;5eeb7dd1-d7eb-42f6-9889-5206f9cb65c0&quot; name=&quot;Pset_Risk&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;586e77c0-7b9f-46e5-b8d3-24ee7f2d379b&quot; name=&quot;Pset_Risk&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_Risk&amp;apos;&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;b5b1a65a-48f7-4863-95cc-a2d10faef755&quot; name=&quot;Pset_Tolerance&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;c3fa3769-89d1-4aed-997c-9a9c0337012d&quot; name=&quot;Pset_Tolerance&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_Tolerance&amp;apos;&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;b8813dba-d788-4cb2-b96d-db960dbd9af7&quot; name=&quot;Pset_Uncertainty&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;a0eeff2b-7d88-4855-95ae-e31dce6d1c92&quot; name=&quot;Pset_Uncertainty&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_Uncertainty&amp;apos;&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;3187f6b2-d55b-4278-89f2-53f3c5181b37&quot; name=&quot;Object Connectivity&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;4b0c215f-ca3a-42d9-98bc-3df31111f6ac&quot; name=&quot;Object Connectivity&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;252a5fa6-cc5b-4d30-bd0c-35e22e336499&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;33b254d0-a5b1-4659-9e78-b7cf8ca33798&quot; name=&quot;Object User Identity&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;fff8150f-69e7-497a-902a-9a62a3db0f94&quot; name=&quot;Object User Identity&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;c19ec186-9cfd-47fc-a4d4-9fb35008d04a&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;951e6079-4eaf-4b93-95e1-1587c9818fa1&quot; name=&quot;Property Sets for Objects&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;1048a4d8-4543-41e1-9c3d-978e69ce3f20&quot; name=&quot;Property Sets for Objects&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;251d1ebf-bb54-4948-ab7f-1925e5445e7c&quot; name=&quot;Property Sets with Override&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;d55b3202-8c7a-4fc7-8575-d57699ace2ba&quot; name=&quot;Property Sets with Override&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;e26040e8-82e2-4f6a-bc63-ac8e6da2d0ae&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;f9e356a5-5112-442d-97a4-ef12f8bb83ea&quot; name=&quot;Quantity Sets&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;ae4d7874-4369-4938-bd11-976a5c5b0781&quot; name=&quot;Quantity Sets&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;6652398e-6579-4460-8cb4-26295acfacc7&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;1730bef2-0fa3-4d66-932a-0be04eb6b771&quot; name=&quot;Library Association&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;536546e3-e653-4403-bf85-6fc48696fb9b&quot; name=&quot;Library Association&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;3d761f09-23a2-4c01-8bc5-8762aa92bc23&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;871495ca-d431-4c8e-8f55-62871e528343&quot; name=&quot;Material Constituent Set&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;db8a66a3-2acd-4dd9-b8fb-fbd3b2441c19&quot; name=&quot;Material Constituent Set&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;d96f7f7d-e742-4db8-9b5d-18a36a6df884&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;3f724728-b8f4-46c1-81a9-ecee30c5781c&quot; name=&quot;Material Layer Set&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;0ef2e40d-81c0-4e90-ac09-0d1c6ba2ca60&quot; name=&quot;Material Layer Set&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;dfb5b3a9-50e3-46e2-8518-1f03e7cfd886&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;6b0584cc-bd28-46ac-a5ca-e45c369e1f17&quot; name=&quot;Material Profile Set&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;b14bbb86-b7f0-40ec-8260-5376d236f5f3&quot; name=&quot;Material Profile Set&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;427ac055-2a71-42c2-a423-71689fa75c59&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;096ee61f-75c5-49c8-a4ef-b04813944b93&quot; name=&quot;Material Single&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;6bea905b-c5f4-4e21-85cc-6b00f5897603&quot; name=&quot;Material Single&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;5f39a814-44a0-4fb3-8dc6-ddaa0560fc54&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;e57be7d2-cf48-4c38-b0e6-3c99f9d0bad7&quot; name=&quot;Object Assignment&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;48f8b2d8-0ffb-425d-aeff-1d6c25e28ce6&quot; name=&quot;Object Assignment&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;3b8e69d9-2824-4ebb-bb95-e5271c122efc&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;b85e6483-6548-4a5a-bf99-f514fc5074ec&quot; name=&quot;Object Association&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;d39ca509-2744-4ff0-9dd2-f390f49ed75f&quot; name=&quot;Object Association&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;4b385464-b99a-42bc-a17a-a0a647a1ab5b&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;2b52567c-eb0e-4e37-adf3-c4cbb30480a8&quot; name=&quot;Object Composition&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;417721ef-63a0-4b33-a404-5421b794353e&quot; name=&quot;Object Composition&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;5098cd13-bf4b-473a-a846-a60f69e9b738&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;ef41545c-43c6-4246-bbb2-3f7032444ca1&quot; name=&quot;Object Attributes&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;3d6c44c1-1cb5-46c4-8cee-6100dd6d54c2&quot; name=&quot;Object Attributes&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;ccb45aa2-74e1-46e8-8e35-ca5e5d7cc9dd&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;b6e325a3-921f-449d-b917-2bc687a96b29&quot; name=&quot;Object Occurrence Attributes&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;70434015-2195-4069-a0fd-ab06a9cdfb06&quot; name=&quot;Object Occurrence Attributes&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;73e34d23-ed0d-4afd-a87d-4da2df34466a&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;f7821b00-8d12-41ed-9585-b540e65ef1af&quot; name=&quot;Property Sets&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;8534df38-a342-437d-9fe8-3d158b7fe666&quot; name=&quot;Property Sets&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;36984334-3ac8-4e59-85a6-f68d65e379c7&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;c0118991-f96a-4d62-acda-655646def2ed&quot; name=&quot;Revision Control&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;03070b68-7ce1-477a-9f91-f684da2728cb&quot; name=&quot;Revision Control&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;b441c773-3fdc-42b6-a323-ad268dcd85f2&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
 &nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;Concept uuid=&quot;86d576d7-e5b0-4b8e-86a2-2af110f02592&quot; name=&quot;Software Identity&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;959b1aba-4989-49f7-9d91-4c3dbc238178&quot; name=&quot;Software Identity&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f7cb0a08-fee7-4cc0-85fe-43f6a6a0bce1&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;01617106-5333-4a6b-837b-34accffa9102&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;84571c5a-69e4-4f56-be1f-eceea5a65a9c&quot; /&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>

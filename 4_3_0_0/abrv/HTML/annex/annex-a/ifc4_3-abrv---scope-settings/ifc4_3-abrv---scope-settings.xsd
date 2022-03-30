@@ -3982,6 +3982,15 @@ of the material. The information contained in this document is subject to change
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:element name="IfcSpatialZoneType" type="ifc:IfcSpatialZoneType" substitutionGroup="ifc:IfcSpatialElementType" nillable="true"/>
+	<xs:complexType name="IfcSpatialZoneType">
+		<xs:complexContent>
+			<xs:extension base="ifc:IfcSpatialElementType">
+				<xs:attribute name="PredefinedType" type="ifc:IfcSpatialZoneTypeEnum" use="optional"/>
+				<xs:attribute name="LongName" type="ifc:IfcLabel" use="optional"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:element name="IfcSpiral" type="ifc:IfcSpiral" abstract="true" substitutionGroup="ifc:IfcCurve" nillable="true"/>
 	<xs:complexType name="IfcSpiral" abstract="true">
 		<xs:complexContent>

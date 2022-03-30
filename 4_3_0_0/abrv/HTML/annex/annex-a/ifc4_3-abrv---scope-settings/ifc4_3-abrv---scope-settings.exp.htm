@@ -4358,7 +4358,7 @@ IN TYPEOF(SELF\<a href="#ifcrepresentation">IfcRepresentation</a>.ContextOfItems
 <br/>
 <a name="ifcspatialelementtype" />
 <span class="keyword">ENTITY</span> IfcSpatialElementType<br/>
-&nbsp;<span class="keyword">ABSTRACT</span> <span class="keyword">SUPERTYPE OF</span>(<a href="#ifcspatialstructureelementtype">IfcSpatialStructureElementType</a>)<br/>
+&nbsp;<span class="keyword">ABSTRACT</span> <span class="keyword">SUPERTYPE OF</span>(<span class="keyword">ONEOF</span>(<a href="#ifcspatialstructureelementtype">IfcSpatialStructureElementType</a>, <a href="#ifcspatialzonetype">IfcSpatialZoneType</a>))<br/>
 &nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="#ifctypeproduct">IfcTypeProduct</a>)<b>;</b><br/>
 &nbsp;&nbsp;ElementType : <span class="keyword">OPTIONAL</span> <a href="#ifclabel">IfcLabel</a>;<br/>
 <span class="keyword">END_ENTITY;</span><br/>
@@ -4391,7 +4391,16 @@ AND<br/>
 &nbsp;&nbsp;CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR<br/>
  (PredefinedType &lt;&gt; <a href="#ifcspatialzonetypeenum">IfcSpatialZoneTypeEnum</a>.<span class="self-ref">USERDEFINED</span>) OR<br/>
  ((PredefinedType = <a href="#ifcspatialzonetypeenum">IfcSpatialZoneTypeEnum</a>.<span class="self-ref">USERDEFINED</span>) AND EXISTS (SELF\<a href="#ifcobject">IfcObject</a>.ObjectType));<br/>&nbsp;&nbsp;CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR<br/>
-  (&#39;IFCPRODUCTEXTENSION.<span class="self-ref">IfcStrippedOptional</span>&#39; IN TYPEOF(SELF\<a href="#ifcobject">IfcObject</a>.IsTypedBy[1].RelatingType));<br/><span class="keyword">END_ENTITY;</span><br/>
+  (&#39;IFCPRODUCTEXTENSION.<a href="#ifcspatialzonetype">IfcSpatialZoneType</a>&#39; IN TYPEOF(SELF\<a href="#ifcobject">IfcObject</a>.IsTypedBy[1].RelatingType));<br/><span class="keyword">END_ENTITY;</span><br/>
+<br/>
+<a name="ifcspatialzonetype" />
+<span class="keyword">ENTITY</span> IfcSpatialZoneType<br/>
+&nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="#ifcspatialelementtype">IfcSpatialElementType</a>)<b>;</b><br/>
+&nbsp;&nbsp;PredefinedType : <a href="#ifcspatialzonetypeenum">IfcSpatialZoneTypeEnum</a>;<br/>
+&nbsp;&nbsp;LongName : <span class="keyword">OPTIONAL</span> <a href="#ifclabel">IfcLabel</a>;<br/>
+&nbsp;<span class="keyword">WHERE</span><br/>
+&nbsp;&nbsp;CorrectPredefinedType : (PredefinedType &lt;&gt; <a href="#ifcspatialzonetypeenum">IfcSpatialZoneTypeEnum</a>.<span class="self-ref">USERDEFINED</span>) OR <br/>
+((PredefinedType = <a href="#ifcspatialzonetypeenum">IfcSpatialZoneTypeEnum</a>.<span class="self-ref">USERDEFINED</span>) AND EXISTS(SELF\<a href="#ifcspatialelementtype">IfcSpatialElementType</a>.ElementType));<br/><span class="keyword">END_ENTITY;</span><br/>
 <br/>
 <a name="ifcspiral" />
 <span class="keyword">ENTITY</span> IfcSpiral<br/>

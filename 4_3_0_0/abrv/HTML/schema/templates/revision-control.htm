@@ -30,8 +30,8 @@
 <p>For cases when multiple users make conflicting changes to the same objects, users may choose to keep their own changes, accept changes from others, merge both changes, or a combination thereof upon submitting to a server. Alternatively, to avoid such merge scenario and coordinate work, objects may be locked such that a particular user has exclusive access to read and/or write a particular object at the current time.</p>
 <p>Project libraries may also be retrieved from model servers having particular revision, and potentially different server URI than the referencing Project. As a project may include multiple revisions of the same project library (a common scenario when multiple users are involved using libraries revised by others), the IfcRoot.ObjectIdentifier IFC-GUID is only valid within the scope of the referencing project, and a separate <i>library reference</i> identifies a project library based object within its originating model server.</p>
 <p>Finally, objects may also carry informational attributes indicating when an object was created, who, when, and what application was used to last modify an object, and who currently owns the object, potentially having exclusive use according to its lock state.</p>
-<p class="fig-ref">Figure 73 illustrates an instance diagram.</p>
-<table><tr><td><img alt="Revision Control" src="./diagrams/revision-control.png" usemap="#f73"><map name="f73"><area shape="rect" coords="8,8,176,68" href="../ifckernel/lexical/ifcroot.htm" alt="IfcRoot" /><area shape="rect" coords="208,8,376,116" href="../ifcutilityresource/lexical/ifcownerhistory.htm" alt="IfcOwnerHistory" /><area shape="rect" coords="408,8,576,56" href="../ifcactorresource/lexical/ifcpersonandorganization.htm" alt="IfcPersonAndOrganization" /><area shape="rect" coords="608,8,776,128" href="../ifcactorresource/lexical/ifcperson.htm" alt="IfcPerson" /><area shape="rect" coords="808,8,976,20" href="../ifcmeasureresource/lexical/ifcidentifier.htm" alt="IfcIdentifier" /><area shape="rect" coords="808,40,976,52" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,72,976,84" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,104,976,116" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,136,976,148" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,168,976,180" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,200,976,260" href="../ifcactorresource/lexical/ifcactorrole.htm" alt="IfcActorRole" /><area shape="rect" coords="808,280,976,424" href="../ifcactorresource/lexical/ifctelecomaddress.htm" alt="IfcTelecomAddress" /><area shape="rect" coords="1008,8,1176,20" href="../ifcactorresource/lexical/ifcaddresstypeenum.htm" alt="IfcAddressTypeEnum" /><area shape="rect" coords="1008,40,1176,52" href="../ifcmeasureresource/lexical/ifctext.htm" alt="IfcText" /><area shape="rect" coords="1008,72,1176,84" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="1008,104,1176,116" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="1008,136,1176,148" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="1008,168,1176,180" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="1008,200,1176,212" href="../ifcexternalreferenceresource/lexical/ifcurireference.htm" alt="IfcURIReference" /><area shape="rect" coords="1008,232,1176,244" href="../ifcexternalreferenceresource/lexical/ifcurireference.htm" alt="IfcURIReference" /><area shape="rect" coords="608,148,776,256" href="../ifcactorresource/lexical/ifcorganization.htm" alt="IfcOrganization" /><area shape="rect" coords="808,444,976,456" href="../ifcmeasureresource/lexical/ifcidentifier.htm" alt="IfcIdentifier" /><area shape="rect" coords="808,476,976,488" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,508,976,520" href="../ifcmeasureresource/lexical/ifctext.htm" alt="IfcText" /><area shape="rect" coords="808,540,976,600" href="../ifcactorresource/lexical/ifcactorrole.htm" alt="IfcActorRole" /><area shape="rect" coords="808,620,976,692" href="../ifcactorresource/lexical/ifcaddress.htm" alt="IfcAddress" /><area shape="rect" coords="608,276,776,336" href="../ifcactorresource/lexical/ifcactorrole.htm" alt="IfcActorRole" /><area shape="rect" coords="808,712,976,724" href="../ifcactorresource/lexical/ifcroleenum.htm" alt="IfcRoleEnum" /><area shape="rect" coords="808,744,976,756" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,776,976,788" href="../ifcmeasureresource/lexical/ifctext.htm" alt="IfcText" /><area shape="rect" coords="408,76,576,136" href="../ifcutilityresource/lexical/ifcapplication.htm" alt="IfcApplication" /><area shape="rect" coords="408,156,576,168" href="../ifcutilityresource/lexical/ifcstateenum.htm" alt="IfcStateEnum" /><area shape="rect" coords="408,188,576,200" href="../ifcutilityresource/lexical/ifcchangeactionenum.htm" alt="IfcChangeActionEnum" /><area shape="rect" coords="408,220,576,232" href="../ifcdatetimeresource/lexical/ifctimestamp.htm" alt="IfcTimeStamp" /><area shape="rect" coords="408,252,576,300" href="../ifcactorresource/lexical/ifcpersonandorganization.htm" alt="IfcPersonAndOrganization" /><area shape="rect" coords="408,320,576,380" href="../ifcutilityresource/lexical/ifcapplication.htm" alt="IfcApplication" /><area shape="rect" coords="408,400,576,412" href="../ifcdatetimeresource/lexical/ifctimestamp.htm" alt="IfcTimeStamp" /></map></td></tr><tr><td><p class="figure">Figure 73 &mdash; Revision Control</p></td></tr></table>
+<p class="fig-ref">Figure 74 illustrates an instance diagram.</p>
+<table><tr><td><img alt="Revision Control" src="./diagrams/revision-control.png" usemap="#f74"><map name="f74"><area shape="rect" coords="8,8,176,68" href="../ifckernel/lexical/ifcroot.htm" alt="IfcRoot" /><area shape="rect" coords="208,8,376,116" href="../ifcutilityresource/lexical/ifcownerhistory.htm" alt="IfcOwnerHistory" /><area shape="rect" coords="408,8,576,56" href="../ifcactorresource/lexical/ifcpersonandorganization.htm" alt="IfcPersonAndOrganization" /><area shape="rect" coords="608,8,776,128" href="../ifcactorresource/lexical/ifcperson.htm" alt="IfcPerson" /><area shape="rect" coords="808,8,976,20" href="../ifcmeasureresource/lexical/ifcidentifier.htm" alt="IfcIdentifier" /><area shape="rect" coords="808,40,976,52" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,72,976,84" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,104,976,116" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,136,976,148" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,168,976,180" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,200,976,260" href="../ifcactorresource/lexical/ifcactorrole.htm" alt="IfcActorRole" /><area shape="rect" coords="808,280,976,424" href="../ifcactorresource/lexical/ifctelecomaddress.htm" alt="IfcTelecomAddress" /><area shape="rect" coords="1008,8,1176,20" href="../ifcactorresource/lexical/ifcaddresstypeenum.htm" alt="IfcAddressTypeEnum" /><area shape="rect" coords="1008,40,1176,52" href="../ifcmeasureresource/lexical/ifctext.htm" alt="IfcText" /><area shape="rect" coords="1008,72,1176,84" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="1008,104,1176,116" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="1008,136,1176,148" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="1008,168,1176,180" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="1008,200,1176,212" href="../ifcexternalreferenceresource/lexical/ifcurireference.htm" alt="IfcURIReference" /><area shape="rect" coords="1008,232,1176,244" href="../ifcexternalreferenceresource/lexical/ifcurireference.htm" alt="IfcURIReference" /><area shape="rect" coords="608,148,776,256" href="../ifcactorresource/lexical/ifcorganization.htm" alt="IfcOrganization" /><area shape="rect" coords="808,444,976,456" href="../ifcmeasureresource/lexical/ifcidentifier.htm" alt="IfcIdentifier" /><area shape="rect" coords="808,476,976,488" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,508,976,520" href="../ifcmeasureresource/lexical/ifctext.htm" alt="IfcText" /><area shape="rect" coords="808,540,976,600" href="../ifcactorresource/lexical/ifcactorrole.htm" alt="IfcActorRole" /><area shape="rect" coords="808,620,976,692" href="../ifcactorresource/lexical/ifcaddress.htm" alt="IfcAddress" /><area shape="rect" coords="608,276,776,336" href="../ifcactorresource/lexical/ifcactorrole.htm" alt="IfcActorRole" /><area shape="rect" coords="808,712,976,724" href="../ifcactorresource/lexical/ifcroleenum.htm" alt="IfcRoleEnum" /><area shape="rect" coords="808,744,976,756" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="808,776,976,788" href="../ifcmeasureresource/lexical/ifctext.htm" alt="IfcText" /><area shape="rect" coords="408,76,576,136" href="../ifcutilityresource/lexical/ifcapplication.htm" alt="IfcApplication" /><area shape="rect" coords="408,156,576,168" href="../ifcutilityresource/lexical/ifcstateenum.htm" alt="IfcStateEnum" /><area shape="rect" coords="408,188,576,200" href="../ifcutilityresource/lexical/ifcchangeactionenum.htm" alt="IfcChangeActionEnum" /><area shape="rect" coords="408,220,576,232" href="../ifcdatetimeresource/lexical/ifctimestamp.htm" alt="IfcTimeStamp" /><area shape="rect" coords="408,252,576,300" href="../ifcactorresource/lexical/ifcpersonandorganization.htm" alt="IfcPersonAndOrganization" /><area shape="rect" coords="408,320,576,380" href="../ifcutilityresource/lexical/ifcapplication.htm" alt="IfcApplication" /><area shape="rect" coords="408,400,576,412" href="../ifcdatetimeresource/lexical/ifctimestamp.htm" alt="IfcTimeStamp" /></map></td></tr><tr><td><p class="figure">Figure 74 &mdash; Revision Control</p></td></tr></table>
 
 <hr/>
 <h4>IFC4.3 AbRV - Scope settings</h4>
@@ -131,6 +131,14 @@
 <td>-<br/>R</td>
 <td>-<br/>R</td>
 </tr>
+<tr><td><a href="../ifcsharedfacilitieselements/lexical/ifcasset.htm">IfcAsset</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
 <tr><td><a href="../ifcelectricaldomain/lexical/ifcaudiovisualappliance.htm">IfcAudioVisualAppliance</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
@@ -204,6 +212,14 @@
 <td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcbuiltsystem.htm">IfcBuiltSystem</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
@@ -359,9 +375,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcsharedbldgelements/lexical/ifccovering.htm">IfcCovering</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -459,12 +475,20 @@
 <td>-<br/>R</td>
 <td>-<br/>R</td>
 </tr>
+<tr><td><a href="../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm">IfcDistributionSystem</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
 <tr><td><a href="../ifcsharedbldgelements/lexical/ifcdoor.htm">IfcDoor</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
 <td>-<br/>R</td>
 </tr>
 <tr><td><a href="../ifchvacdomain/lexical/ifcductfitting.htm">IfcDuctFitting</a></td><td>-<br/>R</td>
@@ -925,11 +949,11 @@
 </tr>
 <tr><td><a href="../ifcproductextension/lexical/ifclinearelement.htm">IfcLinearElement</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcproductextension/lexical/ifclinearpositioningelement.htm">IfcLinearPositioningElement</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -1047,9 +1071,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcstructuralelementsdomain/lexical/ifcpile.htm">IfcPile</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -1108,6 +1132,30 @@
 <td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifckernel/lexical/ifcproduct.htm">IfcProduct</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifckernel/lexical/ifcproject.htm">IfcProject</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcprojectionelement.htm">IfcProjectionElement</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifckernel/lexical/ifcprojectlibrary.htm">IfcProjectLibrary</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
@@ -1295,9 +1343,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcelectricaldomain/lexical/ifcsolardevice.htm">IfcSolarDevice</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -1347,6 +1395,14 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 </tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcspatialzone.htm">IfcSpatialZone</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
 <tr><td><a href="../ifcplumbingfireprotectiondomain/lexical/ifcstackterminal.htm">IfcStackTerminal</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
@@ -1387,12 +1443,28 @@
 <td>-<br/>R</td>
 <td>-<br/>R</td>
 </tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcsystem.htm">IfcSystem</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+<td>-<br/>R</td>
+</tr>
+<tr><td><a href="../ifcsharedfacilitieselements/lexical/ifcsystemfurnitureelement.htm">IfcSystemFurnitureElement</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>R</td>
+</tr>
 <tr><td><a href="../ifchvacdomain/lexical/ifctank.htm">IfcTank</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
-<td>-<br/>-</td>
+<td>-<br/>R</td>
 <td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcstructuralelementsdomain/lexical/ifctendon.htm">IfcTendon</a></td><td>-<br/>R</td>
@@ -1503,9 +1575,9 @@
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
-<td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcplumbingfireprotectiondomain/lexical/ifcwasteterminal.htm">IfcWasteTerminal</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
@@ -1524,6 +1596,14 @@
 <td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcsharedbldgelements/lexical/ifcwindow.htm">IfcWindow</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifczone.htm">IfcZone</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>

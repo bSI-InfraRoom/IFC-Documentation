@@ -32,8 +32,8 @@
 <p>The project spatial structure may be made up of a selection of different spatial structure elements with the most generic and simplest form from high to low level as follows: <a href="../ifckernel/lexical/ifcproject.htm">IfcProject</a>, <a href="../ifcproductextension/lexical/ifcsite.htm">IfcSite</a>, <a href="../ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a> (or any of its subtypes), <a href="../ifcproductextension/lexical/ifcfacilitypart.htm">IfcFacilityPart</a> (or _IfcBuildingStorey in the case of buildings), and <a href="../ifcproductextension/lexical/ifcspace.htm">IfcSpace</a> with <a href="../ifcproductextension/lexical/ifcsite.htm">IfcSite</a>, <i>FacilityPart</i> and <a href="../ifcproductextension/lexical/ifcspace.htm">IfcSpace</a> being optional levels. Therefore a spatial structure element should only be part of an element at the same or higher level, with the exception of <a href="../ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a> which can be part of an <a href="../ifcproductextension/lexical/ifcfacilitypart.htm">IfcFacilityPart</a> to allow for the regional or longitudinal division of a higjh level facility in to sections which can then contain one or more smaller functional facilities.</p>
 <p>Where possible the relevant subtype of <a href="../ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a> should be used to describe the spatial structure element in question. When a adequate subtype of <a href="../ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a> with predefined or user defined type is not available the higher level, generic <a href="../ifcproductextension/lexical/ifcfacility.htm">IfcFacility</a> entity can be instantiated with the relevant and agreed typing identifier defined in <i>IfcFacility.ObjectType</i>. This allows for nearly full coverage of built environment domains and/or scenarios that have yet to be addressed with specific extensions.</p>
 <p>In addition to the identified spatial structure elements <a href="../ifcproductextension/lexical/ifcspatialzone.htm">IfcSpatialZone</a> can be used to provide cross domain or functional zones within a project, these elements are included into the hierarchy using the <i>Spatial Containment</i> concept (<a href="../ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm">IfcRelContainedInSpatialStructure</a>) and can be aggregated into a functional hierarchy in the same manner as other spatial structure elements with the constraint that an <a href="../ifcproductextension/lexical/ifcspatialzone.htm">IfcSpatialZone</a> can only composed under another <a href="../ifcproductextension/lexical/ifcspatialzone.htm">IfcSpatialZone</a>.</p>
-<p class="fig-ref">Figure 77 illustrates an instance diagram.</p>
-<table><tr><td><img alt="Spatial Composition" src="./diagrams/spatial-composition.png" usemap="#f77"><map name="f77"><area shape="rect" coords="8,8,176,344" href="../ifcproductextension/lexical/ifcspatialelement.htm" alt="IfcSpatialElement" /><area shape="rect" coords="208,8,376,92" href="../ifckernel/lexical/ifcrelaggregates.htm" alt="IfcRelAggregates" /><area shape="rect" coords="408,8,576,236" href="../ifckernel/lexical/ifcproject.htm" alt="IfcProject" /><area shape="rect" coords="608,8,776,20" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="408,256,576,592" href="../ifcproductextension/lexical/ifcspatialelement.htm" alt="IfcSpatialElement" /><area shape="rect" coords="608,40,776,52" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /></map></td></tr><tr><td><p class="figure">Figure 77 &mdash; Spatial Composition</p></td></tr></table>
+<p class="fig-ref">Figure 78 illustrates an instance diagram.</p>
+<table><tr><td><img alt="Spatial Composition" src="./diagrams/spatial-composition.png" usemap="#f78"><map name="f78"><area shape="rect" coords="8,8,176,344" href="../ifcproductextension/lexical/ifcspatialelement.htm" alt="IfcSpatialElement" /><area shape="rect" coords="208,8,376,92" href="../ifckernel/lexical/ifcrelaggregates.htm" alt="IfcRelAggregates" /><area shape="rect" coords="408,8,576,236" href="../ifckernel/lexical/ifcproject.htm" alt="IfcProject" /><area shape="rect" coords="608,8,776,20" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /><area shape="rect" coords="408,256,576,592" href="../ifcproductextension/lexical/ifcspatialelement.htm" alt="IfcSpatialElement" /><area shape="rect" coords="608,40,776,52" href="../ifcmeasureresource/lexical/ifclabel.htm" alt="IfcLabel" /></map></td></tr><tr><td><p class="figure">Figure 78 &mdash; Spatial Composition</p></td></tr></table>
 
 <hr/>
 <h4>IFC4.3 AbRV - Scope settings</h4>
@@ -134,6 +134,14 @@
 <td>-<br/>-</td>
 </tr>
 <tr><td><a href="../ifcproductextension/lexical/ifcspatialstructureelement.htm">IfcSpatialStructureElement</a></td><td>-<br/>R</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+<td>-<br/>-</td>
+</tr>
+<tr><td><a href="../ifcproductextension/lexical/ifcspatialzone.htm">IfcSpatialZone</a></td><td>-<br/>R</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
 <td>-<br/>-</td>
