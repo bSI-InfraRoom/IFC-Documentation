@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-Wednesday, 30 March 2022
+Thursday, 5 May 2022
 
 *)
 
@@ -122,6 +122,9 @@ TYPE IfcHeatFluxDensityMeasure = REAL;
 END_TYPE;
 
 TYPE IfcIdentifier = STRING(255);
+END_TYPE;
+
+TYPE IfcIlluminanceMeasure = REAL;
 END_TYPE;
 
 TYPE IfcInductanceMeasure = REAL;
@@ -2384,6 +2387,7 @@ TYPE IfcDerivedMeasureValue = SELECT
 	,IfcForceMeasure
 	,IfcFrequencyMeasure
 	,IfcHeatFluxDensityMeasure
+	,IfcIlluminanceMeasure
 	,IfcInductanceMeasure
 	,IfcIntegerCountRateMeasure
 	,IfcLinearVelocityMeasure
@@ -4390,12 +4394,12 @@ ENTITY IfcGrid
  SUBTYPE OF (IfcPositioningElement);
 	UAxes : LIST [1:?] OF UNIQUE IfcGridAxis;
 	VAxes : LIST [1:?] OF UNIQUE IfcGridAxis;
-	WAxes : OPTIONAL LIST [1:?] OF UNIQUE IfcStrippedOptional;
+	WAxes : OPTIONAL LIST [1:?] OF UNIQUE IfcGridAxis;
 	PredefinedType : OPTIONAL IfcGridTypeEnum;
 END_ENTITY;
 
 ENTITY IfcGridAxis;
-	AxisTag : OPTIONAL IfcStrippedOptional;
+	AxisTag : OPTIONAL IfcLabel;
 	AxisCurve : IfcCurve;
 	SameSense : IfcBoolean;
  INVERSE

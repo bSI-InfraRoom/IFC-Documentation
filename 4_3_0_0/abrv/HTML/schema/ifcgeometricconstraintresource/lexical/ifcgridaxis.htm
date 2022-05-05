@@ -40,7 +40,7 @@
 <tr>
 <td><img src="../../../figures/ifcgridaxis-layout1.gif" alt="design grid" border="0" height="300" width="400"></td>
 <td style="vertical-align:bottom">
-<p class="small">As shown in Figure 176, the grid axis is defined as a 2D curve within
+<p class="small">As shown in Figure 177, the grid axis is defined as a 2D curve within
 the xy plane of the position coordinate system. Any curve can be
 used to define a grid axis, most common is the use of IfcLine for
 linear grids and <a href="../../ifcgeometryresource/lexical/ifccircle.htm">IfcCircle</a> for radial grids.</p>
@@ -50,7 +50,7 @@ offset to the base axis. The use of <i>IfcOffsetCurve2D</i> as
 underlying AxisCurve supports this concept.</p>
 </td>
 </tr>
-<tr><td><p class="figure">Figure 176 &mdash; Grid axis</p></td>
+<tr><td><p class="figure">Figure 177 &mdash; Grid axis</p></td>
 <td>&nbsp;</td>
 </tr>
 </table>
@@ -61,8 +61,9 @@ underlying AxisCurve supports this concept.</p>
 <details open="open"><summary>Attribute definitions</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
 <th>I</th></tr>
-<tr><td>1</td><td>AxisTag</td><td><span class="self-ref">-</span></td><td></td><td>
-<i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
+<tr><td>1</td><td>AxisTag</td><td><a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a></td><td>? </td><td>
+The tag or name for this grid axis.
+</td><td>X</td></tr>
 <tr><td>2</td><td>AxisCurve</td><td><a href="../../ifcgeometryresource/lexical/ifccurve.htm">IfcCurve</a></td><td></td><td>
 Underlying curve which provides the geometry for this grid axis.
 </td><td>X</td></tr>
@@ -114,8 +115,9 @@ i.e. it can only refer to a single instance of <a href="../../ifcproductextensio
 <details><summary>Attribute inheritance</summary><table class="attributes">
 <tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th><th>I</th></tr>
 <tr><td colspan="6"><a href="../../ifcgeometricconstraintresource/lexical/ifcgridaxis.htm">IfcGridAxis</a></td></tr>
-<tr><td>1</td><td>AxisTag</td><td><span class="self-ref">-</span></td><td></td><td>
-<i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
+<tr><td>1</td><td>AxisTag</td><td><a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a></td><td>? </td><td>
+The tag or name for this grid axis.
+</td><td>X</td></tr>
 <tr><td>2</td><td>AxisCurve</td><td><a href="../../ifcgeometryresource/lexical/ifccurve.htm">IfcCurve</a></td><td></td><td>
 Underlying curve which provides the geometry for this grid axis.
 </td><td>X</td></tr>
@@ -153,6 +155,7 @@ IFC2x3 CHANGE  New inverse attribute.
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;AxisCurve&quot; type=&quot;ifc:<a href="../../ifcgeometryresource/lexical/ifccurve.htm">IfcCurve</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;AxisTag&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;SameSense&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>&quot; use=&quot;optional&quot;/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
 &nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
@@ -160,7 +163,7 @@ IFC2x3 CHANGE  New inverse attribute.
 </code></div></details>
 <details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
 <span class="keyword">ENTITY</span> IfcGridAxis<b>;</b><br/>
-&nbsp;&nbsp;AxisTag : <span class="keyword">OPTIONAL</span> <span class="self-ref">IfcStrippedOptional</span>;<br/>
+&nbsp;&nbsp;AxisTag : <span class="keyword">OPTIONAL</span> <a href="../../ifcmeasureresource/lexical/ifclabel.htm">IfcLabel</a>;<br/>
 &nbsp;&nbsp;AxisCurve : <a href="../../ifcgeometryresource/lexical/ifccurve.htm">IfcCurve</a>;<br/>
 &nbsp;&nbsp;SameSense : <a href="../../ifcmeasureresource/lexical/ifcboolean.htm">IfcBoolean</a>;<br/>
 &nbsp;<span class="keyword">INVERSE</span><br/>

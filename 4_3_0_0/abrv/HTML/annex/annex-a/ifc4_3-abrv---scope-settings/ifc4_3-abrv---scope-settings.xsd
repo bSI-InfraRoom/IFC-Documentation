@@ -1786,6 +1786,16 @@ of the material. The information contained in this document is subject to change
 							<xs:attribute ref="ifc:arraySize" use="optional"/>
 						</xs:complexType>
 					</xs:element>
+					<xs:element name="WAxes" nillable="true" minOccurs="0">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="ifc:IfcGridAxis" maxOccurs="unbounded"/>
+							</xs:sequence>
+							<xs:attribute ref="ifc:itemType" fixed="ifc:IfcGridAxis"/>
+							<xs:attribute ref="ifc:cType" fixed="list-unique"/>
+							<xs:attribute ref="ifc:arraySize" use="optional"/>
+						</xs:complexType>
+					</xs:element>
 				</xs:sequence>
 				<xs:attribute name="PredefinedType" type="ifc:IfcGridTypeEnum" use="optional"/>
 			</xs:extension>
@@ -1798,6 +1808,7 @@ of the material. The information contained in this document is subject to change
 				<xs:sequence>
 					<xs:element name="AxisCurve" type="ifc:IfcCurve" nillable="true"/>
 				</xs:sequence>
+				<xs:attribute name="AxisTag" type="ifc:IfcLabel" use="optional"/>
 				<xs:attribute name="SameSense" type="ifc:IfcBoolean" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
@@ -4816,6 +4827,7 @@ of the material. The information contained in this document is subject to change
 			<xs:element ref="ifc:IfcForceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcFrequencyMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcHeatFluxDensityMeasure-wrapper"/>
+			<xs:element ref="ifc:IfcIlluminanceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcInductanceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcIntegerCountRateMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcLinearVelocityMeasure-wrapper"/>
@@ -5008,6 +5020,7 @@ of the material. The information contained in this document is subject to change
 			<xs:element ref="ifc:IfcFrequencyMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcHeatFluxDensityMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcIdentifier-wrapper"/>
+			<xs:element ref="ifc:IfcIlluminanceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcInductanceMeasure-wrapper"/>
 			<xs:element ref="ifc:IfcInteger-wrapper"/>
 			<xs:element ref="ifc:IfcIntegerCountRateMeasure-wrapper"/>
@@ -7377,6 +7390,9 @@ of the material. The information contained in this document is subject to change
 			<xs:maxLength value="255"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="IfcIlluminanceMeasure">
+		<xs:restriction base="xs:double"/>
+	</xs:simpleType>
 	<xs:simpleType name="IfcInductanceMeasure">
 		<xs:restriction base="xs:double"/>
 	</xs:simpleType>
@@ -7814,6 +7830,15 @@ of the material. The information contained in this document is subject to change
 		<xs:complexType>
 			<xs:simpleContent>
 				<xs:extension base="ifc:IfcIdentifier">
+					<xs:attributeGroup ref="ifc:instanceAttributes"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="IfcIlluminanceMeasure-wrapper" nillable="true">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="ifc:IfcIlluminanceMeasure">
 					<xs:attributeGroup ref="ifc:instanceAttributes"/>
 				</xs:extension>
 			</xs:simpleContent>
