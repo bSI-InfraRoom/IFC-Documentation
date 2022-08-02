@@ -146,32 +146,27 @@ IFC4 CHANGE  The inverse attribute datatype has been changed from the supertype
 The type denotes a particular type that indicates the object further. The use has to be established at the level of instantiable subtypes. In particular it holds the user defined type, if the enumeration of the attribute <i>PredefinedType</i> is set to USERDEFINED.
 </td><td>X</td></tr>
 <tr><td></td><td><i>IsDeclaredBy</i></td><td><a href="../../ifckernel/lexical/ifcreldefinesbyobject.htm">IfcRelDefinesByObject</a><br/>@RelatedObjects</td><td>S[0:1]</td><td>Link to the relationship object pointing to the declaring object that provides the object definitions for this object occurrence. The declaring object has to be part of an object type decomposition. The associated <span class="self-ref">IfcObject</span>, or its subtypes, contains the specific information (as part of a type, or style, definition), that is common to all reflected instances of the declaring <span class="self-ref">IfcObject</span>, or its subtypes.
-
 <blockquote>
 IFC4 CHANGE  New inverse relationship, change made with upward compatibility for file based exchange.
 </blockquote>
 </td><td>X</td></tr>
 <tr><td></td><td><i>Declares</i></td><td><a href="../../ifckernel/lexical/ifcreldefinesbyobject.htm">IfcRelDefinesByObject</a><br/>@RelatingObject</td><td>S[0:?]</td><td>Link to the relationship object pointing to the reflected object(s) that receives the object definitions. The reflected object has to be part of an object occurrence decomposition. The associated <span class="self-ref">IfcObject</span>, or its subtypes, provides the specific information (as part of a type, or style, definition), that is common to all reflected instances of the declaring <span class="self-ref">IfcObject</span>, or its subtypes.
-
 <blockquote>
 IFC4 CHANGE  New inverse relationship, change made with upward compatibility for file based exchange.
 </blockquote>
 </td><td></td></tr>
 <tr><td></td><td><i>IsTypedBy</i></td><td><a href="../../ifckernel/lexical/ifcreldefinesbytype.htm">IfcRelDefinesByType</a><br/>@RelatedObjects</td><td>S[0:1]</td><td>Set of relationships to the object type that provides the type definitions for this object occurrence. The then associated <a href="../../ifckernel/lexical/ifctypeobject.htm">IfcTypeObject</a>, or its subtypes, contains the specific information (or type, or style), that is common to all instances of <span class="self-ref">IfcObject</span>, or its subtypes, referring to the same type.
-
 <blockquote>
 IFC4 CHANGE  New inverse relationship, the link to <a href="../../ifckernel/lexical/ifcreldefinesbytype.htm">IfcRelDefinesByType</a> had previously be included in the inverse relationship <a href="../../ifckernel/lexical/ifcreldefines.htm">IfcRelDefines</a>. Change made with upward compatibility for file based exchange.
 </blockquote>
 </td><td>X</td></tr>
 <tr><td></td><td><i>IsDefinedBy</i></td><td><a href="../../ifckernel/lexical/ifcreldefinesbyproperties.htm">IfcRelDefinesByProperties</a><br/>@RelatedObjects</td><td>S[0:?]</td><td>Set of relationships to property set definitions attached to this object. Those statically or dynamically defined properties contain alphanumeric information content that further defines the object.
-
 <blockquote>
 IFC4 CHANGE  The data type has been changed from <a href="../../ifckernel/lexical/ifcreldefines.htm">IfcRelDefines</a> to <a href="../../ifckernel/lexical/ifcreldefinesbyproperties.htm">IfcRelDefinesByProperties</a> with upward compatibility for file based exchange.
 </blockquote>
 </td><td>X</td></tr>
 <tr><td colspan="6"><a href="../../ifckernel/lexical/ifcgroup.htm">IfcGroup</a></td></tr>
 <tr><td></td><td><i>IsGroupedBy</i></td><td><a href="../../ifckernel/lexical/ifcrelassignstogroup.htm">IfcRelAssignsToGroup</a><br/>@RelatingGroup</td><td>S[0:?]</td><td>Reference to the relationship <a href="../../ifckernel/lexical/ifcrelassignstogroup.htm">IfcRelAssignsToGroup</a> that assigns the one to many group members to the <span class="self-ref">IfcGroup</span> object.
-
 <blockquote>
 IFC4 CHANGE  The cardinality has been changed from 1..1 to 0..? in order to allow the exchange of a group concept without having already group members assigned. It now also allows the use of many instances of <a href="../../ifckernel/lexical/ifcrelassignstogroup.htm">IfcRelAssignsToGroup</a> to assign the group members. The change has been done with upward compatibility for file based exchange.
 </blockquote>
@@ -185,6 +180,2277 @@ IFC4 CHANGE  The cardinality has been changed from 1..1 to 0..? in order to all
 </td><td>X</td></tr>
 </table>
 </details>
+</section>
+<section>
+<h5 class="num">Definitions applying to IFC4.3 AbRV - Scope settings</h5>
+<p><a href="../../../annex/annex-d/ifc4_3-abrv---scope-settings/ifcdistributionsystem.htm"><img style="border: 0px" src="../../../img/diagram.png" />&nbsp;Instance diagram</a></p><hr />
+<h5>1.1.2.3.5.3 IfcDistributionSystem</h5><p>IfcDistributionSystem</p>
+<details open="open">
+<summary>Concept usage</summary>
+<a id="property-sets-for-objects" />
+<p class="use-head">Pset_DistributionSystemTypeVentilation</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 3461.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeventilation.htm">Pset_DistributionSystemTypeVentilation</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemcommon.htm">Pset_DistributionSystemCommon</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeelectrical.htm">Pset_DistributionSystemTypeElectrical</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_condition.htm">Pset_Condition</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_powercontrolsystem.htm">Pset_PowerControlSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_tractionpowersystem.htm">Pset_TractionPowerSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_distributionsystemtypeoverheadcontactlinesystem.htm">Pset_DistributionSystemTypeOverheadContactlineSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_repairoccurrence.htm">Pset_RepairOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_servicelifefactors.htm">Pset_ServiceLifeFactors</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_installationoccurrence.htm">Pset_InstallationOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_risk.htm">Pset_Risk</a></td><td></td><td>; 
+</td></tr>
+<tr><td>&nbsp;</td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3461 &mdash; IfcDistributionSystem Property Sets for Objects</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Pset_DistributionSystemCommon</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 3462.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeventilation.htm">Pset_DistributionSystemTypeVentilation</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemcommon.htm">Pset_DistributionSystemCommon</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeelectrical.htm">Pset_DistributionSystemTypeElectrical</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_condition.htm">Pset_Condition</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_powercontrolsystem.htm">Pset_PowerControlSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_tractionpowersystem.htm">Pset_TractionPowerSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_distributionsystemtypeoverheadcontactlinesystem.htm">Pset_DistributionSystemTypeOverheadContactlineSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_repairoccurrence.htm">Pset_RepairOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_servicelifefactors.htm">Pset_ServiceLifeFactors</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_installationoccurrence.htm">Pset_InstallationOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_risk.htm">Pset_Risk</a></td><td></td><td>; 
+</td></tr>
+<tr><td>&nbsp;</td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3462 &mdash; IfcDistributionSystem Property Sets for Objects</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Pset_DistributionSystemTypeElectrical</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 3463.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeventilation.htm">Pset_DistributionSystemTypeVentilation</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemcommon.htm">Pset_DistributionSystemCommon</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeelectrical.htm">Pset_DistributionSystemTypeElectrical</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_condition.htm">Pset_Condition</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_powercontrolsystem.htm">Pset_PowerControlSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_tractionpowersystem.htm">Pset_TractionPowerSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_distributionsystemtypeoverheadcontactlinesystem.htm">Pset_DistributionSystemTypeOverheadContactlineSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_repairoccurrence.htm">Pset_RepairOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_servicelifefactors.htm">Pset_ServiceLifeFactors</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_installationoccurrence.htm">Pset_InstallationOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_risk.htm">Pset_Risk</a></td><td></td><td>; 
+</td></tr>
+<tr><td>&nbsp;</td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3463 &mdash; IfcDistributionSystem Property Sets for Objects</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Pset_Condition</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 3464.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeventilation.htm">Pset_DistributionSystemTypeVentilation</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemcommon.htm">Pset_DistributionSystemCommon</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeelectrical.htm">Pset_DistributionSystemTypeElectrical</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_condition.htm">Pset_Condition</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_powercontrolsystem.htm">Pset_PowerControlSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_tractionpowersystem.htm">Pset_TractionPowerSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_distributionsystemtypeoverheadcontactlinesystem.htm">Pset_DistributionSystemTypeOverheadContactlineSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_repairoccurrence.htm">Pset_RepairOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_servicelifefactors.htm">Pset_ServiceLifeFactors</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_installationoccurrence.htm">Pset_InstallationOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_risk.htm">Pset_Risk</a></td><td></td><td>; 
+</td></tr>
+<tr><td>&nbsp;</td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3464 &mdash; IfcDistributionSystem Property Sets for Objects</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Pset_PowerControlSystem</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 3465.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeventilation.htm">Pset_DistributionSystemTypeVentilation</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemcommon.htm">Pset_DistributionSystemCommon</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeelectrical.htm">Pset_DistributionSystemTypeElectrical</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_condition.htm">Pset_Condition</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_powercontrolsystem.htm">Pset_PowerControlSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_tractionpowersystem.htm">Pset_TractionPowerSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_distributionsystemtypeoverheadcontactlinesystem.htm">Pset_DistributionSystemTypeOverheadContactlineSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_repairoccurrence.htm">Pset_RepairOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_servicelifefactors.htm">Pset_ServiceLifeFactors</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_installationoccurrence.htm">Pset_InstallationOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_risk.htm">Pset_Risk</a></td><td></td><td>; 
+</td></tr>
+<tr><td>&nbsp;</td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3465 &mdash; IfcDistributionSystem Property Sets for Objects</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Pset_TractionPowerSystem</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 3466.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeventilation.htm">Pset_DistributionSystemTypeVentilation</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemcommon.htm">Pset_DistributionSystemCommon</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeelectrical.htm">Pset_DistributionSystemTypeElectrical</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_condition.htm">Pset_Condition</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_powercontrolsystem.htm">Pset_PowerControlSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_tractionpowersystem.htm">Pset_TractionPowerSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_distributionsystemtypeoverheadcontactlinesystem.htm">Pset_DistributionSystemTypeOverheadContactlineSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_repairoccurrence.htm">Pset_RepairOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_servicelifefactors.htm">Pset_ServiceLifeFactors</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_installationoccurrence.htm">Pset_InstallationOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_risk.htm">Pset_Risk</a></td><td></td><td>; 
+</td></tr>
+<tr><td>&nbsp;</td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3466 &mdash; IfcDistributionSystem Property Sets for Objects</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Pset_DistributionSystemTypeOverheadContactlineSystem</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 3467.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeventilation.htm">Pset_DistributionSystemTypeVentilation</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemcommon.htm">Pset_DistributionSystemCommon</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeelectrical.htm">Pset_DistributionSystemTypeElectrical</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_condition.htm">Pset_Condition</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_powercontrolsystem.htm">Pset_PowerControlSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_tractionpowersystem.htm">Pset_TractionPowerSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_distributionsystemtypeoverheadcontactlinesystem.htm">Pset_DistributionSystemTypeOverheadContactlineSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_repairoccurrence.htm">Pset_RepairOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_servicelifefactors.htm">Pset_ServiceLifeFactors</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_installationoccurrence.htm">Pset_InstallationOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_risk.htm">Pset_Risk</a></td><td></td><td>; 
+</td></tr>
+<tr><td>&nbsp;</td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3467 &mdash; IfcDistributionSystem Property Sets for Objects</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Pset_RepairOccurrence</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 3468.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeventilation.htm">Pset_DistributionSystemTypeVentilation</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemcommon.htm">Pset_DistributionSystemCommon</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeelectrical.htm">Pset_DistributionSystemTypeElectrical</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_condition.htm">Pset_Condition</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_powercontrolsystem.htm">Pset_PowerControlSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_tractionpowersystem.htm">Pset_TractionPowerSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_distributionsystemtypeoverheadcontactlinesystem.htm">Pset_DistributionSystemTypeOverheadContactlineSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_repairoccurrence.htm">Pset_RepairOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_servicelifefactors.htm">Pset_ServiceLifeFactors</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_installationoccurrence.htm">Pset_InstallationOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_risk.htm">Pset_Risk</a></td><td></td><td>; 
+</td></tr>
+<tr><td>&nbsp;</td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3468 &mdash; IfcDistributionSystem Property Sets for Objects</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Pset_ServiceLifeFactors</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 3469.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeventilation.htm">Pset_DistributionSystemTypeVentilation</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemcommon.htm">Pset_DistributionSystemCommon</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeelectrical.htm">Pset_DistributionSystemTypeElectrical</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_condition.htm">Pset_Condition</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_powercontrolsystem.htm">Pset_PowerControlSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_tractionpowersystem.htm">Pset_TractionPowerSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_distributionsystemtypeoverheadcontactlinesystem.htm">Pset_DistributionSystemTypeOverheadContactlineSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_repairoccurrence.htm">Pset_RepairOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_servicelifefactors.htm">Pset_ServiceLifeFactors</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_installationoccurrence.htm">Pset_InstallationOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_risk.htm">Pset_Risk</a></td><td></td><td>; 
+</td></tr>
+<tr><td>&nbsp;</td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3469 &mdash; IfcDistributionSystem Property Sets for Objects</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="group-assignment" />
+<p class="use-head">Group Assignment</p>
+<p>The <a href="../../templates/group-assignment.htm">Group Assignment</a> concept template applies to this entity as shown in Table 3470.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>IsGrouped</b></th><th><b>RelatedObjects</b></th><th><b>Description</b></th></tr>
+<tr><td></td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3470 &mdash; IfcDistributionSystem Group Assignment</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Pset_InstallationOccurrence</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 3471.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeventilation.htm">Pset_DistributionSystemTypeVentilation</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemcommon.htm">Pset_DistributionSystemCommon</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeelectrical.htm">Pset_DistributionSystemTypeElectrical</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_condition.htm">Pset_Condition</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_powercontrolsystem.htm">Pset_PowerControlSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_tractionpowersystem.htm">Pset_TractionPowerSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_distributionsystemtypeoverheadcontactlinesystem.htm">Pset_DistributionSystemTypeOverheadContactlineSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_repairoccurrence.htm">Pset_RepairOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_servicelifefactors.htm">Pset_ServiceLifeFactors</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_installationoccurrence.htm">Pset_InstallationOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_risk.htm">Pset_Risk</a></td><td></td><td>; 
+</td></tr>
+<tr><td>&nbsp;</td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3471 &mdash; IfcDistributionSystem Property Sets for Objects</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Pset_Risk</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 3472.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeventilation.htm">Pset_DistributionSystemTypeVentilation</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemcommon.htm">Pset_DistributionSystemCommon</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeelectrical.htm">Pset_DistributionSystemTypeElectrical</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_condition.htm">Pset_Condition</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_powercontrolsystem.htm">Pset_PowerControlSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_tractionpowersystem.htm">Pset_TractionPowerSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_distributionsystemtypeoverheadcontactlinesystem.htm">Pset_DistributionSystemTypeOverheadContactlineSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_repairoccurrence.htm">Pset_RepairOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_servicelifefactors.htm">Pset_ServiceLifeFactors</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_installationoccurrence.htm">Pset_InstallationOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_risk.htm">Pset_Risk</a></td><td></td><td>; 
+</td></tr>
+<tr><td>&nbsp;</td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3472 &mdash; IfcDistributionSystem Property Sets for Objects</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="assignment-to-group" />
+<p class="use-head">Assignment to Group</p>
+<p>The <a href="../../templates/assignment-to-group.htm">Assignment to Group</a> concept template applies to this entity as shown in Table 3473.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>IsAssigned</b></th><th><b>Description</b></th></tr>
+<tr><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3473 &mdash; IfcDistributionSystem Assignment to Group</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="object-connectivity" />
+<p class="use-head">Object Connectivity</p>
+<p>The <a href="../../templates/object-connectivity.htm">Object Connectivity</a> concept template applies to this entity as shown in Table 3474.<table>
+<tr><td>
+</td></tr>
+<tr><td><p class="table">Table 3474 &mdash; IfcDistributionSystem Object Connectivity</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="object-predefined-type" />
+<p class="use-head">Object Predefined Type</p>
+<p>The <a href="../../templates/object-predefined-type.htm">Object Predefined Type</a> concept template applies to this entity as shown in Table 3475.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Description</b></th></tr>
+<tr><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3475 &mdash; IfcDistributionSystem Object Predefined Type</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="object-user-identity" />
+<p class="use-head">Object User Identity</p>
+<p>The <a href="../../templates/object-user-identity.htm">Object User Identity</a> concept template applies to this entity as shown in Table 3476.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Description</b></th></tr>
+<tr><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3476 &mdash; IfcDistributionSystem Object User Identity</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Property Sets for Objects</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 3477.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>Description</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeventilation.htm">Pset_DistributionSystemTypeVentilation</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemcommon.htm">Pset_DistributionSystemCommon</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedbldgserviceelements/pset/pset_distributionsystemtypeelectrical.htm">Pset_DistributionSystemTypeElectrical</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_condition.htm">Pset_Condition</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_powercontrolsystem.htm">Pset_PowerControlSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_tractionpowersystem.htm">Pset_TractionPowerSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_distributionsystemtypeoverheadcontactlinesystem.htm">Pset_DistributionSystemTypeOverheadContactlineSystem</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_repairoccurrence.htm">Pset_RepairOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_servicelifefactors.htm">Pset_ServiceLifeFactors</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcraildomain/pset/pset_installationoccurrence.htm">Pset_InstallationOccurrence</a></td><td></td><td>; 
+</td></tr>
+<tr><td><a href="../../ifcsharedfacilitieselements/pset/pset_risk.htm">Pset_Risk</a></td><td></td><td>; 
+</td></tr>
+<tr><td>&nbsp;</td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3477 &mdash; IfcDistributionSystem Property Sets for Objects</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="property-sets-with-override" />
+<p class="use-head">Property Sets with Override</p>
+<p>The <a href="../../templates/property-sets-with-override.htm">Property Sets with Override</a> concept template applies to this entity as shown in Table 3478.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Properties</b></th><th><b>TypeProperties</b></th><th><b>Description</b></th></tr>
+<tr><td></td><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3478 &mdash; IfcDistributionSystem Property Sets with Override</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="quantity-sets" />
+<p class="use-head">Quantity Sets</p>
+<p>The <a href="../../templates/quantity-sets.htm">Quantity Sets</a> concept template applies to this entity as shown in Table 3479.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Quantities</b></th><th><b>Description</b></th></tr>
+<tr><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3479 &mdash; IfcDistributionSystem Quantity Sets</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="classification-association" />
+<p class="use-head">Classification Association</p>
+<p>The <a href="../../templates/classification-association.htm">Classification Association</a> concept template applies to this entity as shown in Table 3480.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Description</b></th></tr>
+<tr><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3480 &mdash; IfcDistributionSystem Classification Association</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="library-association" />
+<p class="use-head">Library Association</p>
+<p>The <a href="../../templates/library-association.htm">Library Association</a> concept template applies to this entity as shown in Table 3481.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Description</b></th></tr>
+<tr><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3481 &mdash; IfcDistributionSystem Library Association</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="material-constituent-set" />
+<p class="use-head">Material Constituent Set</p>
+<p>The <a href="../../templates/material-constituent-set.htm">Material Constituent Set</a> concept template applies to this entity as shown in Table 3482.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Description</b></th></tr>
+<tr><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3482 &mdash; IfcDistributionSystem Material Constituent Set</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="material-layer-set" />
+<p class="use-head">Material Layer Set</p>
+<p>The <a href="../../templates/material-layer-set.htm">Material Layer Set</a> concept template applies to this entity as shown in Table 3483.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>HasLayer</b></th><th><b>Description</b></th></tr>
+<tr><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3483 &mdash; IfcDistributionSystem Material Layer Set</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="material-profile-set" />
+<p class="use-head">Material Profile Set</p>
+<p>The <a href="../../templates/material-profile-set.htm">Material Profile Set</a> concept template applies to this entity as shown in Table 3484.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>HasProfiles</b></th><th><b>Description</b></th></tr>
+<tr><td></td><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3484 &mdash; IfcDistributionSystem Material Profile Set</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="material-single" />
+<p class="use-head">Material Single</p>
+<p>The <a href="../../templates/material-single.htm">Material Single</a> concept template applies to this entity as shown in Table 3485.<table>
+<tr><td>
+</td></tr>
+<tr><td><p class="table">Table 3485 &mdash; IfcDistributionSystem Material Single</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="object-assignment" />
+<p class="use-head">Object Assignment</p>
+<p>The <a href="../../templates/object-assignment.htm">Object Assignment</a> concept template applies to this entity as shown in Table 3486.<table>
+<tr><td>
+</td></tr>
+<tr><td><p class="table">Table 3486 &mdash; IfcDistributionSystem Object Assignment</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="object-association" />
+<p class="use-head">Object Association</p>
+<p>The <a href="../../templates/object-association.htm">Object Association</a> concept template applies to this entity as shown in Table 3487.<table>
+<tr><td>
+</td></tr>
+<tr><td><p class="table">Table 3487 &mdash; IfcDistributionSystem Object Association</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="object-composition" />
+<p class="use-head">Object Composition</p>
+<p>The <a href="../../templates/object-composition.htm">Object Composition</a> concept template applies to this entity as shown in Table 3488.<table>
+<tr><td>
+</td></tr>
+<tr><td><p class="table">Table 3488 &mdash; IfcDistributionSystem Object Composition</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="object-attributes" />
+<p class="use-head">Object Attributes</p>
+<p>The <a href="../../templates/object-attributes.htm">Object Attributes</a> concept template applies to this entity as shown in Table 3489.<table>
+<tr><td>
+</td></tr>
+<tr><td><p class="table">Table 3489 &mdash; IfcDistributionSystem Object Attributes</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="object-occurrence-attributes" />
+<p class="use-head">Object Occurrence Attributes</p>
+<p>The <a href="../../templates/object-occurrence-attributes.htm">Object Occurrence Attributes</a> concept template applies to this entity as shown in Table 3490.<table>
+<tr><td>
+</td></tr>
+<tr><td><p class="table">Table 3490 &mdash; IfcDistributionSystem Object Occurrence Attributes</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="property-sets" />
+<p class="use-head">Property Sets</p>
+<p>The <a href="../../templates/property-sets.htm">Property Sets</a> concept template applies to this entity as shown in Table 3491.<table>
+<tr><td>
+</td></tr>
+<tr><td><p class="table">Table 3491 &mdash; IfcDistributionSystem Property Sets</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="revision-control" />
+<p class="use-head">Revision Control</p>
+<p>The <a href="../../templates/revision-control.htm">Revision Control</a> concept template applies to this entity as shown in Table 3492.<table>
+<tr><td>
+</td></tr>
+<tr><td><p class="table">Table 3492 &mdash; IfcDistributionSystem Revision Control</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<a id="software-identity" />
+<p class="use-head">Software Identity</p>
+<p>The <a href="../../templates/software-identity.htm">Software Identity</a> concept template applies to this entity as shown in Table 3493.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Description</b></th></tr>
+<tr><td>; 
+</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3493 &mdash; IfcDistributionSystem Software Identity</td></tr></table>
+
+<table class="exchange">
+<tr>
+<th>Exchange</th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-00-minimum-requirements.htm"><img width="16" src="../../../img/mvd-abrv-00-minimum-requirements.png" title="AbRV-00 Minimum Requirements"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1-alrf-alignment-reference-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1-alrf-alignment-reference-exchange.png" title="AbRV-E1-ALRF Alignment Reference Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1a-arse-alignment-reference-superelevation-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1a-arse-alignment-reference-superelevation-exchange.png" title="AbRV-E1a-ARSE Alignment Reference Superelevation Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e1b-arct-alignment-reference-cant-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e1b-arct-alignment-reference-cant-exchange.png" title="AbRV-E1b-ARCT Alignment Reference Cant Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e2a-trst-track-structures-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e2a-trst-track-structures-exchange.png" title="AbRV-E2a-TRST Track Structures Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e5-sign-energy-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e5-sign-energy-exchange.png" title="AbRV-E5-SIGN Energy Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e6-engy-signalling-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e6-engy-signalling-exchange.png" title="AbRV-E6-ENGY Signalling Exchange"/></a></th>
+<th><a href="../../views/ifc4_3-abrv---scope-settings/abrv-e8-teco-telecommunications-exchange.htm"><img width="16" src="../../../img/mvd-abrv-e8-teco-telecommunications-exchange.png" title="AbRV-E8-TECO Telecommunications Exchange"/></a></th>
+</tr>
+<tr>
+<td>Import</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Export</td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</table>
+
+<br/><br/>
+
+</details>
+<details><summary>mvdXML Specification</summary>
+<div class="xsd"><code class="xsd">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br/>
+&lt;ConceptRoot xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; uuid=&quot;e6c3fc19-ddaa-40f4-820a-a67e30b693d9&quot; name=&quot;1.1.2.3.5.3 IfcDistributionSystem&quot; applicableRootEntity=&quot;IfcDistributionSystem&quot;&gt;<br/>
+&nbsp;&lt;Applicability&gt;<br/>
+&nbsp;&nbsp;&lt;Template ref=&quot;ca3aec1f-326b-4da2-83ee-d89cb3aa7916&quot; /&gt;<br/>
+&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&lt;/Applicability&gt;<br/>
+&nbsp;&lt;Concepts&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;28cfbcda-8fb6-432e-ac98-b13133fb784d&quot; name=&quot;Pset_DistributionSystemTypeVentilation&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_DistributionSystemTypeVentilation&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;21b241a6-668d-41c3-95d4-4c8f32c71b48&quot; name=&quot;Pset_DistributionSystemCommon&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;61c44d9f-ce81-4c85-b6cf-2329acfd6433&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;a5f0b52c-2be9-464c-b17b-c4ad12acb763&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;94bc037a-0988-4af3-aacf-40de661edda3&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_DistributionSystemCommon&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;2aacc67f-f2a5-4012-b2f2-ce823d780477&quot; name=&quot;Pset_DistributionSystemTypeElectrical&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;61c44d9f-ce81-4c85-b6cf-2329acfd6433&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;a5f0b52c-2be9-464c-b17b-c4ad12acb763&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;94bc037a-0988-4af3-aacf-40de661edda3&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_DistributionSystemTypeElectrical&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;0e5f7fc2-e9b0-4edb-84fc-d5f79d226e07&quot; name=&quot;Pset_Condition&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;61c44d9f-ce81-4c85-b6cf-2329acfd6433&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;a5f0b52c-2be9-464c-b17b-c4ad12acb763&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;94bc037a-0988-4af3-aacf-40de661edda3&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_Condition&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;54c5d7f4-2771-4f87-99df-e2437ad896f6&quot; name=&quot;Pset_PowerControlSystem&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_PowerControlSystem&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;aeee9efa-18f3-45ee-9177-bf06ff3d6fb9&quot; name=&quot;Pset_TractionPowerSystem&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_TractionPowerSystem&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;6f8b0b85-f2e4-4783-91e9-13d73e42896a&quot; name=&quot;Pset_DistributionSystemTypeOverheadContactlineSystem&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_DistributionSystemTypeOverheadContactlineSystem&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;8310845c-7bbb-42fb-bbb4-7ed8e4ae23f6&quot; name=&quot;Pset_RepairOccurrence&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;61c44d9f-ce81-4c85-b6cf-2329acfd6433&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;a5f0b52c-2be9-464c-b17b-c4ad12acb763&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;94bc037a-0988-4af3-aacf-40de661edda3&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_RepairOccurrence&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;b5258d80-bf8a-4b20-a3fc-2bf790cbb67a&quot; name=&quot;Pset_ServiceLifeFactors&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_ServiceLifeFactors&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;5ca9f732-8111-4637-bea8-5cbe30f190fb&quot; name=&quot;Group Assignment&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f567967f-5493-44d9-ac51-937c09ac2583&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;61c44d9f-ce81-4c85-b6cf-2329acfd6433&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;a5f0b52c-2be9-464c-b17b-c4ad12acb763&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;94bc037a-0988-4af3-aacf-40de661edda3&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;0ee90c2f-d8bc-4d45-903e-c9728b62cba8&quot; name=&quot;Pset_InstallationOccurrence&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;61c44d9f-ce81-4c85-b6cf-2329acfd6433&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;a5f0b52c-2be9-464c-b17b-c4ad12acb763&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;94bc037a-0988-4af3-aacf-40de661edda3&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_InstallationOccurrence&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;7a2ceb58-55ec-4c8c-9b72-787c84c5310f&quot; name=&quot;Pset_Risk&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; Parameters=&quot;PsetName[Value]=&amp;apos;Pset_Risk&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;e9e4f035-80a4-4417-8267-a5fc7cf999f7&quot; name=&quot;Assignment to Group&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;de73eaf7-7f2f-4af8-b574-24f353ddab1d&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;61c44d9f-ce81-4c85-b6cf-2329acfd6433&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;a5f0b52c-2be9-464c-b17b-c4ad12acb763&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;94bc037a-0988-4af3-aacf-40de661edda3&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;26c158f4-f12c-4d82-893b-f66aa7e377a9&quot; name=&quot;Object Connectivity&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;252a5fa6-cc5b-4d30-bd0c-35e22e336499&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;b3adfe28-1dd6-4286-b53d-23ad95f9eecc&quot; name=&quot;Object Predefined Type&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;25248261-98df-4d0a-9364-5653575ca421&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;61c44d9f-ce81-4c85-b6cf-2329acfd6433&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;a5f0b52c-2be9-464c-b17b-c4ad12acb763&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;94bc037a-0988-4af3-aacf-40de661edda3&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;d81ae58b-dade-4b21-aa2e-5dce7959fc4d&quot; name=&quot;Object User Identity&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;c19ec186-9cfd-47fc-a4d4-9fb35008d04a&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;61c44d9f-ce81-4c85-b6cf-2329acfd6433&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;a5f0b52c-2be9-464c-b17b-c4ad12acb763&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;94bc037a-0988-4af3-aacf-40de661edda3&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;942a52ff-cfa6-443e-9b6f-834c04cf66f1&quot; name=&quot;Property Sets for Objects&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;61c44d9f-ce81-4c85-b6cf-2329acfd6433&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;a5f0b52c-2be9-464c-b17b-c4ad12acb763&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;94bc037a-0988-4af3-aacf-40de661edda3&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;59811708-1bd3-409e-9bae-0f08add82444&quot; name=&quot;Property Sets with Override&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;e26040e8-82e2-4f6a-bc63-ac8e6da2d0ae&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;7c03fc21-ee92-462b-aa90-1cf33c3fb14b&quot; name=&quot;Quantity Sets&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;6652398e-6579-4460-8cb4-26295acfacc7&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;bf83c2e7-5058-4b6d-a683-0d5791f29ed4&quot; name=&quot;Classification Association&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;4a224609-6578-4c75-afcf-8affa86e5ef2&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;61c44d9f-ce81-4c85-b6cf-2329acfd6433&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;a5f0b52c-2be9-464c-b17b-c4ad12acb763&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;94bc037a-0988-4af3-aacf-40de661edda3&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;8e1f5fdc-0ada-493a-bdfa-10ade46b9ebf&quot; name=&quot;Library Association&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;3d761f09-23a2-4c01-8bc5-8762aa92bc23&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;30172d08-3911-4bd9-966d-72dc6a0e9a31&quot; name=&quot;Material Constituent Set&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;d96f7f7d-e742-4db8-9b5d-18a36a6df884&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;8da599d4-bb08-444f-a01c-dc60a7c41eab&quot; name=&quot;Material Layer Set&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;dfb5b3a9-50e3-46e2-8518-1f03e7cfd886&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;2e5fe1e0-1efd-4d90-8191-2d2692c61d48&quot; name=&quot;Material Profile Set&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;427ac055-2a71-42c2-a423-71689fa75c59&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;d14ee51c-6092-4ddd-9b09-a00ba509b7df&quot; name=&quot;Material Single&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;5f39a814-44a0-4fb3-8dc6-ddaa0560fc54&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;4f97f36a-3b12-413e-9ab2-b99afd0b5cd6&quot; name=&quot;Object Assignment&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;3b8e69d9-2824-4ebb-bb95-e5271c122efc&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;7f1ef5fe-2ee0-4e26-9350-0a44376dc53f&quot; name=&quot;Object Association&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;4b385464-b99a-42bc-a17a-a0a647a1ab5b&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;fb8ffa0c-9de3-4259-aa42-a7d578bf92fd&quot; name=&quot;Object Composition&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;5098cd13-bf4b-473a-a846-a60f69e9b738&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;c9f35489-5c4a-457b-b2e5-312361158a11&quot; name=&quot;Object Attributes&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;ccb45aa2-74e1-46e8-8e35-ca5e5d7cc9dd&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;346f8e11-7212-472e-9b4a-fd09088bc182&quot; name=&quot;Object Occurrence Attributes&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;73e34d23-ed0d-4afd-a87d-4da2df34466a&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;561bf6c2-d60a-4540-9765-b377bb3fb8fc&quot; name=&quot;Property Sets&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;36984334-3ac8-4e59-85a6-f68d65e379c7&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;0b497c71-39bd-47c6-9c62-bdb5a9295021&quot; name=&quot;Revision Control&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;b441c773-3fdc-42b6-a323-ad268dcd85f2&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;61c44d9f-ce81-4c85-b6cf-2329acfd6433&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;a5f0b52c-2be9-464c-b17b-c4ad12acb763&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;94bc037a-0988-4af3-aacf-40de661edda3&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;66390f0e-fe6d-479e-9b6a-e2237acd48bb&quot; name=&quot;Software Identity&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f7cb0a08-fee7-4cc0-85fe-43f6a6a0bce1&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;957e33d5-4b59-4c47-9578-b5ccce728bac&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;61c44d9f-ce81-4c85-b6cf-2329acfd6433&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;a5f0b52c-2be9-464c-b17b-c4ad12acb763&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;7c5cbfe6-7fb7-4f31-bff8-99562ff212fe&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;94bc037a-0988-4af3-aacf-40de661edda3&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Description=&quot;{}; {}&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&lt;/Concepts&gt;<br/>
+&lt;/ConceptRoot&gt;<br/>
+
+</code></div></details>
+<section>
+<details>
+<summary>Concept inheritance</summary>
+<p><table class="attributes">
+<tr><th><b>#</b></th><th><b>Concept</b></th><th><b>Template</b></th><th><b>Model View</b></th></tr>
+<tr><td colspan="3"><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm">IfcDistributionSystem</a></td></tr><tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#property-sets-for-objects">Pset_DistributionSystemTypeVentilation</a></td><td><a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#group-assignment">Group Assignment</a></td><td><a href="../../templates/group-assignment.htm">Group Assignment</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#assignment-to-group">Assignment to Group</a></td><td><a href="../../templates/assignment-to-group.htm">Assignment to Group</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#object-connectivity">Object Connectivity</a></td><td><a href="../../templates/object-connectivity.htm">Object Connectivity</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#object-predefined-type">Object Predefined Type</a></td><td><a href="../../templates/object-predefined-type.htm">Object Predefined Type</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#object-user-identity">Object User Identity</a></td><td><a href="../../templates/object-user-identity.htm">Object User Identity</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#property-sets-with-override">Property Sets with Override</a></td><td><a href="../../templates/property-sets-with-override.htm">Property Sets with Override</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#quantity-sets">Quantity Sets</a></td><td><a href="../../templates/quantity-sets.htm">Quantity Sets</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#classification-association">Classification Association</a></td><td><a href="../../templates/classification-association.htm">Classification Association</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#library-association">Library Association</a></td><td><a href="../../templates/library-association.htm">Library Association</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#material-constituent-set">Material Constituent Set</a></td><td><a href="../../templates/material-constituent-set.htm">Material Constituent Set</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#material-layer-set">Material Layer Set</a></td><td><a href="../../templates/material-layer-set.htm">Material Layer Set</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#material-profile-set">Material Profile Set</a></td><td><a href="../../templates/material-profile-set.htm">Material Profile Set</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#material-single">Material Single</a></td><td><a href="../../templates/material-single.htm">Material Single</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#object-assignment">Object Assignment</a></td><td><a href="../../templates/object-assignment.htm">Object Assignment</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#object-association">Object Association</a></td><td><a href="../../templates/object-association.htm">Object Association</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#object-composition">Object Composition</a></td><td><a href="../../templates/object-composition.htm">Object Composition</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#object-attributes">Object Attributes</a></td><td><a href="../../templates/object-attributes.htm">Object Attributes</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#object-occurrence-attributes">Object Occurrence Attributes</a></td><td><a href="../../templates/object-occurrence-attributes.htm">Object Occurrence Attributes</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#property-sets">Property Sets</a></td><td><a href="../../templates/property-sets.htm">Property Sets</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#revision-control">Revision Control</a></td><td><a href="../../templates/revision-control.htm">Revision Control</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm#software-identity">Software Identity</a></td><td><a href="../../templates/software-identity.htm">Software Identity</a></td><td>IFC4.3 AbRV - Scope settings</td></tr>
+
+</table>
+</details>
+</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

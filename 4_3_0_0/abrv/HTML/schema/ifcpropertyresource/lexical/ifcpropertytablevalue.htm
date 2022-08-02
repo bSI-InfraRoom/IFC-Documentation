@@ -52,7 +52,7 @@
 <blockquote class="note">
 <p>NOTE  The <span class="self-ref">IfcPropertyTableValue</span> only captures properties that can be expressed by a table with two columns. Use IfcPropertyReferenceValue with the PropertyReference being an IfcTable to express all those properties that require a table with tree or more columns.</p>
 </blockquote>
-<p>The units are handled by the <i>DefiningUnit</i> and <i>DefinedUnit</i> attributes, see Table 9 for an example of a table value property:</p>
+<p>The units are handled by the <i>DefiningUnit</i> and <i>DefinedUnit</i> attributes, see Table 11375 for an example of a table value property:</p>
 <ul>
 <li>If the <i>DefiningUnit</i> or <i>DefinedUnit</i> attribute is not given, then the unit is already implied by the type of <a href="../../ifcmeasureresource/lexical/ifcmeasurevalue.htm">IfcMeasureValue</a> or <a href="../../ifcmeasureresource/lexical/ifcderivedmeasurevalue.htm">IfcDerivedMeasureValue</a>. The associated unit can be found at the <a href="../../ifcmeasureresource/lexical/ifcunitassignment.htm">IfcUnitAssignment</a> globally defined at the project level (<i>IfcProject.UnitsInContext</i>).</li>
 <li>If the <i>DefiningUnit</i> or <i>DefinedUnit</i> attribute is given, then the unit assigned by the unit attribute overrides the globally assigned unit.</li>
@@ -165,7 +165,7 @@
   </td>
  </tr>
  <tr>
-  <td><p class="table">Table 9 &mdash; Table value property with values, measure types and units</p></td>
+  <td><p class="table">Table 11375 &mdash; Table value property with values, measure types and units</p></td>
  </tr>
 </table>
 <blockquote class="history">
@@ -186,14 +186,12 @@ Informal Propositions:</p>
 <th>I</th></tr>
 <tr><td>3</td><td>DefiningValues</td><td><a href="../../ifcmeasureresource/lexical/ifcvalue.htm">IfcValue</a></td><td>? L[1:?]</td><td>
 List of defining values, which determine the defined values. This list shall have unique values only.
-
 <blockquote>
 IFC4 CHANGE  The attribute has been made optional with upward compatibility for file based exchange.
 </blockquote>
 </td><td>X</td></tr>
 <tr><td>4</td><td>DefinedValues</td><td><a href="../../ifcmeasureresource/lexical/ifcvalue.htm">IfcValue</a></td><td>? L[1:?]</td><td>
 Defined values which are applicable for the scope as defined by the defining values.
-
 <blockquote>
 IFC4 CHANGE  The attribute has been made optional with upward compatibility for file based exchange.
 </blockquote>
@@ -207,7 +205,6 @@ Expression for the derivation of defined values from the defining values, the ex
 <i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
 <tr><td>8</td><td>CurveInterpolation</td><td><a href="../../ifcpropertyresource/lexical/ifccurveinterpolationenum.htm">IfcCurveInterpolationEnum</a></td><td>? </td><td>
 Interpolation of the curve between two defining and defined values that are provided. if not provided a linear interpolation is assumed.
-
 <blockquote>
 IFC4 CHANGE  The attribute has been added at the end of the attribute list.
 </blockquote>
@@ -246,7 +243,6 @@ Name for this property. This label is the significant name string that defines t
 Informative text to explain the property.
 </td><td>X</td></tr>
 <tr><td></td><td><i>PartOfPset</i></td><td><a href="../../ifckernel/lexical/ifcpropertyset.htm">IfcPropertySet</a><br/>@HasProperties</td><td>S[0:?]</td><td>Reference to the <a href="../../ifckernel/lexical/ifcpropertyset.htm">IfcPropertySet</a> by which the <span class="self-ref">IfcProperty</span> is referenced.
-
 <blockquote>
 IFC4 CHANGE  New inverse attribute to navigate from <span class="self-ref">IfcProperty</span> to <a href="../../ifckernel/lexical/ifcpropertyset.htm">IfcPropertySet</a> with upward compatibility for file based exchange.
 </blockquote>
@@ -255,14 +251,12 @@ IFC4 CHANGE  New inverse attribute to navigate from <span class="self-ref">IfcP
 <tr><td colspan="6"><a href="../../ifcpropertyresource/lexical/ifcpropertytablevalue.htm">IfcPropertyTableValue</a></td></tr>
 <tr><td>3</td><td>DefiningValues</td><td><a href="../../ifcmeasureresource/lexical/ifcvalue.htm">IfcValue</a></td><td>? L[1:?]</td><td>
 List of defining values, which determine the defined values. This list shall have unique values only.
-
 <blockquote>
 IFC4 CHANGE  The attribute has been made optional with upward compatibility for file based exchange.
 </blockquote>
 </td><td>X</td></tr>
 <tr><td>4</td><td>DefinedValues</td><td><a href="../../ifcmeasureresource/lexical/ifcvalue.htm">IfcValue</a></td><td>? L[1:?]</td><td>
 Defined values which are applicable for the scope as defined by the defining values.
-
 <blockquote>
 IFC4 CHANGE  The attribute has been made optional with upward compatibility for file based exchange.
 </blockquote>
@@ -276,13 +270,13 @@ Expression for the derivation of defined values from the defining values, the ex
 <i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
 <tr><td>8</td><td>CurveInterpolation</td><td><a href="../../ifcpropertyresource/lexical/ifccurveinterpolationenum.htm">IfcCurveInterpolationEnum</a></td><td>? </td><td>
 Interpolation of the curve between two defining and defined values that are provided. if not provided a linear interpolation is assumed.
-
 <blockquote>
 IFC4 CHANGE  The attribute has been added at the end of the attribute list.
 </blockquote>
 </td><td>X</td></tr>
 </table>
 </details>
+</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

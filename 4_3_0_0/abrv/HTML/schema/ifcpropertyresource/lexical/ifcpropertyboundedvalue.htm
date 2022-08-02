@@ -46,7 +46,7 @@
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
 <details open="open"><summary>Entity definition</summary><p>A property with a bounded value, <span class="self-ref">IfcPropertyBoundedValue</span>, defines a property object which has a maximum of two (numeric or descriptive) values assigned, the first value specifying the upper bound and the second value specifying the lower bound. It defines a property - value bound (min-max) combination for which the property <i>Name</i>, an optional <i>Description</i>, the optional <i>UpperBoundValue</i> with measure type, the optional <i>LowerBoundValue</i> with measure type, and the optional <i>Unit</i> is given. A set point value can be provided in addition to the upper and lower bound values for operational value setting.</p>
-<p>The unit is handled by the <i>Unit</i> attribute, see Table 3 for an example of a bounded property:</p>
+<p>The unit is handled by the <i>Unit</i> attribute, see Table 11369 for an example of a bounded property:</p>
 <ul>
 <li>If the <i>Unit</i> attribute is not given, then the unit is already implied by the type of <a href="../../ifcmeasureresource/lexical/ifcmeasurevalue.htm">IfcMeasureValue</a> or <a href="../../ifcmeasureresource/lexical/ifcderivedmeasurevalue.htm">IfcDerivedMeasureValue</a>. The associated unit can be found at the <a href="../../ifcmeasureresource/lexical/ifcunitassignment.htm">IfcUnitAssignment</a> globally defined at the project level (<i>IfcProject.UnitsInContext</i>).</li>
 <li>If the <i>Unit</i> attribute is given, then the unit assigned by the <i>Unit</i> attribute overrides the globally assigned unit.</li>
@@ -109,7 +109,7 @@
   </td>
  </tr>
  <tr>
-  <td><p class="table">Table 3 &mdash; Bounded property with values, measure types and units</p></td>
+  <td><p class="table">Table 11369 &mdash; Bounded property with values, measure types and units</p></td>
  </tr>
 
 <blockquote class="history">
@@ -140,7 +140,6 @@ Lower bound value for the interval defining the property value. If the value is 
 <i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
 <tr><td>6</td><td>SetPointValue</td><td><a href="../../ifcmeasureresource/lexical/ifcvalue.htm">IfcValue</a></td><td>? </td><td>
 Set point value as typically used for operational value setting.
-
 <blockquote>
 IFC4 CHANGE  The attribute has been added at the end of the attribute list.
 </blockquote>
@@ -179,7 +178,6 @@ Name for this property. This label is the significant name string that defines t
 Informative text to explain the property.
 </td><td>X</td></tr>
 <tr><td></td><td><i>PartOfPset</i></td><td><a href="../../ifckernel/lexical/ifcpropertyset.htm">IfcPropertySet</a><br/>@HasProperties</td><td>S[0:?]</td><td>Reference to the <a href="../../ifckernel/lexical/ifcpropertyset.htm">IfcPropertySet</a> by which the <span class="self-ref">IfcProperty</span> is referenced.
-
 <blockquote>
 IFC4 CHANGE  New inverse attribute to navigate from <span class="self-ref">IfcProperty</span> to <a href="../../ifckernel/lexical/ifcpropertyset.htm">IfcPropertySet</a> with upward compatibility for file based exchange.
 </blockquote>
@@ -196,13 +194,13 @@ Lower bound value for the interval defining the property value. If the value is 
 <i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
 <tr><td>6</td><td>SetPointValue</td><td><a href="../../ifcmeasureresource/lexical/ifcvalue.htm">IfcValue</a></td><td>? </td><td>
 Set point value as typically used for operational value setting.
-
 <blockquote>
 IFC4 CHANGE  The attribute has been added at the end of the attribute list.
 </blockquote>
 </td><td>X</td></tr>
 </table>
 </details>
+</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

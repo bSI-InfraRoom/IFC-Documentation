@@ -49,7 +49,7 @@
 <blockquote class="note">
 <p>NOTE  Multiple choices from the property enumeration are supported.</p>
 </blockquote>
-<p>The unit is handled by the <i>Unit</i> attribute, see Table 4 for an example of a enumerated property:</p>
+<p>The unit is handled by the <i>Unit</i> attribute, see Table 11370 for an example of a enumerated property:</p>
 <ul>
 <li>If the <i>Unit</i> attribute is not given, then the unit is already implied by the type of <a href="../../ifcmeasureresource/lexical/ifcmeasurevalue.htm">IfcMeasureValue</a> or <a href="../../ifcmeasureresource/lexical/ifcderivedmeasurevalue.htm">IfcDerivedMeasureValue</a>. The associated unit can be found at the <a href="../../ifcmeasureresource/lexical/ifcunitassignment.htm">IfcUnitAssignment</a> globally defined at the project level (<i>IfcProject.UnitsInContext</i>).</li>
 <li>If the <i>Unit</i> attribute is given, then the unit assigned by the unit attribute overrides the globally assigned unit.</li>
@@ -85,11 +85,11 @@
   </td>
  </tr>
  <tr>
-  <td><p class="table">Table 4 &mdash; Enumerated property with values, measure types and units</p></td>
+  <td><p class="table">Table 11370 &mdash; Enumerated property with values, measure types and units</p></td>
  </tr>
 </table>
 <p> </p>
-<p>The <span class="self-ref">IfcPropertyEnumeratedValue</span> refers to an <a href="../../ifcpropertyresource/lexical/ifcpropertyenumeration.htm">IfcPropertyEnumeration</a>, see Table 5 for an example:</p>
+<p>The <span class="self-ref">IfcPropertyEnumeratedValue</span> refers to an <a href="../../ifcpropertyresource/lexical/ifcpropertyenumeration.htm">IfcPropertyEnumeration</a>, see Table 11371 for an example:</p>
 <table>
  <tr>
   <td>
@@ -110,7 +110,7 @@
   </td>
  </tr>
  <tr>
-  <td><p class="table">Table 5 &mdash; Property enumeration with enumerators</p></td>
+  <td><p class="table">Table 11371 &mdash; Property enumeration with enumerators</p></td>
  </tr>
 </table>
 <p>It is not mandatory to use an instance of <a href="../../ifcpropertyresource/lexical/ifcpropertyenumeration.htm">IfcPropertyEnumeration</a> to hold the applicable values for <span class="self-ref">IfcPropertyEnumeratedValue</span>, however this is the preferred way. A single instance of <a href="../../ifcpropertyresource/lexical/ifcpropertyenumeration.htm">IfcPropertyEnumeration</a> can be referenced by multiple instances of <span class="self-ref">IfcPropertyEnumeratedValue</span>.</p>
@@ -129,7 +129,6 @@
 <th>I</th></tr>
 <tr><td>3</td><td>EnumerationValues</td><td><a href="../../ifcmeasureresource/lexical/ifcvalue.htm">IfcValue</a></td><td>? L[1:?]</td><td>
 Enumeration values, which shall be listed in the referenced <a href="../../ifcpropertyresource/lexical/ifcpropertyenumeration.htm">IfcPropertyEnumeration</a>, if such a reference is provided.
-
 <blockquote>
 IFC4 CHANGE  The attribute has been made optional with upward compatibility for file based exchange.
 </blockquote>
@@ -167,7 +166,6 @@ Name for this property. This label is the significant name string that defines t
 Informative text to explain the property.
 </td><td>X</td></tr>
 <tr><td></td><td><i>PartOfPset</i></td><td><a href="../../ifckernel/lexical/ifcpropertyset.htm">IfcPropertySet</a><br/>@HasProperties</td><td>S[0:?]</td><td>Reference to the <a href="../../ifckernel/lexical/ifcpropertyset.htm">IfcPropertySet</a> by which the <span class="self-ref">IfcProperty</span> is referenced.
-
 <blockquote>
 IFC4 CHANGE  New inverse attribute to navigate from <span class="self-ref">IfcProperty</span> to <a href="../../ifckernel/lexical/ifcpropertyset.htm">IfcPropertySet</a> with upward compatibility for file based exchange.
 </blockquote>
@@ -176,7 +174,6 @@ IFC4 CHANGE  New inverse attribute to navigate from <span class="self-ref">IfcP
 <tr><td colspan="6"><a href="../../ifcpropertyresource/lexical/ifcpropertyenumeratedvalue.htm">IfcPropertyEnumeratedValue</a></td></tr>
 <tr><td>3</td><td>EnumerationValues</td><td><a href="../../ifcmeasureresource/lexical/ifcvalue.htm">IfcValue</a></td><td>? L[1:?]</td><td>
 Enumeration values, which shall be listed in the referenced <a href="../../ifcpropertyresource/lexical/ifcpropertyenumeration.htm">IfcPropertyEnumeration</a>, if such a reference is provided.
-
 <blockquote>
 IFC4 CHANGE  The attribute has been made optional with upward compatibility for file based exchange.
 </blockquote>
@@ -186,6 +183,7 @@ Enumeration from which a enumeration value has been selected. The referenced enu
 </td><td>X</td></tr>
 </table>
 </details>
+</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>
